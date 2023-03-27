@@ -1,0 +1,25 @@
+---
+title: ""
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+![](bears_logo.png){width=50% fig-align="center"}
+
+We are the Berlin Experimental Astronautics Research Student Team e.V. and working on space related projects in our free time. Our work is split up in three workgroups (WG):
+
+* The WG Experimental Rocketry focuses on the development of sounding rockets and an own biliquid propulsion system.
+
+* The WG Science and Experiments develope and build scientific experiments and payloads as well as technology demonstrators. Furthermore the group work on the development of satellite components and missions.
+
+* The WG Robotics developes robotic systems and builds own rover platforms.
+
+
+## Blog

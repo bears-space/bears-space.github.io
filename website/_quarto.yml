@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  navbar:
+    logo: bears_logo.png
+    left:
+      - about.qmd
+      - sponsors.qmd
+    right:
+      - imprint.qmd
+      - icon: instagram
+        href: https://www.instagram.com/bears.space/
+      # - icon: github
+      #   href: https://github.com/
+      # - icon: twitter
+      #   href: https://twitter.com
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+

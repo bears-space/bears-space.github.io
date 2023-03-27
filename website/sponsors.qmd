@@ -1,0 +1,13 @@
+---
+title: "Sponsors"
+---
+
+We want to thank our sponsors and supporters:
+
+## TU Berlin
+
+[![](sponsors_tu_berlin.png)](https://tu.berlin/)
+
+## NI
+
+[![](sponsors_ni.webp)](https://www.ni.com/de-de.html)
