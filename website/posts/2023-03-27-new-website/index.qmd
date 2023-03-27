@@ -21,3 +21,23 @@ If you find any bugs or have any suggestions, please contact us or open an [issu
 This is the Tsiolkovsky rocket equation:^[more info on [Wikipedia](https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation)]
 
 $$\Delta v = v_e \ln\frac{m_0}{m_f}$$
+
+For example, for the upper stage of starship, the $\Delta v$ in dependence on the mass of the rocket is:
+
+```{python}
+#| code-fold: true
+import numpy as np
+import matplotlib.pyplot as plt
+
+mf = 1200  # fuel mass in t
+ms = 120  # dry mass in t
+mp = np.linspace(0, 150)  # payload mass in t
+m0 = mf + ms + mp  # total mass in t
+ve = 3560  # exhaust velocity in m/s
+dv = ve * np.log(m0 / (ms + mp))  # delta v in m/s
+
+plt.plot(mp, dv)
+plt.ylabel("$\Delta v$ [m/s]")
+plt.xlabel("Payload mass [t]")
+plt.show()
+```
