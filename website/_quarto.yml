@@ -17,8 +17,7 @@ website:
       #   href: https://twitter.com
 format:
   html:
-    theme: default
+    theme:
+      light: cosmo
+      dark: slate
     css: styles.css
-
-
-
