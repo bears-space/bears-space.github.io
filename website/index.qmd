@@ -13,13 +13,14 @@ title-block-banner: true
 
 ![](bears_logo.png){width=50% fig-align="center"}
 
-We are the Berlin Experimental Astronautics Research Student Team e.V. and working on space related projects in our free time. Our work is split up in three workgroups (WG):
+We are the Berlin Experimental Astronautics Research Student Team e.V. and working on space related projects in our free time. Our work is split up in three working groups:
 
-* The WG Experimental Rocketry focuses on the development of sounding rockets and an own biliquid propulsion system.
+* The Experimental Rocketry group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.
 
-* The WG Science and Experiments develope and build scientific experiments and payloads as well as technology demonstrators. Furthermore the group work on the development of satellite components and missions.
+* The Science and Experiments group develops and operates science experiments and payloads. Furthermore, it develops, designs and builds satellite components and systems.
 
-* The WG Robotics developes robotic systems and builds own rover platforms.
+* In the Robotics group, robotic systems are designed, built, tested and operated. Currently, the group is focused on robotic implementation of in situ resource utilization technologies for various space environments. One of the projects in this area is the development of a mobile solar smelter which heats up the regolith on the surface of the moon to melting temperatures using sunlight. The goal is to create a sealed surface which can benefit various lunar construction ambitions like building roads or foundations.
 
+Regardless of your academic background, if you are interested you can contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). Otherwise, you can join us in our weekly meeting at 6 pm in the F11 at the ILR.
 
 ## Blog
