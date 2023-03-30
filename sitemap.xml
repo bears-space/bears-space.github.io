@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bears-space.github.io/website/about.html</loc>
-    <lastmod>2023-03-27T19:04:43.240Z</lastmod>
+    <loc>https://github.com/bears-space/bears-space.github.io/blog.html</loc>
+    <lastmod>2023-03-30T16:08:19.501Z</lastmod>
   </url>
   <url>
-    <loc>https://bears-space.github.io/website/imprint.html</loc>
-    <lastmod>2023-03-27T19:04:43.460Z</lastmod>
+    <loc>https://github.com/bears-space/bears-space.github.io/about.html</loc>
+    <lastmod>2023-03-30T16:08:21.713Z</lastmod>
   </url>
   <url>
-    <loc>https://bears-space.github.io/website/index.html</loc>
-    <lastmod>2023-03-27T19:04:44.206Z</lastmod>
+    <loc>https://github.com/bears-space/bears-space.github.io/imprint.html</loc>
+    <lastmod>2023-03-30T16:08:22.097Z</lastmod>
   </url>
   <url>
-    <loc>https://bears-space.github.io/website/posts/2023-03-27-new-website/index.html</loc>
-    <lastmod>2023-03-27T19:04:47.966Z</lastmod>
+    <loc>https://github.com/bears-space/bears-space.github.io/posts/2023-03-27-new-website/index.html</loc>
+    <lastmod>2023-03-30T16:08:27.298Z</lastmod>
   </url>
   <url>
-    <loc>https://bears-space.github.io/website/sponsors.html</loc>
-    <lastmod>2023-03-27T19:04:48.179Z</lastmod>
+    <loc>https://github.com/bears-space/bears-space.github.io/index.html</loc>
+    <lastmod>2023-03-30T16:08:27.758Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/bears-space/bears-space.github.io/sponsors.html</loc>
+    <lastmod>2023-03-30T16:08:28.154Z</lastmod>
   </url>
 </urlset>
