@@ -39,7 +39,7 @@
     "href": "posts/2023-03-27-new-website/index.html#whats-new",
     "title": "New Website for BEARS",
     "section": "What’s new?",
-    "text": "What’s new?\n\nNew design\nBlog posts\nScientific writing with Quarto\n\n\nExamples\nThis is the Tsiolkovsky rocket equation:1\n\\[\\Delta v = v_e \\ln\\frac{m_0}{m_f}\\]\nFor example, for the upper stage of starship, the \\(\\Delta v\\) in dependence on the mass of the rocket is:\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nmf = 1200  # fuel mass in t\nms = 120  # dry mass in t\nmp = np.linspace(0, 150)  # payload mass in t\nm0 = mf + ms + mp  # total mass in t\nve = 3560  # exhaust velocity in m/s\ndv = ve * np.log(m0 / (ms + mp))  # delta v in m/s\n\nplt.plot(mp, dv)\nplt.ylabel(\"$\\Delta v$ [m/s]\")\nplt.xlabel(\"Payload mass [t]\")\nplt.show()"
+    "text": "What’s new?\n\nNew design\nBlog posts\nScientific writing with Quarto\n\n\nExample of what you can do\nThis is the Tsiolkovsky rocket equation:1\n\\[\\Delta v = v_e \\ln\\frac{m_0}{m_f}\\]\nFor the upper stage of starship, the \\(\\Delta v\\) over the payload mass is:\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nmf = 1200  # fuel mass in t\nms = 120  # dry mass in t\nmp = np.linspace(0, 150)  # payload mass in t\nm0 = mf + ms + mp  # total mass in t\nve = 3560  # exhaust velocity in m/s\ndv = ve * np.log(m0 / (ms + mp))  # delta v in m/s\n\nplt.plot(mp, dv)\nplt.ylabel(\"$\\Delta v$ [m/s]\")\nplt.xlabel(\"Payload mass [t]\")\nplt.show()"
   },
   {
     "objectID": "index.html",
