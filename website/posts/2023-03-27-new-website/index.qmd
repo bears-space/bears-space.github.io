@@ -16,13 +16,13 @@ If you find any bugs or have any suggestions, please contact us or open an [issu
 - Blog posts
 - Scientific writing with [Quarto](https://quarto.org/)
 
-### Examples
+### Example of what you can do
 
 This is the Tsiolkovsky rocket equation:^[more info on [Wikipedia](https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation)]
 
 $$\Delta v = v_e \ln\frac{m_0}{m_f}$$
 
-For example, for the upper stage of starship, the $\Delta v$ in dependence on the mass of the rocket is:
+For the upper stage of starship, the $\Delta v$ over the payload mass is:
 
 ```{python}
 #| code-fold: true
