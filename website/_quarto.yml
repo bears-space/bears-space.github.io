@@ -3,8 +3,11 @@ project:
 
 website:
   favicon: favicon.png
-  twitter-card: true
-  open-graph: true
+  site-url: https://bears-space.github.io/
+  twitter-card:
+    image: bears-logo.png
+  open-graph:
+    image: bears-logo.png
   navbar:
     logo: bears_logo.png
     left:
