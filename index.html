@@ -184,6 +184,47 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<div id="slideshow">
+<button id="prevButton">&lt;</button> <button id="nextButton">&gt;</button> <!-- put all images here that should be available in the slideshow --> <img class="slideshow-img" src="slideshow/img1.webp"> <img class="slideshow-img" src="slideshow/img2.jpg"> <img class="slideshow-img" src="slideshow/img3.webp">
+<style>
+    #slideshow {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    #prevButton, #nextButton {
+      position: absolute;
+      top: 0;
+      background: #0003;
+      color: #fffa;
+      border: none;
+      font-size: 50px;
+      height: 100%;
+    }
+    #prevButton {left: 0;}
+    #nextButton {right: 0;}
+    #prevButton:hover, #nextButton:hover {background: #0007;}
+    .slideshow-img {
+      width:100%;
+      display: none;
+    }
+  </style>
+<script>
+    const images = document.getElementsByClassName('slideshow-img');
+    let index = 0;
+    function switch_image(x) {
+      return () => {
+        images[index].style.display = 'none';
+        index = (index + x + images.length) % images.length;
+        images[index].style.display = 'block';
+      }
+    }
+    document.getElementById('prevButton').addEventListener('click', switch_image(-1));
+    document.getElementById('nextButton').addEventListener('click', switch_image(1));
+    switch_image(0)();
+  </script>
+</div>
+<p><br></p>
 <p>Our work is split up in three working groups:</p>
 <ul>
 <li><p>The Experimental Rocketry group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.</p></li>
@@ -200,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1679875200000" data-listing-file-modified-sort="1680192448854" data-listing-reading-time-sort="0.71">
+<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1679875200000" data-listing-file-modified-sort="1680196167617" data-listing-reading-time-sort="0.71">
 <div class="thumbnail">
 <p><a href="./posts/2023-03-27-new-website/index.html"> <img src="./posts/2023-03-27-new-website/bears-website.png" class="thumnail-image"> </a></p>
 </div>
