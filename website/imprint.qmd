@@ -1,5 +1,6 @@
 ---
 title: "Imprint"
+title-block-banner: true
 ---
 
 This imprint is valid for the following websites:
