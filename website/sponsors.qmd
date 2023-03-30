@@ -1,5 +1,6 @@
 ---
 title: "Sponsors"
+title-block-banner: true
 ---
 
 We want to thank our sponsors and supporters:

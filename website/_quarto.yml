@@ -2,9 +2,13 @@ project:
   type: website
 
 website:
+  favicon: favicon.png
+  twitter-card: true
+  open-graph: true
   navbar:
     logo: bears_logo.png
     left:
+      - blog.qmd
       - about.qmd
       - sponsors.qmd
     right:
@@ -18,6 +22,6 @@ website:
 format:
   html:
     theme:
-      light: cosmo
-      dark: slate
+      light: flatly
+      dark: darkly
     css: styles.css

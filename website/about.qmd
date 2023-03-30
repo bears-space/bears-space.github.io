@@ -15,7 +15,7 @@ about:
     # - icon: github
     #   text: Github
     #   href: https://github.com
-
+title-block-banner: true
 ---
 
 ![](bears_logo.png){width=50%}

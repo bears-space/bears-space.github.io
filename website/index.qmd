@@ -1,19 +1,19 @@
 ---
-title: ""
+title: "BEARS - Dare The Limits"
+description: We are the Berlin Experimental Astronautics Research Student Team e.V. at TU Berlin and work on space related projects in our free time.
 listing:
   contents: posts
+  max-items: 3
   sort: "date desc"
   type: default
-  categories: true
+  categories: false
   sort-ui: false
   filter-ui: false
 page-layout: full
 title-block-banner: true
 ---
 
-![](bears_logo.png){width=50% fig-align="center"}
-
-We are the Berlin Experimental Astronautics Research Student Team e.V. and working on space related projects in our free time. Our work is split up in three working groups:
+Our work is split up in three working groups:
 
 * The Experimental Rocketry group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.
 
@@ -21,6 +21,6 @@ We are the Berlin Experimental Astronautics Research Student Team e.V. and worki
 
 * In the Robotics group, robotic systems are designed, built, tested and operated. Currently, the group is focused on robotic implementation of in situ resource utilization technologies for various space environments. One of the projects in this area is the development of a mobile solar smelter which heats up the regolith on the surface of the moon to melting temperatures using sunlight. The goal is to create a sealed surface which can benefit various lunar construction ambitions like building roads or foundations.
 
-Regardless of your academic background, if you are interested you can contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). Otherwise, you can join us in our weekly meeting at 6 pm in the F11 at the ILR.
+Regardless of your academic background, if you are interested you can contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). Otherwise, you can join us in our weekly meeting at 6 pm in the F11 at the [ILR](https://goo.gl/maps/Sg9ZbNibhdPLRGyi9).
 
-## Blog
+## Newest Blog Posts
