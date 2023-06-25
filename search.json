@@ -1,24 +1,45 @@
 [
   {
-    "objectID": "posts/2023-03-27-new-website/index.html",
-    "href": "posts/2023-03-27-new-website/index.html",
-    "title": "New Website for BEARS",
+    "objectID": "sponsors.html",
+    "href": "sponsors.html",
+    "title": "Sponsors",
     "section": "",
-    "text": "This is the new website for BEARS. More Blog posts will follow soon…\nIf you find any bugs or have any suggestions, please contact us or open an issue on GitHub."
+    "text": "We want to thank our sponsors and supporters:"
   },
   {
-    "objectID": "posts/2023-03-27-new-website/index.html#whats-new",
-    "href": "posts/2023-03-27-new-website/index.html#whats-new",
-    "title": "New Website for BEARS",
-    "section": "What’s new?",
-    "text": "What’s new?\n\nNew design\nBlog posts\nScientific writing with Quarto\n\n\nExample of what you can do\nThis is the Tsiolkovsky rocket equation:1\n\\[\\Delta v = v_e \\ln\\frac{m_0}{m_f}\\]\nFor the upper stage of starship, the \\(\\Delta v\\) over the payload mass is:\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nmf = 1200  # fuel mass in t\nms = 120  # dry mass in t\nmp = np.linspace(0, 150)  # payload mass in t\nm0 = mf + ms + mp  # total mass in t\nve = 3560  # exhaust velocity in m/s\ndv = ve * np.log(m0 / (ms + mp))  # delta v in m/s\n\nplt.plot(mp, dv)\nplt.ylabel(\"$\\Delta v$ [m/s]\")\nplt.xlabel(\"Payload mass [t]\")\nplt.show()"
+    "objectID": "sponsors.html#tu-berlin",
+    "href": "sponsors.html#tu-berlin",
+    "title": "Sponsors",
+    "section": "TU Berlin",
+    "text": "TU Berlin\nWe want to thank the TU Berlin, and especially the RFT, for rooms and all kinds of support."
+  },
+  {
+    "objectID": "sponsors.html#ni",
+    "href": "sponsors.html#ni",
+    "title": "Sponsors",
+    "section": "NI",
+    "text": "NI\nThank you NI for discounts."
+  },
+  {
+    "objectID": "about.html#who-are-we",
+    "href": "about.html#who-are-we",
+    "title": "About BEARS",
+    "section": "Who are we?",
+    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31th of May 2022 with the goal to provide students from all the discplines the opportunity to apply their theoretical knwoledege in practical space related projects."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nNew Website for BEARS\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 27, 2023\n\n\nJonas Loos\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "BEARS - Dare The Limits",
     "section": "",
-    "text": "< >\nOur work is split up in three working groups:\nRegardless of your academic background, if you are interested you can contact us via mail or on Instagram. Otherwise, you can join us in our weekly meeting at 6 pm in the F11 at the ILR."
+    "text": "&lt; &gt;\nOur work is split up in three working groups:\nRegardless of your academic background, if you are interested you can contact us via mail or on Instagram. Otherwise, you can join us in our weekly meeting at 6 pm in the F11 at the ILR."
   },
   {
     "objectID": "index.html#newest-blog-posts",
@@ -42,38 +63,24 @@
     "text": "According to § 5 TMG\nBerlin Experimental Astronautics Research Student team e.V.\nc/o TU Berlin - Institut für Luft- und Raumfahrt\nMarchstraße 12-14\n10587 Berlin\nMail: bears.space@protonmail.com\nRepresented by the board:\nVictoria Angret Renate Koßack\nBurkan Akyil\nTill Siebert\nLucie Schade\nAmtsgericht Charlottenburg, Register-Nr.: following"
   },
   {
-    "objectID": "sponsors.html",
-    "href": "sponsors.html",
-    "title": "Sponsors",
+    "objectID": "posts/2023-03-27-new-website/index.html",
+    "href": "posts/2023-03-27-new-website/index.html",
+    "title": "New Website for BEARS",
     "section": "",
-    "text": "We want to thank our sponsors and supporters:"
+    "text": "This is the new website for BEARS. More Blog posts will follow soon…\nIf you find any bugs or have any suggestions, please contact us or open an issue on GitHub."
   },
   {
-    "objectID": "sponsors.html#tu-berlin",
-    "href": "sponsors.html#tu-berlin",
-    "title": "Sponsors",
-    "section": "TU Berlin",
-    "text": "TU Berlin"
+    "objectID": "posts/2023-03-27-new-website/index.html#whats-new",
+    "href": "posts/2023-03-27-new-website/index.html#whats-new",
+    "title": "New Website for BEARS",
+    "section": "What’s new?",
+    "text": "What’s new?\n\nNew design\nBlog posts\nScientific writing with Quarto\n\n\nExample of what you can do\nThis is the Tsiolkovsky rocket equation:1\n\\[\\Delta v = v_e \\ln\\frac{m_0}{m_f}\\]\nFor the upper stage of starship, the \\(\\Delta v\\) over the payload mass is:\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nmf = 1200  # fuel mass in t\nms = 120  # dry mass in t\nmp = np.linspace(0, 150)  # payload mass in t\nm0 = mf + ms + mp  # total mass in t\nve = 3560  # exhaust velocity in m/s\ndv = ve * np.log(m0 / (ms + mp))  # delta v in m/s\n\nplt.plot(mp, dv)\nplt.ylabel(\"$\\Delta v$ [m/s]\")\nplt.xlabel(\"Payload mass [t]\")\nplt.show()"
   },
   {
-    "objectID": "sponsors.html#ni",
-    "href": "sponsors.html#ni",
-    "title": "Sponsors",
-    "section": "NI",
-    "text": "NI"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nNew Website for BEARS\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 27, 2023\n\n\nJonas Loos\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html#who-are-we",
-    "href": "about.html#who-are-we",
-    "title": "About BEARS",
-    "section": "Who are we?",
-    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31th of May 2022 with the goal to provide students from all the discplines the opportunity to apply their theoretical knwoledege in practical space related projects."
+    "objectID": "posts/2023-03-27-new-website/index.html#footnotes",
+    "href": "posts/2023-03-27-new-website/index.html#footnotes",
+    "title": "New Website for BEARS",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nmore info on Wikipedia↩︎"
   }
 ]
