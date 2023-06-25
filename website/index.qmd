@@ -17,9 +17,9 @@ title-block-banner: true
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="slideshow/img1.webp" >
-  <img class="slideshow-img" src="slideshow/img2.jpg">
-  <img class="slideshow-img" src="slideshow/img3.webp">
+  <img class="slideshow-img" src="slideshow/group1.webp" >
+  <img class="slideshow-img" src="slideshow/group2.webp">
+  <img class="slideshow-img" src="slideshow/launch1.jpg">
   <style>
     #slideshow {
       position: relative;

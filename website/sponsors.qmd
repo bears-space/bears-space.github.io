@@ -7,8 +7,12 @@ We want to thank our sponsors and supporters:
 
 ## TU Berlin
 
+We want to thank the [TU Berlin](https://tu.berlin/), and especially the [RFT](https://www.tu.berlin/en/raumfahrttechnik), for rooms and all kinds of support.
+
 [![](sponsors_tu_berlin.png)](https://tu.berlin/)
 
 ## NI
+
+Thank you [NI](https://www.ni.com/de-de.html) for discounts.
 
 [![](sponsors_ni.webp)](https://www.ni.com/de-de.html)
