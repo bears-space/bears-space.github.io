@@ -1,1 +1,1 @@
-Sitemap: https://github.com/bears-space/bears-space.github.io/sitemap.xml
+Sitemap: https://www.bears-space.de/sitemap.xml
