@@ -1,7 +1,7 @@
 ---
 title: "New Website for BEARS"
 author: "Jonas Loos"
-date: "2023-03-27"
+date: "2023-07-08"
 categories: [news]
 image: "bears-website.png"
 ---
@@ -9,7 +9,7 @@ image: "bears-website.png"
 This is the new website for BEARS. More Blog posts will follow soon...
 
 If you find any bugs or have any suggestions, please contact us or open an [issue on GitHub](https://github.com/bears-space/website/issues).
-
+<!-- 
 ## What's new?
 
 - New design
@@ -40,4 +40,4 @@ plt.plot(mp, dv)
 plt.ylabel("$\Delta v$ [m/s]")
 plt.xlabel("Payload mass [t]")
 plt.show()
-```
+``` -->
