@@ -1,0 +1,63 @@
+---
+title: "LARS on the Asclepios analog moon mission"
+# author: "Jonas Loos"
+date: "2023-07-20"
+categories: [news]
+image: "LARS4.png"
+---
+
+When we developed LARS (Lunar Astronaut Revival System), we weren't sure what kind of material we want to use. We had high requirements regarding to the robustness of the most important components because of the high forces that are required for the CPR procedure. Luckily we came in touch with [3D-Druck & Design Rostock](https://3ddruckrostock.de/) who were able to print the components out of a highly robust carbon nylon filament. We are excited to present you the final system which we used for our first test phase at the [Asclepios](https://asclepios.ch/) analog moon mission at San Gottardo (Switzerland).
+
+
+<div id="slideshow">
+  <button id="prevButton"><</button>
+  <button id="nextButton">></button>
+  <!-- put all images here that should be available in the slideshow -->
+  <img class="slideshow-img" src="LARS1.png" >
+  <img class="slideshow-img" src="LARS2.png" >
+  <img class="slideshow-img" src="LARS3.png" >
+  <img class="slideshow-img" src="LARS4.png" >
+  <img class="slideshow-img" src="LARS5.png" >
+  <img class="slideshow-img" src="LARS6.png" >
+  <img class="slideshow-img" src="LARS7.png" >
+  <img class="slideshow-img" src="LARS8.png" >
+  <style>
+    #slideshow {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    #prevButton, #nextButton {
+      position: absolute;
+      top: 0;
+      background: #0003;
+      color: #fffa;
+      border: none;
+      font-size: 50px;
+      height: 100%;
+    }
+    #prevButton {left: 0;}
+    #nextButton {right: 0;}
+    #prevButton:hover, #nextButton:hover {background: #0007;}
+    .slideshow-img {
+      width:100%;
+      display: none;
+    }
+  </style>
+  <script>
+    const images = document.getElementsByClassName('slideshow-img');
+    let index = 0;
+    function switch_image(x) {
+      return () => {
+        images[index].style.display = 'none';
+        index = (index + x + images.length) % images.length;
+        images[index].style.display = 'block';
+      }
+    }
+    document.getElementById('prevButton').addEventListener('click', switch_image(-1));
+    document.getElementById('nextButton').addEventListener('click', switch_image(1));
+    switch_image(0)();
+  </script>
+</div>
+<br/>
+
