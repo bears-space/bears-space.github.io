@@ -14,11 +14,18 @@
     "text": "This is the new website for BEARS. More Blog posts will follow soon…\nIf you find any bugs or have any suggestions, please contact us or open an issue on GitHub."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "imprint.html",
+    "href": "imprint.html",
+    "title": "Imprint",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nNew Website for BEARS\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2023\n\n\nJonas Loos\n\n\n\n\n\n\nNo matching items"
+    "text": "This imprint is valid for the following websites:"
+  },
+  {
+    "objectID": "imprint.html#according-to-5-tmg",
+    "href": "imprint.html#according-to-5-tmg",
+    "title": "Imprint",
+    "section": "According to § 5 TMG",
+    "text": "According to § 5 TMG\nBerlin Experimental Astronautics Research Student team e.V.\nc/o TU Berlin - Institut für Luft- und Raumfahrt\nMarchstraße 12-14\n10587 Berlin\nMail: bears.space@protonmail.com\nRepresented by the board:\nVictoria Koßack\nNima Lucius Mirrafati\nNele Karteusch\nJohanna Erna Charlotte Teuchert\nAmtsgericht Charlottenburg, Register-Nr.: VR 40347 B"
   },
   {
     "objectID": "index.html",
@@ -35,18 +42,18 @@
     "text": "Newest Blog Posts"
   },
   {
-    "objectID": "imprint.html",
-    "href": "imprint.html",
-    "title": "Imprint",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "This imprint is valid for the following websites:"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nLARS on the Asclepios analog moon mission\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\n\n\n\n\n  \n\n\n\n\nNew Website for BEARS\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2023\n\n\nJonas Loos\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "imprint.html#according-to-5-tmg",
-    "href": "imprint.html#according-to-5-tmg",
-    "title": "Imprint",
-    "section": "According to § 5 TMG",
-    "text": "According to § 5 TMG\nBerlin Experimental Astronautics Research Student team e.V.\nc/o TU Berlin - Institut für Luft- und Raumfahrt\nMarchstraße 12-14\n10587 Berlin\nMail: bears.space@protonmail.com\nRepresented by the board:\nVictoria Koßack\nNima Lucius Mirrafati\nNele Karteusch\nJohanna Erna Charlotte Teuchert\nAmtsgericht Charlottenburg, Register-Nr.: VR 40347 B"
+    "objectID": "posts/2023-07-20-lars/index.html",
+    "href": "posts/2023-07-20-lars/index.html",
+    "title": "LARS on the Asclepios analog moon mission",
+    "section": "",
+    "text": "When we developed LARS (Lunar Astronaut Revival System), we weren’t sure what kind of material we want to use. We had high requirements regarding to the robustness of the most important components because of the high forces that are required for the CPR procedure. Luckily we came in touch with 3D-Druck & Design Rostock who were able to print the components out of a highly robust carbon nylon filament. We are excited to present you the final system which we used for our first test phase at the Asclepios analog moon mission at San Gottardo (Switzerland).\n\n&lt; &gt;"
   },
   {
     "objectID": "sponsors.html",
