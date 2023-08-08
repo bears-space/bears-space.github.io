@@ -1,17 +1,31 @@
 [
   {
-    "objectID": "about.html#who-are-we",
-    "href": "about.html#who-are-we",
-    "title": "About BEARS",
-    "section": "Who are we?",
-    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31th of May 2022 with the goal to provide students from all the discplines the opportunity to apply their theoretical knwoledege in practical space related projects."
+    "objectID": "sponsors.html",
+    "href": "sponsors.html",
+    "title": "Sponsors",
+    "section": "",
+    "text": "We want to thank our sponsors and supporters:"
   },
   {
-    "objectID": "posts/2023-03-27-new-website/index.html",
-    "href": "posts/2023-03-27-new-website/index.html",
-    "title": "New Website for BEARS",
+    "objectID": "sponsors.html#tu-berlin",
+    "href": "sponsors.html#tu-berlin",
+    "title": "Sponsors",
+    "section": "TU Berlin",
+    "text": "TU Berlin\nWe want to thank the TU Berlin, and especially the RFT, for rooms and all kinds of support."
+  },
+  {
+    "objectID": "sponsors.html#ni",
+    "href": "sponsors.html#ni",
+    "title": "Sponsors",
+    "section": "NI",
+    "text": "NI\nMany thanks to NI for discounts."
+  },
+  {
+    "objectID": "posts/2023-07-20-lars/index.html",
+    "href": "posts/2023-07-20-lars/index.html",
+    "title": "LARS on the Asclepios analog moon mission",
     "section": "",
-    "text": "This is the new website for BEARS. More Blog posts will follow soon…\nIf you find any bugs or have any suggestions, please contact us or open an issue on GitHub."
+    "text": "When we developed LARS (Lunar Astronaut Revival System), we weren’t sure what kind of material we want to use. We had high requirements regarding to the robustness of the most important components because of the high forces that are required for the CPR procedure. Luckily we came in touch with 3D-Druck & Design Rostock who were able to print the components out of a highly robust carbon nylon filament. We are excited to present you the final system which we used for our first test phase at the Asclepios analog moon mission at San Gottardo (Switzerland).\n\n&lt; &gt;"
   },
   {
     "objectID": "imprint.html",
@@ -32,7 +46,7 @@
     "href": "index.html",
     "title": "BEARS - Dare The Limits",
     "section": "",
-    "text": "&lt; &gt;\nOur work is split up in three working groups:\nRegardless of your academic background, if you are interested you can contact us via mail or on Instagram. Otherwise, you can join us in our weekly meeting at 6 pm in the F11 at the ILR."
+    "text": "&lt; &gt;\nOur work is split up in three working groups:\nRegardless of your academic background, if you are interested you can contact us via mail or on Instagram. Otherwise, you can join us in our weekly meeting Tuesdays at 6 pm in the F11 at the ILR."
   },
   {
     "objectID": "index.html#newest-blog-posts",
@@ -49,31 +63,17 @@
     "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nLARS on the Asclepios analog moon mission\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\n\n\n\n\n  \n\n\n\n\nNew Website for BEARS\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 8, 2023\n\n\nJonas Loos\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/2023-07-20-lars/index.html",
-    "href": "posts/2023-07-20-lars/index.html",
-    "title": "LARS on the Asclepios analog moon mission",
+    "objectID": "about.html#who-are-we",
+    "href": "about.html#who-are-we",
+    "title": "About BEARS",
+    "section": "Who are we?",
+    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31th of May 2022 with the goal to provide students from all the discplines the opportunity to apply their theoretical knwoledege in practical space related projects."
+  },
+  {
+    "objectID": "posts/2023-03-27-new-website/index.html",
+    "href": "posts/2023-03-27-new-website/index.html",
+    "title": "New Website for BEARS",
     "section": "",
-    "text": "When we developed LARS (Lunar Astronaut Revival System), we weren’t sure what kind of material we want to use. We had high requirements regarding to the robustness of the most important components because of the high forces that are required for the CPR procedure. Luckily we came in touch with 3D-Druck & Design Rostock who were able to print the components out of a highly robust carbon nylon filament. We are excited to present you the final system which we used for our first test phase at the Asclepios analog moon mission at San Gottardo (Switzerland).\n\n&lt; &gt;"
-  },
-  {
-    "objectID": "sponsors.html",
-    "href": "sponsors.html",
-    "title": "Sponsors",
-    "section": "",
-    "text": "We want to thank our sponsors and supporters:"
-  },
-  {
-    "objectID": "sponsors.html#tu-berlin",
-    "href": "sponsors.html#tu-berlin",
-    "title": "Sponsors",
-    "section": "TU Berlin",
-    "text": "TU Berlin\nWe want to thank the TU Berlin, and especially the RFT, for rooms and all kinds of support."
-  },
-  {
-    "objectID": "sponsors.html#ni",
-    "href": "sponsors.html#ni",
-    "title": "Sponsors",
-    "section": "NI",
-    "text": "NI\nMany thanks to NI for discounts."
+    "text": "This is the new website for BEARS. More Blog posts will follow soon…\nIf you find any bugs or have any suggestions, please contact us or open an issue on GitHub."
   }
 ]
