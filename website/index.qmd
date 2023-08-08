@@ -17,8 +17,7 @@ title-block-banner: true
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="slideshow/group1.webp" >
-  <img class="slideshow-img" src="slideshow/group2.webp">
+  <img class="slideshow-img" src="slideshow/group.jpg" >
   <img class="slideshow-img" src="slideshow/launch1.jpg">
   <style>
     #slideshow {
@@ -69,7 +68,7 @@ Our work is split up in three working groups:
 
 * In the Robotics group, robotic systems are designed, built, tested and operated. Currently, the group is focused on robotic implementation of in situ resource utilization technologies for various space environments. One of the projects in this area is the development of a mobile solar smelter which heats up the regolith on the surface of the moon to melting temperatures using sunlight. The goal is to create a sealed surface which can benefit various lunar construction ambitions like building roads or foundations.
 
-Regardless of your academic background, if you are interested you can contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). Otherwise, you can join us in our weekly meeting at 6 pm in the F11 at the [ILR](https://goo.gl/maps/Sg9ZbNibhdPLRGyi9).
+Regardless of your academic background, if you are interested you can contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). Otherwise, you can join us in our weekly meeting Tuesdays at 6 pm in the F11 at the [ILR](https://goo.gl/maps/Sg9ZbNibhdPLRGyi9).
 
 <br>
 
