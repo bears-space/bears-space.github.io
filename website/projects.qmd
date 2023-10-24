@@ -12,4 +12,4 @@ page-layout: full
 title-block-banner: true
 ---
 
-test
+The list of projects is currently work in progress.
