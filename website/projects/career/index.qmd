@@ -1,6 +1,6 @@
 ---
 title: "Career"
-categories: []
+categories: [Science and Experiments]
 image: "bears-website.png"
 ---
 

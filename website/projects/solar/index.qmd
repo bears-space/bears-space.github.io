@@ -1,7 +1,7 @@
 ---
 title: "Solar"
-categories: []
-image: "bears-website.png"
+categories: [Robotics]
+image: "Solar_website.jpg"
 ---
 
 
