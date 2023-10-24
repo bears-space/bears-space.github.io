@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.bears-space.de/sponsors.html</loc>
-    <lastmod>2023-08-08T11:27:14.545Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/posts/2023-07-20-lars/index.html</loc>
-    <lastmod>2023-08-08T11:27:13.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/imprint.html</loc>
-    <lastmod>2023-08-08T11:27:12.937Z</lastmod>
+    <loc>https://www.bears-space.de/blog.html</loc>
+    <lastmod>2023-10-24T18:45:46.093Z</lastmod>
   </url>
   <url>
     <loc>https://www.bears-space.de/index.html</loc>
-    <lastmod>2023-08-08T11:27:10.305Z</lastmod>
+    <lastmod>2023-10-24T18:45:45.293Z</lastmod>
   </url>
   <url>
-    <loc>https://www.bears-space.de/blog.html</loc>
-    <lastmod>2023-08-08T11:27:12.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/about.html</loc>
-    <lastmod>2023-08-08T11:27:13.297Z</lastmod>
+    <loc>https://www.bears-space.de/sponsors.html</loc>
+    <lastmod>2023-10-24T18:45:44.409Z</lastmod>
   </url>
   <url>
     <loc>https://www.bears-space.de/posts/2023-03-27-new-website/index.html</loc>
-    <lastmod>2023-08-08T11:27:14.201Z</lastmod>
+    <lastmod>2023-10-24T18:45:42.905Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/posts/2023-07-20-lars/index.html</loc>
+    <lastmod>2023-10-24T18:45:44.033Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/about.html</loc>
+    <lastmod>2023-10-24T18:45:44.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/imprint.html</loc>
+    <lastmod>2023-10-24T18:45:45.625Z</lastmod>
   </url>
 </urlset>
