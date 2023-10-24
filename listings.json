@@ -12,5 +12,12 @@
       "/posts/2023-07-20-lars/index.html",
       "/posts/2023-03-27-new-website/index.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/solar/index.html",
+      "/projects/career/index.html"
+    ]
   }
 ]
