@@ -1,8 +1,10 @@
 ---
-title: "Career"
+title: "Solar"
 categories: []
 image: "bears-website.png"
 ---
 
 
 This is the will be the website to introduce workgroups.
+
+![Solar Sintering Device](Solar_website.jpg)
