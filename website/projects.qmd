@@ -1,0 +1,13 @@
+---
+title: "Projects"
+listing:
+  contents: projects
+  max-items: 3
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+title-block-banner: true
+---
