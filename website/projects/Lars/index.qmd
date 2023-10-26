@@ -1,24 +1,22 @@
 ---
-title: "Experimental Rocketry"
-categories: [Rocketry]
-image: "Rocket_0.jpg"
+title: "Lars"
+categories: [Robotics]
+image: "Lars_1.png"
 ---
 
-
-In the experimental rocket building group we build our own rockets. 
-We have already achieved a successful launch to an altitude of 600m. 
-Currently we are building a rocket that should reach an altitude of 3 km. 
-On this also a small experiment is to be accomplished. 
-We also want to participate in competitions with the new rocket.
+Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. 
+With our prototype we participated in the Asclepios--Mission 2. For this a small team also went to Lausanne. 
+For 2023/24 we plan to participate in the competition again. 
+This project is especially suitable for beginners and we are looking forward to your participation.
 
 <div id="slideshow">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Rocket_0.jpg" >
-  <img class="slideshow-img" src="Rocket_1.jpg" >
-  <img class="slideshow-img" src="Rocket_2.jpg" >
-  <img class="slideshow-img" src="Rocket_3.jpg" >
+  <img class="slideshow-img" src="Lars_1.png" >
+  <img class="slideshow-img" src="Lars_0.png" >
+  <img class="slideshow-img" src="Lars_3.png" >
+  <img class="slideshow-img" src="Lars_2.png" >
   <style>
     #slideshow {
       position: relative;
