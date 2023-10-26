@@ -1,21 +1,20 @@
 ---
-title: "Wobble 2"
+title: "Rover"
 categories: [Science and Experiments]
-image: "RexBexLogoCap.png"
+image: "Rover_1.png"
 ---
 
-A motivated team has been formed for DLR's 15th Rexus competition. 
-This time, an experiment on new 3D printed tanks is to be carried out. 
-The application was submitted on October 9 and we are currently preparing for the selection workshop. 
-We are 8 enthusiastic students covering all areas from electrical design to flow simulation. 
+Natürlich sind wir auch beim Rover bauen dabei. Diesen September haben wir das 2. Mal beim Europäischen Rover-Wettbewerb teilgenommen. 
+Beim Roverbauen arbeiten wir mit den MSE-Studenten zusammen. 
 
 <div id="slideshow">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Bewerbung.png" >
-  <img class="slideshow-img" src="RexBexLogoCap.png" >
-  <img class="slideshow-img" src="simulation.png" >
+  <img class="slideshow-img" src="Rover_0.png" >
+  <img class="slideshow-img" src="Rover_1.png" >
+  <img class="slideshow-img" src="Rover_2.png" >
+  <img class="slideshow-img" src="Rover_3.png" >
   <style>
     #slideshow {
       position: relative;
