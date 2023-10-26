@@ -2,7 +2,7 @@
 title: "Projects"
 listing:
   contents: projects
-  max-items: 5
+  max-items: 10
   sort: "date desc"
   type: default
   categories: true
