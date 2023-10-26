@@ -1,21 +1,21 @@
 ---
-title: "Solar"
-categories: [Robotics]
-image: "Solar_website.jpg"
+title: "Wobble 2"
+categories: [Science and Experimence]
+image: "RexBexLogoCap.png"
 ---
 
-
-In the solar sintering group, we are working on a lens system with which lunar regolith can be melted. 
-The main component is a lens that concentrates the sunlight. Initial tests have successfully melted rock. 
-Now we are in the process of further developing the prototype.
+A motivated team has been formed for DLR's 15th Rexus competition. 
+This time, an experiment on new 3D printed tanks is to be carried out. 
+The application was submitted on October 9 and we are currently preparing for the selection workshop. 
+We are 8 enthusiastic students covering all areas from electrical design to flow simulation. 
 
 <div id="slideshow">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Solar_website.jpg" >
-  <img class="slideshow-img" src="Solar_website_2.jpg" >
-  <img class="slideshow-img" src="Solar_website_3.jpg" >
+  <img class="slideshow-img" src="Bewerbung.png" >
+  <img class="slideshow-img" src="RexBexLogoCap.png" >
+  <img class="slideshow-img" src="simulation.png" >
   <style>
     #slideshow {
       position: relative;
