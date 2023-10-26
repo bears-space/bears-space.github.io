@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.bears-space.de/blog.html</loc>
-    <lastmod>2023-10-24T21:20:06.400Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/index.html</loc>
-    <lastmod>2023-10-24T21:20:05.588Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.bears-space.de/projects/career/index.html</loc>
-    <lastmod>2023-10-24T21:20:04.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/about.html</loc>
-    <lastmod>2023-10-24T21:20:03.976Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/posts/2023-07-20-lars/index.html</loc>
-    <lastmod>2023-10-24T21:20:03.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/posts/2023-03-27-new-website/index.html</loc>
-    <lastmod>2023-10-24T21:20:01.172Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/sponsors.html</loc>
-    <lastmod>2023-10-24T21:20:03.644Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/projects/solar/index.html</loc>
-    <lastmod>2023-10-24T21:20:04.340Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.bears-space.de/projects.html</loc>
-    <lastmod>2023-10-24T21:20:05.076Z</lastmod>
+    <lastmod>2023-10-26T12:56:44.373Z</lastmod>
   </url>
   <url>
     <loc>https://www.bears-space.de/imprint.html</loc>
-    <lastmod>2023-10-24T21:20:05.936Z</lastmod>
+    <lastmod>2023-10-26T12:56:43.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/posts/2023-07-20-lars/index.html</loc>
+    <lastmod>2023-10-26T12:56:42.785Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/blog.html</loc>
+    <lastmod>2023-10-26T12:56:41.869Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/sponsors.html</loc>
+    <lastmod>2023-10-26T12:56:39.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/about.html</loc>
+    <lastmod>2023-10-26T12:56:37.733Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/index.html</loc>
+    <lastmod>2023-10-26T12:56:41.361Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/projects.html</loc>
+    <lastmod>2023-10-26T12:56:42.377Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/posts/2023-03-27-new-website/index.html</loc>
+    <lastmod>2023-10-26T12:56:43.297Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bears-space.de/projects/solar/index.html</loc>
+    <lastmod>2023-10-26T12:56:44.025Z</lastmod>
   </url>
 </urlset>
