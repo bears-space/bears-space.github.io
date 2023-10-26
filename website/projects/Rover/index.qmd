@@ -1,20 +1,21 @@
 ---
 title: "Rover"
 categories: [Robotics]
-image: "Rover_1.png"
+image: "Rover_1.jpg"
 ---
 
-Natürlich sind wir auch beim Rover bauen dabei. Diesen September haben wir das 2. Mal beim Europäischen Rover-Wettbewerb teilgenommen. 
-Beim Roverbauen arbeiten wir mit den MSE-Studenten zusammen. 
+Of course we are also involved in building rovers. 
+This September we participated in the European Rover Competition for the 2nd time. 
+In rover building we work together with the MSE students.
 
 <div id="slideshow">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Rover_0.png" >
-  <img class="slideshow-img" src="Rover_1.png" >
-  <img class="slideshow-img" src="Rover_2.png" >
-  <img class="slideshow-img" src="Rover_3.png" >
+  <img class="slideshow-img" src="Rover_0.jpg" >
+  <img class="slideshow-img" src="Rover_1.jpg" >
+  <img class="slideshow-img" src="Rover_2.jpg" >
+  <img class="slideshow-img" src="Rover_3.jpg" >
   <style>
     #slideshow {
       position: relative;
