@@ -1,24 +1,24 @@
 ---
-title: "Rover"
-categories: [Robotics]
-image: "Rover_1.jpg"
+title: "Propulsion"
+categories: [Rocketry]
+image: "Propulsion_1.jpg"
 ---
 
-Of course, we are also involved in building rovers. This September we participated in the European Rover Competition for the 2nd time. 
-Thereby we reached the 12th place.In rover building we work together with the international students.
+
+In the rocket propulsion team, we are working on a liquid gas propulsion system. 
+In the long term, this should power our own rocket. Currently, the planning has been completed and we are ordering the first components. When the first tests take place, you will of course find out on our BEARS Instagram channel. 
 
 <div id="slideshow">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Rover_0.jpg" >
-  <img class="slideshow-img" src="Rover_1.jpg" >
-  <img class="slideshow-img" src="Rover_2.jpg" >
-  <img class="slideshow-img" src="Rover_3.jpg" >
+  <img class="slideshow-img" src="Propulsion_1.jpg" >
+  <img class="slideshow-img" src="Propulsion_2.jpg" >
+
   <style>
     #slideshow {
       position: relative;
-      width: 80%;
+      width: 60%;
       overflow: hidden;
     }
     #prevButton, #nextButton {

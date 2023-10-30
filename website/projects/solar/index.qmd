@@ -5,9 +5,10 @@ image: "Solar_website.jpg"
 ---
 
 
-In the solar sintering group, we are working on a lens system with which lunar regolith can be melted. 
-The main component is a lens that concentrates the sunlight. Initial tests have successfully melted rock. 
-Now we are in the process of further developing the prototype.
+In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the sunlight. 
+The goal of this is to build dust free areas in the future on the Moon utilizing the resources in-situ.
+Initial tests have successfully created small areas. Now, we are in the process of further developing the first prototype and testing different melting methods.
+
 
 <div id="slideshow">
   <button id="prevButton"><</button>
