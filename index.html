@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -65,38 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="BEARS - Dare The Limits">
@@ -128,10 +95,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
@@ -240,74 +203,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>In the Robotics group, robotic systems are designed, built, tested and operated. Currently, the group is focused on robotic implementation of in situ resource utilization technologies for various space environments. One of the projects in this area is the development of a mobile solar smelter which heats up the regolith on the surface of the moon to melting temperatures using sunlight. The goal is to create a sealed surface which can benefit various lunar construction ambitions like building roads or foundations.</p></li>
 </ul>
 <p>Regardless of your academic background, if you are interested you can contact us via <a href="mailto://bears.space@protonmail.com">mail</a> or on <a href="https://www.instagram.com/bears.space/">Instagram</a>. Otherwise, you can join us in our weekly meeting Tuesdays at 6 pm in the F11 at the <a href="https://goo.gl/maps/Sg9ZbNibhdPLRGyi9">ILR</a>.</p>
-<p><br></p>
-<section id="newest-blog-posts" class="level2">
-<h2 class="anchored" data-anchor-id="newest-blog-posts">Newest Blog Posts</h2>
 
 
 
-</section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1689811200000" data-listing-file-modified-sort="1698652676019" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/2023-07-20-lars/index.html"> <img src="./posts/2023-07-20-lars/LARS4.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2023-07-20-lars/index.html">
-<h3 class="no-anchor listing-title">
-LARS on the Asclepios analog moon mission
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-When we developed LARS (Lunar Astronaut Revival System), we weren’t sure what kind of material we want to use. We had…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-07-20-lars/index.html">
-<div class="listing-date">
-Jul 20, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1688774400000" data-listing-file-modified-sort="1698652675983" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/2023-03-27-new-website/index.html"> <img src="./posts/2023-03-27-new-website/bears-website.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2023-03-27-new-website/index.html">
-<h3 class="no-anchor listing-title">
-New Website for BEARS
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-This is the new website for BEARS. More Blog posts will follow soon…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-03-27-new-website/index.html">
-<div class="listing-date">
-Jul 8, 2023
-</div>
-<div class="listing-author">
-Jonas Loos
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
