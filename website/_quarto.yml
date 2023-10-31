@@ -9,7 +9,6 @@ website:
     logo: bears_logo.png
     left:
       - projects.qmd
-      - blog.qmd
       - about.qmd
       - sponsors.qmd
     right:
