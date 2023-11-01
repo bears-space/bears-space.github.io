@@ -4,8 +4,8 @@ categories: [Robotics]
 image: "Rover_1.jpg"
 ---
 
-Of course, we are also involved in building rovers. This September we participated in the European Rover Competition for the 2nd time. 
-Thereby we reached the 12th place.In rover building we work together with the international students.
+Of course, we are also involved in building rovers. This September 2023 we participated in the [European Rover Competition](https://roverchallenge.eu/en/main-page/) in Poland for the 2nd time. 
+Thereby we reached the 12th place. In rover building, we work together with the international students from the [Master of Space Engineering](https://www.mse.tu-berlin.de/).
 
 <div id="slideshow">
   <button id="prevButton"><</button>
