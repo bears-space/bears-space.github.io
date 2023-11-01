@@ -13,7 +13,7 @@ In the long term, this should power our own rocket. Currently, the planning has 
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
   <img class="slideshow-img" src="Propulsion_1.jpg" >
-  <img class="slideshow-img" src="Propulsion_2.jpg" >
+  <img class="slideshow-img" src="Propulsion_2.png" >
 
   <style>
     #slideshow {

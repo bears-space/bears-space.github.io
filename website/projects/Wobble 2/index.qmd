@@ -4,7 +4,7 @@ categories: [Science and Experiments]
 image: "RexBexLogoCap.png"
 ---
 
-A motivated team has been formed for DLR's 15th Rexus competition. 
+A motivated team has been formed for DLR's 15th [Rexus](https://www.esa.int/Education/Rexus_Bexus/About_REXUS_BEXUS) competition. 
 This time, an experiment on new 3D printed tanks is to be carried out. 
 The application was submitted on October 9 and we are currently preparing for the selection workshop. 
 We are 8 enthusiastic students covering all areas from electrical design to flow simulation. 
