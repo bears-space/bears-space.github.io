@@ -14,9 +14,10 @@ This project is especially suitable for beginners and we are looking forward to 
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
   <img class="slideshow-img" src="Lars_1.png" >
+  <img class="slideshow-img" src="Lars_3.jpg" >
+  <img class="slideshow-img" src="Lars_2.jpg" >
+  <img class="slideshow-img" src="Lars_4.png" >
   <img class="slideshow-img" src="Lars_0.png" >
-  <img class="slideshow-img" src="Lars_3.png" >
-  <img class="slideshow-img" src="Lars_2.png" >
   <style>
     #slideshow {
       position: relative;
