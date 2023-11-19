@@ -198,10 +198,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><br></p>
 WOBBLE2 stands for <strong>W</strong>eightless <strong>O</strong>bservation of <strong>B</strong>ehaviour with <strong>B</strong>erlin <strong>L</strong>iquid Guidance <strong>E</strong>xperiment. We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. In the slide show below you can see first 3D-Printed Prototypes filled with Uranin to test the observation capabilities of our camera.
-<div id="slideshow">
-<button id="prevButton">&lt;</button> <button id="nextButton">&gt;</button> <!-- put all images here that should be available in the slideshow --> <img class="slideshow-img" src="Mixing.jpg"> <img class="slideshow-img" src="REXUS_Tank_white.jpg"> <img class="slideshow-img" src="Mystery_Goo.jpg"> <img class="slideshow-img" src="REXUS_Tank_UV.jpg">
+<div id="slideshow_2">
+<button id="prevButton">&lt;</button> <button id="nextButton">&gt;</button> <!-- put all images here that should be available in the slideshow_2 --> <img class="slideshow_2-img" src="Mixing.jpg"> <img class="slideshow_2-img" src="REXUS_Tank_white.jpg"> <img class="slideshow_2-img" src="Mystery_Goo.jpg"> <img class="slideshow_2-img" src="REXUS_Tank_UV.jpg">
 <style>
-    #slideshow {
+    #slideshow_2 {
       position: relative;
       width: 50%;
       overflow: hidden;
@@ -218,13 +218,13 @@ WOBBLE2 stands for <strong>W</strong>eightless <strong>O</strong>bservation of <
     #prevButton {left: 0;}
     #nextButton {right: 0;}
     #prevButton:hover, #nextButton:hover {background: #0007;}
-    .slideshow-img {
+    .slideshow_2-img {
       width:100%;
       display: none;
     }
   </style>
 <script>
-    const images = document.getElementsByClassName('slideshow-img');
+    const images = document.getElementsByClassName('slideshow_2-img');
     let index = 0;
     function switch_image(x) {
       return () => {
