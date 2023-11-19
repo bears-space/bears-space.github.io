@@ -27,19 +27,17 @@ We are the Berlin Experimental Astronautics Research Student Team e.V. a newly f
 Our club was founded on the 31th of May 2022 with the goal to provide students from all the discplines the opportunity to apply their theoretical knwoledege in practical space related projects.
 
 In addition to the space projects, which you can find under projects here, we also do joint activities. 
-We attend trade fairs and congresses together, organize space parties and otherwise enjoy spending time together. Below you will find a small photo overview of joint activities.
+We attend trade fairs and congresses together. Below you will find a small photo overview of joint activities.
 <div id="slideshow">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="about_photos/Bears_Essen.jpg" >
   <img class="slideshow-img" src="about_photos/Bears_Messe.jpeg" >
-  <img class="slideshow-img" src="about_photos/BEARS_party.jpeg" >
   <img class="slideshow-img" src="about_photos/Weltraumkongress_jpg" >
   <style>
     #slideshow {
       position: relative;
-      width: 50%;
+      width: 70%;
       overflow: hidden;
     }
     #prevButton, #nextButton {
