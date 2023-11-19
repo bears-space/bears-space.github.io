@@ -20,7 +20,7 @@ In the slide show below you can see first 3D-Printed Prototypes filled with Uran
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow_2 -->
-  <img class="slideshow-img" src="RexBexLogoCap.png" >
+  <img class="slideshow_2-img" src="RexBexLogoCap.png" >
   <img class="slideshow_2-img" src="Mixing.jpg" >
   <img class="slideshow_2-img" src="REXUS_Tank_white.jpg" >
   <img class="slideshow_2-img" src="Mystery_Goo.jpg" >
