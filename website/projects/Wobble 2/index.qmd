@@ -62,16 +62,16 @@ We are 8 enthusiastic students covering all areas from electrical design to flow
 WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid Guidance **E**xperiment. 
 We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. 
 In the slide show below you can see first 3D-Printed Prototypes filled with Uranin to test the observation capabilities of our camera.
-<div id="slideshow">
+<div id="slideshow_2">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
-  <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Mixing.jpg" >
-  <img class="slideshow-img" src="REXUS_Tank_white.jpg" >
-  <img class="slideshow-img" src="Mystery_Goo.jpg" >
-  <img class="slideshow-img" src="REXUS_Tank_UV.jpg" >
+  <!-- put all images here that should be available in the slideshow_2 -->
+  <img class="slideshow_2-img" src="Mixing.jpg" >
+  <img class="slideshow_2-img" src="REXUS_Tank_white.jpg" >
+  <img class="slideshow_2-img" src="Mystery_Goo.jpg" >
+  <img class="slideshow_2-img" src="REXUS_Tank_UV.jpg" >
   <style>
-    #slideshow {
+    #slideshow_2 {
       position: relative;
       width: 50%;
       overflow: hidden;
@@ -88,13 +88,13 @@ In the slide show below you can see first 3D-Printed Prototypes filled with Uran
     #prevButton {left: 0;}
     #nextButton {right: 0;}
     #prevButton:hover, #nextButton:hover {background: #0007;}
-    .slideshow-img {
+    .slideshow_2-img {
       width:100%;
       display: none;
     }
   </style>
   <script>
-    const images = document.getElementsByClassName('slideshow-img');
+    const images = document.getElementsByClassName('slideshow_2-img');
     let index = 0;
     function switch_image(x) {
       return () => {
