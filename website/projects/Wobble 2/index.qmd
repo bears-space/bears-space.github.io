@@ -4,6 +4,8 @@ categories: [Science and Experiments]
 image: "RexBexLogoCap.png"
 ---
 
+**News: Our team got invited to present the WOBBLE2 idea in Bonn. On the 27.-28.11 three of us will present the experiment idea in front of a jury of the DLR. The results will be published on 18.12.**
+
 A motivated team has been formed for DLR's 15th [Rexus](https://www.esa.int/Education/Rexus_Bexus/About_REXUS_BEXUS) competition. 
 This time, an experiment on new 3D printed tanks is to be carried out. 
 The application was submitted on October 9 and we are currently preparing for the selection workshop. 
