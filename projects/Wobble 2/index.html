@@ -156,50 +156,15 @@ ul.task-list li input[type="checkbox"] {
 
 <p><strong>News: Our team got invited to present the WOBBLE2 idea in Bonn. On the 27.-28.11 three of us will present the experiment idea in front of a jury of the DLR. The results will be published on 18.12.</strong></p>
 <p>A motivated team has been formed for DLR’s 15th <a href="https://www.esa.int/Education/Rexus_Bexus/About_REXUS_BEXUS">Rexus</a> competition. This time, an experiment on new 3D printed tanks is to be carried out. The application was submitted on October 9 and we are currently preparing for the selection workshop. We are 8 enthusiastic students covering all areas from electrical design to flow simulation.</p>
-<div id="slideshow">
-<button id="prevButton">&lt;</button> <button id="nextButton">&gt;</button> <!-- put all images here that should be available in the slideshow --> <img class="slideshow-img" src="Teamphoto_MCC.jpg"> <img class="slideshow-img" src="Bewerbung.png"> <img class="slideshow-img" src="RexBexLogoCap.png"> <img class="slideshow-img" src="simulation.png">
-<style>
-    #slideshow {
-      position: relative;
-      width: 50%;
-      overflow: hidden;
-    }
-    #prevButton, #nextButton {
-      position: absolute;
-      top: 0;
-      background: #0003;
-      color: #fffa;
-      border: none;
-      font-size: 50px;
-      height: 100%;
-    }
-    #prevButton {left: 0;}
-    #nextButton {right: 0;}
-    #prevButton:hover, #nextButton:hover {background: #0007;}
-    .slideshow-img {
-      width:100%;
-      display: none;
-    }
-  </style>
-<script>
-    const images = document.getElementsByClassName('slideshow-img');
-    let index = 0;
-    function switch_image(x) {
-      return () => {
-        images[index].style.display = 'none';
-        index = (index + x + images.length) % images.length;
-        images[index].style.display = 'block';
-      }
-    }
-    document.getElementById('prevButton').addEventListener('click', switch_image(-1));
-    document.getElementById('nextButton').addEventListener('click', switch_image(1));
-    switch_image(0)();
-  </script>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Teamphoto_MCC.JPG" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Teamfoto of the WOBBLE2 Team</figcaption>
+</figure>
 </div>
-<p><br></p>
 WOBBLE2 stands for <strong>W</strong>eightless <strong>O</strong>bservation of <strong>B</strong>ehaviour with <strong>B</strong>erlin <strong>L</strong>iquid Guidance <strong>E</strong>xperiment. We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. In the slide show below you can see first 3D-Printed Prototypes filled with Uranin to test the observation capabilities of our camera.
 <div id="slideshow_2">
-<button id="prevButton">&lt;</button> <button id="nextButton">&gt;</button> <!-- put all images here that should be available in the slideshow_2 --> <img class="slideshow_2-img" src="Mixing.jpg"> <img class="slideshow_2-img" src="REXUS_Tank_white.jpg"> <img class="slideshow_2-img" src="Mystery_Goo.jpg"> <img class="slideshow_2-img" src="REXUS_Tank_UV.jpg">
+<button id="prevButton">&lt;</button> <button id="nextButton">&gt;</button> <!-- put all images here that should be available in the slideshow_2 --> <img class="slideshow-img" src="RexBexLogoCap.png"> <img class="slideshow_2-img" src="Mixing.jpg"> <img class="slideshow_2-img" src="REXUS_Tank_white.jpg"> <img class="slideshow_2-img" src="Mystery_Goo.jpg"> <img class="slideshow_2-img" src="REXUS_Tank_UV.jpg">
 <style>
     #slideshow_2 {
       position: relative;

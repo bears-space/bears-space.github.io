@@ -1,21 +1,21 @@
 [
   {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/solar/index.html",
+      "/projects/career/index.html",
+      "/projects/Wobble 2/index.html",
+      "/projects/Lars/index.html",
+      "/projects/propulsion/index.html",
+      "/projects/Rocketry/index.html",
+      "/projects/Rover/index.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/posts/2023-07-20-lars/index.html",
       "/posts/2023-03-27-new-website/index.html"
-    ]
-  },
-  {
-    "listing": "/projects.html",
-    "items": [
-      "/projects/Wobble 2/index.html",
-      "/projects/propulsion/index.html",
-      "/projects/career/index.html",
-      "/projects/Rocketry/index.html",
-      "/projects/Rover/index.html",
-      "/projects/Lars/index.html",
-      "/projects/solar/index.html"
     ]
   }
 ]
