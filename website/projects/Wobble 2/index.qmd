@@ -12,8 +12,10 @@ The application was submitted on October 9 and we are currently preparing for th
 We are 8 enthusiastic students covering all areas from electrical design to flow simulation. 
 Three of us will take part in the selection workshop in Bonn from November 27-28.11.2023. 
 This time, an experiment on new 3D printed tanks is to be carried out. 
-
-<img src="Teamphoto_MCC.JPG" alt="Teamfoto of the WOBBLE2 Team" width=100% >
+<p>
+    <img src="Teamphoto_MCC.JPG" alt="Teamfoto of the WOBBLE2 Team" width=100% >
+    <em>Teamphoto of the WOBBLE2 Team</em>
+</p>
 
 ## Experiment Idea
 WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid Guidance **E**xperiment. 
