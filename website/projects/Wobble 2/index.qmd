@@ -20,7 +20,9 @@ WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erl
 We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. 
 During the microgravity phase in the REXUS-Rocket the Fluid will be observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements. 
 
-<img src="Rexus_CAD.png" alt="Current CAD model of the Experiment" width=100%>
+<p align="center">
+  <img src="Rexus_CAD.png" alt="Current CAD model of the Experiment" width=100%/>
+</p>
 
 ## The Propellant Managment Devices
 In the experiment we will test 8 different PMDs in small Tanks. For the fluid we will use normal water combined with Uranin. 
