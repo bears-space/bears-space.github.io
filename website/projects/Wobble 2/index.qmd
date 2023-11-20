@@ -1,5 +1,5 @@
 ---
-title: "Wobble 2"
+title: "WOBBLE2"
 categories: [Science and Experiments]
 image: "RexBexLogoCap.png"
 ---
@@ -39,7 +39,8 @@ In the slide show below you can see first 3D-Printed Prototypes filled with Uran
   <style>
     #slideshow_2 {
       position: relative;
-      width: 100%;
+      width: 50%;
+      left: 25%;
       overflow: hidden;
     }
     #prevButton, #nextButton {
