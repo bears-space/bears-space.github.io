@@ -21,7 +21,7 @@ We are planing to test new propellant management devices (PMD) for satellite tan
 During the microgravity phase in the REXUS-Rocket the Fluid will be observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements. 
 
 <p align="center">
-  <img src="Rexus_CAD.png" alt="Current CAD model of the Experiment" width=100%/>
+  <img src="Rexus_CAD.png" alt="Current CAD model of the Experiment" width=60%/>
 </p>
 
 ## The Propellant Managment Devices
