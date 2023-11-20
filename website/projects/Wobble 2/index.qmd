@@ -11,7 +11,7 @@ This time, an experiment on new 3D printed tanks is to be carried out.
 The application was submitted on October 9 and we are currently preparing for the selection workshop. 
 We are 8 enthusiastic students covering all areas from electrical design to flow simulation. 
 
-![Teamfoto of the WOBBLE2 Team](Teamphoto_MCC.JPG)
+<img src="Teamphoto_MCC.JPG" alt="Teamfoto of the WOBBLE2 Team" width="100" height="100">
 
 WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid Guidance **E**xperiment. 
 We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. 
