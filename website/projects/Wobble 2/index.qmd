@@ -12,7 +12,7 @@ This time, an experiment on new 3D printed tanks is to be carried out.
 The application was submitted on October 9 and we are currently preparing for the selection workshop. 
 We are 8 enthusiastic students covering all areas from electrical design to flow simulation. 
 
-<img src="Teamphoto_MCC.JPG" alt="Teamfoto of the WOBBLE2 Team" width="400" height="300">
+<img src="Teamphoto_MCC.JPG" alt="Teamfoto of the WOBBLE2 Team" width="450" height="300">
 
 
 ###Experiment Idea
@@ -20,7 +20,7 @@ WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erl
 We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. 
 During the microgravity phase in the REXUS-Rocket the Fluid will be observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements. 
 
-<img src="REXUS_CAD.png" alt="Current CAD model of the Experiment " width="400" height="300">
+<img src="Rexus_CAD.png" alt="Current CAD model of the Experiment" width="400" height="300">
 
 ###The Propellant Managment devices
 In the experiment we will test 8 different PMDs in small Tanks. For the fluid we will use normal water combined with Uranin. 
