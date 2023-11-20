@@ -39,6 +39,7 @@ We attend trade fairs and congresses together. Below you will find a small photo
       position: relative;
       width: 70%;
       overflow: hidden;
+      margin: auto;
     }
     #prevButton, #nextButton {
       position: absolute;
