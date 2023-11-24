@@ -28,20 +28,18 @@ Our club was founded on the 31th of May 2022 with the goal to provide students f
 
 In addition to the space projects, which you can find under projects [here](https://www.bears-space.de/projects.html), we also do joint activities. 
 We attend trade fairs and congresses together. Below you will find a small photo overview of latest joint activities.
+
 <div id="slideshow">
   <button id="prevButton"><</button>
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="about_photos/Bears_Messe.jpeg" >
-  <img class="slideshow-img" src="about_photos/Weltraumkongress.jpg" >
   <img class="slideshow-img" src="about_photos/BEARS_Smallsat.jpg" >
-  <img class="slideshow-img" src="about_photos/BEARS_Smallsat_2.jpg" >
+  <img class="slideshow-img" src="about_photos/Bears_Messe" >
   <style>
     #slideshow {
       position: relative;
-      width: 70%;
+      width: 80%;
       overflow: hidden;
-      margin: auto;
     }
     #prevButton, #nextButton {
       position: absolute;
