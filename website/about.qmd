@@ -38,7 +38,7 @@ We attend trade fairs and congresses together. Below you will find a small photo
   <img class="slideshow-img" src="about_photos/BEARS_Smallsat_2.jpg" >
   <style>
     #slideshow {
-      position: absolute;
+      position: relative;
       width: 70%;
       overflow: hidden;
       margin: auto;
