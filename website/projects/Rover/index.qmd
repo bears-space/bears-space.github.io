@@ -16,7 +16,7 @@ Thereby we reached the 12th place. In rover building, we work together with the 
   <img class="slideshow-img" src="Rover_2.jpg" >
   <img class="slideshow-img" src="Rover_3.jpg" >
   <img class="slideshow-img" src="Rover_4.JPG" >
-  <img class="slideshow-img" src="Rover_5.JPG" >
+  <img class="slideshow-img" src="Rover_5.jpg" >
   <style>
     #slideshow {
       position: relative;
