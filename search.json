@@ -46,14 +46,35 @@
     "href": "projects/propulsion/index.html",
     "title": "Propulsion",
     "section": "",
-    "text": "Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus is on the development of a bi-propellant pressure- fed propulsion system, with the goal of integrating it into our own rocket, which is being developed by the Rocket System team. ## Current work\nCurrently, our efforts are centered on the construction of a test stand, a critical element for the testing and further development of our engine. The planning and procurement phase for the fluid system is complete. A specially designed swirl injector has been developed, and our propellant tanks are under construction. A small team is busy with the development and planning of the test stand electronics, ensuring that everything runs smoothly. In collaboration with the Department of Fluid Dynamics, another segment of our team is conducting water tests using the first iteration of our injector. ## Next steps\nThis collaborative effort allows us to gather valuable insights and refine our design for optimal performance. Stay tuned for updates on the BEARS Instagram page, where we will share behind-the-scenes glimpses and exciting milestones. Our timeline targets the completion of the test stand by the end of 2024. We understand that reaching for the stars requires meticulous planning, dedication, and collaboration, and we’re thrilled to have you join us on this exciting journey.\n\n&lt; &gt;"
+    "text": "Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus is on the development of a bi-propellant pressure- fed propulsion system, with the goal of integrating it into our own rocket, which is being developed by the Rocket System team."
+  },
+  {
+    "objectID": "projects/propulsion/index.html#current-work",
+    "href": "projects/propulsion/index.html#current-work",
+    "title": "Propulsion",
+    "section": "Current work",
+    "text": "Current work\nCurrently, our efforts are centered on the construction of a test stand, a critical element for the testing and further development of our engine. The planning and procurement phase for the fluid system is complete. A specially designed swirl injector has been developed, and our propellant tanks are under construction. A small team is busy with the development and planning of the test stand electronics, ensuring that everything runs smoothly. In collaboration with the Department of Fluid Dynamics, another segment of our team is conducting water tests using the first iteration of our injector."
+  },
+  {
+    "objectID": "projects/propulsion/index.html#next-steps",
+    "href": "projects/propulsion/index.html#next-steps",
+    "title": "Propulsion",
+    "section": "Next steps",
+    "text": "Next steps\nThis collaborative effort allows us to gather valuable insights and refine our design for optimal performance. Stay tuned for updates on the BEARS Instagram page, where we will share behind-the-scenes glimpses and exciting milestones. Our timeline targets the completion of the test stand by the end of 2024. We understand that reaching for the stars requires meticulous planning, dedication, and collaboration, and we’re thrilled to have you join us on this exciting journey.\n\n&lt; &gt;"
   },
   {
     "objectID": "projects/Wobble 2/index.html",
     "href": "projects/Wobble 2/index.html",
     "title": "WOBBLE2",
     "section": "",
-    "text": "News: Our team got invited to present the WOBBLE2 idea in Bonn. On the 27.-28.11 three of us presented the experiment idea in front of a jury of the DLR. The results will be published latest on 18.12.\nTeamphoto of the WOBBLE2 Team"
+    "text": "News: Our team got invited to present the WOBBLE2 idea in Bonn. On the 27.-28.11 three of us presented the experiment idea in front of a jury of the DLR. The results will be published latest on 18.12.\n** Workforce: We are currently looking for motivated students to support our CFD-Simulation with OpenFOAM. If interested, contact BEARS via Email/Instagram.” **"
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#the-team",
+    "href": "projects/Wobble 2/index.html#the-team",
+    "title": "WOBBLE2",
+    "section": "The Team",
+    "text": "The Team\nA motivated team has been formed for DLR’s 15th Rexus (ESA-website) competition. The application was submitted on October 9 and we are currently preparing for the selection workshop. We are 8 enthusiastic students covering all areas from electrical design to flow simulation. Three of us will take part in the selection workshop in Bonn from November 27-28.11.2023. This time, an experiment on new 3D printed tanks is to be carried out.\n\n Teamphoto of the WOBBLE2 Team"
   },
   {
     "objectID": "projects/Wobble 2/index.html#experiment-idea",
