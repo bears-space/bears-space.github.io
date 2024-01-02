@@ -1,7 +1,7 @@
 ---
 title: "WOBBLE2"
 categories: [Science and Experiments]
-image: "RexBexLogoCap.png"
+image: "WOBBLE2_Patch.png"
 ---
 
 **News (13.12): Our team got selected for the REXUS Program.**
@@ -98,4 +98,9 @@ The knowledge gained not only contributes to scientific progress, but also enric
 <p>
     <img src="RexBexLogoCap.png" alt="Patch of REXUS/BEXUS" >
     <em>Patch of REXUS/BEXUS</em>
+</p>
+
+<p>
+    <img src="WOBBLE2_Patch.png" alt="Patch of WOBBLE2" >
+    <em>Patch of WOBBLE2</em>
 </p>
