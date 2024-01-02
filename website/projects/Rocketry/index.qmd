@@ -1,11 +1,11 @@
 ---
-title: "Experimental Rocketry"
-categories: [Rocketry]
+title: "Rocket Systems"
+categories: [Experimental Rocketry]
 image: "Rocket_0.jpg"
 ---
 
 
-In the experimental rocket building group we build our own rockets. 
+In the rocket systems group we build our own rockets. 
 We have already achieved a successful launch to an altitude of 600m. 
 Currently we are building a rocket that is designed to reach an altitude of 3 km. 
 On this also a small experiment is to be accomplished. 

@@ -1,6 +1,6 @@
 ---
 title: "Propulsion"
-categories: [Rocketry]
+categories: [Experimental Rocketry]
 image: "Propulsion_1.jpg"
 ---
 
