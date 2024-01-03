@@ -5,9 +5,9 @@ image: "Rocket_0.jpg"
 ---
 
 ## Our rockets
-Our current rocket, which is ready for launch is [STARDUST](https://www.bears-space.de/projects/Starmoon/).
+Our current rocket, which is ready for launch is [STARDUST](https://www.bears-space.de/projects/Stardust/).
 Our first rocket was [STARMOON](https://www.bears-space.de/projects/Starmoon/).
-Our next rocket will be [STARGAZE](https://www.bears-space.de/projects/Starmoon/).
+Our next rocket will be [STARGAZE](https://www.bears-space.de/projects/Stargaze/).
 
 ## Our team
 In the rocket systems group we build our own rockets. 
