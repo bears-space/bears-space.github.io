@@ -1,12 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/2023-07-20-lars/index.html",
-      "/posts/2023-03-27-new-website/index.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/Stardust/index.html",
@@ -17,7 +10,15 @@
       "/projects/propulsion/index.html",
       "/projects/Rocketry/index.html",
       "/projects/Lars/index.html",
+      "/projects/Stargaze/index.html",
       "/projects/Rover/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/2023-07-20-lars/index.html",
+      "/posts/2023-03-27-new-website/index.html"
     ]
   }
 ]
