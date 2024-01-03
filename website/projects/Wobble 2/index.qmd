@@ -95,12 +95,12 @@ The selected teams are given the opportunity to test their experiments as part o
 The REXUS competition not only promotes interdisciplinary collaboration between students, but also provides a practical insight into space research. 
 The knowledge gained not only contributes to scientific progress, but also enriches the personal and professional development of the participating students.
 
-<p>
+<p align="left">
     <img src="RexBexLogoCap.png" alt="Patch of REXUS/BEXUS" >
     <em>Patch of REXUS/BEXUS</em>
 </p>
 
-<p>
-    <img src="WOBBLE2_Patch.png" alt="Patch of WOBBLE2" style="height:50%;">
+<p align="right">
+    <img src="WOBBLE2_Patch.png" alt="Patch of WOBBLE2" width=50%/>
     <em>Patch of WOBBLE2</em>
 </p>
