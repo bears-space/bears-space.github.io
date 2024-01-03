@@ -1,11 +1,11 @@
 ---
-title: "STARMOON"
+title: "STARGAZE"
 categories: [Experimental Rocketry]
 image: "Patch_Stardust.png"
 ---
 
 <p align="center">
-  <img src="Stardust.png" alt="Stardust rocket" width=60%/>
+  <img src="Stardust.png" alt="Stardust rocket" width=100%/>
   <em>Stardust rocket</em>
 </p>
 
@@ -23,7 +23,7 @@ Our fins are made from metal and our nose cone completely from glass fiber. Elec
 The recovery system got more complex now with a 2-stage recovery. The nose cone blasts off revealing the drogue chute, while the main chute is opened at 300 m with cutting a steel cable. 
 We also have the experiment WOBBLE on board, which is a 3D printed tank for propellant management in small satellites.
 <p align="center">
-  <img src="Patch_Stardust.png" alt="Stardust patch" width=60%/>
+  <img src="Patch_Stardust.png" alt="Stardust patch" width=30%/>
   <em>Stardust patch</em>
 </p>
 

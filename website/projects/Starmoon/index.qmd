@@ -5,7 +5,7 @@ image: "Patch_Starmoon.png"
 ---
 
 <p align="center">
-  <img src="Starmoon.jpg" alt="Starmonn rocket" width=60%/>
+  <img src="Starmoon.jpg" alt="Starmonn rocket" width=100%/>
   <em>Starmoon rocket</em>
 </p>
 
@@ -23,11 +23,11 @@ During half a year we gained knowledge about rocketry and started with the desig
 In early summer we had a functional rocket. The rocket was launched as a full success and with a complete recovery one year later in October 2022 near Brunswick with the student club ERIG. 
 
 <p align="center">
-  <img src="Patch_Starmoon.png" alt="Starmonn patch" width=60%/>
+  <img src="Patch_Starmoon.png" alt="Starmonn patch" width=40%/>
   <em>Starmoon patch</em>
 </p>
 
 <p align="center">
-  <img src="Team_Starmoon.jpg" alt="Starmonn team" width=100%/>
+  <img src="Team_Starmoon.jpg" alt="Starmonn team" width=80%/>
   <em>Starmoon team</em>
 </p>
