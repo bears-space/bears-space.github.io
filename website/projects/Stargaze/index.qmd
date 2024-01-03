@@ -1,5 +1,5 @@
 ---
-title: "STARDUST"
+title: "STARGAZE"
 categories: [Experimental Rocketry]
 image: "bears-space/bears-space.github.io/website/projects/Rocketry/Rocket_1.jpg"
 ---

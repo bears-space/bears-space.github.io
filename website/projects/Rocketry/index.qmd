@@ -4,7 +4,12 @@ categories: [Experimental Rocketry]
 image: "Rocket_0.jpg"
 ---
 
+## Our rockets
+Our current rocket, which is ready for launch is [STARDUST](https://www.bears-space.de/projects/Starmoon/).
+Our first rocket was [STARMOON](https://www.bears-space.de/projects/Starmoon/).
+Our next rocket will be [STARGAZE](https://www.bears-space.de/projects/Starmoon/).
 
+## Our team
 In the rocket systems group we build our own rockets. 
 We have already achieved a successful launch to an altitude of 600m. 
 Currently we are building a rocket that is designed to reach an altitude of 3 km. 
