@@ -1,7 +1,7 @@
 ---
-title: "STARMOON"
+title: "STARDUST"
 categories: [Experimental Rocketry]
-image: "Rocket_0.jpg"
+image: "Patch_Starmoon.png"
 ---
 
 <p align="center">
