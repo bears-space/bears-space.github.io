@@ -54,7 +54,7 @@ title-block-banner: true
 
 Our projects are split up in three work groups:
 
-* The [Experimental Rocketry](https://www.bears-space.de/projects.html#category=Rocketry) group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.
+* The [Experimental Rocketry](https://www.bears-space.de/projects.html#category=Experimental%20Rocketry) group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.
 
 * The [Science and Experiments](https://www.bears-space.de/projects.html#category=Science%20and%20Experiments) group develops and operates science experiments and payloads. Furthermore, it develops, designs and builds satellite components and systems.
 
