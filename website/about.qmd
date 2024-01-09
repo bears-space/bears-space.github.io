@@ -34,7 +34,8 @@ We attend trade fairs and congresses together. Below you will find a small photo
   <button id="nextButton">></button>
   <!-- put all images here that should be available in the slideshow -->
   <img class="slideshow-img" src="about_photos/BEARS_Smallsat.jpg" >
-  <img class="slideshow-img" src="about_photos/Bears_Messe" >
+  <img class="slideshow-img" src="about_photos/Bears_Messe.jpeg" >
+  <img class="slideshow-img" src="about_photos/Weltraumkongress.jpg" >
   <style>
     #slideshow {
       position: relative;
