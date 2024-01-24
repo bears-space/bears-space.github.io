@@ -4,15 +4,15 @@ categories: [Science and Experiments]
 image: "WOBBLE2_Patch.png"
 ---
 
-**News (13.12): Our team got selected for the REXUS Program.**
+**News (24.01.24): The team will fly to Kiruna at 4.-11.02 with 6 members. We would like to thank our friends at TU Berlin for making it possible for us to take two more team members with us to Kiruna.**
 
 **Workforce: We are currently looking for motivated students to support us in our outreach program. If you are intrested in managing our Instagram and organize exhibition stands, please contact us on Instagram via bears.space.**
 
 ## The Team
 A motivated team has been formed for DLR's 15th [Rexus (ESA-website)](https://www.esa.int/Education/Rexus_Bexus/About_REXUS_BEXUS) competition. 
 The application was submitted on October 9th and we got selected at the 13.12. 
-We are 8 enthusiastic students covering all areas from electrical design to flow simulation. 
-At least four of us will take part in the workshop in Kiruna from 05-09.02.2024. 
+We are 11 enthusiastic students covering all areas from electrical design to flow simulation. If you want to contact us to join the team or you have any other request, contact us with wooble2@bears-space.de.
+Six of us will take part in the workshop in Kiruna from 05.-09.02.2024. 
 This time, an experiment on new 3D printed tanks is to be carried out. 
 <p>
     <img src="Teamphoto_MCC.JPG" alt="Teamfoto of the WOBBLE2 Team" width=100% >
@@ -100,7 +100,7 @@ The knowledge gained not only contributes to scientific progress, but also enric
     <em>Patch of REXUS/BEXUS</em>
 </p>
 
-<p align="right">
+<p align="left">
     <img src="WOBBLE2_Patch.png" alt="Patch of WOBBLE2" width=50%/>
     <em>Patch of WOBBLE2</em>
 </p>
