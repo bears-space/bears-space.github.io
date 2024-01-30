@@ -9,51 +9,12 @@ With our prototype we participated in the [Asclepios--Mission 2](https://asclepi
 For 2023/24 we plan to participate in the competition again. 
 This project is especially suitable for beginners and we are looking forward to your participation.
 
-<div id="slideshow">
-  <button id="prevButton"><</button>
-  <button id="nextButton">></button>
+<div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
   <img class="slideshow-img" src="Lars_1.png" >
   <img class="slideshow-img" src="Lars_3.jpg" >
   <img class="slideshow-img" src="Lars_2.jpg" >
   <img class="slideshow-img" src="Lars_4.png" >
   <img class="slideshow-img" src="Lars_0.png" >
-  <style>
-    #slideshow {
-      position: relative;
-      width: 80%;
-      overflow: hidden;
-    }
-    #prevButton, #nextButton {
-      position: absolute;
-      top: 0;
-      background: #0003;
-      color: #fffa;
-      border: none;
-      font-size: 50px;
-      height: 100%;
-    }
-    #prevButton {left: 0;}
-    #nextButton {right: 0;}
-    #prevButton:hover, #nextButton:hover {background: #0007;}
-    .slideshow-img {
-      width:100%;
-      display: none;
-    }
-  </style>
-  <script>
-    const images = document.getElementsByClassName('slideshow-img');
-    let index = 0;
-    function switch_image(x) {
-      return () => {
-        images[index].style.display = 'none';
-        index = (index + x + images.length) % images.length;
-        images[index].style.display = 'block';
-      }
-    }
-    document.getElementById('prevButton').addEventListener('click', switch_image(-1));
-    document.getElementById('nextButton').addEventListener('click', switch_image(1));
-    switch_image(0)();
-  </script>
 </div>
 <br/>

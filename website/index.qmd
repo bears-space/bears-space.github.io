@@ -5,49 +5,10 @@ page-layout: full
 title-block-banner: true
 ---
 
-<div id="slideshow">
-  <button id="prevButton"><</button>
-  <button id="nextButton">></button>
+<div class="slideshow" style="width: 100%">
   <!-- put all images here that should be available in the slideshow -->
   <img class="slideshow-img" src="slideshow/group.jpg" >
   <img class="slideshow-img" src="slideshow/launch1.jpg">
-  <style>
-    #slideshow {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
-    #prevButton, #nextButton {
-      position: absolute;
-      top: 0;
-      background: #0003;
-      color: #fffa;
-      border: none;
-      font-size: 50px;
-      height: 100%;
-    }
-    #prevButton {left: 0;}
-    #nextButton {right: 0;}
-    #prevButton:hover, #nextButton:hover {background: #0007;}
-    .slideshow-img {
-      width:100%;
-      display: none;
-    }
-  </style>
-  <script>
-    const images = document.getElementsByClassName('slideshow-img');
-    let index = 0;
-    function switch_image(x) {
-      return () => {
-        images[index].style.display = 'none';
-        index = (index + x + images.length) % images.length;
-        images[index].style.display = 'block';
-      }
-    }
-    document.getElementById('prevButton').addEventListener('click', switch_image(-1));
-    document.getElementById('nextButton').addEventListener('click', switch_image(1));
-    switch_image(0)();
-  </script>
 </div>
 <br/>
 

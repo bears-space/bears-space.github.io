@@ -26,3 +26,6 @@ format:
       dark: darkly
     css: styles.css
     mainfont: Arial  # Default was Lato, but we want to avoid Google Fonts
+    include-after-body:
+      text: <script src="/custom_scripts.js"></script>
+
