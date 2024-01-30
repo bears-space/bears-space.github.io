@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -50,7 +50,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -59,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -97,21 +104,46 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Projects">
-<meta property="og:image" content="https://www.bears-space.de/projects/solar/Solar_website.jpg">
 <meta name="twitter:title" content="Projects">
-<meta name="twitter:image" content="https://www.bears-space.de/projects/solar/Solar_website.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./bears_logo.png" alt="" class="navbar-logo">
     </a>
@@ -123,33 +155,33 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
- <span class="menu-text">Projects</span></a>
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About BEARS</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About BEARS</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./sponsors.html" rel="" target="">
- <span class="menu-text">Sponsors</span></a>
+    <a class="nav-link" href="./sponsors.html"> 
+<span class="menu-text">Sponsors</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./imprint.html" rel="" target="">
- <span class="menu-text">Imprint</span></a>
+    <a class="nav-link" href="./imprint.html"> 
+<span class="menu-text">Imprint</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.instagram.com/bears.space/" rel="" target=""><i class="bi bi-instagram" role="img">
+    <a class="nav-link" href="https://www.instagram.com/bears.space/"> <i class="bi bi-instagram" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -162,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -186,6 +218,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -194,289 +227,279 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Robotics" data-listing-file-modified-sort="1706104512893" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="Robotics" data-listing-file-modified-sort="1706629458341" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
 <div class="thumbnail">
-<p><a href="./projects/solar/index.html"> <img src="./projects/solar/Solar_website.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./projects/solar/index.html" class="no-external"></a></p><a href="./projects/solar/index.html" class="no-external">
+<p><img src="./projects/solar/Solar_website.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projects/solar/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/solar/index.html">
 <h3 class="no-anchor listing-title">
-Solar
+<a href="./projects/solar/index.html" class="no-external">Solar</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/solar/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Robotics'); return false;">
 Robotics
 </div>
 </div>
-<a href="./projects/solar/index.html">
 <div class="listing-description">
-In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the…
+<a href="./projects/solar/index.html" class="no-external">In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/solar/index.html"> </a>
+<p><a href="./projects/solar/index.html" class="no-external"></a></p><a href="./projects/solar/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706104512849" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="1" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706629458301" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
 <div class="thumbnail">
-<p><a href="./projects/Stargaze/index.html"> <img src="./projects/Stargaze/Rocket_0.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./projects/Stargaze/index.html" class="no-external"></a></p><a href="./projects/Stargaze/index.html" class="no-external">
+<p><img src="./projects/Stargaze/Rocket_0.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projects/Stargaze/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/Stargaze/index.html">
 <h3 class="no-anchor listing-title">
-STARGAZE
+<a href="./projects/Stargaze/index.html" class="no-external">STARGAZE</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/Stargaze/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Experimental Rocketry'); return false;">
 Experimental Rocketry
 </div>
 </div>
-<a href="./projects/Stargaze/index.html">
 <div class="listing-description">
-
-STARGAZE is our third rocket. With this rocket we want to participate at the European Rocketry Challenge 2024 in Portugal. As we grew in our team member size and our…
+<a href="./projects/Stargaze/index.html" class="no-external">
+STARGAZE is our third rocket. With this rocket we want to participate at the European Rocketry Challenge 2024 in Portugal. As we grew in our team member size and our…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/Stargaze/index.html"> </a>
+<p><a href="./projects/Stargaze/index.html" class="no-external"></a></p><a href="./projects/Stargaze/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Robotics" data-listing-file-modified-sort="1706104512849" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="2" data-categories="Robotics" data-listing-file-modified-sort="1706629458301" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
 <div class="thumbnail">
-<p><a href="./projects/Rover/index.html"> <img src="./projects/Rover/Rover_1.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./projects/Rover/index.html" class="no-external"></a></p><a href="./projects/Rover/index.html" class="no-external">
+<p><img src="./projects/Rover/Rover_1.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projects/Rover/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/Rover/index.html">
 <h3 class="no-anchor listing-title">
-Rover
+<a href="./projects/Rover/index.html" class="no-external">Rover</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/Rover/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Robotics'); return false;">
 Robotics
 </div>
 </div>
-<a href="./projects/Rover/index.html">
 <div class="listing-description">
-Of course, we are also involved in building rovers. This September 2023 we participated in the European Rover Competition in Poland for the 2nd time. Thereby we reached the 12th place. In rover building, we…
+<a href="./projects/Rover/index.html" class="no-external">Of course, we are also involved in building rovers. This September 2023 we participated in the European Rover Competition in Poland for the 2nd time. Thereby we reached the…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/Rover/index.html"> </a>
+<p><a href="./projects/Rover/index.html" class="no-external"></a></p><a href="./projects/Rover/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Robotics" data-listing-file-modified-sort="1706104512801" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="3" data-categories="Robotics" data-listing-file-modified-sort="1706629458253" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
 <div class="thumbnail">
-<p><a href="./projects/Lars/index.html"> <img src="./projects/Lars/Lars_1.png" class="thumbnail-image"> </a></p>
+<p><a href="./projects/Lars/index.html" class="no-external"></a></p><a href="./projects/Lars/index.html" class="no-external">
+<p><img src="./projects/Lars/Lars_1.png" class="thumbnail-image"></p>
+</a><p><a href="./projects/Lars/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/Lars/index.html">
 <h3 class="no-anchor listing-title">
-Lars
+<a href="./projects/Lars/index.html" class="no-external">Lars</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/Lars/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Robotics'); return false;">
 Robotics
 </div>
 </div>
-<a href="./projects/Lars/index.html">
 <div class="listing-description">
-Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asc…
+<a href="./projects/Lars/index.html" class="no-external">Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asclepios–Miss…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/Lars/index.html"> </a>
+<p><a href="./projects/Lars/index.html" class="no-external"></a></p><a href="./projects/Lars/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706104512889" data-listing-reading-time-sort="3">
+<div class="quarto-post image-right" data-index="4" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706629458341" data-listing-reading-time-sort="2" data-listing-word-count-sort="249">
 <div class="thumbnail">
-<p><a href="./projects/propulsion/index.html"> <img src="./projects/propulsion/Propulsion_1.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./projects/propulsion/index.html" class="no-external"></a></p><a href="./projects/propulsion/index.html" class="no-external">
+<p><img src="./projects/propulsion/Propulsion_1.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projects/propulsion/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/propulsion/index.html">
 <h3 class="no-anchor listing-title">
-Propulsion
+<a href="./projects/propulsion/index.html" class="no-external">Propulsion</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/propulsion/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Experimental Rocketry'); return false;">
 Experimental Rocketry
 </div>
 </div>
-<a href="./projects/propulsion/index.html">
 <div class="listing-description">
-Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus…
+<a href="./projects/propulsion/index.html" class="no-external">Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus is on the development of a…</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/propulsion/index.html"> </a>
+<p><a href="./projects/propulsion/index.html" class="no-external"></a></p><a href="./projects/propulsion/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Science and Experiments" data-listing-file-modified-sort="1706104512889" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="5" data-categories="Science and Experiments" data-listing-file-modified-sort="1706629458341" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
 <div class="thumbnail">
-<p><a href="./projects/career/index.html"> <img src="./projects/career/Career_1.png" class="thumbnail-image"> </a></p>
+<p><a href="./projects/career/index.html" class="no-external"></a></p><a href="./projects/career/index.html" class="no-external">
+<p><img src="./projects/career/Career_1.png" class="thumbnail-image"></p>
+</a><p><a href="./projects/career/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/career/index.html">
 <h3 class="no-anchor listing-title">
-Career
+<a href="./projects/career/index.html" class="no-external">Career</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/career/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Science and Experiments'); return false;">
 Science and Experiments
 </div>
 </div>
-<a href="./projects/career/index.html">
 <div class="listing-description">
-The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.
+<a href="./projects/career/index.html" class="no-external">The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/career/index.html"> </a>
+<p><a href="./projects/career/index.html" class="no-external"></a></p><a href="./projects/career/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Science and Experiments" data-listing-file-modified-sort="1706104512885" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="6" data-categories="Science and Experiments" data-listing-file-modified-sort="1706629458337" data-listing-reading-time-sort="4" data-listing-word-count-sort="610">
 <div class="thumbnail">
-<p><a href="./projects/Wobble 2/index.html"> <img src="./projects/Wobble 2/WOBBLE2_Patch.png" class="thumbnail-image"> </a></p>
+<p><a href="./projects/Wobble 2/index.html" class="no-external"></a></p><a href="./projects/Wobble 2/index.html" class="no-external">
+<p><img src="./projects/Wobble 2/WOBBLE2_Patch.png" class="thumbnail-image"></p>
+</a><p><a href="./projects/Wobble 2/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/Wobble 2/index.html">
 <h3 class="no-anchor listing-title">
-WOBBLE2
+<a href="./projects/Wobble 2/index.html" class="no-external">WOBBLE2</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/Wobble 2/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Science and Experiments'); return false;">
 Science and Experiments
 </div>
 </div>
-<a href="./projects/Wobble 2/index.html">
 <div class="listing-description">
-<strong>News (24.01.24): The…</strong>
+<a href="./projects/Wobble 2/index.html" class="no-external"><strong>News (24.01.24): The team will fly to Kiruna at 4.-11.02 with 6 members. We would like to thank our friends at TU Berlin for making it possible for us to take two more team…</strong></a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/Wobble 2/index.html"> </a>
+<p><a href="./projects/Wobble 2/index.html" class="no-external"></a></p><a href="./projects/Wobble 2/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706104512849" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="7" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706629458301" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
 <div class="thumbnail">
-<p><a href="./projects/Stardust/index.html"> <img src="./projects/Stardust/Patch_Stardust.png" class="thumbnail-image"> </a></p>
+<p><a href="./projects/Stardust/index.html" class="no-external"></a></p><a href="./projects/Stardust/index.html" class="no-external">
+<p><img src="./projects/Stardust/Patch_Stardust.png" class="thumbnail-image"></p>
+</a><p><a href="./projects/Stardust/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/Stardust/index.html">
 <h3 class="no-anchor listing-title">
-STARDUST
+<a href="./projects/Stardust/index.html" class="no-external">STARDUST</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/Stardust/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Experimental Rocketry'); return false;">
 Experimental Rocketry
 </div>
 </div>
-<a href="./projects/Stardust/index.html">
 <div class="listing-description">
-
+<a href="./projects/Stardust/index.html" class="no-external">
  <em>Stardust rocket</em>
-
-</div>
 </a>
+</div>
 </div>
 <div class="metadata">
-<a href="./projects/Stardust/index.html"> </a>
+<p><a href="./projects/Stardust/index.html" class="no-external"></a></p><a href="./projects/Stardust/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706104512849" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="8" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706629458301" data-listing-reading-time-sort="2" data-listing-word-count-sort="290">
 <div class="thumbnail">
-<p><a href="./projects/Starmoon/index.html"> <img src="./projects/Starmoon/Patch_Starmoon.png" class="thumbnail-image"> </a></p>
+<p><a href="./projects/Starmoon/index.html" class="no-external"></a></p><a href="./projects/Starmoon/index.html" class="no-external">
+<p><img src="./projects/Starmoon/Patch_Starmoon.png" class="thumbnail-image"></p>
+</a><p><a href="./projects/Starmoon/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/Starmoon/index.html">
 <h3 class="no-anchor listing-title">
-STARMOON
+<a href="./projects/Starmoon/index.html" class="no-external">STARMOON</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/Starmoon/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Experimental Rocketry'); return false;">
 Experimental Rocketry
 </div>
 </div>
-<a href="./projects/Starmoon/index.html">
 <div class="listing-description">
-
+<a href="./projects/Starmoon/index.html" class="no-external">
  <em>Starmoon rocket</em>
-
-</div>
 </a>
+</div>
 </div>
 <div class="metadata">
-<a href="./projects/Starmoon/index.html"> </a>
+<p><a href="./projects/Starmoon/index.html" class="no-external"></a></p><a href="./projects/Starmoon/index.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706104512805" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="9" data-categories="Experimental Rocketry" data-listing-file-modified-sort="1706629458257" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
 <div class="thumbnail">
-<p><a href="./projects/Rocketry/index.html"> <img src="./projects/Rocketry/Rocket_0.jpg" class="thumbnail-image"> </a></p>
+<p><a href="./projects/Rocketry/index.html" class="no-external"></a></p><a href="./projects/Rocketry/index.html" class="no-external">
+<p><img src="./projects/Rocketry/Rocket_0.jpg" class="thumbnail-image"></p>
+</a><p><a href="./projects/Rocketry/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
-<a href="./projects/Rocketry/index.html">
 <h3 class="no-anchor listing-title">
-Rocket Systems
+<a href="./projects/Rocketry/index.html" class="no-external">Rocket Systems</a>
 </h3>
 <div class="listing-subtitle">
-
+<a href="./projects/Rocketry/index.html" class="no-external"></a>
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Experimental Rocketry'); return false;">
 Experimental Rocketry
 </div>
 </div>
-<a href="./projects/Rocketry/index.html">
 <div class="listing-description">
-Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE.
+<a href="./projects/Rocketry/index.html" class="no-external">Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE.</a>
 </div>
-</a>
 </div>
 <div class="metadata">
-<a href="./projects/Rocketry/index.html"> </a>
+<p><a href="./projects/Rocketry/index.html" class="no-external"></a></p><a href="./projects/Rocketry/index.html" class="no-external">
+</a>
 </div>
 </div>
 </div>
@@ -525,6 +548,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -593,13 +643,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -678,10 +730,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -691,8 +742,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -705,6 +765,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -748,6 +927,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -773,6 +953,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -833,6 +1039,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script src="./custom_scripts.js"></script>
+
 
 
 

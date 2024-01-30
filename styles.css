@@ -1,1 +1,28 @@
 /* css styles */
+
+
+.slideshow {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slideshow p {
+    margin: 0;
+}
+.prevButton, .nextButton {
+    position: absolute;
+    top: 0;
+    background: #0003;
+    color: #fffa;
+    border: none;
+    font-size: 50px;
+    height: 100%;
+}
+.prevButton {left: 0;}
+.nextButton {right: 0;}
+.prevButton:hover, .nextButton:hover {background: #0007;}
+.slideshow-img {
+    width:100%;
+    display: none;
+}
