@@ -1,7 +1,7 @@
 ---
 title: "Lars"
 categories: [Robotics]
-image: "Lars_1.png"
+image: "LARS_LOGO.png"
 ---
 
 Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. 
@@ -11,10 +11,13 @@ This project is especially suitable for beginners and we are looking forward to 
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img src="Lars_1.png" >
-  <img src="Lars_3.jpg" >
-  <img src="Lars_2.jpg" >
-  <img src="Lars_4.png" >
-  <img src="Lars_0.png" >
+  <img src="LARS1.png" >
+  <img src="LARS2.png" >
+  <img src="LARS3.png" >
+  <img src="LARS4.png" >
+  <img src="LARS5.png" >
+  <img src="LARS6.png" >
+  <img src="LARS7.png" >
+  <img src="LARS8.png" >
 </div>
 <br/>
