@@ -1,10 +1,15 @@
-// general code for all slideshows
+// initialize slideshows
 function init_slideshow() {
+    // get all slideshows
     const slideshows = document.getElementsByClassName('slideshow');
     console.log(`initializing ${slideshows.length} slideshows`)
+
+    // add prev/next buttons to each slideshow
     for (let i = 0; i < slideshows.length; i++) {
+        // get all images in slideshow
         const images = slideshows[i].getElementsByTagName('img');
         let index = 0;
+        // create function to switch image
         function switch_image(x) {
             return () => {
                 images[index].style.display = 'none';
@@ -12,6 +17,7 @@ function init_slideshow() {
                 images[index].style.display = 'block';
             }
         }
+        // add prev/next buttons
         prevButton = document.createElement('button');
         prevButton.className = 'prevButton';
         prevButton.innerHTML = '&#10094;';
@@ -22,6 +28,7 @@ function init_slideshow() {
         slideshows[i].appendChild(nextButton);
         prevButton.addEventListener('click', switch_image(-1));
         nextButton.addEventListener('click', switch_image(1));
+        // show first image
         switch_image(0)();
     }
 }
