@@ -18,9 +18,9 @@ We also want to participate in competitions with the new rocket.
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Rocket_0.jpg" >
-  <img class="slideshow-img" src="Rocket_1.jpg" >
-  <img class="slideshow-img" src="Rocket_2.jpg" >
-  <img class="slideshow-img" src="Rocket_3.jpg" >
+  <img src="Rocket_0.jpg" >
+  <img src="Rocket_1.jpg" >
+  <img src="Rocket_2.jpg" >
+  <img src="Rocket_3.jpg" >
 </div>
 <br/>

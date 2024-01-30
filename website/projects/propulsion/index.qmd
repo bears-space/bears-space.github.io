@@ -24,9 +24,9 @@ We understand that reaching for the stars requires meticulous planning, dedicati
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Propulsion_1.jpg" >
-  <img class="slideshow-img" src="Propulsion_2.png" >
-  <img class="slideshow-img" src="CAD_Propulsion.jpeg" >
+  <img src="Propulsion_1.jpg" >
+  <img src="Propulsion_2.png" >
+  <img src="CAD_Propulsion.jpeg" >
   </script>
 </div>
 <br/>

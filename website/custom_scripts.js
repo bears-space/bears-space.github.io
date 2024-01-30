@@ -3,7 +3,7 @@ function init_slideshow() {
     const slideshows = document.getElementsByClassName('slideshow');
     console.log(`initializing ${slideshows.length} slideshows`)
     for (let i = 0; i < slideshows.length; i++) {
-        const images = slideshows[i].getElementsByClassName('slideshow-img');
+        const images = slideshows[i].getElementsByTagName('img');
         let index = 0;
         function switch_image(x) {
             return () => {

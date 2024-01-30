@@ -7,8 +7,8 @@ title-block-banner: true
 
 <div class="slideshow" style="width: 100%">
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="slideshow/group.jpg" >
-  <img class="slideshow-img" src="slideshow/launch1.jpg">
+  <img src="slideshow/group.jpg" >
+  <img src="slideshow/launch1.jpg">
 </div>
 <br/>
 

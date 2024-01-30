@@ -11,14 +11,14 @@ When we developed LARS (Lunar Astronaut Revival System), we weren't sure what ki
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="LARS1.png" >
-  <img class="slideshow-img" src="LARS2.png" >
-  <img class="slideshow-img" src="LARS3.png" >
-  <img class="slideshow-img" src="LARS4.png" >
-  <img class="slideshow-img" src="LARS5.png" >
-  <img class="slideshow-img" src="LARS6.png" >
-  <img class="slideshow-img" src="LARS7.png" >
-  <img class="slideshow-img" src="LARS8.png" >
+  <img src="LARS1.png" >
+  <img src="LARS2.png" >
+  <img src="LARS3.png" >
+  <img src="LARS4.png" >
+  <img src="LARS5.png" >
+  <img src="LARS6.png" >
+  <img src="LARS7.png" >
+  <img src="LARS8.png" >
 </div>
 <br/>
 

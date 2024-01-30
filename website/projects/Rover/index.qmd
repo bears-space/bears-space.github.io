@@ -9,11 +9,11 @@ Thereby we reached the 12th place. In rover building, we work together with the 
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Rover_0.jpg" >
-  <img class="slideshow-img" src="Rover_1.jpg" >
-  <img class="slideshow-img" src="Rover_2.jpg" >
-  <img class="slideshow-img" src="Rover_3.jpg" >
-  <img class="slideshow-img" src="Rover_4.JPG" >
-  <img class="slideshow-img" src="Rover_5.jpg" >
+  <img src="Rover_0.jpg" >
+  <img src="Rover_1.jpg" >
+  <img src="Rover_2.jpg" >
+  <img src="Rover_3.jpg" >
+  <img src="Rover_4.JPG" >
+  <img src="Rover_5.jpg" >
 </div>
 <br/>

@@ -12,8 +12,8 @@ Initial tests have successfully created small areas. Now, we are in the process 
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img class="slideshow-img" src="Solar_website.jpg" >
-  <img class="slideshow-img" src="Solar_website_2.jpg" >
-  <img class="slideshow-img" src="Solar_website_3.jpg" >
+  <img src="Solar_website.jpg" >
+  <img src="Solar_website_2.jpg" >
+  <img src="Solar_website_3.jpg" >
 </div>
 <br/>

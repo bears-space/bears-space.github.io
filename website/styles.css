@@ -22,7 +22,7 @@
 .prevButton {left: 0;}
 .nextButton {right: 0;}
 .prevButton:hover, .nextButton:hover {background: #0007;}
-.slideshow-img {
+.slideshow img {
     width:100%;
     display: none;
 }
