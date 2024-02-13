@@ -3,15 +3,15 @@
     "listing": "/projects.html",
     "items": [
       "/projects/solar/index.html",
+      "/projects/Stargaze/index.html",
       "/projects/Stardust/index.html",
+      "/projects/Lars/index.html",
+      "/projects/Rover/index.html",
+      "/projects/Starmoon/index.html",
+      "/projects/propulsion/index.html",
       "/projects/Rocketry/index.html",
       "/projects/Wobble 2/index.html",
-      "/projects/career/index.html",
-      "/projects/Stargaze/index.html",
-      "/projects/propulsion/index.html",
-      "/projects/Rover/index.html",
-      "/projects/Lars/index.html",
-      "/projects/Starmoon/index.html"
+      "/projects/career/index.html"
     ]
   }
 ]
