@@ -5,7 +5,7 @@ image: "WOBBLE2_Patch.png"
 ---
 **News (14.02.24): We had an incredibly great time during the training week in Sweden. We got a lot of input and good feedback. Now it's time to order the first components and test them diligently. The next milestone is the critical design review on June 10 in Oberpfaffenhofen.**
 
-**News (4.02.24): We have received our first press statement from the TU Berlin. You can read it [here] (https://www.tu.berlin/ueber-die-tu-berlin/profil/pressemitteilungen-nachrichten/tu-studenten-fliegen-fuer-tests-ihres-raumfahrt-experiments-nach-schweden).**
+**News (4.02.24): We have received our first press statement from the TU Berlin. You can read it [here](https://www.tu.berlin/ueber-die-tu-berlin/profil/pressemitteilungen-nachrichten/tu-studenten-fliegen-fuer-tests-ihres-raumfahrt-experiments-nach-schweden).**
 
 
 ## The Team
@@ -56,13 +56,13 @@ The selected teams are given the opportunity to test their experiments as part o
 The REXUS competition not only promotes interdisciplinary collaboration between students, but also provides a practical insight into space research. 
 The knowledge gained not only contributes to scientific progress, but also enriches the personal and professional development of the participating students.
 
-<p align="right">
-    <img src="RexBexLogoCap.png" alt="Patch of REXUS/BEXUS" width=40% />
+<p align="center">
+    <img src="RexBexLogoCap.png" alt="Patch of REXUS/BEXUS" width=30% />
     <em>Patch of REXUS/BEXUS</em>
 </p>
 
-<p align="left">
-    <img src="WOBBLE2_Patch.png" alt="Patch of WOBBLE2" width=40%/>
+<p align="center">
+    <img src="WOBBLE2_Patch.png" alt="Patch of WOBBLE2" width=30%/>
     <em>Patch of WOBBLE2</em>
 </p>
 
@@ -80,8 +80,8 @@ Thanks to their financial support we were able to travel to Sweden as a group of
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
   <img src="PDR_group.jpeg" >
-  <img src="Rocket_group.jpg" >
-  <img src="SNOW.jpg" >
+  <img src="Rocket_group.JPG" >
+  <img src="SNOW.jpeg" >
 </div>
 <br/>
 
