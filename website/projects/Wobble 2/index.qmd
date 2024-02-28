@@ -9,7 +9,7 @@ image: "WOBBLE2_Patch.png"
 
 
 ## The Team
-A motivated team has been formed for DLR's 15th [Rexus (ESA-website)](https://www.esa.int/Education/Rexus_Bexus/About_REXUS_BEXUS) competition. 
+A motivated team has been formed for the 15th cycle of [REXUS/BEXUS (ESA-website)](https://www.esa.int/Education/Rexus_Bexus/About_REXUS_BEXUS) competition. 
 The application was submitted on October 9th and we got selected at the 13.12. 
 We are 11 enthusiastic students covering all areas from electrical design to flow simulation. If you want to contact us to join the team or you have any other request, contact us with wooble2@bears-space.de.
 Six of us took part in the workshop in Kiruna from 05.-09.02.2024. 
@@ -44,8 +44,16 @@ In the slide show below you can see first 3D-printed prototypes filled with Uran
 
 ## About the REXUS competition
 
-The [Rexus](https://rexusbexus.net/) (Rocket Experiments for University Students) competition, initiated by the German Aerospace Center (DLR) and the swedish space agency (SNSA), offers students the unique opportunity to send their experiments into space on board sounding rockets. 
-The program enables teams from different universities to conduct innovative experiments in weightlessness and under extreme atmospheric conditions.
+The [REXUS/BEXUS programme](https://rexusbexus.net/) is realised under a bilateral Agency Agreement between the 
+German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA). The 
+Swedish share of the payload has been made available to students from other European 
+countries through a collaboration with the European Space Agency (ESA). EuroLaunch, a 
+cooperation between the Swedish Space Corporation (SSC) and the Mobile Rocket Base 
+(MORABA) of DLR, is responsible for the campaign management and operations of the launch 
+vehicles. Experts from DLR, SSC, ZARM and ESA provide technical support to the student 
+teams throughout the project. REXUS and BEXUS are launched from SSC, Esrange Space 
+Center in northern Sweden.
+The REXUS rocket enables teams from different universities to conduct innovative experiments in weightlessness and under extreme atmospheric conditions.
 
 The participating teams have the challenge of integrating their scientific investigations into a compact experimental module that is placed on board a REXUS rocket. These rockets will be launched from the Esrange Space Center in Sweden. 
 The competition is aimed at students of engineering, physics, astronomy and related disciplines.
@@ -53,7 +61,7 @@ The competition is aimed at students of engineering, physics, astronomy and rela
 Projects are selected through a rigorous selection process that evaluates creativity, technical feasibility and scientific relevance. 
 The selected teams are given the opportunity to test their experiments as part of a real space mission.
 
-The REXUS competition not only promotes interdisciplinary collaboration between students, but also provides a practical insight into space research. 
+The REXUS/BEXUS competition not only promotes interdisciplinary collaboration between students, but also provides a practical insight into space research. 
 The knowledge gained not only contributes to scientific progress, but also enriches the personal and professional development of the participating students.
 
 <p align="center">
