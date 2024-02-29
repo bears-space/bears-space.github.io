@@ -4,8 +4,10 @@ categories: [Robotics]
 image: "Rover_1.jpg"
 ---
 
-Of course, we are also involved in building rovers. In September 2023, we participated in the [European Rover Competition](https://roverchallenge.eu/en/main-page/) in Poland for the 2nd time. 
+Of course, we are also involved in building rovers. In September 2023, we participated in the [European Rover Competition](https://roverchallenge.eu/en/main-page/) (ERC) in Poland for the 2nd time. 
 Thereby we reached the 12th place. In rover building, we work together with the international students from the [Master of Space Engineering](https://www.mse.tu-berlin.de/).
+
+Currently we are preparing for the ERC 2024.
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
@@ -17,3 +19,5 @@ Thereby we reached the 12th place. In rover building, we work together with the 
   <img src="Rover_5.jpg" >
 </div>
 <br/>
+
+We want to thank our [sponsors](/sponsors) for their support of this project, including a battery pack from *Tesla*, software from *Ansys*, and 3d-printed parts from *3D-Druck und Design Rostock*.
