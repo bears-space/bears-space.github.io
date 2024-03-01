@@ -33,4 +33,12 @@ function init_slideshow() {
     }
 }
 
-init_slideshow();
+document.addEventListener('DOMContentLoaded', init_slideshow);
+
+
+// use user preference for color scheme
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.localStorage.getItem("quarto-color-scheme") == null) {
+        window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+}
