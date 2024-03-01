@@ -1,6 +1,6 @@
-/* css styles */
+/* The styles defined here are applied to all pages */
 
-
+/* slideshow */
 .slideshow {
     position: relative;
     width: 80%;
@@ -25,4 +25,17 @@
 .slideshow img {
     width:100%;
     display: none;
+}
+
+
+/* image captions */
+figcaption {
+    text-align: center;
+}
+
+
+/* post thumbnails */
+div.quarto-post .thumbnail img {
+    object-fit: contain;
+    max-height: 10em;
 }

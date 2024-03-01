@@ -5,6 +5,7 @@ website:
   favicon: favicon.png
   twitter-card: true
   open-graph: true
+  search: true
   navbar:
     logo: bears_logo.png
     left:
@@ -26,6 +27,6 @@ format:
       dark: darkly
     css: styles.css
     mainfont: Arial  # Default was Lato, but we want to avoid Google Fonts
-    include-after-body:
+    include-before-body: 
       text: <script src="/custom_scripts.js"></script>
 

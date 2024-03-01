@@ -9,16 +9,17 @@ title-block-banner: true
   <!-- put all images here that should be available in the slideshow -->
   <img src="slideshow_index/group.jpg" >
   <img src="slideshow_index/launch1.jpg">
+  <img src="projects/Rover/Rover_team.jpg">
 </div>
 <br/>
 
 
-Our projects are split up in three work groups:
+We are organized in 3 work groups, each with its own focus and projects:
 
-* The [Experimental Rocketry](https://www.bears-space.de/projects.html#category=Experimental%20Rocketry) group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.
+* The [Experimental Rocketry](/projects.html#category=Experimental%20Rocketry) group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.
 
-* The [Science and Experiments](https://www.bears-space.de/projects.html#category=Science%20and%20Experiments) group develops and operates science experiments and payloads. Furthermore, it develops, designs and builds satellite components and systems.
+* The [Science and Experiments](/projects.html#category=Science%20and%20Experiments) group develops and operates science experiments and payloads. Furthermore, it develops, designs and builds satellite components and systems.
 
-* In the [Robotics](https://www.bears-space.de/projects.html#category=Robotics) group, robotic systems are designed, built, tested and operated. Currently, the group is focused on robotic implementation of in situ resource utilization technologies for various space environments. One of the projects in this area is the development of a mobile solar smelter which heats up the regolith on the surface of the moon to melting temperatures using sunlight. The goal is to create a sealed surface which can benefit various lunar construction ambitions like building roads or foundations.
+* In the [Robotics](/projects.html#category=Robotics) group, we currently focus on robotic implementation of in situ resource utilization technologies for various space environments. One of the projects in this area is the development of a mobile solar smelter which heats up the regolith on the surface of the moon to melting temperatures using sunlight. The goal is to create a sealed surface which can benefit various lunar construction ambitions like building roads or foundations.
 
-Regardless of your academic background, if you are interested you can contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). Otherwise, you can join us in our weekly meeting Tuesdays at 6 pm in the F11 at the [ILR](https://maps.app.goo.gl/tbDpmmfYUmKv3eRZ7).
+Regardless of your academic background, we would like to welcome you to our team! If you are interested, contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). You can also join us directly in our weekly meeting Tuesdays at 6 pm in the F11 at the [ILR](https://maps.app.goo.gl/tbDpmmfYUmKv3eRZ7).

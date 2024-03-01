@@ -4,10 +4,16 @@ categories: [Experimental Rocketry]
 image: "Patch_Stardust.png"
 ---
 
-<p align="center">
-  <img src="Stardust.png" alt="Stardust rocket" width=100%/>
-  <em>Stardust rocket</em>
-</p>
+
+STARDUST is our second rocket development. With a target apogee of 3 km and a length of 2,5 m a very powerful rocket for our young team. Development started in summer 2022 and manufacturing in 2023.
+For such powerful motors we drove to the Netherlands to buy them, in this case we use a M class motor. With higher speed of about 1 Ma and therefore vibrations we upgraded or completely changed almost all systems. 
+Our fins are made from metal and our nose cone completely from glass fiber. Electronics system is using the same flight computers while updating the arming system as well as adding some cameras. We also developed a GPS system to track our rocket. 
+The recovery system got more complex now with a 2-stage recovery. The nose cone blasts off revealing the drogue chute, while the main chute is opened at 300 m with cutting a steel cable. 
+We also have the experiment WOBBLE on board, which is a 3D printed tank for propellant management in small satellites.
+
+![Stardust rocket](Stardust.png)
+
+<br/>
 
 | Stats        |                |
 | :---         |     :---:      |
@@ -15,15 +21,7 @@ image: "Patch_Stardust.png"
 | Mass         | 18 kg          |
 | Total Impulse | 6,3 kNs       |
 | Velocity     | 1 MA         |
+<br/>
 
 
-STARDUST is our second rocket development. With a target apogee of 3 km and a length of 2,5 m a very powerful rocket for our young team. Development started in summer 2022. 
-Manufacturing in 2023. For such powerful motors we drove to the Netherlands to buy them, in this case we use a M class motor. With higher speed of about 1 Ma and therefore vibrations we upgraded or completely changed almost all systems. 
-Our fins are made from metal and our nose cone completely from glass fiber. Electronics system is using the same flight computers while updating the arming system as well as adding some cameras. We also developed a GPS system to track our rocket. 
-The recovery system got more complex now with a 2-stage recovery. The nose cone blasts off revealing the drogue chute, while the main chute is opened at 300 m with cutting a steel cable. 
-We also have the experiment WOBBLE on board, which is a 3D printed tank for propellant management in small satellites.
-<p align="center">
-  <img src="Patch_Stardust.png" alt="Stardust patch" width=30%/>
-  <em>Stardust patch</em>
-</p>
-
+![Stardust patch](Patch_Stardust.png){width=30%}
