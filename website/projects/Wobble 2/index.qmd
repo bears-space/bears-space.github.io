@@ -1,7 +1,7 @@
 ---
 title: "WOBBLE2"
 categories: [Science and Experiments]
-image: "WOBBLE2_Patch.png"
+image: "images/WOBBLE2_Patch.png"
 ---
 
 WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid Guidance **E**xperiment. 
@@ -86,9 +86,9 @@ Thanks to their financial support we were able to travel to Sweden as a group of
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img src="PDR_group.jpeg" >
+  <img src="images/PDR_group.jpeg" >
   <img src="images/Rocket_group.JPG" >
-  <img src="SNOW.jpeg" >
+  <img src="images/SNOW.jpeg" >
 </div>
 <br/>
 
