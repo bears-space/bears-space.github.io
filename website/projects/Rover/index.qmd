@@ -1,7 +1,7 @@
 ---
 title: "Rover"
 categories: [Robotics]
-image: "Rover_1.jpg"
+image: "Rover_team_with_erc_banner.jpg"
 ---
 
 We work together with the international students from the [Master of Space Engineering](https://www.mse.tu-berlin.de/) to build a Mars rover for the [European Rover Challenge](https://roverchallenge.eu/) (ERC).
