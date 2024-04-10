@@ -17,3 +17,8 @@ We develop our own flight computer, a battery management system as well as our o
 | Mass          | TBD            |
 | Total Impulse | TBD            |
 | Velocity      | TBD            |
+
+<p align="center">
+  <img src="images/stargaze_team.jpg" alt="The team" width=60%/>
+  <em>The current Stargaze team</em>
+</p>
