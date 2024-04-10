@@ -19,6 +19,6 @@ We develop our own flight computer, a battery management system as well as our o
 | Velocity      | TBD            |
 
 <p align="center">
-  <img src="images/stargaze_team.jpg" alt="The team" width=60%/>
+  <img src="images/stargaze_team.jpg" alt="The team" width=100%/>
   <em>The current Stargaze team</em>
 </p>
