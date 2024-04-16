@@ -1,7 +1,7 @@
 ---
 title: "STARGAZE"
 categories: [Experimental Rocketry]
-image: "placeholder.jpg"
+image: "images/placeholder.jpg"
 ---
 
 STARGAZE is our third rocket. With this rocket we want to participate at the European Rocketry Challenge 2024 in Portugal. 
