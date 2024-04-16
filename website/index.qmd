@@ -3,6 +3,15 @@ title: "BEARS - Dare The Limits"
 description: We are the Berlin Experimental Astronautics Research Student Team e.V. at TU Berlin and work on space related projects in our free time.
 page-layout: full
 title-block-banner: true
+listing:
+  id: events-listing
+  contents: events
+  sort: "date desc"
+  max-items: 3
+  type: default
+  sort-ui: false
+  filter-ui: false
+  max-description-length: 210
 ---
 
 <div class="slideshow" style="width: 100%">
@@ -23,3 +32,10 @@ We are organized in 3 work groups, each with its own focus and projects:
 * In the [Robotics](/projects.html#category=Robotics) group, we currently focus on robotic implementation of in situ resource utilization technologies for various space environments. One of the projects in this area is the development of a mobile solar smelter which heats up the regolith on the surface of the moon to melting temperatures using sunlight. The goal is to create a sealed surface which can benefit various lunar construction ambitions like building roads or foundations.
 
 Regardless of your academic background, we would like to welcome you to our team! If you are interested, contact us via [mail](mailto://bears.space@protonmail.com) or on [Instagram](https://www.instagram.com/bears.space/). You can also join us directly in our weekly meeting Tuesdays at 6 pm in the F11 at the [ILR](https://maps.app.goo.gl/tbDpmmfYUmKv3eRZ7).
+
+<br/>
+
+## Future and recent events
+
+::: {#sample-listings}
+:::

@@ -39,3 +39,11 @@ div.quarto-post .thumbnail img {
     object-fit: contain;
     max-height: 10em;
 }
+
+/* disable date heading */
+#title-block-header.quarto-title-block.default .quarto-title-meta-heading {
+    display: none;
+}
+#title-block-header.quarto-title-block.default .quarto-title-meta-contents {
+    margin-top: 1em;
+}

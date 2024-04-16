@@ -1,0 +1,13 @@
+---
+title: "Events"
+description: "Upcoming and past events"
+listing:
+  contents: events
+  sort: "date desc"
+  type: default
+  sort-ui: false
+  filter-ui: true
+  max-description-length: 210
+page-layout: full
+title-block-banner: true
+---
