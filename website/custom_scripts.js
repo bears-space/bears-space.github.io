@@ -28,6 +28,17 @@ function init_slideshow() {
         slideshows[i].appendChild(nextButton);
         prevButton.addEventListener('click', switch_image(-1));
         nextButton.addEventListener('click', switch_image(1));
+        // swipe left/right
+        slideshows[i].addEventListener('touchstart', (e) => {
+            xDown = e.touches[0].clientX;
+        });
+        slideshows[i].addEventListener('touchmove', (e) => {
+            if (!xDown) return;
+            xDiff = xDown - e.touches[0].clientX;
+            if (xDiff > 0) switch_image(1)();
+            else switch_image(-1)();
+            xDown = null;
+        });
         // show first image
         switch_image(0)();
     }
