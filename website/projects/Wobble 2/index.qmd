@@ -4,20 +4,18 @@ categories: [Science and Experiments]
 image: "images/WOBBLE2_Patch.png"
 ---
 
-WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid Guidance **E**xperiment. 
+WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid guided **E**xperiment. 
 We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. 
 During the microgravity phase in the REXUS-Rocket the Fluid will be observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements. 
 
 <p align="center">
-  <img src="images/CAD_24_02.png" alt="Current CAD model of the Experiment" width=60%/>
+  <img src="images/WOBBLE_CAD.png" alt="Current CAD model of the Experiment" width=60%/>
   <em>CAD Model in februar 2024</em>
 </p>
 
 ## News
 
-**14.02.24**: We had an incredibly great time during the training week in Sweden. We got a lot of input and good feedback. Now it's time to order the first components and test them diligently. The next milestone is the critical design review on June 10 in Oberpfaffenhofen.
-
-**04.02.24**: We have received our first press statement from the TU Berlin. You can read it [here](https://www.tu.berlin/ueber-die-tu-berlin/profil/pressemitteilungen-nachrichten/tu-studenten-fliegen-fuer-tests-ihres-raumfahrt-experiments-nach-schweden).
+**03.06.24**: The tickets are booked and we travel to Oberpfaffenhofen to the CDR. From 10.-13.06. we will meet the other REXUS teams and present our experiment concept.
 
 
 ## The Team
@@ -98,6 +96,10 @@ We are always happy about new interested students who want to join the team. You
 
 
 ## Old News
+
+**14.02.24**: We had an incredibly great time during the training week in Sweden. We got a lot of input and good feedback. Now it's time to order the first components and test them diligently. The next milestone is the critical design review on June 10 in Oberpfaffenhofen.
+
+**04.02.24**: We have received our first press statement from the TU Berlin. You can read it [here](https://www.tu.berlin/ueber-die-tu-berlin/profil/pressemitteilungen-nachrichten/tu-studenten-fliegen-fuer-tests-ihres-raumfahrt-experiments-nach-schweden).
 
 **24.01.24**: The team will fly to Kiruna at 4.-11.02 with 6 members. We would like to thank our friends at TU Berlin for making it possible for us to take two more team members with us to Kiruna.
 
