@@ -10,7 +10,7 @@ During the microgravity phase in the REXUS-Rocket the Fluid will be observed wit
 
 <p align="center">
   <img src="images/WOBBLE_CAD.png" alt="Current CAD model of the Experiment" width=60%/>
-  <em>CAD Model in februar 2024</em>
+  <em>CAD model in may 2024</em>
 </p>
 
 ## News
