@@ -51,3 +51,12 @@ We want to thank our sponsors and supporters:
 <a href="https://www.ni.com/de-de.html" target="_blank">
     <img src="sponsors_images/logo_ni.webp" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
+
+
+## BigRep
+
+[BigRep](https://bigrep.com/) for 3D-printing parts of the rover.
+
+<a href="https://bigrep.com/" target="_blank">
+    <img src="sponsors_images/bigrep_logo.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
