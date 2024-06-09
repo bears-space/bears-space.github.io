@@ -6,6 +6,8 @@ image: "Rover_team_with_erc_banner.jpg"
 
 We work together with the international students from the [Master of Space Engineering](https://www.mse.tu-berlin.de/) to build a Mars rover for the [European Rover Challenge](https://roverchallenge.eu/) (ERC).
 
+{{< video https://www.youtube.com/watch?v=Vr0KuI2trUQ >}}
+
 In September 2023, we had a lot of fun participating in ERC (onsite) for the second time, reaching the 12th place (of 25). Based on the gained experience, we are redesigning our rover to climb the leaderboard in 2024.
 
 <div class="slideshow">
