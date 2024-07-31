@@ -17,6 +17,8 @@ website:
       - imprint.qmd
       - icon: instagram
         href: https://www.instagram.com/bears.space/
+      - icon: linkedin
+        href: https://www.linkedin.com/company/bears-ev/
       # - icon: github
       #   href: https://github.com/
       # - icon: twitter

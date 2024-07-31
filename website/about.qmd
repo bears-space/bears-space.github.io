@@ -9,9 +9,9 @@ about:
     # - icon: twitter
     #   text: Twitter
     #   href: https://twitter.com
-    # - icon: linkedin
-    #   text: LinkedIn
-    #   href: https://linkedin.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/company/bears-ev/
     # - icon: github
     #   text: Github
     #   href: https://github.com
