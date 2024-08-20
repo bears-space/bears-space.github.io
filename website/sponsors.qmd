@@ -70,3 +70,11 @@ We want to thank our sponsors and supporters:
     <img src="sponsors_images/cfx-berlin.png" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
 
+## Dr. Rölleke Labor GmbH
+
+[Dr. Rölleke Labor GmbH](https://www.dr-roelleke.de/) for server housing and utilities.
+
+<a href="https://www.dr-roelleke.de/" target="_blank">
+    <img src="sponsors_images/dr_roelleke_labor_gmbh.gif" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
