@@ -15,7 +15,23 @@ During the microgravity phase in the REXUS-Rocket the Fluid will be observed wit
 
 ## News
 
-**03.06.24**: The tickets are booked and we travel to Oberpfaffenhofen to the CDR. From 10.-13.06. we will meet the other REXUS teams and present our experiment concept.
+**28.08.24**: We will be presenting WOBBLE2 at the Space Tech Expo in Bremen. Meet us at the Bears booth from 19-21.11.24.
+
+**01.08.24**: We successfully passed the critical design review in Oberpfaffenhofen. The Integration Process Review will now take place at our university on 11.09.2024.
+
+## Sponsors
+
+We want to thank our sponsors APWORKS and SENSRION for their support.
+
+<p align="center">
+  <img src="images/Sponsors/APWORKS_Farbe.webp" alt="APWORKS" width=60%/>
+  <em>CAD model in may 2024</em>
+</p>
+
+<p align="center">
+  <img src="images/Sponsors/Sensirion_Logo_Green.png" alt="SENSRION" width=60%/>
+  <em>CAD model in may 2024</em>
+</p>
 
 
 ## The Team
@@ -70,6 +86,19 @@ The knowledge gained not only contributes to scientific progress, but also enric
 ![Patch of WOBBLE2](images/WOBBLE2_Patch.png)
 :::
 
+## CDR in Oberpfaffenhofen
+For our critical design we were in Oberpfaffenhofen and presented our finished concept to a jury. The exchange with experts from Zam, ESA and SSC was once again very helpful. 
+We were also very happy to see the other teams again. We enjoyed the exciting exchange and feedback, but there was also time to look at the facilities at DLR and to spend nice hours at Bavarian lakes. 
+
+<div class="slideshow">
+  <!-- put all images here that should be available in the slideshow -->
+  <img src="website/projects/Wobble 2/images/CDR_pics/20240611_151052.jpg" >
+  <img src="website/projects/Wobble 2/images/CDR_pics/20240612_135059.jpg" >
+  <img src="website/projects/Wobble 2/images/CDR_pics/20240612_152405.jpg" >
+  <img src="website/projects/Wobble 2/images/CDR_pics/IMG-20240611-WA0003.jpg" >
+  <img src="website/projects/Wobble 2/images/CDR_pics/IMG-20240612-WA0025.jpg" >
+</div>
+<br/>
 
 ## Trainingweek in Esrange
 To evaluate the preliminary design, theBexus and RExus teams from all countries met in Esrange in the north of Sweden. 
@@ -96,6 +125,8 @@ We are always happy about new interested students who want to join the team. You
 
 
 ## Old News
+
+**03.06.24**: The tickets are booked and we travel to Oberpfaffenhofen to the CDR. From 10.-13.06. we will meet the other REXUS teams and present our experiment concept.
 
 **14.02.24**: We had an incredibly great time during the training week in Sweden. We got a lot of input and good feedback. Now it's time to order the first components and test them diligently. The next milestone is the critical design review on June 10 in Oberpfaffenhofen.
 
