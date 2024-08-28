@@ -25,12 +25,12 @@ We want to thank our sponsors APWORKS and SENSRION for their support.
 
 <p align="center">
   <img src="images/Sponsors/APWORKS_Farbe.webp" alt="APWORKS" width=60%/>
-  <em>CAD model in may 2024</em>
+  <em>APWORKS</em>
 </p>
 
 <p align="center">
   <img src="images/Sponsors/Sensirion_Logo_Green.png" alt="SENSRION" width=60%/>
-  <em>CAD model in may 2024</em>
+  <em>Sensirion</em>
 </p>
 
 
