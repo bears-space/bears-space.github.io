@@ -92,13 +92,10 @@ We were also very happy to see the other teams again. We enjoyed the exciting ex
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img src="images/CDR_pics/20240611_151052.jpg" >
-  <img src="images/CDR_pics/20240612_135059.jpg" >
-  <img src="images/CDR_pics/20240612_152405.jpg" >
-  <img src="images/CDR_pics/IMG-20240611-WA0003.jpg" >
-  <img src="images/CDR_pics/IMG-20240612-WA0025.jpg" >
+  <img src="images/20240611_151052.jpg" >
 </div>
 <br/>
+
 
 ## Trainingweek in Esrange
 To evaluate the preliminary design, theBexus and RExus teams from all countries met in Esrange in the north of Sweden. 
