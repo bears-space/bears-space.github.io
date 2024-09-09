@@ -6,19 +6,31 @@ image: "Rover_team_with_erc_banner.jpg"
 
 We work together with the international students from the [Master of Space Engineering](https://www.mse.tu-berlin.de/) to build a Mars rover for the [European Rover Challenge](https://roverchallenge.eu/) (ERC).
 
+## ERC24
+
+During the ERC 2024 in Krakow we achieved **7th place** (of 27) and won the **best Navigation (Droning)** and **best Science (Geological Exploration)** awards!
+
+Application Video:
+
 {{< video https://www.youtube.com/watch?v=Vr0KuI2trUQ >}}
 
-In September 2023, we had a lot of fun participating in ERC (onsite) for the second time, reaching the 12th place (of 25). Based on the gained experience, we are redesigning our rover to climb the leaderboard in 2024.
+
+## ERC23
+
+In September 2023, we had a lot of fun participating in ERC (onsite) for the second time, reaching the 12th place (of 25). Based on the gained experience, we were redesigning our rover to climb the leaderboard in 2024.
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
-  <img src="Rover_team.jpg" >
-  <img src="Rover_robro.jpg" >
-  <img src="Rover_team_with_erc_banner.jpg" >
-  <img src="Rover_fixing_onsite.jpg" >
-  <img src="Rover_all_groups.jpg" >
-  <img src="Rover_tag.jpg" >
+  <img src="images/Rover_team.jpg" >
+  <img src="images/Rover_robro.jpg" >
+  <img src="images/Rover_team_with_erc_banner.jpg" >
+  <img src="images/Rover_fixing_onsite.jpg" >
+  <img src="images/Rover_all_groups.jpg" >
+  <img src="images/Rover_tag.jpg" >
 </div>
 <br/>
 
-We want to thank our [sponsors](/sponsors.html) for their support of this project, including a battery pack from *Tesla*, software from *Ansys*, and 3d-printed parts from *3D-Druck und Design Rostock*.
+
+## Sponsors
+
+Huge thanks to our [sponsors](/sponsors.html) for their support of this project, including a battery pack from *Tesla*, software from *Ansys*, and 3d-printed parts from *3D-Druck und Design Rostock*.
