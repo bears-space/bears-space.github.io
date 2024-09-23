@@ -18,7 +18,7 @@ listing:
   <!-- put all images here that should be available in the slideshow -->
   <img src="slideshow_index/group.jpg" >
   <img src="slideshow_index/launch1.jpg">
-  <img src="projects/Rover/Rover_team.jpg">
+  <img src="projects/Rover/images/Rover_team.jpg">
 </div>
 <br/>
 
