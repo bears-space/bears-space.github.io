@@ -5,6 +5,14 @@ title-block-banner: true
 
 We want to thank our sponsors and supporters:
 
+## Friends of the TU Berlin
+
+[Gesellschaft von Freunden der TU Berlin e.V.](https://www.tu.berlin/communication/freunde) for sponsoring our trips to competitions and events.
+
+<a href="https://www.tu.berlin/communication/freunde" target="_blank">
+    <img src="sponsors_images/GvF_Logo_final_RGB_300.jpg" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
 ## CubeMars
 
 [CubeMars](https://www.cubemars.com/) for supporting us with motors for the [rover](/projects/Rover/).
