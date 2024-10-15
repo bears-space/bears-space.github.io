@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BEARS - Dare The Limits",
+    "section": "",
+    "text": "We are organized in 3 work groups, each with its own focus and projects:\nRegardless of your academic background, we would like to welcome you to our team! If you are interested, contact us via mail or on Instagram. You can also join us directly in our weekly meeting Tuesdays at 6 pm in the F11 at the ILR."
+  },
+  {
+    "objectID": "index.html#future-and-recent-events",
+    "href": "index.html#future-and-recent-events",
+    "title": "BEARS - Dare The Limits",
+    "section": "Future and recent events",
+    "text": "Future and recent events"
+  },
+  {
     "objectID": "events/2024-11-19_SpaceTechEXPO/index.html",
     "href": "events/2024-11-19_SpaceTechEXPO/index.html",
     "title": "BEARS at Space Tech EXPO",
@@ -7,18 +21,137 @@
     "text": "From 19.-21.11.2024 we are represented as BEARS at the Space Expo. You will find us in the University Pavilion. We look forward to seeing you in large numbers and are sure to be able to present you with great exhibits. Feel free to write to us if you would like to meet us directly or make an appointment.\nSee you there!"
   },
   {
-    "objectID": "events/2024-10-15_introduction_event/index.html",
-    "href": "events/2024-10-15_introduction_event/index.html",
+    "objectID": "events/2024-04-30_introduction_event/index.html",
+    "href": "events/2024-04-30_introduction_event/index.html",
     "title": "Introduction Event for Interested Students",
     "section": "",
-    "text": "On October 15, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 (ground floor) in the RFT building.\nDare the limits and join us there!"
+    "text": "On April 30, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 in the RFT building.\nSee you there!"
   },
   {
-    "objectID": "events.html",
-    "href": "events.html",
-    "title": "Events",
+    "objectID": "sponsors.html",
+    "href": "sponsors.html",
+    "title": "Sponsors",
     "section": "",
-    "text": "BEARS at Space Tech EXPO\n\n\n\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nLong Night of the Sciences / Lange Nacht der Wissenschaften\n\n\n\n\n\n\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\n\n\n\nApr 30, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "We want to thank our sponsors and supporters:"
+  },
+  {
+    "objectID": "sponsors.html#friends-of-the-tu-berlin",
+    "href": "sponsors.html#friends-of-the-tu-berlin",
+    "title": "Sponsors",
+    "section": "Friends of the TU Berlin",
+    "text": "Friends of the TU Berlin\nGesellschaft von Freunden der TU Berlin e.V. for sponsoring our trips to competitions and events."
+  },
+  {
+    "objectID": "sponsors.html#cubemars",
+    "href": "sponsors.html#cubemars",
+    "title": "Sponsors",
+    "section": "CubeMars",
+    "text": "CubeMars\nCubeMars for supporting us with motors for the rover."
+  },
+  {
+    "objectID": "sponsors.html#tesla",
+    "href": "sponsors.html#tesla",
+    "title": "Sponsors",
+    "section": "Tesla",
+    "text": "Tesla\nTesla for the battery pack for our rover."
+  },
+  {
+    "objectID": "sponsors.html#therma",
+    "href": "sponsors.html#therma",
+    "title": "Sponsors",
+    "section": "Therma",
+    "text": "Therma\nTherma for thermocouples and accessories for STARGAZE."
+  },
+  {
+    "objectID": "sponsors.html#nicomatic",
+    "href": "sponsors.html#nicomatic",
+    "title": "Sponsors",
+    "section": "Nicomatic",
+    "text": "Nicomatic\nNicomatic for connectors for STARGAZE."
+  },
+  {
+    "objectID": "sponsors.html#ansys",
+    "href": "sponsors.html#ansys",
+    "title": "Sponsors",
+    "section": "Ansys",
+    "text": "Ansys\nAnsys for software licenses and project support."
+  },
+  {
+    "objectID": "sponsors.html#d-druck-und-design-rostock",
+    "href": "sponsors.html#d-druck-und-design-rostock",
+    "title": "Sponsors",
+    "section": "3D-Druck und Design Rostock",
+    "text": "3D-Druck und Design Rostock\n3D-Druck und Design Rostock for 3D-printing essential parts for LARS, our Asclepios III project and our 2024 rover MORPHEUS."
+  },
+  {
+    "objectID": "sponsors.html#tu-berlin",
+    "href": "sponsors.html#tu-berlin",
+    "title": "Sponsors",
+    "section": "TU Berlin",
+    "text": "TU Berlin\nTU Berlin, and especially the RFT, for rooms and all kinds of support."
+  },
+  {
+    "objectID": "sponsors.html#ni",
+    "href": "sponsors.html#ni",
+    "title": "Sponsors",
+    "section": "NI",
+    "text": "NI\nNI for discounts."
+  },
+  {
+    "objectID": "sponsors.html#bigrep",
+    "href": "sponsors.html#bigrep",
+    "title": "Sponsors",
+    "section": "BigRep",
+    "text": "BigRep\nBigRep for 3D-printing parts of the rover."
+  },
+  {
+    "objectID": "sponsors.html#cfx-berlin",
+    "href": "sponsors.html#cfx-berlin",
+    "title": "Sponsors",
+    "section": "CFX Berlin",
+    "text": "CFX Berlin\nCFX-Berlin for a generous donation of HPC server hardware as well as supporting our projects with Flownex licences."
+  },
+  {
+    "objectID": "sponsors.html#dr.-rölleke-labor-gmbh",
+    "href": "sponsors.html#dr.-rölleke-labor-gmbh",
+    "title": "Sponsors",
+    "section": "Dr. Rölleke Labor GmbH",
+    "text": "Dr. Rölleke Labor GmbH\nDr. Rölleke Labor GmbH for server housing and utilities."
+  },
+  {
+    "objectID": "projects/Rocketry/index.html",
+    "href": "projects/Rocketry/index.html",
+    "title": "Rocket Systems",
+    "section": "",
+    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
+  },
+  {
+    "objectID": "projects/Rocketry/index.html#our-rockets",
+    "href": "projects/Rocketry/index.html#our-rockets",
+    "title": "Rocket Systems",
+    "section": "",
+    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
+  },
+  {
+    "objectID": "projects/Rocketry/index.html#our-team",
+    "href": "projects/Rocketry/index.html#our-team",
+    "title": "Rocket Systems",
+    "section": "Our team",
+    "text": "Our team\nIn the rocket systems group we build our own rockets. We have already achieved a successful launch to an altitude of 600m. Currently we are building a rocket that is designed to reach an altitude of 3 km. On this also a small experiment is to be accomplished. We also want to participate in competitions with the new rocket."
+  },
+  {
+    "objectID": "projects/Starmoon/index.html",
+    "href": "projects/Starmoon/index.html",
+    "title": "STARMOON",
+    "section": "",
+    "text": "We started with our first rocket STARMOON in a newly created module at the TUB in October 2021. Quickly we figured with the university that we should found a student club for further developing this and other projects. Starting with six people we had the ambitious goal to launch a rocket with a target apogee of 600 m, so we could launch in Germany, while having already a motor with 500 N thrust. During half a year we gained knowledge about rocketry and started with the design of our compartments. We learned many things about 3D printing, flight computer control, machining, fiber composites, motors, redundant recovery systems and so on. In early summer we had a functional rocket. The rocket was launched as a full success and with a complete recovery one year later in October 2022 near Brunswick with the student club ERIG.\n\n\n\nStarmoon rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n600 m\n\n\nMass\n12 kg\n\n\nTotal Impulse\n1,4 kNs\n\n\nVelocity\n0,3 MA\n\n\n\n\n\n\n\n\n\n\n\n\n\nStarmoon patch\n\n\n\n\n \n\n\n\n\n\nStarmoon team"
+  },
+  {
+    "objectID": "projects/Stargaze/index.html",
+    "href": "projects/Stargaze/index.html",
+    "title": "STARGAZE",
+    "section": "",
+    "text": "STARGAZE is our third rocket. With this rocket we want to participate at the European Rocketry Challenge 2024 in Portugal. As we grew in our team member size and our experience with already quite powerful rockets, we decided our next step to show our rocketry to the world. It is a great opportunity to further push ourselves to develop better and bigger rockets. We started the development in October 2023. Our goal is to fulfil the requirements of the competition as well as to develop many new aspects of our rocket. The structure shall be for the first time made from carbon fiber. We develop our own flight computer, a battery management system as well as our own payload, a spin camera system. Our stats for the rocket and interesting pictures will follow with our progress. Stay tuned!\n\n\n\n\nStats\n\n\n\n\n\nAltitude\nTBD\n\n\nMass\nTBD\n\n\nTotal Impulse\nTBD\n\n\nVelocity\nTBD\n\n\n\n\n The current Stargaze team"
   },
   {
     "objectID": "projects/Wobble 2/index.html",
@@ -91,144 +224,11 @@
     "text": "Old News\n03.06.24: The tickets are booked and we travel to Oberpfaffenhofen to the CDR. From 10.-13.06. we will meet the other REXUS teams and present our experiment concept.\n14.02.24: We had an incredibly great time during the training week in Sweden. We got a lot of input and good feedback. Now it’s time to order the first components and test them diligently. The next milestone is the critical design review on June 10 in Oberpfaffenhofen.\n04.02.24: We have received our first press statement from the TU Berlin. You can read it here.\n24.01.24: The team will fly to Kiruna at 4.-11.02 with 6 members. We would like to thank our friends at TU Berlin for making it possible for us to take two more team members with us to Kiruna.\n15.01.24: We are currently looking for motivated students to support us in our outreach program. If you are intrested in managing our Instagram and organize exhibition stands, please contact us on Instagram via bears.space."
   },
   {
-    "objectID": "projects/Lars/index.html",
-    "href": "projects/Lars/index.html",
-    "title": "Lars",
-    "section": "",
-    "text": "Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asclepios–Mission 2. For this, a small team went to Lausanne. For 2023/24 we plan to participate in the competition again. This project is especially suitable for beginners and we are looking forward to your participation."
-  },
-  {
-    "objectID": "projects/Rocketry/index.html",
-    "href": "projects/Rocketry/index.html",
-    "title": "Rocket Systems",
-    "section": "",
-    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
-  },
-  {
-    "objectID": "projects/Rocketry/index.html#our-rockets",
-    "href": "projects/Rocketry/index.html#our-rockets",
-    "title": "Rocket Systems",
-    "section": "",
-    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
-  },
-  {
-    "objectID": "projects/Rocketry/index.html#our-team",
-    "href": "projects/Rocketry/index.html#our-team",
-    "title": "Rocket Systems",
-    "section": "Our team",
-    "text": "Our team\nIn the rocket systems group we build our own rockets. We have already achieved a successful launch to an altitude of 600m. Currently we are building a rocket that is designed to reach an altitude of 3 km. On this also a small experiment is to be accomplished. We also want to participate in competitions with the new rocket."
-  },
-  {
     "objectID": "projects/solar/index.html",
     "href": "projects/solar/index.html",
     "title": "Solar",
     "section": "",
     "text": "In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the sunlight. The goal of this is to build dust free areas in the future on the Moon utilizing the resources in-situ. Initial tests have successfully created small areas. Now, we are in the process of further developing the first prototype and testing different melting methods."
-  },
-  {
-    "objectID": "projects/Starmoon/index.html",
-    "href": "projects/Starmoon/index.html",
-    "title": "STARMOON",
-    "section": "",
-    "text": "We started with our first rocket STARMOON in a newly created module at the TUB in October 2021. Quickly we figured with the university that we should found a student club for further developing this and other projects. Starting with six people we had the ambitious goal to launch a rocket with a target apogee of 600 m, so we could launch in Germany, while having already a motor with 500 N thrust. During half a year we gained knowledge about rocketry and started with the design of our compartments. We learned many things about 3D printing, flight computer control, machining, fiber composites, motors, redundant recovery systems and so on. In early summer we had a functional rocket. The rocket was launched as a full success and with a complete recovery one year later in October 2022 near Brunswick with the student club ERIG.\n\n\n\nStarmoon rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n600 m\n\n\nMass\n12 kg\n\n\nTotal Impulse\n1,4 kNs\n\n\nVelocity\n0,3 MA\n\n\n\n\n\n\n\n\n\n\n\n\n\nStarmoon patch\n\n\n\n\n \n\n\n\n\n\nStarmoon team"
-  },
-  {
-    "objectID": "sponsors.html",
-    "href": "sponsors.html",
-    "title": "Sponsors",
-    "section": "",
-    "text": "We want to thank our sponsors and supporters:"
-  },
-  {
-    "objectID": "sponsors.html#friends-of-the-tu-berlin",
-    "href": "sponsors.html#friends-of-the-tu-berlin",
-    "title": "Sponsors",
-    "section": "Friends of the TU Berlin",
-    "text": "Friends of the TU Berlin\nGesellschaft von Freunden der TU Berlin e.V. for sponsoring our trips to competitions and events."
-  },
-  {
-    "objectID": "sponsors.html#cubemars",
-    "href": "sponsors.html#cubemars",
-    "title": "Sponsors",
-    "section": "CubeMars",
-    "text": "CubeMars\nCubeMars for supporting us with motors for the rover."
-  },
-  {
-    "objectID": "sponsors.html#tesla",
-    "href": "sponsors.html#tesla",
-    "title": "Sponsors",
-    "section": "Tesla",
-    "text": "Tesla\nTesla for the battery pack for our rover."
-  },
-  {
-    "objectID": "sponsors.html#ansys",
-    "href": "sponsors.html#ansys",
-    "title": "Sponsors",
-    "section": "Ansys",
-    "text": "Ansys\nAnsys for software licenses and project support."
-  },
-  {
-    "objectID": "sponsors.html#d-druck-und-design-rostock",
-    "href": "sponsors.html#d-druck-und-design-rostock",
-    "title": "Sponsors",
-    "section": "3D-Druck und Design Rostock",
-    "text": "3D-Druck und Design Rostock\n3D-Druck und Design Rostock for 3D-printing essential parts for LARS, our Asclepios III project and our 2024 rover MORPHEUS."
-  },
-  {
-    "objectID": "sponsors.html#tu-berlin",
-    "href": "sponsors.html#tu-berlin",
-    "title": "Sponsors",
-    "section": "TU Berlin",
-    "text": "TU Berlin\nTU Berlin, and especially the RFT, for rooms and all kinds of support."
-  },
-  {
-    "objectID": "sponsors.html#ni",
-    "href": "sponsors.html#ni",
-    "title": "Sponsors",
-    "section": "NI",
-    "text": "NI\nNI for discounts."
-  },
-  {
-    "objectID": "sponsors.html#bigrep",
-    "href": "sponsors.html#bigrep",
-    "title": "Sponsors",
-    "section": "BigRep",
-    "text": "BigRep\nBigRep for 3D-printing parts of the rover."
-  },
-  {
-    "objectID": "sponsors.html#cfx-berlin",
-    "href": "sponsors.html#cfx-berlin",
-    "title": "Sponsors",
-    "section": "CFX Berlin",
-    "text": "CFX Berlin\nCFX-Berlin for a generous donation of HPC server hardware as well as supporting our projects with Flownex licences."
-  },
-  {
-    "objectID": "sponsors.html#dr.-rölleke-labor-gmbh",
-    "href": "sponsors.html#dr.-rölleke-labor-gmbh",
-    "title": "Sponsors",
-    "section": "Dr. Rölleke Labor GmbH",
-    "text": "Dr. Rölleke Labor GmbH\nDr. Rölleke Labor GmbH for server housing and utilities."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Career\n\n\n\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLars\n\n\n\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPropulsion\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocket Systems\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRover\n\n\n\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARDUST\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARGAZE\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARMOON\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar\n\n\n\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWOBBLE2\n\n\n\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BEARS - Dare The Limits",
-    "section": "",
-    "text": "We are organized in 3 work groups, each with its own focus and projects:\nRegardless of your academic background, we would like to welcome you to our team! If you are interested, contact us via mail or on Instagram. You can also join us directly in our weekly meeting Tuesdays at 6 pm in the F11 at the ILR."
-  },
-  {
-    "objectID": "index.html#future-and-recent-events",
-    "href": "index.html#future-and-recent-events",
-    "title": "BEARS - Dare The Limits",
-    "section": "Future and recent events",
-    "text": "Future and recent events"
   },
   {
     "objectID": "imprint.html",
@@ -245,11 +245,11 @@
     "text": "According to § 5 TMG\nBerlin Experimental Astronautics Research Student team e.V.\nc/o TU Berlin - Institut für Luft- und Raumfahrt\nMarchstraße 12-14\n10587 Berlin\nMail: bears.space@protonmail.com\nRepresented by the board:\nAurel Gröbel\nNima Lucius Mirrafati\nFabian Jonathan Krech\nBenjamin Otto Brumm\nAmtsgericht Charlottenburg, Register-Nr.: VR 40347 B"
   },
   {
-    "objectID": "about.html#who-are-we",
-    "href": "about.html#who-are-we",
-    "title": "About BEARS",
-    "section": "Who are we?",
-    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31th of May 2022 with the goal to provide students from all the discplines the opportunity to apply their theoretical knwoledege in practical space related projects.\nIn addition to the space projects, which you can find under projects here, we also do joint activities. We attend trade fairs and congresses together. Below you will find a small photo overview of latest joint activities."
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "BEARS at Space Tech EXPO\n\n\n\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nLong Night of the Sciences / Lange Nacht der Wissenschaften\n\n\n\n\n\n\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\n\n\n\nApr 30, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/Rover/index.html",
@@ -280,18 +280,25 @@
     "text": "Sponsors\nHuge thanks to our sponsors for their support of this project, including a battery pack from Tesla, software from Ansys, and 3d-printed parts from 3D-Druck und Design Rostock."
   },
   {
-    "objectID": "projects/Stargaze/index.html",
-    "href": "projects/Stargaze/index.html",
-    "title": "STARGAZE",
-    "section": "",
-    "text": "STARGAZE is our third rocket. With this rocket we want to participate at the European Rocketry Challenge 2024 in Portugal. As we grew in our team member size and our experience with already quite powerful rockets, we decided our next step to show our rocketry to the world. It is a great opportunity to further push ourselves to develop better and bigger rockets. We started the development in October 2023. Our goal is to fulfil the requirements of the competition as well as to develop many new aspects of our rocket. The structure shall be for the first time made from carbon fiber. We develop our own flight computer, a battery management system as well as our own payload, a spin camera system. Our stats for the rocket and interesting pictures will follow with our progress. Stay tuned!\n\n\n\n\nStats\n\n\n\n\n\nAltitude\nTBD\n\n\nMass\nTBD\n\n\nTotal Impulse\nTBD\n\n\nVelocity\nTBD\n\n\n\n\n The current Stargaze team"
-  },
-  {
     "objectID": "projects/Stardust/index.html",
     "href": "projects/Stardust/index.html",
     "title": "STARDUST",
     "section": "",
     "text": "STARDUST is our second rocket development. With a target apogee of 3 km and a length of 2,5 m a very powerful rocket for our young team. Development started in summer 2022 and manufacturing in 2023. For such powerful motors we drove to the Netherlands to buy them, in this case we use a M class motor. With higher speed of about 1 Ma and therefore vibrations we upgraded or completely changed almost all systems. Our fins are made from metal and our nose cone completely from glass fiber. Electronics system is using the same flight computers while updating the arming system as well as adding some cameras. We also developed a GPS system to track our rocket. The recovery system got more complex now with a 2-stage recovery. The nose cone blasts off revealing the drogue chute, while the main chute is opened at 300 m with cutting a steel cable. We also have the experiment WOBBLE on board, which is a 3D printed tank for propellant management in small satellites.\n\n\n\nStardust rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n3000 m\n\n\nMass\n18 kg\n\n\nTotal Impulse\n6,3 kNs\n\n\nVelocity\n1 MA\n\n\n\n\n\n\n\nStardust patch"
+  },
+  {
+    "objectID": "projects/career/index.html",
+    "href": "projects/career/index.html",
+    "title": "Career",
+    "section": "",
+    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
+  },
+  {
+    "objectID": "projects/Lars/index.html",
+    "href": "projects/Lars/index.html",
+    "title": "Lars",
+    "section": "",
+    "text": "Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asclepios–Mission 2. For this, a small team went to Lausanne. For 2023/24 we plan to participate in the competition again. This project is especially suitable for beginners and we are looking forward to your participation."
   },
   {
     "objectID": "projects/propulsion/index.html",
@@ -315,11 +322,25 @@
     "text": "Next steps\nThis collaborative effort allows us to gather valuable insights and refine our design for optimal performance. Stay tuned for updates on the BEARS Instagram page, where we will share behind-the-scenes glimpses and exciting milestones. Our timeline targets the completion of the test stand by the end of 2024. We understand that reaching for the stars requires meticulous planning, dedication, and collaboration, and we’re thrilled to have you join us on this exciting journey."
   },
   {
-    "objectID": "projects/career/index.html",
-    "href": "projects/career/index.html",
-    "title": "Career",
+    "objectID": "about.html#who-are-we",
+    "href": "about.html#who-are-we",
+    "title": "About BEARS",
+    "section": "Who are we?",
+    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31th of May 2022 with the goal to provide students from all the discplines the opportunity to apply their theoretical knwoledege in practical space related projects.\nIn addition to the space projects, which you can find under projects here, we also do joint activities. We attend trade fairs and congresses together. Below you will find a small photo overview of latest joint activities."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
+    "text": "Career\n\n\n\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLars\n\n\n\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPropulsion\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocket Systems\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRover\n\n\n\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARDUST\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARGAZE\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARMOON\n\n\n\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar\n\n\n\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWOBBLE2\n\n\n\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "events/2024-10-15_introduction_event/index.html",
+    "href": "events/2024-10-15_introduction_event/index.html",
+    "title": "Introduction Event for Interested Students",
+    "section": "",
+    "text": "On October 15, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 (ground floor) in the RFT building.\nDare the limits and join us there!"
   },
   {
     "objectID": "events/2024-06-22_LNDW/index.html",
@@ -327,12 +348,5 @@
     "title": "Long Night of the Sciences / Lange Nacht der Wissenschaften",
     "section": "",
     "text": "On June 22, 2024, the Long Night of the Sciences will take place. From 5 to 12 p.m., around 60 scientific and science-related institutions in Berlin will once again invite visitors to spectacular experiments, exciting lectures, science shows and laboratory tours, giving visitors the opportunity to take a look behind the scenes. More info and tickets are available here.\nAlso BEARS will be present at the Long Night of the Sciences in the RFT building of TU Berlin, Room F11. We will present our projects and are looking forward to your visit!"
-  },
-  {
-    "objectID": "events/2024-04-30_introduction_event/index.html",
-    "href": "events/2024-04-30_introduction_event/index.html",
-    "title": "Introduction Event for Interested Students",
-    "section": "",
-    "text": "On April 30, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 in the RFT building.\nSee you there!"
   }
 ]
