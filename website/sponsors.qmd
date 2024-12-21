@@ -2,8 +2,16 @@
 title: "Sponsors"
 title-block-banner: true
 ---
+<div style="text-align: center;" markdown="1">
+## Without our sponsors and partners, we would not be able to realize our projects.  You too can donate!  
+</div>
 
-We want to thank our sponsors and supporters:
+</br></br> 
+IBAN **DE14 8306 5408 0005 3946 43**  
+BIC **GENODEF1SLR**
+</br></br>
+ 
+**We want to thank our sponsors and supporters:**
 
 ## Friends of the TU Berlin
 

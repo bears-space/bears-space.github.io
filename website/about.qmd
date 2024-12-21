@@ -26,6 +26,18 @@ title-block-banner: true
 We are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. 
 Our club was founded on the 31st of May 2022 with the goal to provide students from all the disciplines the opportunity to apply their theoretical knowledge in practical space related projects.
 
+
+<div style="text-align: center;" markdown="1">
+## Meet our board
+</div>
+
+![](Bears_Vorstand_21122024.png){width=80%}
+
+<div style="text-align: center;" markdown="1">
+Fabian Jonathan Krech (Treasurer), Lucie Schade (Public Relations) , Yaron Matteo Grube (1st Speaker), Gedeon Felix Görg (2nd Speaker)
+</div>
+
+
 In addition to the space projects, which you can find under projects [here](https://www.bears-space.de/projects.html), we also do joint activities. 
 We attend trade fairs and congresses together. Below you will find a small photo overview of latest joint activities.
 
