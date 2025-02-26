@@ -1,23 +1,5 @@
 [
   {
-    "listing": "/events.html",
-    "items": [
-      "/events/2024-11-19_SpaceTechEXPO/index.html",
-      "/events/2024-10-15_introduction_event/index.html",
-      "/events/2024-06-22_LNDW/index.html",
-      "/events/2024-04-30_introduction_event/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/events/2024-11-19_SpaceTechEXPO/index.html",
-      "/events/2024-10-15_introduction_event/index.html",
-      "/events/2024-06-22_LNDW/index.html",
-      "/events/2024-04-30_introduction_event/index.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/career/index.html",
@@ -30,6 +12,24 @@
       "/projects/Starmoon/index.html",
       "/projects/solar/index.html",
       "/projects/Wobble 2/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/events/2024-11-19_SpaceTechEXPO/index.html",
+      "/events/2024-10-15_introduction_event/index.html",
+      "/events/2024-06-22_LNDW/index.html",
+      "/events/2024-04-30_introduction_event/index.html"
+    ]
+  },
+  {
+    "listing": "/events.html",
+    "items": [
+      "/events/2024-11-19_SpaceTechEXPO/index.html",
+      "/events/2024-10-15_introduction_event/index.html",
+      "/events/2024-06-22_LNDW/index.html",
+      "/events/2024-04-30_introduction_event/index.html"
     ]
   }
 ]
