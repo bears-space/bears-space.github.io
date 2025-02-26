@@ -131,3 +131,12 @@ title:'PayPal - The safer, easier way to pay online!',
     <img src="sponsors_images/dr_roelleke_labor_gmbh.gif" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
 
+## Motion Lab Berlin
+
+[Motion Lab Berlin](https://motionlab.berlin/de/)
+
+<a href="https://motionlab.berlin/de/" target="_blank">
+    <img src="sponsors_images/MotionLab.Berlin.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+
