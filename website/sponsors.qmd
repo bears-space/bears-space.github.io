@@ -133,7 +133,7 @@ title:'PayPal - The safer, easier way to pay online!',
 
 ## Motion Lab Berlin
 
-[Motion Lab Berlin](https://motionlab.berlin/de/)
+[Motion Lab Berlin](https://motionlab.berlin/de/) for allowing our team members to access their workspaces and machines, as well as giving us the opportunity to present ourselves within their network.
 
 <a href="https://motionlab.berlin/de/" target="_blank">
     <img src="sponsors_images/MotionLab.Berlin.png" style="display: block; margin: 0 auto; height: 5em;"/>
