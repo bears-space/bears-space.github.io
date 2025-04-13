@@ -1,0 +1,31 @@
+---
+title: "Join Us"
+title-block-banner: true
+---
+
+<div style="text-align: center;">
+## Are you motivated to support our teams and work on current space topics? Then take a look at our open positions!
+</div>
+
+<div style="padding-left: 2em;">
+# Current Open Positions:
+</div>
+
+<div style="padding-left: 3em;">
+We are currently looking for a **Social Media Manager (voluntary)**.
+
+📄 [Download the full job description (PDF)](open_positions_pdf/Recruitment_Social_Media_Manager_Position.pdf)
+
+Please email your application to [info@bears-space.de](mailto:info@bears-space.de).
+</div>
+
+
+
+<div style="text-align: center;">
+
+# Join Our Team!
+
+</div>
+
+
+

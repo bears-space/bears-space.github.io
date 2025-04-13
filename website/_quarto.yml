@@ -13,6 +13,7 @@ website:
       - events.qmd
       - about.qmd
       - sponsors.qmd
+      - join.qmd
     right:
       - imprint.qmd
       - icon: instagram
