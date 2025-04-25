@@ -15,7 +15,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/events.html",
     "items": [
       "/events/2024-11-19_SpaceTechEXPO/index.html",
       "/events/2024-10-15_introduction_event/index.html",
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "listing": "/events.html",
+    "listing": "/index.html",
     "items": [
       "/events/2024-11-19_SpaceTechEXPO/index.html",
       "/events/2024-10-15_introduction_event/index.html",
