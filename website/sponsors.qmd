@@ -41,10 +41,10 @@ title:'PayPal - The safer, easier way to pay online!',
 
 ## Würth Elektronik
 
-[Würth Elektronik](http://www.we-online.com/) for various electronic components and expertise.
+[Würth Elektronik](http://www.we-online.com/) for providing us with sensors, various other electrical components, and technical expertise.
 
 <a href="http://www.we-online.com/" target="_blank">
-    <img src="sponsors_images/WE_logo.png" style="display: block; margin: 0 auto; height: 5em;"/>
+    <img src="sponsors_images/we_logo.png" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
 
 ## Gemmel Metalle
