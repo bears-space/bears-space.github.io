@@ -16,7 +16,7 @@ listing:
 
 <div class="slideshow" style="width: 100%">
   <!-- put all images here that should be available in the slideshow -->
-  <img src="slideshow_index/group.jpg" >
+  <img src="slideshow_index/Group_photo_BEARS_2025.jpg" >
   <img src="slideshow_index/launch1.jpg">
   <img src="projects/Rover/images/Rover_team.jpg">
 </div>
