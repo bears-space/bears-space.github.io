@@ -1,12 +1,35 @@
 ---
 title: "STARGAZE"
 categories: [Experimental Rocketry]
-image: "images/placeholder.jpg"
+image: "images/STARGAZE_transparent.png"
 ---
 
-STARGAZE is our third rocket. As we grew in our team member size and our experience with already quite powerful rockets, we decided our next step is to further push ourselves to develop better and bigger rockets. 
-We started the development in October 2023. Our goal is to develop many new aspects of our rocket. The structure shall be for the first time made from carbon fiber. 
-We develop our own flight computer, a battery management system as well as our own payload, a spin camera system. Our stats for the rocket and interesting pictures will follow with our progress. Stay tuned! 
+STARGAZE is our third rocket. The rocket is developed with two major goals: participation at EuRoC as well as providing a launch platform to test our subsystems and procedures to serve as an intermediate step to our future goal of developing a bi-liquid propellant high-altitude two-stage rocket. For participation at EuRoC, we specifically developed two subsystems: our Payload, as well as our Airbrake.
+
+::: {layout=[[20,-2,20]]  layout-valign="center"}
+![STARGAZE CAD](images/STARGAZE_transparent.png)
+
+![Team](images/stargaze_team.jpg)
+:::
+
+## Airbrake
+The Airbrake is the only active flight control system which increases the drag area of the rocket to accurately achieve an apogee of 3000 m.
+
+![Prototype of our Airbrake](images/Prototype_Airbrake.JPG)
+
+## Structure
+Similar to our previous rockets, the primary structure of STARGAZE consists of a nosecone, a body tube and a fin can. The body tube is divided into several compartments: Motor compartment, Electronics Bay, Airbrake, Payload and Recovery. Compared to our previous rockets, this rocket differs in that the compartments frame is made out of fiber-reinforced tubes glued to milled aluminum couplers. The fins are carbon fiber plates glued to the motor tube and then laminated over tip-to-tip between the fins.
+
+## Payload
+The payload is a mechatronical system that decouples on-board video cameras from the rocket’s roll-rate. The payload is mounted on top of the rocket’s primary structure via 2 bearings. The roll-rate of this decoupled compartment is held at 0°/s by using a closed-loop controlled stepper motor and gear-coupling.
+
+![Prototype of our spin camera](images/Prototype_Spin_Camera.JPG)
+
+## Electronics
+The core of the electronics consists of the two flight computers, one of which is self-designed. Alongside it, the Altimax G4 was chosen for the redundant flight computer. The self-designed MAX-FC is a SRAD modular flight computer designed to control parachutes, transmit telemetry data to the ground station, receive commands from the ground station and monitor and log sensor data.
+
+## Recovery
+The recovery system follows a two-stage concept. Multiple stages mean that the ejection of each parachute is planned to occur at specific times during the descent The drogue parachute is deployed at the apogee of the rocket’s trajectory, while the main parachute is released at an altitude of 300 meters above ground
 
 ![Stardust rocket](images/STARGAZE_transparent.png)
 
@@ -19,7 +42,5 @@ We develop our own flight computer, a battery management system as well as our o
 | Total Impulse | TBD            |
 | Velocity      | TBD            |
 
-<p align="center">
-  <img src="images/stargaze_team.jpg" alt="The team" width=100%/>
-  <em>The current Stargaze team</em>
-</p>
+## Sponsors
+We want to thank our sponsors 3dk.berlin, Nikomatic and Therma for their support.
