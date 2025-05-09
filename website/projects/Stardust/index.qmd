@@ -24,4 +24,4 @@ We also have the experiment WOBBLE on board, which is a 3D printed tank for prop
 <br/>
 
 
-![Stardust patch](Patch_Stardust.png){width=30%}
+![Stardust patch](STARDUST_Logo.png){width=30%}
