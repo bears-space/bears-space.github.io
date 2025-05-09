@@ -1,25 +1,20 @@
 ---
 title: "Rocket Systems"
 categories: [Experimental Rocketry]
-image: "Rocket_0.jpg"
+image: "STARDUST_nach_Start.jpg"
 ---
+The experimental rocketry team develops and builds rockets. We have already completed two launches. 
 
 ## Our rockets
-Our current rocket, ready for launch, is [STARDUST](https://www.bears-space.de/projects/Stardust/).
-Our first rocket was [STARMOON](https://www.bears-space.de/projects/Starmoon/).
-Our next rocket will be [STARGAZE](https://www.bears-space.de/projects/Stargaze/).
+Our first rocket was [STARMOON](https://www.bears-space.de/projects/Starmoon/), which launched in 2022. We improved on that rocket with our second rocket [STARDUST](https://www.bears-space.de/projects/Stardust/) which launched in 2024. Unlike our first rocket, this one was carrying an experiment. Our third flagship rocket, which is currently in production, is [STARGAZE](https://www.bears-space.de/projects/Stargaze/). It is scheduled to be launched in October 2025. A fourth rocket, called MOONDUST, is also under development.
 
 ## Our team
-In the rocket systems group we build our own rockets. 
-We have already achieved a successful launch to an altitude of 600m. 
-Currently we are building a rocket that is designed to reach an altitude of 3 km. 
-On this also a small experiment is to be accomplished. 
-We also want to participate in competitions with the new rocket.
+Our team consists of 24 highly motivated students from several different degrees (including Geotechnology). We try to push ourselves harder every time we develop a new rocket to make a more advanced rocket. We are also very interested in participating in competitions.
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
+  <img src="STARDUST_nach_Start.jpg" >
   <img src="Rocket_0.jpg" >
-  <img src="Rocket_1.jpg" >
   <img src="Rocket_2.jpg" >
   <img src="Rocket_3.jpg" >
 </div>
