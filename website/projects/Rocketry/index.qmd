@@ -3,13 +3,14 @@ title: "Rocket Systems"
 categories: [Experimental Rocketry]
 image: "STARDUST_nach_Start.jpg"
 ---
-The experimental rocketry team develops and builds rockets. We have already completed two launches. 
+
+The Rocket Systems subgroup focuses on the development, production and operation of sounding rockets with the goal of incrementally increasing the capability of each rocket build. As of April 2025 two launches were performed. One of the major long-term goals of this subgroup is the integration of our in-development LOX-Ethanol pressure-fed engine that soon undergoes testing.
 
 ## Our rockets
-Our first rocket was [STARMOON](https://www.bears-space.de/projects/Starmoon/), which launched in 2022. We improved on that rocket with our second rocket [STARDUST](https://www.bears-space.de/projects/Stardust/) which launched in 2024. Unlike our first rocket, this one was carrying an experiment. Our third flagship rocket, which is currently in production, is [STARGAZE](https://www.bears-space.de/projects/Stargaze/). It is scheduled to be launched in October 2025. A fourth rocket, called MOONDUST, is also under development.
+Our first rocket was [STARMOON](https://www.bears-space.de/projects/Starmoon/), which launched in October 2022 to around 600m. We improved on that rocket with our second rocket [STARDUST](https://www.bears-space.de/projects/Stardust/) which launched to around 1500m in September 2024. Unlike our first rocket, this one was carrying an experiment. Our third flagship rocket, which is currently in production, is [STARGAZE](https://www.bears-space.de/projects/Stargaze/). It is scheduled to be launched in October 2025. A fourth rocket, called MOONDUST, is also under development. The goal of this ultra-low cost testing-rocket is to test an improved recovery-system and new avionics to an apogee of around 600 m
 
 ## Our team
-Our team consists of 24 highly motivated students from several different degrees (including Geotechnology). We try to push ourselves harder every time we develop a new rocket to make a more advanced rocket. We are also very interested in participating in competitions.
+Our team consists of 19 highly motivated students from several different degrees (including Geotechnology). We try to push ourselves harder every time we develop a new rocket to make a more advanced rocket. We are also very interested in participating in competitions.
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
