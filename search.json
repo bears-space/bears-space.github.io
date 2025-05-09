@@ -1,5 +1,166 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About BEARS",
+    "section": "",
+    "text": "In addition to the space projects, which you can find under projects here, we also do joint activities. We attend trade fairs and congresses together. Below you will find a small photo overview of latest joint activities."
+  },
+  {
+    "objectID": "about.html#who-are-we",
+    "href": "about.html#who-are-we",
+    "title": "About BEARS",
+    "section": "Who are we?",
+    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31st of May 2022 with the goal to provide students from all the disciplines the opportunity to apply their theoretical knowledge in practical space related projects."
+  },
+  {
+    "objectID": "about.html#meet-our-board",
+    "href": "about.html#meet-our-board",
+    "title": "About BEARS",
+    "section": "Meet our board",
+    "text": "Meet our board"
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html",
+    "href": "projects/Wobble 2/index.html",
+    "title": "WOBBLE2",
+    "section": "",
+    "text": "WOBBLE2 stands for Weightless Observation of Behaviour with Berlin Liquid guided Experiment. We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. During the microgravity phase in the REXUS-Rocket the Fluid will be observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements.\nCAD model in may 2024\nExperiment in the module"
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#news",
+    "href": "projects/Wobble 2/index.html#news",
+    "title": "WOBBLE2",
+    "section": "News",
+    "text": "News\n19.01.2025: We sucessfully finished the BENCH Test at DLR, Oberpfaffenhofen. Now our experiment is in the Container traveling to Kiruna."
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#sponsors",
+    "href": "projects/Wobble 2/index.html#sponsors",
+    "title": "WOBBLE2",
+    "section": "Sponsors",
+    "text": "Sponsors\nWe want to thank our sponsors APWORKS and SENSIRION for their support."
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#the-team",
+    "href": "projects/Wobble 2/index.html#the-team",
+    "title": "WOBBLE2",
+    "section": "The Team",
+    "text": "The Team\nA motivated team has been formed for the 15th cycle of REXUS/BEXUS (ESA-website) competition. The application was submitted on October 9th and we got selected at the 13.12. We are 11 enthusiastic students covering all areas from electrical design to flow simulation. If you want to contact us to join the team or you have any other request, contact us with wooble2@bears-space.de. This time, an experiment on new 3D printed tanks is to be carried out.\n\n\n\nTeamfoto of the WOBBLE2 Team"
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#the-propellant-managment-devices",
+    "href": "projects/Wobble 2/index.html#the-propellant-managment-devices",
+    "title": "WOBBLE2",
+    "section": "The Propellant Managment Devices",
+    "text": "The Propellant Managment Devices\nIn the experiment we will test 6 different PMDs in small tanks. For the fluid we will use normal water combined with Uranin. The Propellant Managment Devices are produced by APWORKS out ot titanium and special aluminium. In the slide show below you can see the metal PMDs and also first 3D-printed prototypes filled with Uranin to test the observation capabilities of our camera."
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#about-the-rexus-competition",
+    "href": "projects/Wobble 2/index.html#about-the-rexus-competition",
+    "title": "WOBBLE2",
+    "section": "About the REXUS competition",
+    "text": "About the REXUS competition\nThe REXUS/BEXUS programme is realised under a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA). The Swedish share of the payload has been made available to students from other European countries through a collaboration with the European Space Agency (ESA). EuroLaunch, a cooperation between the Swedish Space Corporation (SSC) and the Mobile Rocket Base (MORABA) of DLR, is responsible for the campaign management and operations of the launch vehicles. Experts from DLR, SSC, ZARM and ESA provide technical support to the student teams throughout the project. REXUS and BEXUS are launched from SSC, Esrange Space Center in northern Sweden. The REXUS rocket enables teams from different universities to conduct innovative experiments in weightlessness and under extreme atmospheric conditions.\nThe participating teams have the challenge of integrating their scientific investigations into a compact experimental module that is placed on board a REXUS rocket. These rockets will be launched from the Esrange Space Center in Sweden. The competition is aimed at students of engineering, physics, astronomy and related disciplines.\nProjects are selected through a rigorous selection process that evaluates creativity, technical feasibility and scientific relevance. The selected teams are given the opportunity to test their experiments as part of a real space mission.\nThe REXUS/BEXUS competition not only promotes interdisciplinary collaboration between students, but also provides a practical insight into space research. The knowledge gained not only contributes to scientific progress, but also enriches the personal and professional development of the participating students.\n\n\n\n \n\n\n\n\n\nPatch of REXUS/BEXUS\n\n\n\n\n \n\n\n\n\n\nPatch of WOBBLE2"
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#bench-test-in-oberpfaffenhofen",
+    "href": "projects/Wobble 2/index.html#bench-test-in-oberpfaffenhofen",
+    "title": "WOBBLE2",
+    "section": "BENCH Test in Oberpfaffenhofen",
+    "text": "BENCH Test in Oberpfaffenhofen\nFor the bench test we were once again at the DLR in Oberpfaffenhofen. This time, 3 team members performed the final test of the Experiemnt. A communication and function test was carried out on site. Finally, the countdown was tested both cold and hot. We passed all tests and now WOBBLE2 is on its way to Sweden."
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#cdr-in-oberpfaffenhofen",
+    "href": "projects/Wobble 2/index.html#cdr-in-oberpfaffenhofen",
+    "title": "WOBBLE2",
+    "section": "CDR in Oberpfaffenhofen",
+    "text": "CDR in Oberpfaffenhofen\nFor our critical design we were in Oberpfaffenhofen and presented our finished concept to a jury. The exchange with experts from Zam, ESA and SSC was once again very helpful. We were also very happy to see the other teams again. We enjoyed the exciting exchange and feedback, but there was also time to look at the facilities at DLR and to spend nice hours at Bavarian lakes."
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#trainingweek-in-esrange",
+    "href": "projects/Wobble 2/index.html#trainingweek-in-esrange",
+    "title": "WOBBLE2",
+    "section": "Trainingweek in Esrange",
+    "text": "Trainingweek in Esrange\nTo evaluate the preliminary design, theBexus and RExus teams from all countries met in Esrange in the north of Sweden. There, each team presented its ideas to a jury consisting of representatives from ESA, DLR, SNSA, ZARM from Bremen and MORABA. We received very good feedback but also some suggestions for improvement. In addition to the review, there was an intensive lecture program on all relevant topics of the campaign. It was exciting to get so much condensed knowledge from experts and to ask all your questions. At the same time, the program also promoted team building. All in all, it was a very special time and we are very much looking forward to coming back to Esrange in 13 months. Special thanks again to the friends of the TU Berlin. Thanks to their financial support we were able to travel to Sweden as a group of six instead of four."
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#contact",
+    "href": "projects/Wobble 2/index.html#contact",
+    "title": "WOBBLE2",
+    "section": "Contact",
+    "text": "Contact\nWe are always happy about new interested students who want to join the team. You can contact us at wobble2@bears-space.de and find regular updates on the Instagram channel @bears.space. The best way to reach us is to come to the weekly Bears meeting every Tuesday at 6pm in F11."
+  },
+  {
+    "objectID": "projects/Wobble 2/index.html#old-news",
+    "href": "projects/Wobble 2/index.html#old-news",
+    "title": "WOBBLE2",
+    "section": "Old News",
+    "text": "Old News\n20.12.24: We finished the shaker test sucessfully and the Integration week at ZARM, Bremen. We have some homework to do, but nothing we can not solve.\n16.09.24: We finished successfullyour Integration Progress Review at out University.\n03.06.24: The tickets are booked and we travel to Oberpfaffenhofen to the CDR. From 10.-13.06. we will meet the other REXUS teams and present our experiment concept.\n14.02.24: We had an incredibly great time during the training week in Sweden. We got a lot of input and good feedback. Now it’s time to order the first components and test them diligently. The next milestone is the critical design review on June 10 in Oberpfaffenhofen.\n04.02.24: We have received our first press statement from the TU Berlin. You can read it here.\n24.01.24: The team will fly to Kiruna at 4.-11.02 with 6 members. We would like to thank our friends at TU Berlin for making it possible for us to take two more team members with us to Kiruna.\n15.01.24: We are currently looking for motivated students to support us in our outreach program. If you are intrested in managing our Instagram and organize exhibition stands, please contact us on Instagram via bears.space."
+  },
+  {
+    "objectID": "projects/Stardust/index.html",
+    "href": "projects/Stardust/index.html",
+    "title": "STARDUST",
+    "section": "",
+    "text": "STARDUST is our second rocket development. With a target apogee of 3 km and a length of 2,5 m a very powerful rocket for our young team. Development started in summer 2022 and manufacturing in 2023. For such powerful motors we drove to the Netherlands to buy them, in this case we use a M class motor. With higher speed of about 1 Ma and therefore vibrations we upgraded or completely changed almost all systems. Our fins are made from metal and our nose cone completely from glass fiber. Electronics system is using the same flight computers while updating the arming system as well as adding some cameras. We also developed a GPS system to track our rocket. The recovery system got more complex now with a 2-stage recovery. The nose cone blasts off revealing the drogue chute, while the main chute is opened at 300 m with cutting a steel cable. We also have the experiment WOBBLE on board, which is a 3D printed tank for propellant management in small satellites.\n\n\n\nStardust rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n3000 m\n\n\nMass\n18 kg\n\n\nTotal Impulse\n6,3 kNs\n\n\nVelocity\n1 MA\n\n\n\n\n\n\n\nStardust patch"
+  },
+  {
+    "objectID": "projects/Rocketry/index.html",
+    "href": "projects/Rocketry/index.html",
+    "title": "Rocket Systems",
+    "section": "",
+    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
+  },
+  {
+    "objectID": "projects/Rocketry/index.html#our-rockets",
+    "href": "projects/Rocketry/index.html#our-rockets",
+    "title": "Rocket Systems",
+    "section": "",
+    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
+  },
+  {
+    "objectID": "projects/Rocketry/index.html#our-team",
+    "href": "projects/Rocketry/index.html#our-team",
+    "title": "Rocket Systems",
+    "section": "Our team",
+    "text": "Our team\nIn the rocket systems group we build our own rockets. We have already achieved a successful launch to an altitude of 600m. Currently we are building a rocket that is designed to reach an altitude of 3 km. On this also a small experiment is to be accomplished. We also want to participate in competitions with the new rocket."
+  },
+  {
+    "objectID": "projects/Stargaze/index.html",
+    "href": "projects/Stargaze/index.html",
+    "title": "STARGAZE",
+    "section": "",
+    "text": "STARGAZE is our third rocket. As we grew in our team member size and our experience with already quite powerful rockets, we decided our next step is to further push ourselves to develop better and bigger rockets. We started the development in October 2023. Our goal is to develop many new aspects of our rocket. The structure shall be for the first time made from carbon fiber. We develop our own flight computer, a battery management system as well as our own payload, a spin camera system. Our stats for the rocket and interesting pictures will follow with our progress. Stay tuned!\n\n\n\n\nStats\n\n\n\n\n\nAltitude\nTBD\n\n\nMass\nTBD\n\n\nTotal Impulse\nTBD\n\n\nVelocity\nTBD\n\n\n\n\n The current Stargaze team"
+  },
+  {
+    "objectID": "projects/solar/index.html",
+    "href": "projects/solar/index.html",
+    "title": "Solar",
+    "section": "",
+    "text": "In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the sunlight. The goal of this is to build dust free areas in the future on the Moon utilizing the resources in-situ. Initial tests have successfully created small areas. Now, we are in the process of further developing the first prototype and testing different melting methods."
+  },
+  {
+    "objectID": "events/2025-04-11_yuris_night/index.html",
+    "href": "events/2025-04-11_yuris_night/index.html",
+    "title": "Yuri´s Night",
+    "section": "",
+    "text": "On 11.4.2025 we celebrate the Yuri’s at night again. We celebrate space travel and everything that goes with it.\nWe have again invited great speakers and are looking forward to a great evening. You can find us at F11 from 19.00\nSee you there!"
+  },
+  {
+    "objectID": "events/2024-06-22_LNDW/index.html",
+    "href": "events/2024-06-22_LNDW/index.html",
+    "title": "Long Night of the Sciences / Lange Nacht der Wissenschaften",
+    "section": "",
+    "text": "On June 22, 2024, the Long Night of the Sciences will take place. From 5 to 12 p.m., around 60 scientific and science-related institutions in Berlin will once again invite visitors to spectacular experiments, exciting lectures, science shows and laboratory tours, giving visitors the opportunity to take a look behind the scenes. More info and tickets are available here.\nAlso BEARS will be present at the Long Night of the Sciences in the RFT building of TU Berlin, Room F11. We will present our projects and are looking forward to your visit!"
+  },
+  {
+    "objectID": "events/2024-04-30_introduction_event/index.html",
+    "href": "events/2024-04-30_introduction_event/index.html",
+    "title": "Introduction Event for Interested Students",
+    "section": "",
+    "text": "On April 30, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 in the RFT building.\nSee you there!"
+  },
+  {
     "objectID": "sponsors.html",
     "href": "sponsors.html",
     "title": "Sponsors",
@@ -112,174 +273,6 @@
     "text": "Motion Lab Berlin\nMotion Lab Berlin for allowing our team members to access their workspaces and machines, as well as giving us the opportunity to present ourselves within their network."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Career\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLars\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPropulsion\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocket Systems\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRover\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARDUST\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARGAZE\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARMOON\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWOBBLE2\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About BEARS",
-    "section": "",
-    "text": "In addition to the space projects, which you can find under projects here, we also do joint activities. We attend trade fairs and congresses together. Below you will find a small photo overview of latest joint activities."
-  },
-  {
-    "objectID": "about.html#who-are-we",
-    "href": "about.html#who-are-we",
-    "title": "About BEARS",
-    "section": "Who are we?",
-    "text": "Who are we?\nWe are the Berlin Experimental Astronautics Research Student Team e.V. a newly founded student association at the Technische Universität Berlin. Our club was founded on the 31st of May 2022 with the goal to provide students from all the disciplines the opportunity to apply their theoretical knowledge in practical space related projects."
-  },
-  {
-    "objectID": "about.html#meet-our-board",
-    "href": "about.html#meet-our-board",
-    "title": "About BEARS",
-    "section": "Meet our board",
-    "text": "Meet our board"
-  },
-  {
-    "objectID": "projects/Stardust/index.html",
-    "href": "projects/Stardust/index.html",
-    "title": "STARDUST",
-    "section": "",
-    "text": "STARDUST is our second rocket development. With a target apogee of 3 km and a length of 2,5 m a very powerful rocket for our young team. Development started in summer 2022 and manufacturing in 2023. For such powerful motors we drove to the Netherlands to buy them, in this case we use a M class motor. With higher speed of about 1 Ma and therefore vibrations we upgraded or completely changed almost all systems. Our fins are made from metal and our nose cone completely from glass fiber. Electronics system is using the same flight computers while updating the arming system as well as adding some cameras. We also developed a GPS system to track our rocket. The recovery system got more complex now with a 2-stage recovery. The nose cone blasts off revealing the drogue chute, while the main chute is opened at 300 m with cutting a steel cable. We also have the experiment WOBBLE on board, which is a 3D printed tank for propellant management in small satellites.\n\n\n\nStardust rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n3000 m\n\n\nMass\n18 kg\n\n\nTotal Impulse\n6,3 kNs\n\n\nVelocity\n1 MA\n\n\n\n\n\n\n\nStardust patch"
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html",
-    "href": "projects/Wobble 2/index.html",
-    "title": "WOBBLE2",
-    "section": "",
-    "text": "WOBBLE2 stands for Weightless Observation of Behaviour with Berlin Liquid guided Experiment. We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. During the microgravity phase in the REXUS-Rocket the Fluid will be observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements.\nCAD model in may 2024\nExperiment in the module"
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#news",
-    "href": "projects/Wobble 2/index.html#news",
-    "title": "WOBBLE2",
-    "section": "News",
-    "text": "News\n19.01.2025: We sucessfully finished the BENCH Test at DLR, Oberpfaffenhofen. Now our experiment is in the Container traveling to Kiruna."
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#sponsors",
-    "href": "projects/Wobble 2/index.html#sponsors",
-    "title": "WOBBLE2",
-    "section": "Sponsors",
-    "text": "Sponsors\nWe want to thank our sponsors APWORKS and SENSIRION for their support."
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#the-team",
-    "href": "projects/Wobble 2/index.html#the-team",
-    "title": "WOBBLE2",
-    "section": "The Team",
-    "text": "The Team\nA motivated team has been formed for the 15th cycle of REXUS/BEXUS (ESA-website) competition. The application was submitted on October 9th and we got selected at the 13.12. We are 11 enthusiastic students covering all areas from electrical design to flow simulation. If you want to contact us to join the team or you have any other request, contact us with wooble2@bears-space.de. This time, an experiment on new 3D printed tanks is to be carried out.\n\n\n\nTeamfoto of the WOBBLE2 Team"
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#the-propellant-managment-devices",
-    "href": "projects/Wobble 2/index.html#the-propellant-managment-devices",
-    "title": "WOBBLE2",
-    "section": "The Propellant Managment Devices",
-    "text": "The Propellant Managment Devices\nIn the experiment we will test 6 different PMDs in small tanks. For the fluid we will use normal water combined with Uranin. The Propellant Managment Devices are produced by APWORKS out ot titanium and special aluminium. In the slide show below you can see the metal PMDs and also first 3D-printed prototypes filled with Uranin to test the observation capabilities of our camera."
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#about-the-rexus-competition",
-    "href": "projects/Wobble 2/index.html#about-the-rexus-competition",
-    "title": "WOBBLE2",
-    "section": "About the REXUS competition",
-    "text": "About the REXUS competition\nThe REXUS/BEXUS programme is realised under a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA). The Swedish share of the payload has been made available to students from other European countries through a collaboration with the European Space Agency (ESA). EuroLaunch, a cooperation between the Swedish Space Corporation (SSC) and the Mobile Rocket Base (MORABA) of DLR, is responsible for the campaign management and operations of the launch vehicles. Experts from DLR, SSC, ZARM and ESA provide technical support to the student teams throughout the project. REXUS and BEXUS are launched from SSC, Esrange Space Center in northern Sweden. The REXUS rocket enables teams from different universities to conduct innovative experiments in weightlessness and under extreme atmospheric conditions.\nThe participating teams have the challenge of integrating their scientific investigations into a compact experimental module that is placed on board a REXUS rocket. These rockets will be launched from the Esrange Space Center in Sweden. The competition is aimed at students of engineering, physics, astronomy and related disciplines.\nProjects are selected through a rigorous selection process that evaluates creativity, technical feasibility and scientific relevance. The selected teams are given the opportunity to test their experiments as part of a real space mission.\nThe REXUS/BEXUS competition not only promotes interdisciplinary collaboration between students, but also provides a practical insight into space research. The knowledge gained not only contributes to scientific progress, but also enriches the personal and professional development of the participating students.\n\n\n\n \n\n\n\n\n\nPatch of REXUS/BEXUS\n\n\n\n\n \n\n\n\n\n\nPatch of WOBBLE2"
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#bench-test-in-oberpfaffenhofen",
-    "href": "projects/Wobble 2/index.html#bench-test-in-oberpfaffenhofen",
-    "title": "WOBBLE2",
-    "section": "BENCH Test in Oberpfaffenhofen",
-    "text": "BENCH Test in Oberpfaffenhofen\nFor the bench test we were once again at the DLR in Oberpfaffenhofen. This time, 3 team members performed the final test of the Experiemnt. A communication and function test was carried out on site. Finally, the countdown was tested both cold and hot. We passed all tests and now WOBBLE2 is on its way to Sweden."
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#cdr-in-oberpfaffenhofen",
-    "href": "projects/Wobble 2/index.html#cdr-in-oberpfaffenhofen",
-    "title": "WOBBLE2",
-    "section": "CDR in Oberpfaffenhofen",
-    "text": "CDR in Oberpfaffenhofen\nFor our critical design we were in Oberpfaffenhofen and presented our finished concept to a jury. The exchange with experts from Zam, ESA and SSC was once again very helpful. We were also very happy to see the other teams again. We enjoyed the exciting exchange and feedback, but there was also time to look at the facilities at DLR and to spend nice hours at Bavarian lakes."
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#trainingweek-in-esrange",
-    "href": "projects/Wobble 2/index.html#trainingweek-in-esrange",
-    "title": "WOBBLE2",
-    "section": "Trainingweek in Esrange",
-    "text": "Trainingweek in Esrange\nTo evaluate the preliminary design, theBexus and RExus teams from all countries met in Esrange in the north of Sweden. There, each team presented its ideas to a jury consisting of representatives from ESA, DLR, SNSA, ZARM from Bremen and MORABA. We received very good feedback but also some suggestions for improvement. In addition to the review, there was an intensive lecture program on all relevant topics of the campaign. It was exciting to get so much condensed knowledge from experts and to ask all your questions. At the same time, the program also promoted team building. All in all, it was a very special time and we are very much looking forward to coming back to Esrange in 13 months. Special thanks again to the friends of the TU Berlin. Thanks to their financial support we were able to travel to Sweden as a group of six instead of four."
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#contact",
-    "href": "projects/Wobble 2/index.html#contact",
-    "title": "WOBBLE2",
-    "section": "Contact",
-    "text": "Contact\nWe are always happy about new interested students who want to join the team. You can contact us at wobble2@bears-space.de and find regular updates on the Instagram channel @bears.space. The best way to reach us is to come to the weekly Bears meeting every Tuesday at 6pm in F11."
-  },
-  {
-    "objectID": "projects/Wobble 2/index.html#old-news",
-    "href": "projects/Wobble 2/index.html#old-news",
-    "title": "WOBBLE2",
-    "section": "Old News",
-    "text": "Old News\n20.12.24: We finished the shaker test sucessfully and the Integration week at ZARM, Bremen. We have some homework to do, but nothing we can not solve.\n16.09.24: We finished successfullyour Integration Progress Review at out University.\n03.06.24: The tickets are booked and we travel to Oberpfaffenhofen to the CDR. From 10.-13.06. we will meet the other REXUS teams and present our experiment concept.\n14.02.24: We had an incredibly great time during the training week in Sweden. We got a lot of input and good feedback. Now it’s time to order the first components and test them diligently. The next milestone is the critical design review on June 10 in Oberpfaffenhofen.\n04.02.24: We have received our first press statement from the TU Berlin. You can read it here.\n24.01.24: The team will fly to Kiruna at 4.-11.02 with 6 members. We would like to thank our friends at TU Berlin for making it possible for us to take two more team members with us to Kiruna.\n15.01.24: We are currently looking for motivated students to support us in our outreach program. If you are intrested in managing our Instagram and organize exhibition stands, please contact us on Instagram via bears.space."
-  },
-  {
-    "objectID": "projects/career/index.html",
-    "href": "projects/career/index.html",
-    "title": "Career",
-    "section": "",
-    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
-  },
-  {
-    "objectID": "projects/propulsion/index.html",
-    "href": "projects/propulsion/index.html",
-    "title": "Propulsion",
-    "section": "",
-    "text": "Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus is on the development of a bi-propellant pressure- fed propulsion system, with the goal of integrating it into our own rocket, which is being developed by the Rocket System team."
-  },
-  {
-    "objectID": "projects/propulsion/index.html#current-work",
-    "href": "projects/propulsion/index.html#current-work",
-    "title": "Propulsion",
-    "section": "Current work",
-    "text": "Current work\nCurrently, our efforts are centered on the construction of a test stand, a critical element for the testing and further development of our engine. The planning and procurement phase for the fluid system is complete. A specially designed swirl injector has been developed, and our propellant tanks are under construction. A small team is busy with the development and planning of the test stand electronics, ensuring that everything runs smoothly. In collaboration with the Department of Fluid Dynamics, another segment of our team is conducting water tests using the first iteration of our injector."
-  },
-  {
-    "objectID": "projects/propulsion/index.html#next-steps",
-    "href": "projects/propulsion/index.html#next-steps",
-    "title": "Propulsion",
-    "section": "Next steps",
-    "text": "Next steps\nThis collaborative effort allows us to gather valuable insights and refine our design for optimal performance. Stay tuned for updates on the BEARS Instagram page, where we will share behind-the-scenes glimpses and exciting milestones. Our timeline targets the completion of the test stand by the end of 2024. We understand that reaching for the stars requires meticulous planning, dedication, and collaboration, and we’re thrilled to have you join us on this exciting journey."
-  },
-  {
-    "objectID": "projects/Lars/index.html",
-    "href": "projects/Lars/index.html",
-    "title": "Lars",
-    "section": "",
-    "text": "Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asclepios–Mission 2. For this, a small team went to Lausanne. For 2023/24 we plan to participate in the competition again. This project is especially suitable for beginners and we are looking forward to your participation."
-  },
-  {
-    "objectID": "events/2024-04-30_introduction_event/index.html",
-    "href": "events/2024-04-30_introduction_event/index.html",
-    "title": "Introduction Event for Interested Students",
-    "section": "",
-    "text": "On April 30, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 in the RFT building.\nSee you there!"
-  },
-  {
-    "objectID": "events/2024-11-19_SpaceTechEXPO/index.html",
-    "href": "events/2024-11-19_SpaceTechEXPO/index.html",
-    "title": "BEARS at Space Tech EXPO",
-    "section": "",
-    "text": "From 19.-21.11.2024 we are represented as BEARS at the Space Expo. You will find us in the University Pavilion. We look forward to seeing you in large numbers and are sure to be able to present you with great exhibits. Feel free to write to us if you would like to meet us directly or make an appointment.\nSee you there!"
-  },
-  {
-    "objectID": "events/2025-04-11_yuris_night/index.html",
-    "href": "events/2025-04-11_yuris_night/index.html",
-    "title": "Yuri´s Night",
-    "section": "",
-    "text": "On 11.4.2025 we celebrate the Yuri’s at night again. We celebrate space travel and everything that goes with it.\nWe have again invited great speakers and are looking forward to a great evening. You can find us at F11 from 19.00\nSee you there!"
-  },
-  {
     "objectID": "imprint.html",
     "href": "imprint.html",
     "title": "Imprint",
@@ -294,11 +287,18 @@
     "text": "According to § 5 TMG\nBerlin Experimental Astronautics Research Student team e.V.\nc/o TU Berlin - Institut für Luft- und Raumfahrt\nMarchstraße 12-14\n10587 Berlin\nMail: info@bears-space.de\nRepresented by the board:\nYaron Matteo Grube\nGedeon Felix Görg\nFabian Jonathan Krech\nLucie Schade\nAmtsgericht Charlottenburg, Register-Nr.: VR 40347 B"
   },
   {
-    "objectID": "events/2024-06-22_LNDW/index.html",
-    "href": "events/2024-06-22_LNDW/index.html",
-    "title": "Long Night of the Sciences / Lange Nacht der Wissenschaften",
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
     "section": "",
-    "text": "On June 22, 2024, the Long Night of the Sciences will take place. From 5 to 12 p.m., around 60 scientific and science-related institutions in Berlin will once again invite visitors to spectacular experiments, exciting lectures, science shows and laboratory tours, giving visitors the opportunity to take a look behind the scenes. More info and tickets are available here.\nAlso BEARS will be present at the Long Night of the Sciences in the RFT building of TU Berlin, Room F11. We will present our projects and are looking forward to your visit!"
+    "text": "Introduction Event for Interested Students\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nYuri´s Night\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBEARS at Space Tech EXPO\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nLong Night of the Sciences / Lange Nacht der Wissenschaften\n\n\n\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nApr 30, 2024\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Career\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLars\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPropulsion\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocket Systems\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRover\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARDUST\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARGAZE\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARMOON\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWOBBLE2\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "events/2025-05-06_Kickoff_Event/index.html",
@@ -308,6 +308,13 @@
     "text": "On Mai 06, 2025, we will host an kickoff event for all students who are interested in joining BEARS. Every project will shortly introduce themself and you can ask all question. Also there will be free fries!!! The event will take place at 18:00 in room F11 (ground floor) in the RFT building.\nDare the limits and join us there!"
   },
   {
+    "objectID": "events/2024-11-19_SpaceTechEXPO/index.html",
+    "href": "events/2024-11-19_SpaceTechEXPO/index.html",
+    "title": "BEARS at Space Tech EXPO",
+    "section": "",
+    "text": "From 19.-21.11.2024 we are represented as BEARS at the Space Expo. You will find us in the University Pavilion. We look forward to seeing you in large numbers and are sure to be able to present you with great exhibits. Feel free to write to us if you would like to meet us directly or make an appointment.\nSee you there!"
+  },
+  {
     "objectID": "events/2024-10-15_introduction_event/index.html",
     "href": "events/2024-10-15_introduction_event/index.html",
     "title": "Introduction Event for Interested Students",
@@ -315,25 +322,18 @@
     "text": "On October 15, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 (ground floor) in the RFT building.\nDare the limits and join us there!"
   },
   {
-    "objectID": "projects/Rocketry/index.html",
-    "href": "projects/Rocketry/index.html",
-    "title": "Rocket Systems",
+    "objectID": "projects/career/index.html",
+    "href": "projects/career/index.html",
+    "title": "Career",
     "section": "",
-    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
+    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
   },
   {
-    "objectID": "projects/Rocketry/index.html#our-rockets",
-    "href": "projects/Rocketry/index.html#our-rockets",
-    "title": "Rocket Systems",
+    "objectID": "projects/Starmoon/index.html",
+    "href": "projects/Starmoon/index.html",
+    "title": "STARMOON",
     "section": "",
-    "text": "Our current rocket, ready for launch, is STARDUST. Our first rocket was STARMOON. Our next rocket will be STARGAZE."
-  },
-  {
-    "objectID": "projects/Rocketry/index.html#our-team",
-    "href": "projects/Rocketry/index.html#our-team",
-    "title": "Rocket Systems",
-    "section": "Our team",
-    "text": "Our team\nIn the rocket systems group we build our own rockets. We have already achieved a successful launch to an altitude of 600m. Currently we are building a rocket that is designed to reach an altitude of 3 km. On this also a small experiment is to be accomplished. We also want to participate in competitions with the new rocket."
+    "text": "We started with our first rocket STARMOON in a newly created module at the TUB in October 2021. Quickly we figured with the university that we should found a student club for further developing this and other projects. Starting with six people we had the ambitious goal to launch a rocket with a target apogee of 600 m, so we could launch in Germany, while having already a motor with 500 N thrust. During half a year we gained knowledge about rocketry and started with the design of our compartments. We learned many things about 3D printing, flight computer control, machining, fiber composites, motors, redundant recovery systems and so on. In early summer we had a functional rocket. The rocket was launched as a full success and with a complete recovery one year later in October 2022 near Brunswick with the student club ERIG.\n\n\n\nStarmoon rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n600 m\n\n\nMass\n12 kg\n\n\nTotal Impulse\n1,4 kNs\n\n\nVelocity\n0,3 MA\n\n\n\n\n\n\n\n\n\n\nStarmoon patch\n\n\n\n\n \n\n\n\n\n\nStarmoon team"
   },
   {
     "objectID": "projects/Rover/index.html",
@@ -364,32 +364,32 @@
     "text": "Sponsors\nHuge thanks to our sponsors for their support of this project, including a battery pack from Tesla, software from Ansys, and 3d-printed parts from 3D-Druck und Design Rostock."
   },
   {
-    "objectID": "projects/Stargaze/index.html",
-    "href": "projects/Stargaze/index.html",
-    "title": "STARGAZE",
+    "objectID": "projects/propulsion/index.html",
+    "href": "projects/propulsion/index.html",
+    "title": "Propulsion",
     "section": "",
-    "text": "STARGAZE is our third rocket. As we grew in our team member size and our experience with already quite powerful rockets, we decided our next step is to further push ourselves to develop better and bigger rockets. We started the development in October 2023. Our goal is to develop many new aspects of our rocket. The structure shall be for the first time made from carbon fiber. We develop our own flight computer, a battery management system as well as our own payload, a spin camera system. Our stats for the rocket and interesting pictures will follow with our progress. Stay tuned!\n\n\n\n\nStats\n\n\n\n\n\nAltitude\nTBD\n\n\nMass\nTBD\n\n\nTotal Impulse\nTBD\n\n\nVelocity\nTBD\n\n\n\n\n The current Stargaze team"
+    "text": "Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus is on the development of a bi-propellant pressure- fed propulsion system, with the goal of integrating it into our own rocket, which is being developed by the Rocket System team."
   },
   {
-    "objectID": "projects/Starmoon/index.html",
-    "href": "projects/Starmoon/index.html",
-    "title": "STARMOON",
-    "section": "",
-    "text": "We started with our first rocket STARMOON in a newly created module at the TUB in October 2021. Quickly we figured with the university that we should found a student club for further developing this and other projects. Starting with six people we had the ambitious goal to launch a rocket with a target apogee of 600 m, so we could launch in Germany, while having already a motor with 500 N thrust. During half a year we gained knowledge about rocketry and started with the design of our compartments. We learned many things about 3D printing, flight computer control, machining, fiber composites, motors, redundant recovery systems and so on. In early summer we had a functional rocket. The rocket was launched as a full success and with a complete recovery one year later in October 2022 near Brunswick with the student club ERIG.\n\n\n\nStarmoon rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n600 m\n\n\nMass\n12 kg\n\n\nTotal Impulse\n1,4 kNs\n\n\nVelocity\n0,3 MA\n\n\n\n\n\n\n\n\n\n\nStarmoon patch\n\n\n\n\n \n\n\n\n\n\nStarmoon team"
+    "objectID": "projects/propulsion/index.html#current-work",
+    "href": "projects/propulsion/index.html#current-work",
+    "title": "Propulsion",
+    "section": "Current work",
+    "text": "Current work\nCurrently, our efforts are centered on the construction of a test stand, a critical element for the testing and further development of our engine. The planning and procurement phase for the fluid system is complete. A specially designed swirl injector has been developed, and our propellant tanks are under construction. A small team is busy with the development and planning of the test stand electronics, ensuring that everything runs smoothly. In collaboration with the Department of Fluid Dynamics, another segment of our team is conducting water tests using the first iteration of our injector."
   },
   {
-    "objectID": "projects/solar/index.html",
-    "href": "projects/solar/index.html",
-    "title": "Solar",
-    "section": "",
-    "text": "In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the sunlight. The goal of this is to build dust free areas in the future on the Moon utilizing the resources in-situ. Initial tests have successfully created small areas. Now, we are in the process of further developing the first prototype and testing different melting methods."
+    "objectID": "projects/propulsion/index.html#next-steps",
+    "href": "projects/propulsion/index.html#next-steps",
+    "title": "Propulsion",
+    "section": "Next steps",
+    "text": "Next steps\nThis collaborative effort allows us to gather valuable insights and refine our design for optimal performance. Stay tuned for updates on the BEARS Instagram page, where we will share behind-the-scenes glimpses and exciting milestones. Our timeline targets the completion of the test stand by the end of 2024. We understand that reaching for the stars requires meticulous planning, dedication, and collaboration, and we’re thrilled to have you join us on this exciting journey."
   },
   {
-    "objectID": "events.html",
-    "href": "events.html",
-    "title": "Events",
+    "objectID": "projects/Lars/index.html",
+    "href": "projects/Lars/index.html",
+    "title": "Lars",
     "section": "",
-    "text": "Introduction Event for Interested Students\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nYuri´s Night\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBEARS at Space Tech EXPO\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nLong Night of the Sciences / Lange Nacht der Wissenschaften\n\n\n\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nApr 30, 2024\n\n\n\n\n\nNo matching items"
+    "text": "Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asclepios–Mission 2. For this, a small team went to Lausanne. For 2023/24 we plan to participate in the competition again. This project is especially suitable for beginners and we are looking forward to your participation."
   },
   {
     "objectID": "index.html",
