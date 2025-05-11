@@ -1,7 +1,7 @@
 ---
 title: "STARDUST"
 categories: [Experimental Rocketry]
-image: "Patch_Stardust.png"
+image: "STARDUST_Logo.png"
 ---
 
 
