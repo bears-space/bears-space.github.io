@@ -18,8 +18,8 @@ In early summer we had a functional rocket. The rocket was launched as a full su
 | :---         |     :---:      |
 | Altitude     | 600 m          |
 | Mass         | 12 kg          |
-| Total Impulse | 1,4 kNs       |
-| Velocity     | 0,3 MA         |
+| Total Impulse | 1.4 kNs       |
+| Velocity     | 0.3 Ma         |
 
 <br/>
 

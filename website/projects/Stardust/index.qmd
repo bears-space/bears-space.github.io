@@ -4,23 +4,32 @@ categories: [Experimental Rocketry]
 image: "STARDUST_Logo.png"
 ---
 
+{{< video https://www.youtube.com/watch?v=0V28z2BWKMA >}}
 
-STARDUST is our second rocket development. With a target apogee of 3 km and a length of 2,5 m a very powerful rocket for our young team. Development started in summer 2022 and manufacturing in 2023.
-For such powerful motors we drove to the Netherlands to buy them, in this case we use a M class motor. With higher speed of about 1 Ma and therefore vibrations we upgraded or completely changed almost all systems. 
-Our fins are made from metal and our nose cone completely from glass fiber. Electronics system is using the same flight computers while updating the arming system as well as adding some cameras. We also developed a GPS system to track our rocket. 
-The recovery system got more complex now with a 2-stage recovery. The nose cone blasts off revealing the drogue chute, while the main chute is opened at 300 m with cutting a steel cable. 
-We also have the experiment WOBBLE on board, which is a 3D printed tank for propellant management in small satellites.
+
+STARDUST was our second rocket. With a target apogee of 1.5 km and a length of 2.5 m, this was a significant upgrade in power when compared to our first rocket ([STARMOON](/projects/Starmoon/)). Development started in the summer of 2022 with manufacturing beginning in 2023, leading up to the launch in September 2024.
+
+To acquire a motor powerful enough for to reach the target height, we drove to the Netherlands to buy an M-class motor.
+Almost all systems have been upgraded or completely redesigned to sustain the higher maximum speed of 0.56 Ma and the associated vibrations.
+Our fins have been manufactured from metal while the nose cone was created using only glass fiber.
+The electronics compartment used the same flight computers as [STARMOON](/projects/Starmoon/) in combination with an updated arming system. Outward-facing cameras were also included.
+We have also developed a GPS downlink system to track our rocket.
+The redesigned recovery system used 2-stage recovery, with the nose cone blasting off at apogee to reveal the drogue chute while the main chute opens at 300 m by cutting a steel cable.
+
+As payload, we had the WOBBLE experiment on board. This consisted of a camera pointed at a 3D-printed tank (PMD = propellant management device) for small satellites, allowing observation of the fluid behavior inside.
+
+The rocket was launched in the Netherlands in cooperation with [DARE](https://dare.tudelft.nl/) in September 2024.
 
 ![Stardust rocket](Stardust.png)
 
 <br/>
 
-| Stats        |                |
-| :---         |     :---:      |
-| Altitude     | 3000 m          |
-| Mass         | 18 kg          |
-| Total Impulse | 6,3 kNs       |
-| Velocity     | 1 MA         |
+| Stats         |                |
+| :---          |     :---:      |
+| Altitude      | 1547 m         |
+| Mass          | 18 kg          |
+| Total Impulse | 6.3 kNs        |
+| Velocity      | 0.56 Ma        |
 <br/>
 
 

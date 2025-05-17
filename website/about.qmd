@@ -38,7 +38,7 @@ Fabian Jonathan Krech (Treasurer), Lucie Schade (Public Relations) , Yaron Matte
 </div>
 
 
-In addition to the space projects, which you can find under projects [here](https://www.bears-space.de/projects.html), we also do joint activities. 
+In addition to the space projects, which you can find under projects [here](/projects), we also do joint activities. 
 We attend trade fairs and congresses together. Below you will find a small photo overview of latest joint activities.
 
 <div class="slideshow">
