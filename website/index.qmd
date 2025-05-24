@@ -16,9 +16,24 @@ listing:
 
 <div class="slideshow" style="width: 100%">
   <!-- put all images here that should be available in the slideshow -->
-  <img src="slideshow_index/Group_photo_BEARS_2025.JPG" >
-  <img src="slideshow_index/launch1.jpg">
-  <img src="projects/Rover/images/Rover_team.jpg">
+  <picture>
+    <source srcset="slideshow_index/Group_photo_BEARS_2025.JPG.avif" type="image/avif">
+    <img
+      src="slideshow_index/Group_photo_BEARS_2025.JPG"
+      alt="BEARS group photo">
+  </picture>
+  <picture>
+    <source srcset="slideshow_index/launch1.jpg.avif" type="image/avif">
+    <img
+      src="slideshow_index/launch1.jpg"
+      alt="Photo of the first rocket launch">
+  </picture>
+  <picture>
+    <source srcset="projects/Rover/images/Rover_team.jpg.avif" type="image/avif">
+    <img
+      src="projects/Rover/images/Rover_team.jpg"
+      alt="Photo of the rover sub-team of BEARS">
+  </picture>
 </div>
 <br/>
 
