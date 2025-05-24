@@ -1,5 +1,8 @@
 project:
   type: website
+  output-dir: website
+  resources:
+    - "images/*.avif"
 
 website:
   favicon: favicon.png
@@ -32,7 +35,6 @@ format:
       light: flatly
       dark: darkly
     css: styles.css
-    mainfont: Arial  # Default was Lato, but we want to avoid Google Fonts
-    include-before-body: 
+    mainfont: Arial # Default was Lato, but we want to avoid Google Fonts
+    include-before-body:
       text: <script src="/custom_scripts.js"></script>
-
