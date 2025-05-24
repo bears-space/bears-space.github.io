@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: website
   resources:
-    - "images/*.avif"
+    - "**/*.avif"
 
 website:
   favicon: favicon.png
