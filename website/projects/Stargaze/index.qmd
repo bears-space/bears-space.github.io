@@ -29,16 +29,16 @@ The payload is a mechatronical system that decouples on-board video cameras from
 The core of the electronics consists of the two flight computers, one of which is self-designed. Alongside it, the Altimax G4 was chosen for the redundant flight computer. The self-designed MAX-FC is a SRAD modular flight computer designed to control parachutes, transmit telemetry data to the ground station, receive commands from the ground station and monitor and log sensor data.
 
 ## Recovery
-The recovery system follows a two-stage concept. Multiple stages mean that the ejection of each parachute is planned to occur at specific times during the descent The drogue parachute is deployed at the apogee of the rocket’s trajectory, while the main parachute is released at an altitude of 300 meters above ground
+The recovery system follows a two-stage concept. Multiple stages mean that the ejection of each parachute is planned to occur at specific times during the descent. The drogue parachute is deployed at the apogee of the rocket’s trajectory, while the main parachute is released at an altitude of 300 meters above ground.
 
 <br/>
 
 | Stats         |                |
 | :---          |     :---:      |
-| Altitude      | TBD            |
-| Mass          | TBD            |
-| Total Impulse | TBD            |
-| Velocity      | TBD            |
+| Altitude      | 3000 m         |
+| Mass          | 21.2 kg        |
+| Total Impulse | 6.8 kNs        |
+| Velocity      | 1.03 Ma        |
 
 ## Sponsors
 We want to thank our sponsors 3dk.berlin, Nikomatic and Therma for their support.
