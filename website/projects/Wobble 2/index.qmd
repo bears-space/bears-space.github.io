@@ -4,9 +4,9 @@ categories: [Science and Experiments]
 image: "images/WOBBLE2_Patch.png"
 ---
 
-WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid guided **E**xperiment. 
-We are planing to test new propellant management devices (PMD) for satellite tanks. We want to use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. 
-During the microgravity phase in the REXUS-Rocket the Fluid will be observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements. 
+WOBBLE2 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid guided **E**xperiment. WOBBLE2 is a finished project. Feel free to get in contact, if you have any questions. 
+We are planing to test new propellant management devices (PMD) for satellite tanks. We use additive manufacturing techniques as well as develop new PMD designs that are only possible with the new manufacturing technology. 
+During the microgravity phase in the REXUS-Rocket the Fluid is observed with a camera. The liquid is pumped to simulate different fill levels and dynamic movements. 
 
 <p align="center">
   <img src="images/WOBBLE_CAD.png" alt="Current CAD model of the Experiment" width=60%/>
@@ -19,8 +19,9 @@ During the microgravity phase in the REXUS-Rocket the Fluid will be observed wit
 </p>
 
 ## News
+**29.06.2025**: We finished the documentation for the REXUS programm and finshed the project. 
 
-**19.01.2025**: We sucessfully finished the BENCH Test at DLR, Oberpfaffenhofen. Now our experiment is in the Container traveling to Kiruna. 
+**11.03.2025**: We launched sucessfully our WOBBLE2 experiemnt on REXUS33. 
 
 ## Sponsors
 
@@ -40,8 +41,7 @@ We want to thank our sponsors APWORKS and SENSIRION for their support.
 ## The Team
 A motivated team has been formed for the 15th cycle of [REXUS/BEXUS (ESA-website)](https://www.esa.int/Education/Rexus_Bexus/About_REXUS_BEXUS) competition. 
 The application was submitted on October 9th and we got selected at the 13.12. 
-We are 11 enthusiastic students covering all areas from electrical design to flow simulation. If you want to contact us to join the team or you have any other request, contact us with wooble2@bears-space.de.
-This time, an experiment on new 3D printed tanks is to be carried out.
+We are 11 enthusiastic students covering all areas from electrical design to flow simulation. You can contact us at wooble2@bears-space.de.
 
 ![Teamfoto of the WOBBLE2 Team](images/Team_photo_wobble2.JPG)
 
@@ -139,10 +139,12 @@ Thanks to their financial support we were able to travel to Sweden as a group of
 
 
 ## Contact 
-We are always happy about new interested students who want to join the team. You can contact us at *wobble2@bears-space.de* and find regular updates on the Instagram channel [@bears.space](https://www.instagram.com/bears.space/). The best way to reach us is to come to the weekly Bears meeting every Tuesday at 6pm in F11.
+We are always happy about interested students for the club and maybe a WOBBLE3 project. You can contact us at *info@bears-space.de* and find regular updates on the Instagram channel [@bears.space](https://www.instagram.com/bears.space/). The best way to reach us is to come to the weekly Bears meeting every Tuesday at 6pm in F11.
 
 
 ## Old News
+
+**19.01.2025**: We sucessfully finished the BENCH Test at DLR, Oberpfaffenhofen. Now our experiment is in the Container traveling to Kiruna. 
 
 **20.12.24**: We finished the shaker test sucessfully and the Integration week at ZARM, Bremen. We have some homework to do, but nothing we can not solve.
 
