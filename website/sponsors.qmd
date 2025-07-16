@@ -47,6 +47,14 @@ title:'PayPal - The safer, easier way to pay online!',
     <img src="sponsors_images/WE_logo.png" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
 
+## IGUS GmbH
+
+[IGUS](https://www.igus.de/) for providing us with parts for the rover and rocketry.
+
+<a href="https://www.igus.de/" target="_blank">
+    <img src="sponsors_images/igus-Logo.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
 ## Gemmel Metalle
 
 [Gemmel Metalle](https://www.gemmel-metalle.de/) for support with various semi-finished products.
