@@ -17,6 +17,8 @@ website:
       - about.qmd
       - sponsors.qmd
       - join.qmd
+      - text: "Education"
+        href: edu.qmd
     right:
       - imprint.qmd
       - icon: instagram
