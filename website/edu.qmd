@@ -17,7 +17,6 @@ about:
     #   href: https://github.com
 title-block-banner: true
 ---
-
 **Meet the BEARS Education Program. We offer workshops related to space.**
 
 Want to launch waterrockets with your colleages?
@@ -26,6 +25,6 @@ Want to explore Mars with your class?
 
 Want to understand orbits?
 
-**Please contact us at: [education-program@bears-space.de](education-program@bears-space.de)**
+**Please contact us at: [education-program@bears-space.de](mailto:education-program@bears-space.de?subject=Workshop)**
 
 ![](bears_edu.png)
