@@ -31,6 +31,34 @@ title:'PayPal - The safer, easier way to pay online!',
 
 **We want to thank our sponsors and supporters:**
 
+## Reflex Aerospace
+[Reflex Aerospace](https://www.reflexaerospace.com/) for the generous sponsoring the STARGAZE rocket project.
+
+<a href="https://www.reflexaerospace.com/" target="_blank">
+    <img src="sponsors_images/Reflex+Logo+-+Dark.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+## HalloPetra
+[HalloPetra](https://hallopetra.de/) for sponsoring the STARGAZE rocket project.
+
+<a href="https://hallopetra.de/" target="_blank">
+    <img src="sponsors_images/HalloPetra.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+## Momentum Aerospace
+Momentum Aerospace for the generous sponsoring of our MOONDUST rocket launch.
+
+<a href="" target="_blank">
+    <img src="sponsors_images/moondust team.jpg" style="display: block; margin: 0 auto; height: 7em;"/>
+</a>
+
+## AISLER
+[Aisler](https://aisler.net/de) for producing our PCBs.
+
+<a href="https://aisler.net/de" target="_blank">
+    <img src="sponsors_images/aisler.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
 ## Friends of the TU Berlin
 
 [Gesellschaft von Freunden der TU Berlin e.V.](https://www.tu.berlin/communication/freunde) for sponsoring our trips to competitions and events.
