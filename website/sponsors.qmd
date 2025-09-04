@@ -117,7 +117,7 @@ Momentum Aerospace for the generous sponsoring of our MOONDUST rocket launch.
 
 ## Nicomatic
 
-[Nicomatic](https://www.nicomatic.com/) for connectors for [STARGAZE](/projects/Stargaze/).
+[Nicomatic](https://www.nicomatic.com/) for sponsoring and connectors for [STARGAZE](/projects/Stargaze/).
 
 <a href="https://www.nicomatic.com/" target="_blank">
     <img src="sponsors_images/nicomatic_logo.svg" style="display: block; margin: 0 auto; height: 5em;"/>
