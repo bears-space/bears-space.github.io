@@ -19,6 +19,8 @@ During the microgravity phase in the REXUS-Rocket the Fluid is observed with a c
 </p>
 
 ## News
+**1.8.2025**: We finish now ths project. Our next REXUS Experiment will be MAGGIE-
+
 **29.06.2025**: We finished the documentation for the REXUS programm and finshed the project. 
 
 **11.03.2025**: We launched sucessfully our WOBBLE2 experiemnt on REXUS33. 
