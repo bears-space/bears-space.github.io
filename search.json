@@ -315,11 +315,18 @@
     "text": "Abstract\nThe student research project MAGGIE is investigating the robotic removal of space debris using gecko inspired adhesive materials in microgravity. The aim is to demonstrate the functionality of the robotic arm and to test the interaction of gecko inspired adhesive materials with a smooth surface as fused silica in microgravity and space environment. The arm, equipped with a gecko inspired adhesive endeffector, should be able to manipulate or repair uncooperative space objects from a CubeSat platform. Through interaction, repairs and on-orbit servicing as well as orbit manipulation can be carried out, making space travel significantly more sustainable. When conducting the experiment during a launch on a REXUS sounding rocket, the robotic arm will navigate to targets in a microgravity and space environment. The adhesive force of the gecko inspired adhesive materials on the surface is measured and the position of the material on the surface is recorded using cameras. The robotic arm itself consists of seven identical links in order to achieve redundancy of the individual joints."
   },
   {
+    "objectID": "projects/MAGGIE/index.html#how-to-get-involved",
+    "href": "projects/MAGGIE/index.html#how-to-get-involved",
+    "title": "MAGGIE",
+    "section": "How to get involved",
+    "text": "How to get involved\nIf you are interested, feel free to contact Leo Scheuermann or Felix Schoetzau. MAGGIE is looking for all kind of skills or fields of interests. To mention some: - Systems and Requirement Engineering - Design and CAD - Computer Sciences - Electrical Engineering - Test Execution - Manufacturing - Outreach / Communication - Budgeting - Management The Kick-Off event is on 21st October 2025 – 2-4pm c.T. at MAR 0.017 We look forward to your participation.\nYou can expect unique Hands-On experience in a space related research topic, you get in touch with experts from ESA and DLR and several funded travels to European space research institutions."
+  },
+  {
     "objectID": "projects/MAGGIE/index.html#about-the-x-tutorials",
     "href": "projects/MAGGIE/index.html#about-the-x-tutorials",
     "title": "MAGGIE",
     "section": "About the X-Tutorials",
-    "text": "About the X-Tutorials\nMAGGIE is part of the Student Research Opportunities Program (StuROPx) and funded by the Federal Ministry of Education and Research (BMBF) and the state of Berlin under the Excellence Strategy of the Federal Government and the Länder. Therefore, MAGGIE will be offered as a X-Tutorial lecture compensated with 6 ECTS in both winter and summer semester."
+    "text": "About the X-Tutorials\nMAGGIE is part of the Student Research Opportunities Program (StuROPx) and funded by the Federal Ministry of Education and Research (BMBF) and the state of Berlin under the Excellence Strategy of the Federal Government and the Länder. Therefore, MAGGIE will be offered as a X-Tutorial lecture compensated with 6 ECTS in both winter and summer semester. More informations about the X-Tutorials for on the BUA-Website.\nIn the upcoming wintersemester and the following summer semester the project can be offered as a lecture worth 6 ETCS. Check out more informations in the moodle website."
   },
   {
     "objectID": "projects/MAGGIE/index.html#about-the-rexus-competition",
