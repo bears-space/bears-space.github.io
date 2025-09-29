@@ -22,6 +22,7 @@ The student research project MAGGIE is investigating the robotic removal of spac
 
 If you are interested, feel free to contact [Leo Scheuermann](mailto:l.scheuermann.1@campus.tu-berlin.de) or [Felix Schoetzau](mailto:f.schoetzau@campus.tu-berlin.de).
 MAGGIE is looking for all kind of skills or fields of interests. To mention some:
+
 -	Systems and Requirement Engineering
 -	Design and CAD
 -	Computer Sciences
@@ -31,6 +32,7 @@ MAGGIE is looking for all kind of skills or fields of interests. To mention some
 -	Outreach / Communication
 -	Budgeting
 -	Management
+
 The Kick-Off event is on 21st October 2025 – 2-4pm c.T. at MAR 0.017 
 We look forward to your participation.
 
@@ -44,8 +46,8 @@ More informations about the X-Tutorials for on the [BUA-Website](https://www.ber
 In the upcoming wintersemester and the following summer semester the project can be offered as a lecture worth 6 ETCS. Check out more informations in the [moodle website](https://isis.tu-berlin.de/course/view.php?id=45243).
 
 ::: {layout-ncol=2}
-![](images/BUA_Logo_hoch_3_RGB_24.png){fig-alt="BUA Logo", width=60%}
-![](images/TU_BERLIN_Logo_Lang_RGB_SR_rot.png){fig-alt="TUB Logo", width=60%}
+![](images/BUA_Logo_hoch_3_RGB_24.png){fig-alt="BUA Logo" width=40%}
+![](images/TU_BERLIN_Logo_Lang_RGB_SR_rot.png){fig-alt="TUB Logo" width=40%}
 :::
 
 ## About the REXUS competition
