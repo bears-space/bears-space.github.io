@@ -18,20 +18,41 @@ MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **
 
 The student research project MAGGIE is investigating the robotic removal of space debris using gecko inspired adhesive materials in microgravity. The aim is to demonstrate the functionality of the robotic arm and to test the interaction of gecko inspired adhesive materials with a smooth surface as fused silica in microgravity and space environment. The arm, equipped with a gecko inspired adhesive endeffector, should be able to manipulate or repair uncooperative space objects from a CubeSat platform. Through interaction, repairs and on-orbit servicing as well as orbit manipulation can be carried out, making space travel significantly more sustainable. When conducting the experiment during a launch on a REXUS sounding rocket, the robotic arm will navigate to targets in a microgravity and space environment. The adhesive force of the gecko inspired adhesive materials on the surface is measured and the position of the material on the surface is recorded using cameras. The robotic arm itself consists of seven identical links in order to achieve redundancy of the individual joints.
 
+## How to get involved
 
+If you are interested, feel free to contact [Leo Scheuermann](mailto:l.scheuermann.1@campus.tu-berlin.de) or [Felix Schoetzau](mailto:f.schoetzau@campus.tu-berlin.de).
+MAGGIE is looking for all kind of skills or fields of interests. To mention some:
+-	Systems and Requirement Engineering
+-	Design and CAD
+-	Computer Sciences
+-	Electrical Engineering
+-	Test Execution
+-	Manufacturing
+-	Outreach / Communication
+-	Budgeting
+-	Management
+The Kick-Off event is on 21st October 2025 – 2-4pm c.T. at MAR 0.017 
+We look forward to your participation.
+
+You can expect unique Hands-On experience in a space related research topic, you get in touch with experts from ESA and DLR and several funded travels to European space research institutions.
 
 ## About the X-Tutorials
 
 MAGGIE is part of the Student Research Opportunities Program (StuROPx) and funded by the Federal Ministry of Education and Research (BMBF) and the state of Berlin under the Excellence Strategy of the Federal Government and the Länder. Therefore, MAGGIE will be offered as a X-Tutorial lecture compensated with 6 ECTS in both winter and summer semester. 
+More informations about the X-Tutorials for on the [BUA-Website](https://www.berlin-university-alliance.de/commitments/teaching-learning/sturop/tutorials/archiv/sem_aktuell/MAGGIE/index.html).
+
+In the upcoming wintersemester and the following summer semester the project can be offered as a lecture worth 6 ETCS. Check out more informations in the [moodle website](https://isis.tu-berlin.de/course/view.php?id=45243).
+
+::: {layout-ncol=2}
+![](images/BUA_Logo_hoch_3_RGB_24.png){fig-alt="BUA Logo"}
+![](images/U_BERLIN_Logo_Lang_RGB_SR_rot.png){fig-alt="TUB Logo"}
+:::
 
 ## About the REXUS competition
 
 MAGGIE is applying for Cycle REXUS17 of the [REXUS/BEXUS programme](https://rexusbexus.net/) programme. A positive feedback and admission to the programme will guarantee MAGGIE with scientific, technical and financial support and unique travel opportunities within the Cycle to different reviews. The Highlight shall be marked by the launch on a sounding rocket from Kiruna / Sweden in March 2027.
 
 The REXUS/BEXUS programme is realised under a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA). The Swedish share of the payload has been made available to students from other European countries through a collaboration with the European Space Agency (ESA). EuroLaunch, a cooperation between the Swedish Space Corporation (SSC) and the Mobile Rocket Base (MORABA) of DLR, is responsible for the campaign management and operations of the launch vehicles. Experts from DLR, SSC, ZARM and ESA provide technical support to the student teams throughout the project. REXUS and BEXUS are launched from SSC, Esrange Space Center in northern Sweden.
-
-
-
 
 
 ## Contact 
