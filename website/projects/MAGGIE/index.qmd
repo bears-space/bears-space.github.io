@@ -6,6 +6,9 @@ image: "images/logo_maggie_baer.png"
 
 MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **I**nteraction **E**xperiment and will research on gecko materials and robotic sciences in a reduced gravity environment and under the influence of space environment. The project is starting by October 2025 and will apply for the REXUS-program. 
 
+<p align="center">
+  <img src="images/logo_maggie_baer.jpg" alt="MAGGIE Patch." width=60%/>
+</p>
 
 ## News
 **22.08.2025**: MAGGIE hands in its letter of intend for the upcoming REXUS-cycle.
@@ -45,10 +48,13 @@ More informations about the X-Tutorials on the [BUA-Website](https://www.berlin-
 
 In the upcoming wintersemester and the following summer semester the project can be offered as a lecture worth 6 ETCS. Check out more informations in the [moodle website](https://isis.tu-berlin.de/course/view.php?id=45243).
 
-::: {layout-ncol=2}
-![](images/BUA_Logo_hoch_3_RGB_24.png){fig-alt="BUA Logo" width=40%}
-![](images/TU_BERLIN_Logo_Lang_RGB_SR_rot.png){fig-alt="TUB Logo" width=60%}
-:::
+<p align="center">
+<div style="display: flex; gap: 10px;">
+  <img src="images/BUA_Logo_hoch_3_RGB_24.png" alt="Bild 1" width="45%">
+  <img src="images/TU_BERLIN_Logo_Lang_RGB_SR_rot.png" alt="Bild 2" width="45%">
+</div>
+</p>
+
 
 ## About the REXUS competition
 
