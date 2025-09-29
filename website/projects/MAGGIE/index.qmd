@@ -41,13 +41,13 @@ You can expect unique Hands-On experience in a space related research topic, you
 ## About the X-Tutorials
 
 MAGGIE is part of the Student Research Opportunities Program (StuROPx) and funded by the Federal Ministry of Education and Research (BMBF) and the state of Berlin under the Excellence Strategy of the Federal Government and the Länder. Therefore, MAGGIE will be offered as a X-Tutorial lecture compensated with 6 ECTS in both winter and summer semester. 
-More informations about the X-Tutorials for on the [BUA-Website](https://www.berlin-university-alliance.de/commitments/teaching-learning/sturop/tutorials/archiv/sem_aktuell/MAGGIE/index.html).
+More informations about the X-Tutorials on the [BUA-Website](https://www.berlin-university-alliance.de/commitments/teaching-learning/sturop/tutorials/archiv/sem_aktuell/MAGGIE/index.html).
 
 In the upcoming wintersemester and the following summer semester the project can be offered as a lecture worth 6 ETCS. Check out more informations in the [moodle website](https://isis.tu-berlin.de/course/view.php?id=45243).
 
 ::: {layout-ncol=2}
 ![](images/BUA_Logo_hoch_3_RGB_24.png){fig-alt="BUA Logo" width=40%}
-![](images/TU_BERLIN_Logo_Lang_RGB_SR_rot.png){fig-alt="TUB Logo" width=40%}
+![](images/TU_BERLIN_Logo_Lang_RGB_SR_rot.png){fig-alt="TUB Logo" width=60%}
 :::
 
 ## About the REXUS competition
