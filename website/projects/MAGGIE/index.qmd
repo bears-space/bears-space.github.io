@@ -11,6 +11,8 @@ MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **
 </p>
 
 ## News
+**21.10.2025**: The Kick-Off event for the [X-Tutorial MAGGIE](https://isis.tu-berlin.de/course/view.php?id=45243) is on Tuesday (21st October 2025) from 2 to 4 pm c.T. at MAR 0.017!
+
 **22.08.2025**: MAGGIE hands in its letter of intend for the upcoming REXUS-cycle.
 
 **30.07.2025**: The project was accepted as a X-Tutorial and thereby can be offered as a lecture in the upcoming winter semester. 
@@ -48,12 +50,8 @@ More informations about the X-Tutorials on the [BUA-Website](https://www.berlin-
 
 In the upcoming wintersemester and the following summer semester the project can be offered as a lecture worth 6 ETCS. Check out more informations in the [moodle website](https://isis.tu-berlin.de/course/view.php?id=45243).
 
-<p align="center">
-<div style="display: flex; gap: 10px;">
-  <img src="images/BUA_Logo_hoch_3_RGB_24.png" alt="Bild 1" width="45%">
-  <img src="images/TU_BERLIN_Logo_Lang_RGB_SR_rot.png" alt="Bild 2" width="45%">
-</div>
-</p>
+<img src="images/BUA_Logo_quer_RGB_24.svg" alt="BUA Logo" width="80%">
+<img src="images/UA_Logoleiste_24_RGB.svg" alt="Logos BUA Universities" width="80%">
 
 
 ## About the REXUS competition
