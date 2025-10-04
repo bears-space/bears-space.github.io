@@ -50,9 +50,10 @@ More informations about the X-Tutorials on the [BUA-Website](https://www.berlin-
 
 In the upcoming wintersemester and the following summer semester the project can be offered as a lecture worth 6 ETCS. Check out more informations in the [moodle website](https://isis.tu-berlin.de/course/view.php?id=45243).
 
+<p align="center">
 <img src="images/BUA_Logo_quer_RGB_24.svg" alt="BUA Logo" width="80%">
-<img src="images/UA_Logoleiste_24_RGB.svg" alt="Logos BUA Universities" width="80%">
-
+<img src="images/BUA_Logoleiste_24_RGB.svg" alt="Logos BUA Universities" width="80%">
+</p>
 
 ## About the REXUS competition
 
