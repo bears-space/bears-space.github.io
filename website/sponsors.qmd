@@ -38,6 +38,9 @@ title:'PayPal - The safer, easier way to pay online!',
     <img src="sponsors_images/Reflex+Logo+-+Dark.png" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
 
+## Kurtz Ersa
+[Kurtz Ersa](https://kurtzersa.de/) for a generous donation of soldering equipement and accesories.
+
 ## HalloPetra
 [HalloPetra](https://hallopetra.de/) for sponsoring the STARGAZE rocket project.
 
@@ -190,5 +193,10 @@ Momentum Aerospace for the generous sponsoring of our MOONDUST rocket launch.
 <a href="https://motionlab.berlin/de/" target="_blank">
     <img src="sponsors_images/MotionLab.Berlin.png" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
+
+## Hetzner
+[Hetzner](https://www.hetzner.com/) for sponsoring us with shared cloud storage.
+
+
 
 
