@@ -41,7 +41,7 @@ title:'PayPal - The safer, easier way to pay online!',
 ## Kurtz Ersa
 [Kurtz Ersa](https://kurtzersa.de/) for a generous donation of soldering equipement and accesories.
 
-<a href="https://www.reflexaerospace.com/" target="_blank">
+<a href="https://kurtzersa.de/" target="_blank">
     <img src="sponsors_images/Kurtz_Ersa-Logo_400px.png" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
 
@@ -201,9 +201,10 @@ Momentum Aerospace for the generous sponsoring of our MOONDUST rocket launch.
 ## Hetzner
 [Hetzner](https://www.hetzner.com/) for sponsoring us with shared cloud storage.
 
-<a href="https://www.reflexaerospace.com/" target="_blank">
-    <img src="sponsors_images/Hetzner-Logo-slogan_white_space-red" style="display: block; margin: 0 auto; height: 5em;"/>
+<a href="https://www.hetzner.com/" target="_blank">
+    <img src="sponsors_images/Hetzner-Logo-slogan_white_space-red.jpg" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
+
 
 
 
