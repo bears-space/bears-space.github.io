@@ -15,12 +15,13 @@ Berlin Experimental Astronautics Research Student team e.V.
 c/o TU Berlin - Institut für Luft- und Raumfahrt  
 Marchstraße 12-14  
 10587 Berlin  
-Mail: info@bears-space.de
+Mail: info[at]bears-space.de
 
 Represented by the board:  
-Yaron Matteo Grube  
-Gedeon Felix Görg  
-Fabian Jonathan Krech  
-Lucie Schade  
+Matti Keller  
+Dema Morad  
+Gedeon Görg 
+Akshat Goel  
 
 Amtsgericht Charlottenburg, Register-Nr.: VR 40347 B
+
