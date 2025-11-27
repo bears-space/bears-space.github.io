@@ -2,6 +2,7 @@
 title: "MAGGIE"
 categories: [Science and Experiments]
 image: "images/logo_maggie_baer.png"
+allow-html: true
 ---
 
 MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **I**nteraction **E**xperiment and will research on gecko materials and robotic sciences in a reduced gravity environment and under the influence of space environment. The project is starting by October 2025 and will apply for the REXUS-program. 
