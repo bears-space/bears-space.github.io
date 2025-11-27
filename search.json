@@ -378,60 +378,46 @@
     "text": "Our team\nOur team consists of 19 highly motivated students from several different degrees (including Geotechnology). We try to push ourselves harder every time we develop a new rocket to make a more advanced rocket. We are also very interested in participating in competitions."
   },
   {
-    "objectID": "projects/Stardust/index.html",
-    "href": "projects/Stardust/index.html",
-    "title": "STARDUST",
+    "objectID": "projects/DOPAMINS/index.html",
+    "href": "projects/DOPAMINS/index.html",
+    "title": "DOPAMINS",
     "section": "",
-    "text": "STARDUST was our second rocket. With a target apogee of 1.5 km and a length of 2.5 m, this was a significant upgrade in power when compared to our first rocket (STARMOON). Development started in the summer of 2022 with manufacturing beginning in 2023, leading up to the launch in September 2024.\nTo acquire a motor powerful enough for to reach the target height, we drove to the Netherlands to buy an M-class motor. Almost all systems have been upgraded or completely redesigned to sustain the higher maximum speed of 0.56 Ma and the associated vibrations. Our fins have been manufactured from metal while the nose cone was created using only glass fiber. The electronics compartment used the same flight computers as STARMOON in combination with an updated arming system. Outward-facing cameras were also included. We have also developed a GPS downlink system to track our rocket. The redesigned recovery system used 2-stage recovery, with the nose cone blasting off at apogee to reveal the drogue chute while the main chute opens at 300 m by cutting a steel cable.\nAs payload, we had the WOBBLE experiment on board. This consisted of a camera pointed at a 3D-printed tank (PMD = propellant management device) for small satellites, allowing observation of the fluid behavior inside.\nThe rocket was launched in the Netherlands in cooperation with DARE in September 2024.\n\n\n\nStardust rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n1547 m\n\n\nMass\n18 kg\n\n\nTotal Impulse\n6.3 kNs\n\n\nVelocity\n0.56 Ma\n\n\n\n\n\n\n\nStardust patch"
+    "text": "DOPAMINS stands for Detection of Positron Annihilation Mission In Near Space and uses scintillators to detect antimatter in the stratosphere."
   },
   {
-    "objectID": "events/2024-06-22_LNDW/index.html",
-    "href": "events/2024-06-22_LNDW/index.html",
-    "title": "Long Night of the Sciences / Lange Nacht der Wissenschaften",
-    "section": "",
-    "text": "On June 22, 2024, the Long Night of the Sciences will take place. From 5 to 12 p.m., around 60 scientific and science-related institutions in Berlin will once again invite visitors to spectacular experiments, exciting lectures, science shows and laboratory tours, giving visitors the opportunity to take a look behind the scenes. More info and tickets are available here.\nAlso BEARS will be present at the Long Night of the Sciences in the RFT building of TU Berlin, Room F11. We will present our projects and are looking forward to your visit!"
+    "objectID": "projects/DOPAMINS/index.html#about-the-project",
+    "href": "projects/DOPAMINS/index.html#about-the-project",
+    "title": "DOPAMINS",
+    "section": "About the Project",
+    "text": "About the Project\nThe primary objective of DOPAMINS is to detect the annihilation of positron-electron in the stratosphere using a detector mounted on a high-altitude balloon. A positron is the antimatter counterpart of the electron. When high-energy cosmic rays hit the atmosphere, they create secondary particles, including antiparticles, through processes like pair production.\nWhen matter and antimatter meet, they annihilate. Some positrons annihilate immediately, and some survive a bit longer. When a positron meets an electron, they annihilate and release two gamma rays of 511 keV, emitted in opposite directions (about 180°).\nDOPAMINS aims to design an accurate and precise detection system to measure these events. This mission helps us understand the flux of positrons in the regions crossed by the balloon, and the detection system can be used as a basis for future antiparticle detection missions in space."
   },
   {
-    "objectID": "events/2024-10-15_introduction_event/index.html",
-    "href": "events/2024-10-15_introduction_event/index.html",
-    "title": "Introduction Event for Interested Students",
-    "section": "",
-    "text": "On October 15, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 (ground floor) in the RFT building.\nDare the limits and join us there!"
+    "objectID": "projects/DOPAMINS/index.html#bexus-selection-workshop-bonn---2425.-november-2025",
+    "href": "projects/DOPAMINS/index.html#bexus-selection-workshop-bonn---2425.-november-2025",
+    "title": "DOPAMINS",
+    "section": "BEXUS Selection Workshop Bonn - 24/25. November 2025",
+    "text": "BEXUS Selection Workshop Bonn - 24/25. November 2025\nDOPAMINS has recently presented their project at “BEXUS Selection Workshop” at DLR in Bonn."
   },
   {
-    "objectID": "events/2025-04-11_yuris_night/index.html",
-    "href": "events/2025-04-11_yuris_night/index.html",
-    "title": "Yuri´s Night",
-    "section": "",
-    "text": "On 11.4.2025 we celebrate the Yuri’s at night again. We celebrate space travel and everything that goes with it.\nWe have again invited great speakers and are looking forward to a great evening. You can find us at F11 from 19.00\nSee you there!"
+    "objectID": "projects/DOPAMINS/index.html#about-the-bexus-competition",
+    "href": "projects/DOPAMINS/index.html#about-the-bexus-competition",
+    "title": "DOPAMINS",
+    "section": "About the BEXUS competition",
+    "text": "About the BEXUS competition\nBEXUS (Balloon Experiment for University Students) is a European program that lets university teams fly their experiments on a high-altitude research balloon. The balloon reaches about 30 km altitude, allowing students to test scientific instruments and space-related technologies in near-space conditions. The program is run by DLR, SNSA, and ESA, and gives students hands-on experience with real aerospace missions.\nThe REXUS/BEXUS programme is realised under a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA). The Swedish share of the payload has been made available to students from other European countries through a collaboration with the European Space Agency (ESA). EuroLaunch, a cooperation between the Swedish Space Corporation (SSC) and the Mobile Rocket Base (MORABA) of DLR, is responsible for the campaign management and operations of the launch vehicles. Experts from DLR, SSC, ZARM and ESA provide technical support to the student teams throughout the project. REXUS and BEXUS are launched from SSC, Esrange Space Center in northern Sweden."
   },
   {
-    "objectID": "events/2025-07-16_BEARSxWACKEN/index.html",
-    "href": "events/2025-07-16_BEARSxWACKEN/index.html",
-    "title": "BEARSxWACKEN",
-    "section": "",
-    "text": "🚀 DGLR GOES WACKEN! 🤘🌌\nYes, you read that right: The Holy Ground becomes a space camp! And we are right there with BEARS. This year we are part of the legendary Wacken Open Air Festival alongside numerous players from the German space and astronomy scene! With us are:\n💫 Astronomy: @hausderastronomie, @germanastrosoc , @mpifr_bonn, @unipotsdam and CRAF\n🔬 Research: @fraunhoferaviationspace, @chairofspacetechnology\n🌍 Aerospace networks: @bdli_de, @dglr _de\n🚀 Space industry: @arianegroup, @hpsgermany , @hyimpulse_technologies, @neuro __space, @ohb_se and POLARIS Spaceplanes\n🎓 Student junior research groups: @bears.space, @erig1999 , @ksat_stuttgart, @sprog .ev, @warr.tum, @wuespace\n📍 Are you on site? Then come and visit us at Space Camp!\n📅 When: 27 July to 2 August 2025\nAt the DGLR stand, you can find out about our activities, chat to researchers from @RFT at @TU Berlin and try out how to build a satellite with the satellite construction kit. 💬 We will also be bringing 6 of our student research groups with us: BEARS, ERIG, KSat, SPROG, WARR and WüSpace! We’ll tell you what they’re doing at the WoA in the next few days! Stay tuned ✨"
+    "objectID": "projects/DOPAMINS/index.html#contact",
+    "href": "projects/DOPAMINS/index.html#contact",
+    "title": "DOPAMINS",
+    "section": "Contact",
+    "text": "Contact\nWe are always happy about interested students for MAGGIE and the club. You can contact us at maggie(@)bears-space.de and find regular updates on the Instagram channel @bears.space. The best way to reach us is to come to the weekly Bears meeting every Tuesday at 6pm in F11."
   },
   {
-    "objectID": "events.html",
-    "href": "events.html",
-    "title": "Events",
+    "objectID": "projects/career/index.html",
+    "href": "projects/career/index.html",
+    "title": "Career",
     "section": "",
-    "text": "BEARSxWACKEN\n\n\n\n\n\n\n\n\nJul 16, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nYuri´s Night\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBEARS at Space Tech EXPO\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nLong Night of the Sciences / Lange Nacht der Wissenschaften\n\n\n\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nApr 30, 2024\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "events/2024-11-19_SpaceTechEXPO/index.html",
-    "href": "events/2024-11-19_SpaceTechEXPO/index.html",
-    "title": "BEARS at Space Tech EXPO",
-    "section": "",
-    "text": "From 19.-21.11.2024 we are represented as BEARS at the Space Expo. You will find us in the University Pavilion. We look forward to seeing you in large numbers and are sure to be able to present you with great exhibits. Feel free to write to us if you would like to meet us directly or make an appointment.\nSee you there!"
-  },
-  {
-    "objectID": "events/2024-04-30_introduction_event/index.html",
-    "href": "events/2024-04-30_introduction_event/index.html",
-    "title": "Introduction Event for Interested Students",
-    "section": "",
-    "text": "On April 30, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 in the RFT building.\nSee you there!"
+    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
   },
   {
     "objectID": "events/2025-05-06_Kickoff_Event/index.html",
@@ -441,11 +427,60 @@
     "text": "On Mai 06, 2025, we will host an kickoff event for all students who are interested in joining BEARS.\nEvery project will shortly introduce themself and you can ask all question. Also there will be free fries!!! The event will take place at 18:00 in room F11 (ground floor) in the RFT building.\nDare the limits and join us there!"
   },
   {
-    "objectID": "projects/career/index.html",
-    "href": "projects/career/index.html",
-    "title": "Career",
+    "objectID": "events/2024-04-30_introduction_event/index.html",
+    "href": "events/2024-04-30_introduction_event/index.html",
+    "title": "Introduction Event for Interested Students",
     "section": "",
-    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
+    "text": "On April 30, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 in the RFT building.\nSee you there!"
+  },
+  {
+    "objectID": "events/2024-11-19_SpaceTechEXPO/index.html",
+    "href": "events/2024-11-19_SpaceTechEXPO/index.html",
+    "title": "BEARS at Space Tech EXPO",
+    "section": "",
+    "text": "From 19.-21.11.2024 we are represented as BEARS at the Space Expo. You will find us in the University Pavilion. We look forward to seeing you in large numbers and are sure to be able to present you with great exhibits. Feel free to write to us if you would like to meet us directly or make an appointment.\nSee you there!"
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "BEARSxWACKEN\n\n\n\n\n\n\n\n\nJul 16, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nYuri´s Night\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBEARS at Space Tech EXPO\n\n\n\n\n\n\n\n\nNov 19, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nLong Night of the Sciences / Lange Nacht der Wissenschaften\n\n\n\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction Event for Interested Students\n\n\n\n\n\n\n\n\nApr 30, 2024\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "events/2025-07-16_BEARSxWACKEN/index.html",
+    "href": "events/2025-07-16_BEARSxWACKEN/index.html",
+    "title": "BEARSxWACKEN",
+    "section": "",
+    "text": "🚀 DGLR GOES WACKEN! 🤘🌌\nYes, you read that right: The Holy Ground becomes a space camp! And we are right there with BEARS. This year we are part of the legendary Wacken Open Air Festival alongside numerous players from the German space and astronomy scene! With us are:\n💫 Astronomy: @hausderastronomie, @germanastrosoc , @mpifr_bonn, @unipotsdam and CRAF\n🔬 Research: @fraunhoferaviationspace, @chairofspacetechnology\n🌍 Aerospace networks: @bdli_de, @dglr _de\n🚀 Space industry: @arianegroup, @hpsgermany , @hyimpulse_technologies, @neuro __space, @ohb_se and POLARIS Spaceplanes\n🎓 Student junior research groups: @bears.space, @erig1999 , @ksat_stuttgart, @sprog .ev, @warr.tum, @wuespace\n📍 Are you on site? Then come and visit us at Space Camp!\n📅 When: 27 July to 2 August 2025\nAt the DGLR stand, you can find out about our activities, chat to researchers from @RFT at @TU Berlin and try out how to build a satellite with the satellite construction kit. 💬 We will also be bringing 6 of our student research groups with us: BEARS, ERIG, KSat, SPROG, WARR and WüSpace! We’ll tell you what they’re doing at the WoA in the next few days! Stay tuned ✨"
+  },
+  {
+    "objectID": "events/2025-04-11_yuris_night/index.html",
+    "href": "events/2025-04-11_yuris_night/index.html",
+    "title": "Yuri´s Night",
+    "section": "",
+    "text": "On 11.4.2025 we celebrate the Yuri’s at night again. We celebrate space travel and everything that goes with it.\nWe have again invited great speakers and are looking forward to a great evening. You can find us at F11 from 19.00\nSee you there!"
+  },
+  {
+    "objectID": "events/2024-10-15_introduction_event/index.html",
+    "href": "events/2024-10-15_introduction_event/index.html",
+    "title": "Introduction Event for Interested Students",
+    "section": "",
+    "text": "On October 15, 2024, we will host an introduction event for all students who are interested in joining BEARS. The event will take place at 18:00 in room F11 (ground floor) in the RFT building.\nDare the limits and join us there!"
+  },
+  {
+    "objectID": "events/2024-06-22_LNDW/index.html",
+    "href": "events/2024-06-22_LNDW/index.html",
+    "title": "Long Night of the Sciences / Lange Nacht der Wissenschaften",
+    "section": "",
+    "text": "On June 22, 2024, the Long Night of the Sciences will take place. From 5 to 12 p.m., around 60 scientific and science-related institutions in Berlin will once again invite visitors to spectacular experiments, exciting lectures, science shows and laboratory tours, giving visitors the opportunity to take a look behind the scenes. More info and tickets are available here.\nAlso BEARS will be present at the Long Night of the Sciences in the RFT building of TU Berlin, Room F11. We will present our projects and are looking forward to your visit!"
+  },
+  {
+    "objectID": "projects/Stardust/index.html",
+    "href": "projects/Stardust/index.html",
+    "title": "STARDUST",
+    "section": "",
+    "text": "STARDUST was our second rocket. With a target apogee of 1.5 km and a length of 2.5 m, this was a significant upgrade in power when compared to our first rocket (STARMOON). Development started in the summer of 2022 with manufacturing beginning in 2023, leading up to the launch in September 2024.\nTo acquire a motor powerful enough for to reach the target height, we drove to the Netherlands to buy an M-class motor. Almost all systems have been upgraded or completely redesigned to sustain the higher maximum speed of 0.56 Ma and the associated vibrations. Our fins have been manufactured from metal while the nose cone was created using only glass fiber. The electronics compartment used the same flight computers as STARMOON in combination with an updated arming system. Outward-facing cameras were also included. We have also developed a GPS downlink system to track our rocket. The redesigned recovery system used 2-stage recovery, with the nose cone blasting off at apogee to reveal the drogue chute while the main chute opens at 300 m by cutting a steel cable.\nAs payload, we had the WOBBLE experiment on board. This consisted of a camera pointed at a 3D-printed tank (PMD = propellant management device) for small satellites, allowing observation of the fluid behavior inside.\nThe rocket was launched in the Netherlands in cooperation with DARE in September 2024.\n\n\n\nStardust rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n1547 m\n\n\nMass\n18 kg\n\n\nTotal Impulse\n6.3 kNs\n\n\nVelocity\n0.56 Ma\n\n\n\n\n\n\n\nStardust patch"
   },
   {
     "objectID": "projects/Stargaze/index.html",
@@ -557,6 +592,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Career\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLars\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMAGGIE\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPropulsion\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocket Systems\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRover\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARDUST\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARGAZE\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARMOON\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWOBBLE2\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Career\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDOPAMINS\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLars\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMAGGIE\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPropulsion\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRocket Systems\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRover\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARDUST\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARGAZE\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTARMOON\n\n\n\nExperimental Rocketry\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar\n\n\n\nRobotics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWOBBLE2\n\n\n\nScience and Experiments\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
