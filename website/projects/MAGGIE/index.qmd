@@ -92,4 +92,24 @@ The REXUS/BEXUS programme is realised under a bilateral Agency Agreement between
 We are always happy about interested students for MAGGIE and the club. You can contact us at *maggie(@)bears-space.de* and find regular updates on the Instagram channel [@bears.space](https://www.instagram.com/bears.space/). The best way to reach us is to come to the weekly Bears meeting every Tuesday at 6pm in F11.
 
 
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
 
+function showSlide(n) {
+  slides.forEach(s => s.style.display = "none");
+  slides[n].style.display = "block";
+}
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+}
+
+function prevSlide() {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  showSlide(slideIndex);
+}
+
+showSlide(slideIndex);
+</script>
