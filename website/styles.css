@@ -22,6 +22,7 @@
 .prevButton {left: 0;}
 .nextButton {right: 0;}
 .prevButton:hover, .nextButton:hover {background: #0007;}
+
 .slideshow img {
     width:100%;
     display: none;
@@ -35,7 +36,11 @@
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  border-radius: 8px;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 10px;
 }
 
 h2 {
