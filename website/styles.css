@@ -26,7 +26,21 @@
     width:100%;
     display: none;
 }
+.slide {
+  display: none;
+  text-align: center;
+}
 
+.slide img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 15px;
+}
 
 /* image captions */
 figcaption {

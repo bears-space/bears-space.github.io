@@ -32,12 +32,12 @@ The student research project MAGGIE is investigating the robotic removal of spac
 <div class="slideshow">
 
   <div class="slide">
-    <h2>October 2025</h2>
-    <p>Handing in the proposal for REXUS 17</p>
+    <h2>Project Application</h2>
+    <p>Handing in the proposal for REXUS 17 mid October 2025. The team is looking forward the Selection Workshop to meet other German teams applying for REXUS and BEXUS.</p>
   </div>
 
   <div class="slide">
-    <img src="images/IMG-20251124-WA0006.jpg">
+    <img src="images/IMG-20251124-WA0003.jpg">
     <h2>Selection Workshop at the DLR / Bonn</h2>
     <p>On November 24th three students presented MAGGIE at the REXUS Selection Workshop at the DLR in Bonn to a jury of experts by ESA, ZARM, DLR and MORABA.</p>
   </div>
@@ -47,10 +47,6 @@ The student research project MAGGIE is investigating the robotic removal of spac
   <!-- weitere slides wie oben -->
 </div>
 
-<div class="controls">
-  <button onclick="prevSlide()">← Zurück</button>
-  <button onclick="nextSlide()">Weiter →</button>
-</div>
 
 
 ## How to get involved
