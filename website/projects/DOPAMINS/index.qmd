@@ -21,7 +21,7 @@ When matter and antimatter meet, they annihilate. Some positrons annihilate imme
 DOPAMINS aims to design an accurate and precise detection system to measure these events. This mission helps us understand the flux of positrons in the regions crossed by the balloon, and the detection system can be used as a basis for future antiparticle detection missions in space.
 
 <p align="center">
-  <img src="Dopamins_team.png" alt="dopamins team" width=60%/>
+  <img src="Dopamins_team.jpg" alt="dopamins team" width=60%/>
 </p>
 
 ## BEXUS Selection Workshop Bonn - 24/25. November 2025
