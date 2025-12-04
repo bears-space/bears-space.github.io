@@ -66,3 +66,63 @@ div.quarto-post .thumbnail img {
 #title-block-header.quarto-title-block.default .quarto-title-meta-contents {
     margin-top: 1em;
 }
+
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.gallery-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 220px;
+  scroll-snap-align: start;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Pfeile */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(255,255,255,1);
+}
