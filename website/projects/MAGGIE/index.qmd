@@ -15,13 +15,8 @@ MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **
 
 **30.10.2025**: MAGGIE recieved to invitation letter to the REXUS selection workshop at the DLR in Bonn. We are looking forward an inspering dialogue and exchange with the experts from DLR and ESA as well as meeting the other student teams. 
 
-**21.10.2025**: The Kick-Off event for the [X-Tutorial MAGGIE](https://isis.tu-berlin.de/course/view.php?id=45243) is on Tuesday (21st October 2025) from 2 to 4 pm c.T. at MAR 0.017!
+**25.11.2025**: With three motivated students, MAGGIE took part in the selection workshop at the DLR for the 17th cycle of the REXUS programme. We are eagerly awaiting the results to see if we will be participating further. 
 
-**22.08.2025**: MAGGIE hands in its letter of intend for the upcoming REXUS-cycle.
-
-**30.07.2025**: The project was accepted as a X-Tutorial and thereby can be offered as a lecture in the upcoming winter semester. 
-
-**01.06.2025**: MAGGIE has applied for the X-Tutorial program by StuROPx.
 
 ## Abstract
 
@@ -67,6 +62,15 @@ MAGGIE is applying for Cycle REXUS17 of the [REXUS/BEXUS programme](https://rexu
 
 The REXUS/BEXUS programme is realised under a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA). The Swedish share of the payload has been made available to students from other European countries through a collaboration with the European Space Agency (ESA). EuroLaunch, a cooperation between the Swedish Space Corporation (SSC) and the Mobile Rocket Base (MORABA) of DLR, is responsible for the campaign management and operations of the launch vehicles. Experts from DLR, SSC, ZARM and ESA provide technical support to the student teams throughout the project. REXUS and BEXUS are launched from SSC, Esrange Space Center in northern Sweden.
 
+## Older News
+
+**21.10.2025**: The Kick-Off event for the [X-Tutorial MAGGIE](https://isis.tu-berlin.de/course/view.php?id=45243) is on Tuesday (21st October 2025) from 2 to 4 pm c.T. at MAR 0.017!
+
+**22.08.2025**: MAGGIE hands in its letter of intend for the upcoming REXUS-cycle.
+
+**30.07.2025**: The project was accepted as a X-Tutorial and thereby can be offered as a lecture in the upcoming winter semester. 
+
+**01.06.2025**: MAGGIE has applied for the X-Tutorial program by StuROPx.
 
 ## Contact 
 We are always happy about interested students for MAGGIE and the club. You can contact us at *maggie(@)bears-space.de* and find regular updates on the Instagram channel [@bears.space](https://www.instagram.com/bears.space/). The best way to reach us is to come to the weekly Bears meeting every Tuesday at 6pm in F11.
