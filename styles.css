@@ -130,3 +130,7 @@ div.quarto-post .thumbnail img {
 body {
     text-align: justify;
 }
+
+p, div, article, section {
+    text-align: justify;
+}
