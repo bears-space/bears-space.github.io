@@ -12,6 +12,9 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/company/bears-ev/
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@darethelimits
     # - icon: github
     #   text: Github
     #   href: https://github.com
