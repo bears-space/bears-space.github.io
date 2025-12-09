@@ -134,3 +134,10 @@ body {
 p, div, article, section {
     text-align: justify;
 }
+
+/* centering of non 100% pictures*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
