@@ -46,6 +46,26 @@ website:
       #   href: https://github.com/
       # - icon: twitter
       #   href: https://twitter.com
+  page-footer: 
+    border: true
+    background: light
+
+    left: "© 2025 Berlin Experimental Astronautics Research Student Team e.V. All rights reserved."
+    
+    center:
+      - text: "Privacy notice"
+      - text: "&nbsp;&nbsp;|"        # ← horizontal separator
+      - imprint.qmd
+
+    right: 
+      - text: "info@bears-space.de"
+        href: "mailto:info@bears-space.de"
+      - icon: instagram
+        href: https://www.instagram.com/bears.space/
+      - icon: linkedin
+        href: https://www.linkedin.com/company/bears-ev/
+      - icon: youtube
+        href: https://www.youtube.com/@darethelimits 
 format:
   html:
     theme:
