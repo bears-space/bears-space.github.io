@@ -20,14 +20,33 @@ about:
     #   text: Github
     #   href: https://github.com
 listing:
-  contents: projects
-  sort: "title asc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  max-description-length: 210
+  - id: current-projects
+    contents: "projects/current"
+    sort: "start-date desc"
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: false
+    max-description-length: 210
+
+  - id: past-projects
+    contents: "projects/past"
+    sort: "start-date desc"
+    type: default
+    categories: true
+    sort-ui: false
+    filter-ui: false
+    max-description-length: 210
 page-layout: full
 title-block-banner: true
 ---
+## Current Projects
+
+:::{#current-projects}
+:::
+
+## Past Projects
+
+:::{#past-projects}
+:::
 

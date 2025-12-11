@@ -1,0 +1,81 @@
+---
+title: "STARGAZE"
+categories: [Experimental Rocketry]
+image: "images/STARGAZE_transparent.png"
+start-date: 2023-11-01
+---
+
+STARGAZE is our third rocket. The rocket is developed with two major goals: participation at EuRoC as well as providing a launch platform to test our subsystems and procedures to serve as an intermediate step to our future goal of developing a bi-liquid propellant high-altitude two-stage rocket. For participation at EuRoC, we specifically developed two subsystems: our Payload, as well as our Airbrake.
+
+::: {layout=[[20,-2,20]]  layout-valign="center"}
+![STARGAZE CAD](images/STARGAZE_transparent.png)
+
+![Team](images/stargaze_team.jpg)
+:::
+
+## Airbrake
+The Airbrake is the only active flight control system which increases the drag area of the rocket to accurately achieve an apogee of 3000 m.
+
+![Prototype of our Airbrake](images/Prototype_Airbrake.JPG)
+
+## Structure
+Similar to our previous rockets, the primary structure of STARGAZE consists of a nosecone, a body tube and a fin can. The body tube is divided into several compartments: Motor compartment, Electronics Bay, Airbrake, Payload and Recovery. Compared to our previous rockets, this rocket differs in that the compartments frame is made out of fiber-reinforced tubes glued to milled aluminum couplers. The fins are carbon fiber plates glued to the motor tube and then laminated over tip-to-tip between the fins.
+
+## Payload
+The payload is a mechatronical system that decouples on-board video cameras from the rocket’s roll-rate. The payload is mounted on top of the rocket’s primary structure via 2 bearings. The roll-rate of this decoupled compartment is held at 0°/s by using a closed-loop controlled stepper motor and gear-coupling.
+
+![Prototype of our spin camera](images/Protoype_Spin_Camera.JPG)
+
+## Electronics
+The core of the electronics consists of the two flight computers, one of which is self-designed. Alongside it, the Altimax G4 was chosen for the redundant flight computer. The self-designed MAX-FC is a SRAD modular flight computer designed to control parachutes, transmit telemetry data to the ground station, receive commands from the ground station and monitor and log sensor data.
+
+## Recovery
+The recovery system follows a two-stage concept. Multiple stages mean that the ejection of each parachute is planned to occur at specific times during the descent. The drogue parachute is deployed at the apogee of the rocket’s trajectory, while the main parachute is released at an altitude of 300 meters above ground.
+
+<br/>
+
+| Stats         |                |
+| :---          |     :---:      |
+| Altitude      | 3000 m         |
+| Mass          | 21.2 kg        |
+| Total Impulse | 6.8 kNs        |
+| Velocity      | 1.03 Ma        |
+
+## Sponsors
+We want to thank our sponsors for their generous support! Without them, STARGAZE and competing at EuRoC 2025 would not have been possible:
+
+<a href="https://www.reflexaerospace.com/" target="_blank">
+    <img src="/sponsors_images/Reflex+Logo+-+Dark.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="https://www.nicomatic.com/" target="_blank">
+    <img src="/sponsors_images/nicomatic_logo.svg" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="https://hallopetra.de/" target="_blank">
+    <img src="/sponsors_images/HalloPetra.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="https://3dk.berlin/de/" target="_blank">
+    <img src="/sponsors_images/3dkberlin-logo.jpg" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="https://www.thermagmbh.de/" target="_blank">
+    <img src="/sponsors_images/therma_logo.jpg" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="http://www.we-online.com/" target="_blank">
+    <img src="/sponsors_images/WE_logo.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="https://www.igus.de/" target="_blank">
+    <img src="/sponsors_images/igus-Logo.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="https://aisler.net/de" target="_blank">
+    <img src="/sponsors_images/aisler.png" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
+
+<a href="https://www.gemmel-metalle.de/" target="_blank">
+    <img src="/sponsors_images/Gemmel_Metalle_gelb_blau.jpg" style="display: block; margin: 0 auto; height: 5em;"/>
+</a>
