@@ -12,7 +12,21 @@ website:
   navbar:
     logo: bears_logo.png
     left:
-      - projects.qmd
+      - text: "Projects"
+         # main projects page
+        menu:
+          - text: "All Projects"
+            href: projects.qmd
+          - text: "Science and Experiments"
+            href: "projects.html#category=Science%20and%20Experiments"
+          - text: "Experimental Rocketry"
+            href: "projects.html#category=Experimental%20Rocketry"
+          - text: "Robotics"
+            href: "projects.html#category=Robotics"
+            # add more categories like this:
+            # - text: "Another Category"
+            #   href: "projects.qmd#category=Another%20Category"
+
       - events.qmd
       - about.qmd
       - sponsors.qmd
