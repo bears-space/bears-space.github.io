@@ -1,5 +1,5 @@
 ---
-title: "About BEARS"
+title: "About"
 title-block-banner: true
 ---
 

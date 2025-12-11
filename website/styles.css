@@ -140,4 +140,36 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+/*The following code adapts the logo size in the top left corner for different screen sizes:*/
+/* Bigger logo (you can keep your existing size tweaks if you like) */
+.navbar-brand img,
+.navbar-brand .navbar-logo,
+.navbar .navbar-logo {
+  height: 35px;
+  max-height: 35px;
+  width: auto;
+}
+
+/* Center the logo nicely */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* ✅ Force navbar to collapse to hamburger on wider screens */
+@media (max-width: 920px) {  /* <-- adjust this breakpoint as needed */
+  /* Show hamburger button */
+  .navbar-expand-lg .navbar-toggler {
+    display: block !important;
+  }
+
+  /* Hide expanded menu by default */
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+
+  /* But show it when Bootstrap adds .show (when user clicks hamburger) */
+  .navbar-expand-lg .navbar-collapse.show {
+    display: block !important;
+  }
 }
