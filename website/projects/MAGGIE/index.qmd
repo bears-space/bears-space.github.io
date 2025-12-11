@@ -5,7 +5,11 @@ image: "images/logo_maggie_baer.png"
 allow-html: true
 ---
 
+<p align="justify">
+
 MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **I**nteraction **E**xperiment and will research on gecko materials and robotic sciences in a reduced gravity environment and under the influence of space environment. The project is starting by October 2025 and will apply for the REXUS-program.
+
+</p>
 
 <p align="center">
 
@@ -14,6 +18,8 @@ MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **
 </p>
 
 ## News
+
+**10.12.2025**: MAGGIE was accepted to the 17th REXUS cycle and is looking forward the Preliminary Design Review and Student Training Week in January at Esrange / Sweden.
 
 **25.11.2025**: With three motivated students, MAGGIE took part in the selection workshop at the DLR for the 17th cycle of the REXUS programme. We are eagerly awaiting the results to see if we will be participating further.
 
