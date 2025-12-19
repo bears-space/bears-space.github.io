@@ -173,3 +173,67 @@ img {
     display: block !important;
   }
 }
+/* the following three blocks turn the footer into a 22% 56% 22% space separation*/
+/* Footer column sizing: 22% | auto | 22% */
+.footer .nav-footer-left {
+  flex: 0 0 22%;
+  max-width: 22%;
+  text-align: left;
+}
+
+.footer .nav-footer-right {
+  flex: 0 0 22%;
+  max-width: 22%;
+  text-align: right;
+}
+
+/* Center takes the rest and can actually be wide */
+.footer .nav-footer-center {
+  flex: 1 1 auto;
+  min-width: 0; /* IMPORTANT: allows proper shrink/wrap behavior */
+  display: flex;
+  justify-content: center; /* keeps your table centered */
+}
+
+
+/* Footer: increase social media icon size */
+.footer .nav-footer-right i.bi {
+  font-size: 1.6rem;   /* try 1.4–2.0rem */
+}
+
+/* Global hover effect for clickable elements in navbar & footer */
+.navbar a:hover,
+.navbar button:hover,
+.footer a:hover,
+.footer button:hover {
+  opacity: 0.7;
+}
+
+/* Footer table layout */
+.footer .footer-table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Remove all borders (including implicit ones) */
+.footer .footer-table,
+.footer .footer-table th,
+.footer .footer-table td {
+  border: none !important;
+}
+
+/*makes footer table distance between lines better*/
+.footer .footer-table td {
+  padding: 0.15rem 1.5rem 0.15rem 0;
+}
+
+/*removes line under clickable text in the footer table*/
+.footer .footer-table a {
+  text-decoration: none;
+}
+
+/* Increase spacing between footer table columns */
+.footer .footer-table th:first-child,
+.footer .footer-table td:first-child {
+  padding-right: 6rem;   /* try 2rem–4rem */
+}
