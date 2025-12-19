@@ -140,6 +140,24 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*Can be used to increase title block banner, especially useful if you use a picture.*/
+/* .quarto-title-block .quarto-title-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 430px;       /* tweak this 
+} */
+
+/* Center headings relative to the listing grid */
+.listing-title {
+  text-align: left;
+  max-width: 900px; /* match listing width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*The following code adapts the logo size in the top left corner for different screen sizes:*/
 /* Bigger logo (you can keep your existing size tweaks if you like) */
 .navbar-brand img,
