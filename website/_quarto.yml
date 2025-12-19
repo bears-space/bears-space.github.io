@@ -52,7 +52,7 @@ website:
     background: light
     # "© 2025 Berlin Experimental Astronautics Research Student Team e.V. All rights reserved."
     left: |
-      <img src="bears_logo.png" alt="BEARS logo" style="max-width:140px; height:auto; margin-bottom:10px; margin-top:10px; display:block; margin-left:0;">
+      <img src="/bears_logo.png" alt="BEARS logo" style="max-width:140px; height:auto; margin-bottom:10px; margin-top:10px; display:block; margin-left:0;">
       <div style="margin-top:8px;">
         Berlin Experimental Astronautics<br>
         Research Student Team e.V.<br>
@@ -66,26 +66,26 @@ website:
       - text: |
           <table class="footer-table">
             <tr>
-              <td><a href="projects.qmd"><strong>Projects</strong></a></td>
+              <td><a href="/projects.html"><strong>Projects</strong></a></td>
               <td><strong>About</strong></td>
             </tr>
             <tr>
-              <td><a href="projects.html#category=Science%20and%20Experiments">Science and Experiments</a></td>
-              <td><a href="about.qmd">Who are we</a></td>
+              <td><a href="/projects.html#category=Science%20and%20Experiments">Science and Experiments</a></td>
+              <td><a href="/about.html">Who are we</a></td>
             </tr>
             <tr>
-              <td><a href="projects.html#category=Experimental%20Rocketry">Experimental Rocketry</a></td>
-              <td><a href="join.qmd">Join Us</a></td>
+              <td><a href="/projects.html#category=Experimental%20Rocketry">Experimental Rocketry</a></td>
+              <td><a href="/join.html">Join Us</a></td>
             </tr>
             <tr>
-              <td><a href="projects.html#category=Robotics">Robotics</a></td>
-              <td><a href="imprint.qmd">Imprint</a></td>
+              <td><a href="/projects.html#category=Robotics">Robotics</a></td>
+              <td><a href="/imprint.html">Imprint</a></td>
             </tr>
             <tr>
               <td></td>
-              <td><a href="privacy.qmd">Privacy notice</a></td>
+              <td><a href="/privacy.html">Privacy notice</a></td>
             </tr>
-          </table>   
+          </table> 
 
     right: 
       - icon: instagram
