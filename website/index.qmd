@@ -14,29 +14,30 @@ listing:
   max-description-length: 210
 ---
 
-<div class="slideshow" style="width: 100%">
-  <!-- put all images here that should be available in the slideshow -->
-  <picture>
-    <source srcset="slideshow_index/Group_photo_BEARS_2025.JPG.avif" type="image/avif">
-    <img
-      src="slideshow_index/Group_photo_BEARS_2025.JPG"
-      alt="BEARS group photo">
-  </picture>
-  <picture>
-    <source srcset="slideshow_index/launch1.jpg.avif" type="image/avif">
-    <img
-      src="slideshow_index/launch1.jpg"
-      alt="Photo of the first rocket launch">
-  </picture>
-  <picture>
-    <source srcset="projects/current/Rover/images/Rover_team.jpg.avif" type="image/avif">
-    <img
-      src="projects/current/Rover/images/Rover_team.jpg"
-      alt="Photo of the rover sub-team of BEARS">
-  </picture>
-</div>
-<br/>
+::: {.slideshow style="width: 70%"}
+<!-- put all images here that should be available in the slideshow --> 
+<picture> 
+<source srcset="slideshow_index/Group_photo_BEARS_2025.JPG.avif" type="image/avif"> <img src="slideshow_index/Group_photo_BEARS_2025.JPG" alt="BEARS group photo"/> 
+</picture> 
 
+<picture> 
+<source srcset="slideshow_index/bvsr_conf_2025.jpg.avif" type="image/avif"> <img src="slideshow_index/bvsr_conf_2025.JPG" alt="BEARS at BVSR Conference 2025 in Aachen"/> 
+</picture> 
+
+<picture> 
+<source srcset="slideshow_index/euroc_team.jpg.avif" type="image/avif"> <img src="slideshow_index/euroc_team.JPG" alt="BEARS team on launch day of their STARGAZE rocket at EuRoC"/> 
+</picture> 
+
+<picture> 
+<source srcset="projects/current/Rover/images/Rover_team.jpg.avif" type="image/avif"> <img src="projects/current/Rover/images/Rover_team.jpg" alt="Photo of the rover sub-team of BEARS"/> 
+</picture>
+
+<picture> 
+<source srcset="slideshow_index/launch1.jpg.avif" type="image/avif"> <img src="slideshow_index/launch1.jpg" alt="Photo of the first rocket launch"/> 
+</picture> 
+:::
+
+<br/>
 
 We are organized in 3 work groups, each with its own focus and projects:
 

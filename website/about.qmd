@@ -28,8 +28,11 @@ We attend trade fairs and congresses together. Below you will find a small photo
 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
+  <img src="slideshow_about/Rocket_group.JPG" >
+  <img src="slideshow_about/spacetech_2025.jpg" >
+  <img src="slideshow_about/Weltraumkongress_alex.jpg" >
+  <img src="slideshow_about/info_stand.jpg" >  
   <img src="slideshow_about/BEARS_Smallsat.jpg" >
   <img src="slideshow_about/Bears_Messe.jpeg" >
-  <img src="slideshow_about/Weltraumkongress.jpg" >
 </div>
 <br/>
