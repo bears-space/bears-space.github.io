@@ -1,0 +1,13 @@
+---
+title: "Weltraumkongress 2025"
+date: 2025-09-25
+---
+
+At the Weltraumkongress 2025 in Berlin, BEARS e.V. took part with a booth to present our student projects and talk about our work in rocketry, robotics and space-research. We had many great conversations with other students, industry representatives and political figures. The booth was hosted together with students from STAR Dresden and organized with the help of the "Bundesverband studentischer Raumfahrt" (BVSR). Together we represented german student space associations.
+
+![Group photo with Matthias Wachter from BDI (right)](img/weltraumkongress_group.jpeg)
+
+![Our (former) second speaker Alexander Kerth explaing the CASIMAR project © Christian Kruppa](img/Weltraumkongress_alex.jpg)
+
+If you want to learn more about the congress, you can visit the event-website of the "Bundesverband der
+Deutschen Industrie e.V."(BDI): [bdi.eu/weltraumkongress](https://bdi.eu/weltraumkongress)
