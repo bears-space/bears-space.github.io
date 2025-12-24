@@ -1,0 +1,31 @@
+---
+title: "STARMOON"
+categories: [Experimental Rocketry]
+image: "Patch_Starmoon.png"
+start-date: 2021-10-01
+---
+
+We started with our first rocket STARMOON in a newly created module at the TUB in October 2021. Quickly we figured with the university that we should found a student club for further developing this and other projects. 
+Starting with six people we had the ambitious goal to launch a rocket with a target apogee of 600 m, so we could launch in Germany, while having already a motor with 500 N thrust. 
+During half a year we gained knowledge about rocketry and started with the design of our compartments. We learned many things about 3D printing, flight computer control, machining, fiber composites, motors, redundant recovery systems and so on. 
+In early summer we had a functional rocket. The rocket was launched as a full success and with a complete recovery one year later in October 2022 near Brunswick with the student club ERIG. 
+
+
+![Starmoon rocket](Starmoon.jpg)
+
+<br/>
+
+| Stats        |                |
+| :---         |     :---:      |
+| Altitude     | 600 m          |
+| Mass         | 12 kg          |
+| Total Impulse | 1.4 kNs       |
+| Velocity     | 0.3 Ma         |
+
+<br/>
+
+::: {layout=[[10,-2,20]]  layout-valign="center"}
+![Starmoon patch](Patch_Starmoon.png)
+
+![Starmoon team](Team_Starmoon.jpg)
+:::

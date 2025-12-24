@@ -134,3 +134,124 @@ body {
 p, div, article, section {
     text-align: justify;
 }
+
+/* centering of non 100% pictures*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Can be used to increase title block banner, especially useful if you use a picture.*/
+/* .quarto-title-block .quarto-title-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 430px;       /* tweak this 
+} */
+
+/* Center headings relative to the listing grid */
+.listing-title {
+  text-align: left;
+  max-width: 900px; /* match listing width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*The following code adapts the logo size in the top left corner for different screen sizes:*/
+/* Bigger logo (you can keep your existing size tweaks if you like) */
+.navbar-brand img,
+.navbar-brand .navbar-logo,
+.navbar .navbar-logo {
+  height: 35px;
+  max-height: 35px;
+  width: auto;
+}
+
+/* Center the logo nicely */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* ✅ Force navbar to collapse to hamburger on wider screens */
+@media (max-width: 920px) {  /* <-- adjust this breakpoint as needed */
+  /* Show hamburger button */
+  .navbar-expand-lg .navbar-toggler {
+    display: block !important;
+  }
+
+  /* Hide expanded menu by default */
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+
+  /* But show it when Bootstrap adds .show (when user clicks hamburger) */
+  .navbar-expand-lg .navbar-collapse.show {
+    display: block !important;
+  }
+}
+/* the following three blocks turn the footer into a 22% 56% 22% space separation*/
+/* Footer column sizing: 22% | auto | 22% */
+.footer .nav-footer-left {
+  flex: 0 0 22%;
+  max-width: 22%;
+  text-align: left;
+}
+
+.footer .nav-footer-right {
+  flex: 0 0 22%;
+  max-width: 22%;
+  text-align: right;
+}
+
+/* Center takes the rest and can actually be wide */
+.footer .nav-footer-center {
+  flex: 1 1 auto;
+  min-width: 0; /* IMPORTANT: allows proper shrink/wrap behavior */
+  display: flex;
+  justify-content: center; /* keeps your table centered */
+}
+
+
+/* Footer: increase social media icon size */
+.footer .nav-footer-right i.bi {
+  font-size: 1.6rem;   /* try 1.4–2.0rem */
+}
+
+/* Global hover effect for clickable elements in navbar & footer */
+.navbar a:hover,
+.navbar button:hover,
+.footer a:hover,
+.footer button:hover {
+  opacity: 0.7;
+}
+
+/* Footer table layout */
+.footer .footer-table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Remove all borders (including implicit ones) */
+.footer .footer-table,
+.footer .footer-table th,
+.footer .footer-table td {
+  border: none !important;
+}
+
+/*makes footer table distance between lines better*/
+.footer .footer-table td {
+  padding: 0.15rem 1.5rem 0.15rem 0;
+}
+
+/*removes line under clickable text in the footer table*/
+.footer .footer-table a {
+  text-decoration: none;
+}
+
+/* Increase spacing between footer table columns */
+.footer .footer-table th:first-child,
+.footer .footer-table td:first-child {
+  padding-right: 6rem;   /* try 2rem–4rem */
+}

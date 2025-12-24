@@ -1,0 +1,37 @@
+---
+title: "STARDUST"
+categories: [Experimental Rocketry]
+image: "STARDUST_Logo.png"
+start-date: 2022-10-01
+---
+
+{{< video https://www.youtube.com/watch?v=0V28z2BWKMA >}}
+
+
+STARDUST was our second rocket. With a target apogee of 1.5 km and a length of 2.5 m, this was a significant upgrade in power when compared to our first rocket ([STARMOON](/projects/Starmoon/)). Development started in the summer of 2022 with manufacturing beginning in 2023, leading up to the launch in September 2024.
+
+To acquire a motor powerful enough for to reach the target height, we drove to the Netherlands to buy an M-class motor.
+Almost all systems have been upgraded or completely redesigned to sustain the higher maximum speed of 0.56 Ma and the associated vibrations.
+Our fins have been manufactured from metal while the nose cone was created using only glass fiber.
+The electronics compartment used the same flight computers as [STARMOON](/projects/Starmoon/) in combination with an updated arming system. Outward-facing cameras were also included.
+We have also developed a GPS downlink system to track our rocket.
+The redesigned recovery system used 2-stage recovery, with the nose cone blasting off at apogee to reveal the drogue chute while the main chute opens at 300 m by cutting a steel cable.
+
+As payload, we had the WOBBLE experiment on board. This consisted of a camera pointed at a 3D-printed tank (PMD = propellant management device) for small satellites, allowing observation of the fluid behavior inside.
+
+The rocket was launched in the Netherlands in cooperation with [DARE](https://dare.tudelft.nl/) in September 2024.
+
+![Stardust rocket](Stardust.png)
+
+<br/>
+
+| Stats         |                |
+| :---          |     :---:      |
+| Altitude      | 1547 m         |
+| Mass          | 18 kg          |
+| Total Impulse | 6.3 kNs        |
+| Velocity      | 0.56 Ma        |
+<br/>
+
+
+![Stardust patch](STARDUST_Logo.png){width=30%}
