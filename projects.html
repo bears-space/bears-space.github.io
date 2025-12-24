@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1e1598a2e220c904bea3893bf5b70d56.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-3634a964d599fd7e6adf01946db4ce37.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-1e1598a2e220c904bea3893bf5b70d56.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0727b514d3b16801babb813ac46111ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-09ce9f71ef996ac14bbaaa4aad8522ae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0727b514d3b16801babb813ac46111ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-current-projects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -92,7 +92,35 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-current-projects'] = new List('listing-current-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-past-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-past-projects'] = new List('listing-past-projects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -139,14 +167,14 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Projects">
 <meta property="og:description" content="Current and past projects of our working groups">
-<meta property="og:image" content="https://www.bears-space.de/projects/career/Career_1.png">
-<meta property="og:image:height" content="1699">
-<meta property="og:image:width" content="3432">
+<meta property="og:image" content="https://www.bears-space.de/projects/current/MAGGIE/images/logo_maggie_baer.png">
+<meta property="og:image:height" content="1000">
+<meta property="og:image:width" content="1000">
 <meta name="twitter:title" content="Projects">
 <meta name="twitter:description" content="Current and past projects of our working groups">
-<meta name="twitter:image" content="https://www.bears-space.de/projects/career/Career_1.png">
-<meta name="twitter:image-height" content="1699">
-<meta name="twitter:image-width" content="3432">
+<meta name="twitter:image" content="https://www.bears-space.de/projects/current/MAGGIE/images/logo_maggie_baer.png">
+<meta name="twitter:image-height" content="1000">
+<meta name="twitter:image-width" content="1000">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -330,17 +358,36 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="./projects.html">
+ <span class="dropdown-text">All Projects</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./projects.html#category=Science and Experiments">
+ <span class="dropdown-text">Science and Experiments</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projects.html#category=Experimental Rocketry">
+ <span class="dropdown-text">Experimental Rocketry</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./projects.html#category=Robotics">
+ <span class="dropdown-text">Robotics</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./events.html"> 
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About BEARS</span></a>
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./sponsors.html"> 
@@ -420,303 +467,315 @@ window.Quarto = {
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<section id="current-projects" class="level2">
+<h2 class="anchored" data-anchor-id="current-projects">Current Projects</h2>
+<div id="listing-current-projects" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1765705093530" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
-<div class="thumbnail"><a href="./projects/career/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1766560977902" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
+<div class="thumbnail"><a href="./projects/current/MAGGIE/index.html" class="no-external">
 
-<img loading="lazy" src="./projects/career/Career_1.png" class="thumbnail-image">
+<img loading="lazy" src="./projects/current/MAGGIE/images/logo_maggie_baer.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./projects/career/index.html" class="no-external">Career</a>
+<a href="./projects/current/MAGGIE/index.html" class="no-external">MAGGIE</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz'); return false;">Science and Experiments</div>
 
 </div>
-<div class="delink listing-description"><a href="./projects/career/index.html" class="no-external">
-The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/career/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1765705093182" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
-<div class="thumbnail"><a href="./projects/DOPAMINS/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/DOPAMINS/dopamins_logo.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/DOPAMINS/index.html" class="no-external">DOPAMINS</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz'); return false;">Science and Experiments</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/DOPAMINS/index.html" class="no-external">
-DOPAMINS stands for <strong>D</strong>etection of <strong>P</strong>ositron <strong>A</strong>nnihilation <strong>M</strong>ission <strong>I</strong>n <strong>N</strong>ear <strong>S</strong>pace and uses scintillators to detect antimatter in the stratosphere.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/DOPAMINS/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Um9ib3RpY3M=" data-listing-file-modified-sort="1765705093205" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
-<div class="thumbnail"><a href="./projects/Lars/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/Lars/LARS_LOGO.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Lars/index.html" class="no-external">Lars</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/Lars/index.html" class="no-external">
-Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asclepios–Mission 2. For this, a small team went…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/Lars/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1765705093222" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
-<div class="thumbnail"><a href="./projects/MAGGIE/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/MAGGIE/images/logo_maggie_baer.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/MAGGIE/index.html" class="no-external">MAGGIE</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz'); return false;">Science and Experiments</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/MAGGIE/index.html" class="no-external">
+<div class="delink listing-description"><a href="./projects/current/MAGGIE/index.html" class="no-external">
 MAGGIE stands for <strong>M</strong>icrogravitational <strong>A</strong>utomated <strong>G</strong>ecko <strong>G</strong>ripping <strong>I</strong>nteraction <strong>E</strong>xperiment and will research on gecko materials and robotic sciences in a reduced gravity environment and under the influence of space…
 </a></div>
 </div>
 <div class="metadata">
-<a href="./projects/MAGGIE/index.html" class="no-external">
+<a href="./projects/current/MAGGIE/index.html" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1765705093532" data-listing-reading-time-sort="2" data-listing-word-count-sort="246">
-<div class="thumbnail"><a href="./projects/propulsion/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="1" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1766560977886" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<div class="thumbnail"><a href="./projects/current/DOPAMINS/index.html" class="no-external">
 
-<img loading="lazy" src="./projects/propulsion/Propulsion_1.jpg" class="thumbnail-image">
+<img loading="lazy" src="./projects/current/DOPAMINS/dopamins_logo.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./projects/propulsion/index.html" class="no-external">Propulsion</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/propulsion/index.html" class="no-external">
-Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus is on the development of a bi-propellant pressure- fed propulsion…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/propulsion/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1765705093230" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
-<div class="thumbnail"><a href="./projects/Rocketry/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/Rocketry/STARDUST_nach_Start.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Rocketry/index.html" class="no-external">Rocket Systems</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/Rocketry/index.html" class="no-external">
-The Rocket Systems subgroup focuses on the development, production and operation of sounding rockets with the goal of incrementally increasing the capability of each rocket build. As of April 2025 two…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/Rocketry/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Um9ib3RpY3M=" data-listing-file-modified-sort="1765705093255" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
-<div class="thumbnail"><a href="./projects/Rover/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/Rover/images/Rover_team_with_erc_banner.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Rover/index.html" class="no-external">Rover</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/Rover/index.html" class="no-external">
-We work together with the international students from the Master of Space Engineering to build a Mars rover for the European Rover Challenge (ERC).
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/Rover/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1765705093322" data-listing-reading-time-sort="2" data-listing-word-count-sort="344">
-<div class="thumbnail"><a href="./projects/Stardust/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/Stardust/STARDUST_Logo.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Stardust/index.html" class="no-external">STARDUST</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/Stardust/index.html" class="no-external">
-STARDUST was our second rocket. With a target apogee of 1.5 km and a length of 2.5 m, this was a significant upgrade in power when compared to our first rocket (STARMOON). Development started in the summer of…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/Stardust/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1765705093365" data-listing-reading-time-sort="4" data-listing-word-count-sort="604">
-<div class="thumbnail"><a href="./projects/Stargaze/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/Stargaze/images/STARGAZE_transparent.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Stargaze/index.html" class="no-external">STARGAZE</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/Stargaze/index.html" class="no-external">
-STARGAZE is our third rocket. The rocket is developed with two major goals: participation at EuRoC as well as providing a launch platform to test our subsystems and procedures to serve as an intermediate step…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/Stargaze/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1765705093367" data-listing-reading-time-sort="2" data-listing-word-count-sort="266">
-<div class="thumbnail"><a href="./projects/Starmoon/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/Starmoon/Patch_Starmoon.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Starmoon/index.html" class="no-external">STARMOON</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/Starmoon/index.html" class="no-external">
-We started with our first rocket STARMOON in a newly created module at the TUB in October 2021. Quickly we figured with the university that we should found a student club for further developing this and other…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/Starmoon/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="Um9ib3RpY3M=" data-listing-file-modified-sort="1765705093532" data-listing-reading-time-sort="1" data-listing-word-count-sort="101">
-<div class="thumbnail"><a href="./projects/solar/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/solar/solar_sintering.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/solar/index.html" class="no-external">Solar</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/solar/index.html" class="no-external">
-In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the sunlight. The goal of this is to build…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/solar/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1765705093528" data-listing-reading-time-sort="7" data-listing-word-count-sort="1241">
-<div class="thumbnail"><a href="./projects/Wobble 2/index.html" class="no-external">
-
-<img loading="lazy" src="./projects/Wobble 2/images/WOBBLE2_Patch.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Wobble 2/index.html" class="no-external">WOBBLE2</a>
+<a href="./projects/current/DOPAMINS/index.html" class="no-external">DOPAMINS</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz'); return false;">Science and Experiments</div>
 
 </div>
-<div class="delink listing-description"><a href="./projects/Wobble 2/index.html" class="no-external">
-WOBBLE2 stands for <strong>W</strong>eightless <strong>O</strong>bservation of <strong>B</strong>ehaviour with <strong>B</strong>erlin <strong>L</strong>iquid guided <strong>E</strong>xperiment. WOBBLE2 is a finished project. Feel free to get in contact, if you have any questions. We are planing to test new…
+<div class="delink listing-description"><a href="./projects/current/DOPAMINS/index.html" class="no-external">
+DOPAMINS stands for <strong>D</strong>etection of <strong>P</strong>ositron <strong>A</strong>nnihilation <strong>M</strong>ission <strong>I</strong>n <strong>N</strong>ear <strong>S</strong>pace and uses scintillators to detect antimatter in the stratosphere.
 </a></div>
 </div>
 <div class="metadata">
-<a href="./projects/Wobble 2/index.html" class="no-external">
+<a href="./projects/current/DOPAMINS/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1766560977979" data-listing-reading-time-sort="4" data-listing-word-count-sort="604">
+<div class="thumbnail"><a href="./projects/current/Stargaze/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/current/Stargaze/images/STARGAZE_transparent.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/current/Stargaze/index.html" class="no-external">STARGAZE</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/current/Stargaze/index.html" class="no-external">
+STARGAZE is our third rocket. The rocket is developed with two major goals: participation at EuRoC as well as providing a launch platform to test our subsystems and procedures to serve as an intermediate step…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/current/Stargaze/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1766560977981" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
+<div class="thumbnail"><a href="./projects/current/career/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/current/career/Career_1.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/current/career/index.html" class="no-external">Career</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz'); return false;">Science and Experiments</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/current/career/index.html" class="no-external">
+The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/current/career/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1766560977911" data-listing-reading-time-sort="2" data-listing-word-count-sort="222">
+<div class="thumbnail"><a href="./projects/current/Rocketry/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/current/Rocketry/STARDUST_nach_Start.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/current/Rocketry/index.html" class="no-external">Rocket Systems</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/current/Rocketry/index.html" class="no-external">
+The Rocket Systems subgroup focuses on the development, production and operation of sounding rockets with the goal of incrementally increasing the capability of each rocket build. As of April 2025 two…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/current/Rocketry/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Um9ib3RpY3M=" data-listing-file-modified-sort="1766560977936" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
+<div class="thumbnail"><a href="./projects/current/Rover/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/current/Rover/images/Rover_team_with_erc_banner.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/current/Rover/index.html" class="no-external">Rover</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/current/Rover/index.html" class="no-external">
+We work together with the international students from the Master of Space Engineering to build a Mars rover for the European Rover Challenge (ERC).
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/current/Rover/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1766560977983" data-listing-reading-time-sort="2" data-listing-word-count-sort="246">
+<div class="thumbnail"><a href="./projects/current/propulsion/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/current/propulsion/Propulsion_1.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/current/propulsion/index.html" class="no-external">Propulsion</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/current/propulsion/index.html" class="no-external">
+Welcome to the Rocket Propulsion Team, where passionate students work together to explore the exciting realm of rocket engines. Our focus is on the development of a bi-propellant pressure- fed propulsion…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/current/propulsion/index.html" class="no-external">
 </a>
 </div>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+</section>
+<section id="past-projects" class="level2">
+<h2 class="anchored" data-anchor-id="past-projects">Past Projects</h2>
+<div id="listing-past-projects" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz" data-listing-file-modified-sort="1766560978236" data-listing-reading-time-sort="7" data-listing-word-count-sort="1241">
+<div class="thumbnail"><a href="./projects/past/Wobble 2/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/past/Wobble 2/images/WOBBLE2_Patch.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/past/Wobble 2/index.html" class="no-external">WOBBLE2</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('U2NpZW5jZSUyMGFuZCUyMEV4cGVyaW1lbnRz'); return false;">Science and Experiments</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/past/Wobble 2/index.html" class="no-external">
+WOBBLE2 stands for <strong>W</strong>eightless <strong>O</strong>bservation of <strong>B</strong>ehaviour with <strong>B</strong>erlin <strong>L</strong>iquid guided <strong>E</strong>xperiment. WOBBLE2 is a finished project. Feel free to get in contact, if you have any questions. We are planing to test new…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/past/Wobble 2/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1766560978073" data-listing-reading-time-sort="2" data-listing-word-count-sort="344">
+<div class="thumbnail"><a href="./projects/past/Stardust/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/past/Stardust/STARDUST_Logo.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/past/Stardust/index.html" class="no-external">STARDUST</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/past/Stardust/index.html" class="no-external">
+STARDUST was our second rocket. With a target apogee of 1.5 km and a length of 2.5 m, this was a significant upgrade in power when compared to our first rocket (STARMOON). Development started in the summer of…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/past/Stardust/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Um9ib3RpY3M=" data-listing-file-modified-sort="1766560978236" data-listing-reading-time-sort="1" data-listing-word-count-sort="101">
+<div class="thumbnail"><a href="./projects/past/solar/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/past/solar/solar_sintering.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/past/solar/index.html" class="no-external">Solar</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/past/solar/index.html" class="no-external">
+In the SOLAR group, we are working on a system with which lunar regolith simulant (Moon dust) can be melted. The main component is a Fresnel lens that concentrates the sunlight. The goal of this is to build…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/past/solar/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Um9ib3RpY3M=" data-listing-file-modified-sort="1766560978006" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
+<div class="thumbnail"><a href="./projects/past/Lars/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/past/Lars/LARS_LOGO.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/past/Lars/index.html" class="no-external">Lars</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Um9ib3RpY3M='); return false;">Robotics</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/past/Lars/index.html" class="no-external">
+Lars (Lunar Astronaut Revival System) was a cardiac massage device designed to revive astronauts in their spacesuits. With our prototype we participated in the Asclepios–Mission 2. For this, a small team went…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/past/Lars/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk=" data-listing-file-modified-sort="1766560978074" data-listing-reading-time-sort="2" data-listing-word-count-sort="266">
+<div class="thumbnail"><a href="./projects/past/Starmoon/index.html" class="no-external">
+
+<img loading="lazy" src="./projects/past/Starmoon/Patch_Starmoon.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/past/Starmoon/index.html" class="no-external">STARMOON</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXhwZXJpbWVudGFsJTIwUm9ja2V0cnk='); return false;">Experimental Rocketry</div>
+
+</div>
+<div class="delink listing-description"><a href="./projects/past/Starmoon/index.html" class="no-external">
+We started with our first rocket STARMOON in a newly created module at the TUB in October 2021. Quickly we figured with the university that we should found a student club for further developing this and other…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./projects/past/Starmoon/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1131,6 +1190,70 @@ WOBBLE2 stands for <strong>W</strong>eightless <strong>O</strong>bservation of <
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<img src="./bears_logo.png" alt="BEARS logo" style="max-width:140px; height:auto; margin-bottom:10px; margin-top:10px; display:block; margin-left:0;">
+<div style="margin-top:8px;">
+<p>Berlin Experimental Astronautics<br> Research Student Team e.V.<br> c/o TU Berlin - Institut für Luft- und Raumfahrt<br> Marchstraße 12-14<br> 10587 Berlin<br> Mail: info[at]bears-space.de</p>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ 
+<table class="footer-table caption-top table">
+<tbody>
+<tr class="odd">
+<td><a href="./projects.html"><strong>Projects</strong></a></td>
+<td><strong>About</strong></td>
+</tr>
+<tr class="even">
+<td><a href="./projects.html#category=Science and Experiments">Science and Experiments</a></td>
+<td><a href="./about.html">Who are we</a></td>
+</tr>
+<tr class="odd">
+<td><a href="./projects.html#category=Experimental Rocketry">Experimental Rocketry</a></td>
+<td><a href="./join.html">Join Us</a></td>
+</tr>
+<tr class="even">
+<td><a href="./projects.html#category=Robotics">Robotics</a></td>
+<td><a href="./imprint.html">Imprint</a></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="./privacy.html">Privacy notice</a></td>
+</tr>
+</tbody>
+</table>
+ 
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/bears.space/">
+      <i class="bi bi-instagram" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/bears-ev/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@darethelimits">
+      <i class="bi bi-youtube" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

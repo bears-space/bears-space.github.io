@@ -1,17 +1,23 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/events.html",
     "items": [
       "/events/2026-01-25_REXUS_STW/index.html",
+      "/events/2025-11-17_SpaceTech_Expo/index.html",
+      "/events/2025-11-04_Kickoff_Event/index.html",
+      "/events/2025-09-25_Weltraumkongress/index.html",
       "/events/2025-07-16_BEARSxWACKEN/index.html",
       "/events/2025-05-06_Kickoff_Event/index.html",
       "/events/2025-04-11_yuris_night/index.html"
     ]
   },
   {
-    "listing": "/events.html",
+    "listing": "/index.html",
     "items": [
       "/events/2026-01-25_REXUS_STW/index.html",
+      "/events/2025-11-17_SpaceTech_Expo/index.html",
+      "/events/2025-11-04_Kickoff_Event/index.html",
+      "/events/2025-09-25_Weltraumkongress/index.html",
       "/events/2025-07-16_BEARSxWACKEN/index.html",
       "/events/2025-05-06_Kickoff_Event/index.html",
       "/events/2025-04-11_yuris_night/index.html"
@@ -20,18 +26,18 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/career/index.html",
-      "/projects/DOPAMINS/index.html",
-      "/projects/Lars/index.html",
-      "/projects/MAGGIE/index.html",
-      "/projects/propulsion/index.html",
-      "/projects/Rocketry/index.html",
-      "/projects/Rover/index.html",
-      "/projects/Stardust/index.html",
-      "/projects/Stargaze/index.html",
-      "/projects/Starmoon/index.html",
-      "/projects/solar/index.html",
-      "/projects/Wobble 2/index.html"
+      "/projects/current/MAGGIE/index.html",
+      "/projects/current/DOPAMINS/index.html",
+      "/projects/current/Stargaze/index.html",
+      "/projects/current/career/index.html",
+      "/projects/current/Rocketry/index.html",
+      "/projects/current/Rover/index.html",
+      "/projects/current/propulsion/index.html",
+      "/projects/past/Wobble 2/index.html",
+      "/projects/past/Stardust/index.html",
+      "/projects/past/solar/index.html",
+      "/projects/past/Lars/index.html",
+      "/projects/past/Starmoon/index.html"
     ]
   }
 ]
