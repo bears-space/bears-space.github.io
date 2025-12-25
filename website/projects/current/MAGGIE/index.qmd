@@ -10,7 +10,7 @@ MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **
 
 <p align="center">
 
-<img src="images/logo_maggie_simpson_christmas.png" alt="MAGGIE Patch." width="60%/"/>
+<img src="images/logo_maggie_christmas.png" alt="MAGGIE Patch." width="60%/"/>
 
 </p>
 
