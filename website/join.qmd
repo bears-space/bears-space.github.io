@@ -3,29 +3,65 @@ title: "Join Us"
 title-block-banner: true
 ---
 
-<div style="text-align: center;">
-## Are you motivated to support our teams and work on current space topics? Then take a look at our open positions!
-</div>
+::: {style="text-align: center;"}
+## Are you a student from Berlin motivated to support our teams and work on current space topics? Then take a look at our open positions!
+:::
 
-<div style="padding-left: 2em;">
+::: {style="padding-left: 2em;"}
 # Current Open Positions:
-</div>
+:::
 
-<div style="padding-left: 3em;">
+::: {style="padding-left: 3em;"}
 We are currently looking for a **Social Media Manager (voluntary)**.
 
 📄 [Download the full job description (PDF)](open_positions_pdf/Recruitment_Social_Media_Manager_Position.pdf)
 
-Please email your application to [info@bears-space.de](mailto:info@bears-space.de).
-</div>
+We are also always looking for electrical, mechanical and software engineering students or any other space-passionate students to help with our projects.
 
+Feel free to E-Mail your application to [info\@bears-space.de](mailto:info@bears-space.de).
+:::
 
+::: {style="padding-left: 2em;"}
+# Or just join our weekly meetings:
+:::
+::: {style="padding-left: 3em;"}
+📅 Every Tuesday at 6pm  
 
-<div style="text-align: center;">
+📍 F11 Seminar Room in the Institute of Aerospace Engineering (ILR):
 
-# Join Our Team!
+<!-- Interactive map: -->
 
-</div>
+::: {#map style="height: 400px; width: 100%; border-radius: 12px;"}
+:::
 
+```{=html}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+```
 
+```{=html}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+```
 
+```{=html}
+<script>
+  // === SET YOUR COORDINATES HERE ===
+  const latitude = 52.515402;   // example: Berlin
+  const longitude = 13.323714;
+  const zoomLevel = 14;       // 12–13 city, 14–16 area, 17+ building
+
+  // Create map
+  const map = L.map('map').setView([latitude, longitude], zoomLevel);
+
+  // OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Marker
+  L.marker([latitude, longitude]).addTo(map);
+</script>
+```

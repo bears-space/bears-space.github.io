@@ -14,39 +14,77 @@ listing:
   max-description-length: 210
 ---
 
-<div class="slideshow" style="width: 100%">
-  <!-- put all images here that should be available in the slideshow -->
-  <picture>
-    <source srcset="slideshow_index/Group_photo_BEARS_2025.JPG.avif" type="image/avif">
-    <img
-      src="slideshow_index/Group_photo_BEARS_2025.JPG"
-      alt="BEARS group photo">
-  </picture>
-  <picture>
-    <source srcset="slideshow_index/launch1.jpg.avif" type="image/avif">
-    <img
-      src="slideshow_index/launch1.jpg"
-      alt="Photo of the first rocket launch">
-  </picture>
-  <picture>
-    <source srcset="projects/Rover/images/Rover_team.jpg.avif" type="image/avif">
-    <img
-      src="projects/Rover/images/Rover_team.jpg"
-      alt="Photo of the rover sub-team of BEARS">
-  </picture>
-</div>
-<br/>
+::: {.slideshow style="width: 70%"}
+<!-- put all images here that should be available in the slideshow --> 
+<picture> 
+<source srcset="slideshow_index/Group_photo_BEARS_2025.JPG.avif" type="image/avif"> <img src="slideshow_index/Group_photo_BEARS_2025.JPG" alt="BEARS group photo"/> 
+</picture> 
 
+<picture> 
+<source srcset="slideshow_index/bvsr_conf_2025.jpg.avif" type="image/avif"> <img src="slideshow_index/bvsr_conf_2025.JPG" alt="BEARS at BVSR Conference 2025 in Aachen"/> 
+</picture> 
+
+<picture> 
+<source srcset="slideshow_index/euroc_team.jpg.avif" type="image/avif"> <img src="slideshow_index/euroc_team.JPG" alt="BEARS team on launch day of their STARGAZE rocket at EuRoC"/> 
+</picture> 
+
+<picture> 
+<source srcset="projects/current/Rover/images/Rover_team.jpg.avif" type="image/avif"> <img src="projects/current/Rover/images/Rover_team.jpg" alt="Photo of the rover sub-team of BEARS"/> 
+</picture>
+
+<picture> 
+<source srcset="slideshow_index/launch1.jpg.avif" type="image/avif"> <img src="slideshow_index/launch1.jpg" alt="Photo of the first rocket launch"/> 
+</picture> 
+:::
+
+<br/>
 
 We are organized in 3 work groups, each with its own focus and projects:
 
-* The [Experimental Rocketry](/projects.html#category=Experimental%20Rocketry) group currently develops multiple rockets. These rockets are built based on solid-propellant engines. A bi-propellant engine and a test environment are in progress. The goal is to merge the work on rockets and on bi-propellant engines in the future.
+-   The [Experimental Rocketry](/projects.html#category=Experimental%20Rocketry) group develops rockets to launch payloads, test their subsystems and compete in rocketry competitions. These rockets have so far been built using COTS solid-propellant engines. A hybrid engine and a test environment are currently in development.
 
-* The [Science and Experiments](/projects.html#category=Science%20and%20Experiments) group develops and operates science experiments and payloads. Furthermore, it develops, designs and builds satellite components and systems.
+-   The [Science and Experiments](/projects.html#category=Science%20and%20Experiments) group develops and operates science experiments and payloads. Furthermore, it develops, designs and builds satellite components and systems.
 
-* In the [Robotics](/projects.html#category=Robotics) group, we focus on planetary exploration of the moon and mars. This includes, for example, building rovers or developing in situ resource utilization technologies like solar sintering. 
+-   In the [Robotics](/projects.html#category=Robotics) group, we focus on planetary exploration of the moon and mars. This includes, for example, building rovers or developing in situ resource utilization technologies like solar sintering.
 
-Regardless of your academic background, we would like to welcome you to our team! If you are interested, contact us via [mail](mailto://info@bears-space.de) or on [Instagram](https://www.instagram.com/bears.space/). You can also join us directly in our weekly meeting Tuesdays at 6 pm in the F11 at the [ILR](https://maps.app.goo.gl/sixUKMx4wxruqQFr8).
+## How to reach out to us
+
+Regardless of your academic background, we would like to welcome you to our team! If you are interested, contact us via [mail](mailto://info@bears-space.de) or on [Instagram](https://www.instagram.com/bears.space/). You can also join us directly in our weekly meeting **Tuesdays** at **6 pm** in the **F11** at the [**ILR**](https://maps.app.goo.gl/sixUKMx4wxruqQFr8):
+
+<!-- Interactive map: -->
+
+::: {#map style="height: 400px; width: 80%; margin: 0 auto; border-radius: 12px;"}
+:::
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+```{=html}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+```
+
+```{=html}
+<script>
+  // === SET YOUR COORDINATES HERE ===
+  const latitude = 52.515402;   // example: Berlin
+  const longitude = 13.323714;
+  const zoomLevel = 14;       // 12–13 city, 14–16 area, 17+ building
+
+  // Create map
+  const map = L.map('map').setView([latitude, longitude], zoomLevel);
+
+  // OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Marker
+  L.marker([latitude, longitude]).addTo(map);
+</script>
+```
 
 <br/>
 

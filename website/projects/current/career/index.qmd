@@ -1,0 +1,12 @@
+---
+title: "Career"
+categories: [Science and Experiments]
+image: "Career_1.png"
+start-date: 2022-10-01
+---
+
+
+The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used. 
+
+![Concept of the Career project](Career_1.png)
+
