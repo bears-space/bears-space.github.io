@@ -8,10 +8,9 @@ start-date: 2025-10-01
 
 WOBBLE3 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid guided **E**xperiment and is observing and comparing the performance of additively manufactured propellent management devices (PMD) traps with porous elements during a parabola flight. WOBBLE3 aims to be selected for the ESA Academy Experiments programme.
 
-
 <p align="center">
 
-<img src="images/Wobble3_Final.pdf" alt="MAGGIE Patch." width="60%/"/>
+<img src="images/Wobble3_Final.svg" alt="MAGGIE Patch." width="60%/"/>
 
 </p>
 
@@ -21,21 +20,22 @@ WOBBLE3 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erl
 
 ## Abstract
 
-WOBBLE3 is observing and comparing the performance of additively manufactured propellent management devices (PMD) traps with porous elements, in a micro-g environment. Porous elements traps stop gas transport through the pores but allow liquid transport if the pressure is below the so-called bubble point pressure. This is applied to keep the outlet of a propellent-tank gas-free in micro-g which is critical for a safe combustion process. WOBBLE3 uses the additive process to implement microstructures into the trap to enhance the effectiveness of the PMD, which has not been studied before to the knowledge of WOBBLE3. The effectiveness will be determined by four key values: flow rate, pressure loss, gas free outlet, and wetting rate. These key values are determined on ground as a reference and in-situ during the micro-g environment using a camera, pressure sensors, and a flow sensor. The trap will be places in a water fluid loop, and a pump will transport the fluid to the test area. Three traps are tested: a conventional manufactured perforated sheet; an additive manufactured perforated sheet with the same dimensions; and a perforated sheet with microstructures. WOBBLE3 expects that the perforated sheets without microstructures perform like each other regarding the listed key values, while the perforated sheet with microstructures is expected to perform better. WOBBLE3 is a follow-up to [WOBBLE2](/projects/past/Wobble%202/) which determines that additively manufactured PMDs are possible to manufacture and are usable in a near-space environment in micro-g. 
+WOBBLE3 is observing and comparing the performance of additively manufactured propellent management devices (PMD) traps with porous elements, in a micro-g environment. Porous elements traps stop gas transport through the pores but allow liquid transport if the pressure is below the so-called bubble point pressure. This is applied to keep the outlet of a propellent-tank gas-free in micro-g which is critical for a safe combustion process. WOBBLE3 uses the additive process to implement microstructures into the trap to enhance the effectiveness of the PMD, which has not been studied before to the knowledge of WOBBLE3. The effectiveness will be determined by four key values: flow rate, pressure loss, gas free outlet, and wetting rate. These key values are determined on ground as a reference and in-situ during the micro-g environment using a camera, pressure sensors, and a flow sensor. The trap will be places in a water fluid loop, and a pump will transport the fluid to the test area. Three traps are tested: a conventional manufactured perforated sheet; an additive manufactured perforated sheet with the same dimensions; and a perforated sheet with microstructures. WOBBLE3 expects that the perforated sheets without microstructures perform like each other regarding the listed key values, while the perforated sheet with microstructures is expected to perform better. WOBBLE3 is a follow-up to [WOBBLE2](/projects/past/Wobble%202/) which determines that additively manufactured PMDs are possible to manufacture and are usable in a near-space environment in micro-g.
 
 ## How to get involved
+
 If you are interested, feel free to contact [Felix Oesterle](mailto:oesterle@tu-berlin.de). WOBBLE3 is looking for all kind of skills or fields of interests. To mention some:
 
-- Systems and Requirement Engineering
-- Design and CAD
-- Computer Sciences
-- Electric Engineering
-- Test Execution
-- Manufacturing
-- Outreach / Communication
-- Budgeting
-- Management
+-   Systems and Requirement Engineering
+-   Design and CAD
+-   Computer Sciences
+-   Electric Engineering
+-   Test Execution
+-   Manufacturing
+-   Outreach / Communication
+-   Budgeting
+-   Management
 
-## About the ESA Academy Experiments programme 
+## About the ESA Academy Experiments programme
 
 The ESA Academy Experiments programme provides opportunities for students to develop space hardware that is tested in various ESA facilities or connected test opportunities. More information can be found [here](https://www.esa.int/Education/ESA_Academy_Experiments_programme/About_the_ESA_Academy_Experiments_programme).
