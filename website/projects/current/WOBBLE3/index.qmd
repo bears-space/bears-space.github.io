@@ -8,11 +8,13 @@ start-date: 2025-10-01
 
 WOBBLE3 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erlin **L**iquid guided **E**xperiment and is observing and comparing the performance of additively manufactured propellent management devices (PMD) traps with porous elements during a parabola flight. WOBBLE3 aims to be selected for the ESA Academy Experiments programme.
 
+
 <p align="center">
 
-<img src="images/Wobble3_Final.svg" alt="MAGGIE Patch." width="60%/"/>
+<img src="images/Wobble3_Final.png" alt="MAGGIE Patch." width="60%/"/>
 
 </p>
+
 
 ## News
 
