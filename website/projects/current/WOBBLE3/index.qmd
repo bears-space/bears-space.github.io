@@ -11,7 +11,7 @@ WOBBLE3 stands for **W**eightless **O**bservation of **B**ehaviour with **B**erl
 
 <p align="center">
 
-<img src="images/wobble3_patch.svg" alt="MAGGIE Patch." width="60%/"/>
+<img src="images/Wobble3_Final.pdf" alt="MAGGIE Patch." width="60%/"/>
 
 </p>
 
