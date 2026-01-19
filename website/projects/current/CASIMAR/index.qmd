@@ -1,0 +1,31 @@
+---
+title: "CASIMAR"
+categories: [Robotics]
+image: "Casimar_logo.png"
+allow-html: true
+start-date: 2026-01-19
+---
+
+Humankind’s exploration of the Solar System is a daunting endeavor which many of us aerospace students wish to support and participate in during our careers. A permanent presence on our own Moon is an essential step for our cosmic growth as a species. In order to allow our members to gather further experience in the field of robotics and the design of analog space missions and tools, BEARS e.V. has become a proud member of the CASIMAR program.
+
+<p align="center">
+
+<img src="Casimar_logo.png" alt="CASIMAR Patch." width="50%/"/>
+
+</p>
+
+
+This new, nationwide collaboration with over nine other student aerospace associations aims to allow our members to conduct analog lunar missions in the LUNA Analog Facility. This state-of-the-art facility operated by the German Space Agency (DLR) and the European Space Agency (ESA) simulates the Lunar environment on 700 m^2 of lunar regolith with accurate lighting conditions, professional communication equipment and will feature a gravity offloading system and a simulated habitat in the future.
+
+BEARS e.V.’s  past contributions to the CASIMAR program include a regolith sieve which was successfully employed during our first campaign in September of 2025. Our current projects include the development of a robotic arm as a standalone payload and a new tool to be used by our analog LUNAnauts during our next simulated extravehicular activity (EVA). Each of these projects also demand us to prepare and master new challenges in designing, planning and executing a custom mission profile, which go beyond the classical engineering skillset.
+
+<p align="center">
+
+<img src="02_LUNAnaut_01.jpg" alt="LUNAnaut" width="60%/"/>
+<figcaption>LUNAnaut Weronika from the first CASIMAR campaign September 2025 ©BVSR</figcaption>
+
+</p>
+
+The entire student led aspect of the CASIMAR program is coordinated under the umbrella of the BVSR, which encompasses many of the established student space clubs in all of Germany. This project is the first nationwide collaboration spearheaded by the BVSR, followed by other nationwide collaborations, such as ODIN, a design competition for a spaceshot rocket.
+
+The BEARS are grateful for the opportunity to contribute to such a project and we encourage any who are interested to visit and speak to us about Project CASIMAR.
