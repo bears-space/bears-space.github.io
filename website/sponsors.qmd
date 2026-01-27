@@ -38,6 +38,13 @@ title:'PayPal - The safer, easier way to pay online!',
     <img src="sponsors_images/Reflex+Logo+-+Dark.png" style="display: block; margin: 0 auto; height: 5em;"/>
 </a>
 
+## Siemens Digital Industries Software
+[Siemens Digital Industries Software](https://www.sw.siemens.com/en-US/) for the generous supply of software licenses for their high-end CAD, FEM, CFD and Systems Engineering software packages.
+
+<a href="https://www.sw.siemens.com/en-US/" target="_blank">
+    <img src="sponsors_images/Petrol_Siemens_outlines.png" style="display: block; margin: 0 auto; height: 7em;"/>
+</a>
+
 ## Kurtz Ersa
 [Kurtz Ersa](https://kurtzersa.de/) for a generous donation of soldering equipement and accesories.
 
@@ -56,7 +63,7 @@ title:'PayPal - The safer, easier way to pay online!',
 Momentum Aerospace for the generous sponsoring of our MOONDUST rocket launch.
 
 <a href="" target="_blank">
-    <img src="sponsors_images/moondust team.jpg" style="display: block; margin: 0 auto; height: 7em;"/>
+    <img src="sponsors_images/moondust team.jpg" style="display: block; margin: 0 auto; height: 10em;"/>
 </a>
 
 ## AISLER
@@ -136,7 +143,7 @@ Momentum Aerospace for the generous sponsoring of our MOONDUST rocket launch.
 [Ansys](https://www.ansys.com) for software licenses and project support.
 
 <a href="https://www.ansys.com" target="_blank">
-    <img src="sponsors_images/logo_ansys.webp" style="display: block; margin: 0 auto; height: 5em;"/>
+    <img src="sponsors_images/logo_ansys.webp" style="display: block; margin: 0 auto; height: 10em;"/>
 </a>
 
 ## 3D-Druck und Design Rostock
@@ -202,7 +209,7 @@ Momentum Aerospace for the generous sponsoring of our MOONDUST rocket launch.
 [Hetzner](https://www.hetzner.com/) for sponsoring us with shared cloud storage.
 
 <a href="https://www.hetzner.com/" target="_blank">
-    <img src="sponsors_images/Hetzner-Logo-slogan_white_space-red.jpg" style="display: block; margin: 0 auto; height: 5em;"/>
+    <img src="sponsors_images/Hetzner-Logo-slogan_white_space-red.jpg" style="display: block; margin: 0 auto; height: 8em;"/>
 </a>
 
 
