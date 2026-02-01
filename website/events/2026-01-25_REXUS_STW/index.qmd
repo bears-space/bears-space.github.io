@@ -15,7 +15,7 @@ With the submission of the first student experiment description of both teams a 
 <div class="slideshow">
   <!-- put all images here that should be available in the slideshow -->
   <img src="img/MAGGIE_Dopamins.png" >
-  <img src="img/20260129_083136.JPG" >
+  <img src="img/20260129_083136.jpg" >
   <img src="img/068A3602.JPG" >
   <img src="img/STW_all.png" >
 </div>
