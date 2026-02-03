@@ -89,6 +89,17 @@ MAGGIE is applying for Cycle REXUS17 of the [REXUS/BEXUS programme](https://rexu
 
 The REXUS/BEXUS programme is realised under a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA). The Swedish share of the payload has been made available to students from other European countries through a collaboration with the European Space Agency (ESA). EuroLaunch, a cooperation between the Swedish Space Corporation (SSC) and the Mobile Rocket Base (MORABA) of DLR, is responsible for the campaign management and operations of the launch vehicles. Experts from DLR, SSC, ZARM and ESA provide technical support to the student teams throughout the project. REXUS and BEXUS are launched from SSC, Esrange Space Center in northern Sweden.
 
+## Sponsoring
+
+MAGGIE would like to thanks its specific project sponsors.
+
+<p align="center">
+
+<img src="images/GvF_Logo_final_RGB_300.jpg" alt="Gesellschaft von Freunden der TU Berlin" width="60%/"/>
+
+</p>
+The Gesellschaft von Freunden der TU Berlin sponsored a majority of the travel budget for two students for their journey to the REXUS/BEXUS Student Training Week and Preliminary Design Review to Esrange / Sweden.
+
 ## Older News
 
 **30.10.2025**: MAGGIE recieved to invitation letter to the REXUS selection workshop at the DLR in Bonn. We are looking forward an inspering dialogue and exchange with the experts from DLR and ESA as well as meeting the other student teams.
