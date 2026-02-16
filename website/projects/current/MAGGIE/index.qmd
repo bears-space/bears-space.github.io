@@ -11,7 +11,7 @@ MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **
 
 <p align="center">
 
-<img src="images/logo_maggie_baer.png" alt="MAGGIE Patch." width="60%/"/>
+<img src="images/logo_maggie_baer_REXUS.png" alt="MAGGIE Patch." width="60%/"/>
 
 </p>
 
