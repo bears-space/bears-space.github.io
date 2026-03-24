@@ -2,15 +2,17 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/current/Aerobear/index.html",
       "/projects/current/CASIMAR/index.html",
       "/projects/current/WOBBLE3/index.html",
       "/projects/current/DOPAMINS/index.html",
       "/projects/current/MAGGIE/index.html",
-      "/projects/current/Stargaze/index.html",
       "/projects/current/career/index.html",
       "/projects/current/propulsion/index.html",
       "/projects/current/Rocketry/index.html",
       "/projects/current/Rover/index.html",
+      "/projects/past/Stargaze/index.html",
+      "/projects/past/Moondust/index.html",
       "/projects/past/Wobble 2/index.html",
       "/projects/past/solar/index.html",
       "/projects/past/Lars/index.html",
