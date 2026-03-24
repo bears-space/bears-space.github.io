@@ -33,5 +33,4 @@ The rocket was launched in the Netherlands in cooperation with [DARE](https://da
 | Velocity      | 0.56 Ma        |
 <br/>
 
-
-![Stardust patch](STARDUST_Logo.png){width=30%}
+![STARDUST patch](STARDUST_Logo.png){width=30%}

@@ -11,7 +11,7 @@ During half a year we gained knowledge about rocketry and started with the desig
 In early summer we had a functional rocket. The rocket was launched as a full success and with a complete recovery one year later in October 2022 near Brunswick with the student club ERIG. 
 
 
-![Starmoon rocket](Starmoon.jpg)
+![STARMOON rocket](Starmoon.jpg)
 
 <br/>
 
@@ -25,7 +25,7 @@ In early summer we had a functional rocket. The rocket was launched as a full su
 <br/>
 
 ::: {layout=[[10,-2,20]]  layout-valign="center"}
-![Starmoon patch](Patch_Starmoon.png)
+![STARMOON patch](Patch_Starmoon.png)
 
-![Starmoon team](Team_Starmoon.jpg)
+![STARMOON team](Team_Starmoon.jpg)
 :::

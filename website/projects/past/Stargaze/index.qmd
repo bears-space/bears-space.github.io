@@ -43,6 +43,8 @@ The recovery system follows a two-stage concept. Multiple stages mean that the e
 | Total Impulse | 6.8 kNs        |
 | Velocity      | 1.03 Ma        |
 
+![STARGAZE patch](images/bears-stargaze-patch.png){width=30%}
+
 ## Sponsors
 We want to thank our sponsors for their generous support! Without them, STARGAZE and competing at EuRoC 2025 would not have been possible:
 

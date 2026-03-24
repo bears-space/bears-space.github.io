@@ -19,3 +19,5 @@ The goal of MOONDUST was to onboard new members by having them build a complete 
 | Mass          | 12.2 kg        |
 | Total Impulse | 2.869 kNs        |
 | Velocity      | 0.53 Ma        |
+
+![MOONDUST patch](images/bears-moondust-patch.png){width=30%}
