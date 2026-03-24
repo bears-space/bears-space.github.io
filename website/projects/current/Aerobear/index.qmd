@@ -5,13 +5,13 @@ categories: [Experimental Rocketry]
 start-date: 2026-12-01
 ---
 
-TODO: AEROBEAR text
+AEROBEAR is our upcoming fifth rocket and the current focus of the Experimental Rocketry team. The rocket is a test platform for the redesign of all systems for the targeted launch of our sixth rocket at EuRoC27. These redesigns include a conical coupler design, a completely redesigned slottable modular Avionics system, and a reefing recovery system.
 
 <br/>
 
 | Stats         |                |
 | :---          |     :---:      |
-| Altitude      | TODO m         |
-| Mass          | TODO kg        |
-| Total Impulse | TODO kNs        |
-| Velocity      | TODO Ma        |
+| Altitude      | 3000 m         |
+| Mass          | TBD kg        |
+| Total Impulse | TBD kNs        |
+| Velocity      | TBD Ma        |
