@@ -1,0 +1,17 @@
+---
+title: "MOONDUST"
+categories: [Experimental Rocketry]
+image: "images/bears-moondust-patch.png"
+start-date: 2025-08-01
+---
+
+TODO: MOONDUST text
+
+<br/>
+
+| Stats         |                |
+| :---          |     :---:      |
+| Altitude      | TODO m         |
+| Mass          | TODO kg        |
+| Total Impulse | TODO kNs        |
+| Velocity      | TODO Ma        |

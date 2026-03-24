@@ -2,7 +2,7 @@
 title: "STARGAZE"
 categories: [Experimental Rocketry]
 image: "images/STARGAZE_transparent.png"
-start-date: 2023-11-01
+start-date: 2025-10-13
 ---
 
 STARGAZE is our third rocket. The rocket is developed with two major goals: participation at EuRoC as well as providing a launch platform to test our subsystems and procedures to serve as an intermediate step to our future goal of developing a bi-liquid propellant high-altitude two-stage rocket. For participation at EuRoC, we specifically developed two subsystems: our Payload, as well as our Airbrake.

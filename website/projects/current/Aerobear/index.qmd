@@ -1,0 +1,17 @@
+---
+title: "AEROBEAR"
+categories: [Experimental Rocketry]
+#image: "images/TODO.png"
+start-date: 2026-12-01
+---
+
+TODO: AEROBEAR text
+
+<br/>
+
+| Stats         |                |
+| :---          |     :---:      |
+| Altitude      | TODO m         |
+| Mass          | TODO kg        |
+| Total Impulse | TODO kNs        |
+| Velocity      | TODO Ma        |
