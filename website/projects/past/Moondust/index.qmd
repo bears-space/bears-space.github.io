@@ -13,7 +13,7 @@ The goal of MOONDUST was to onboard new members by having them build a complete 
 
 | Stats         |                |
 | :---          |     :---:      |
-| Altitude      | 1200 m         |
-| Mass          | TODO kg        |
-| Total Impulse | TODO kNs        |
+| Altitude      | 1165 m         |
+| Mass          | 12.2 kg        |
+| Total Impulse | 2.869 kNs        |
 | Velocity      | 0.53 Ma        |
