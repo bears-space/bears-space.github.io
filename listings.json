@@ -4,24 +4,24 @@
     "items": [
       "/projects/current/Aerobear/index.html",
       "/projects/current/CASIMAR/index.html",
-      "/projects/current/WOBBLE3/index.html",
-      "/projects/current/DOPAMINS/index.html",
       "/projects/current/MAGGIE/index.html",
+      "/projects/current/DOPAMINS/index.html",
+      "/projects/current/WOBBLE3/index.html",
       "/projects/current/career/index.html",
       "/projects/current/propulsion/index.html",
-      "/projects/current/Rocketry/index.html",
       "/projects/current/Rover/index.html",
+      "/projects/current/Rocketry/index.html",
       "/projects/past/Stargaze/index.html",
       "/projects/past/Moondust/index.html",
       "/projects/past/Wobble 2/index.html",
-      "/projects/past/solar/index.html",
-      "/projects/past/Lars/index.html",
       "/projects/past/Stardust/index.html",
+      "/projects/past/Lars/index.html",
+      "/projects/past/solar/index.html",
       "/projects/past/Starmoon/index.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/events.html",
     "items": [
       "/events/2026-01-25_REXUS_STW/index.html",
       "/events/2025-11-17_SpaceTech_Expo/index.html",
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "listing": "/events.html",
+    "listing": "/index.html",
     "items": [
       "/events/2026-01-25_REXUS_STW/index.html",
       "/events/2025-11-17_SpaceTech_Expo/index.html",
