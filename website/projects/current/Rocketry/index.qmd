@@ -16,7 +16,7 @@ We improved on that rocket with our second rocket [STARDUST](/projects/Stardust/
 Our third rocket, [MOONDUST](/projects/Moondust), launched to a target altitude of around 1200m, with the goal of onboarding a new generation of BEARS members and verifying Recovery and Avioncs system redesigns for our next launch.
 Our fourth rocket, [STARGAZE](/projects/Stargaze/), launched at EuRoC in October 2025.
 
-We are currently developing [AEROBEAR](/projects/Aerobear), which will be our fifth rocket. It is planned to be launched around the end of 2026, with the goal of verifying major system redesigns for future rockets.
+We are currently developing [STARSTREAK](/projects/Starstreak), which will be our fifth rocket. It is planned to be launched around the end of 2026, with the goal of verifying major system redesigns for future rockets.
 We are also working on a custom liquid or hybrid engine, which we hope to integrate in time for EuRoC 2027.
 
 ## Our team
