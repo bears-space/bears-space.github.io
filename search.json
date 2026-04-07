@@ -175,11 +175,25 @@
     "text": "STARDUST was our second rocket. With a target apogee of 1.5 km and a length of 2.5 m, this was a significant upgrade in power when compared to our first rocket (STARMOON). Development started in the summer of 2022 with manufacturing beginning in 2023, leading up to the launch in September 2024.\nTo acquire a motor powerful enough for to reach the target height, we drove to the Netherlands to buy an M-class motor. Almost all systems have been upgraded or completely redesigned to sustain the higher maximum speed of 0.56 Ma and the associated vibrations. Our fins have been manufactured from metal while the nose cone was created using only glass fiber. The electronics compartment used the same flight computers as STARMOON in combination with an updated arming system. Outward-facing cameras were also included. We have also developed a GPS downlink system to track our rocket. The redesigned recovery system used 2-stage recovery, with the nose cone blasting off at apogee to reveal the drogue chute while the main chute opens at 300 m by cutting a steel cable.\nAs payload, we had the WOBBLE experiment on board. This consisted of a camera pointed at a 3D-printed tank (PMD = propellant management device) for small satellites, allowing observation of the fluid behavior inside.\nThe rocket was launched in the Netherlands in cooperation with DARE in September 2024.\n\n\n\nStardust rocket\n\n\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n1547 m\n\n\nMass\n18 kg\n\n\nTotal Impulse\n6.3 kNs\n\n\nVelocity\n0.56 Ma\n\n\n\n\n\n\n\nSTARDUST patch"
   },
   {
-    "objectID": "projects/current/career/index.html",
-    "href": "projects/current/career/index.html",
-    "title": "Career",
+    "objectID": "projects/current/Rocketry/index.html",
+    "href": "projects/current/Rocketry/index.html",
+    "title": "Rocket Systems",
     "section": "",
-    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
+    "text": "The Rocket Systems subgroup focuses on the development, production and operation of sounding rockets with the goal of incrementally increasing the capability of each new rocket. As of October 2025, four launches were performed."
+  },
+  {
+    "objectID": "projects/current/Rocketry/index.html#our-rockets",
+    "href": "projects/current/Rocketry/index.html#our-rockets",
+    "title": "Rocket Systems",
+    "section": "Our rockets",
+    "text": "Our rockets\nOur first rocket was STARMOON, which launched in October 2022 to around 600m. We improved on that rocket with our second rocket STARDUST which launched to around 1500m in September 2024. Unlike our first rocket, this one was carrying an experiment. Our third rocket, MOONDUST, launched to a target altitude of around 1200m, with the goal of onboarding a new generation of BEARS members and verifying Recovery and Avioncs system redesigns for our next launch. Our fourth rocket, STARGAZE, launched at EuRoC in October 2025.\nWe are currently developing STARSTREAK, which will be our fifth rocket. It is planned to be launched around the end of 2026, with the goal of verifying major system redesigns for future rockets. We are also working on a custom liquid or hybrid engine, which we hope to integrate in time for EuRoC 2027."
+  },
+  {
+    "objectID": "projects/current/Rocketry/index.html#our-team",
+    "href": "projects/current/Rocketry/index.html#our-team",
+    "title": "Rocket Systems",
+    "section": "Our team",
+    "text": "Our team\nOur team consists of around 30 highly motivated students from diverse study backgrounds, including Aeronautics and Astronautics, Transport Systems, Computer Science and Geotechnology. We try to push ourselves harder every time we develop a new rocket to make a more advanced rocket. We are also very interested in participating in competitions like EuRoC."
   },
   {
     "objectID": "projects/current/WOBBLE3/index.html",
@@ -378,32 +392,18 @@
     "text": "Sponsors\nHuge thanks to our sponsors for their support of this project, including a battery pack from Tesla, software from Ansys, and 3d-printed parts from 3D-Druck und Design Rostock."
   },
   {
-    "objectID": "projects/current/Rocketry/index.html",
-    "href": "projects/current/Rocketry/index.html",
-    "title": "Rocket Systems",
+    "objectID": "projects/current/Starstreak/index.html",
+    "href": "projects/current/Starstreak/index.html",
+    "title": "STARSTREAK",
     "section": "",
-    "text": "The Rocket Systems subgroup focuses on the development, production and operation of sounding rockets with the goal of incrementally increasing the capability of each new rocket. As of October 2025, four launches were performed."
+    "text": "STARSTREAK is our upcoming fifth rocket and the current focus of the Experimental Rocketry team. The rocket is a test platform for the redesign of all systems for the targeted launch of our sixth rocket at EuRoC27. These redesigns include a conical coupler design, a completely redesigned slottable modular Avionics system, and a reefing recovery system.\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n3000 m\n\n\nMass\nTBD kg\n\n\nTotal Impulse\nTBD kNs\n\n\nVelocity\nTBD Ma"
   },
   {
-    "objectID": "projects/current/Rocketry/index.html#our-rockets",
-    "href": "projects/current/Rocketry/index.html#our-rockets",
-    "title": "Rocket Systems",
-    "section": "Our rockets",
-    "text": "Our rockets\nOur first rocket was STARMOON, which launched in October 2022 to around 600m. We improved on that rocket with our second rocket STARDUST which launched to around 1500m in September 2024. Unlike our first rocket, this one was carrying an experiment. Our third rocket, MOONDUST, launched to a target altitude of around 1200m, with the goal of onboarding a new generation of BEARS members and verifying Recovery and Avioncs system redesigns for our next launch. Our fourth rocket, STARGAZE, launched at EuRoC in October 2025.\nWe are currently developing AEROBEAR, which will be our fifth rocket. It is planned to be launched around the end of 2026, with the goal of verifying major system redesigns for future rockets. We are also working on a custom liquid or hybrid engine, which we hope to integrate in time for EuRoC 2027."
-  },
-  {
-    "objectID": "projects/current/Rocketry/index.html#our-team",
-    "href": "projects/current/Rocketry/index.html#our-team",
-    "title": "Rocket Systems",
-    "section": "Our team",
-    "text": "Our team\nOur team consists of around 30 highly motivated students from diverse study backgrounds, including Aeronautics and Astronautics, Transport Systems, Computer Science and Geotechnology. We try to push ourselves harder every time we develop a new rocket to make a more advanced rocket. We are also very interested in participating in competitions like EuRoC."
-  },
-  {
-    "objectID": "projects/current/Aerobear/index.html",
-    "href": "projects/current/Aerobear/index.html",
-    "title": "AEROBEAR",
+    "objectID": "projects/current/career/index.html",
+    "href": "projects/current/career/index.html",
+    "title": "Career",
     "section": "",
-    "text": "AEROBEAR is our upcoming fifth rocket and the current focus of the Experimental Rocketry team. The rocket is a test platform for the redesign of all systems for the targeted launch of our sixth rocket at EuRoC27. These redesigns include a conical coupler design, a completely redesigned slottable modular Avionics system, and a reefing recovery system.\n\n\n\n\nStats\n\n\n\n\n\nAltitude\n3000 m\n\n\nMass\nTBD kg\n\n\nTotal Impulse\nTBD kNs\n\n\nVelocity\nTBD Ma"
+    "text": "The Career project is about reproducing the docking of 2 satellites. For this purpose 2 robot arms are used.\n\n\n\nConcept of the Career project"
   },
   {
     "objectID": "projects/past/Lars/index.html",
