@@ -10,6 +10,8 @@
 > - `src/content/page-text/en/contact/contact-title.mdx`
 >
 > **TODO:** Add benefits section to sponsors and link in footer, or remove entry in footer.
+>
+> **TODO:** At website-migration cutover, switch the Cloudflare Pages project's production branch from `leopold-website-migration` to `main`. Cloudflare → Workers & Pages → the admin project → Settings → Builds & deployments → Production branch. Do this *after* `leopold-website-migration` has been merged into `main`, otherwise the admin will redeploy from a branch that's now behind.
 
 ## Prerequisites
 
