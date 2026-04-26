@@ -32,7 +32,7 @@ npm run dev
 
 ## Deployment
 
-The repo produces **two separate deploys** from the same source tree:
+The repo produces **two separate deploys** from the same source tree. The public pages are pure static HTML/CSS/JS, which GitHub Pages serves for free — but the admin UI's `/keystatic` and `/api/keystatic/*` routes need server-side rendering (OAuth callback + GitHub commit handler), and GitHub Pages doesn't support that. The admin therefore runs on Cloudflare Pages with an SSR adapter, while the public site stays on GitHub Pages.
 
 - **Public site** — `bears-space.de`, deployed to GitHub Pages. Purely static, built with `npm run build`. This is what end users see.
 - **Admin UI** — `admin.bears-space.de`, deployed to Cloudflare Pages. Astro `output: 'server'` with the `@astrojs/cloudflare` adapter, built with `npm run build:admin` (sets `ADMIN_BUILD=true`). Serves `/keystatic` for content editors.
