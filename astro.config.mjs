@@ -45,6 +45,7 @@ export default defineConfig({
   vite: {
     define: {
       'import.meta.env.ADMIN_BUILD': JSON.stringify(ADMIN_BUILD),
+      'import.meta.env.KEYSTATIC_STORAGE': JSON.stringify(process.env.KEYSTATIC_STORAGE ?? ''),
     },
     plugins: [tailwindcss()],
   },

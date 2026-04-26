@@ -17,7 +17,7 @@ import { buildMdxComponents } from './src/keystatic/mdxComponents';
 
 const useGithubStorage =
   process.env.NODE_ENV === 'production' ||
-  process.env.KEYSTATIC_STORAGE === 'github';
+  import.meta.env.KEYSTATIC_STORAGE === 'github';
 
 const storage = useGithubStorage
   ? {
