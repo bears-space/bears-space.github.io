@@ -1,6 +1,6 @@
 showHero: true
 showWhatIsBears: true
-showMeetTheTeam: true
+showMeetTheTeam: false
 showBecomeSponsor: true
 showLatestNews: true
 showTestimonials: true
