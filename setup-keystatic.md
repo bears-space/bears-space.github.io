@@ -28,24 +28,28 @@ git checkout leopold-website-migration   # or main, after merge
 npm install
 ```
 
-The setup wizard at `/keystatic/setup` only renders when `keystatic.config.ts`
-is in github-storage mode, which is gated on `NODE_ENV === 'production'`
-([keystatic.config.ts:14](keystatic.config.ts)). In a normal `npm run
-dev:admin` invocation `NODE_ENV` is `development`, storage falls back to
-`local`, and the setup wizard short-circuits — that's why a fresh clone
-"just works" with no prompts. Force production mode for this one step:
+Create a `.env` file in the project root with one line:
 
-```powershell
-# Windows PowerShell
-$env:NODE_ENV='production'; npm run dev:admin
 ```
+KEYSTATIC_STORAGE=github
+```
+
+The setup wizard at `/keystatic/setup` only renders when `keystatic.config.ts`
+is in github-storage mode. By default that's gated on `NODE_ENV === 'production'`
+([keystatic.config.ts:14](keystatic.config.ts)) — in a normal `npm run dev:admin`
+invocation `NODE_ENV` is `development`, storage falls back to `local`, and the
+wizard short-circuits straight to the CMS. The `KEYSTATIC_STORAGE=github` flag
+is the dev-mode override that flips the same condition without requiring
+shell-specific env-var syntax (Vite ignores `NODE_ENV` overrides from `.env`,
+so this dedicated flag exists for exactly this case).
+
+Then start the dev server:
 
 ```sh
-# macOS / Linux / Git Bash
-NODE_ENV=production npm run dev:admin
+npm run dev:admin
 ```
 
-Then open `http://localhost:4321/keystatic/setup` and walk through the flow. Set:
+Open `http://localhost:4321/keystatic/setup` and walk through the flow. Set:
 
 - Homepage URL → `https://<admin-domain>` (placeholder ok, editable later).
 - OAuth callback → `https://<admin-domain>/api/keystatic/github/oauth/callback`.
@@ -58,10 +62,9 @@ Copy the three secrets it generates:
 
 Install the App on `bears-space/bears-space.github.io` only — not org-wide.
 
-Stop the dev server and unset `NODE_ENV` (close the shell, or
-`Remove-Item Env:\NODE_ENV` / `unset NODE_ENV`) so subsequent `npm run
-dev:admin` calls go back to the local-storage flow that doesn't need the
-secrets.
+Once setup is done, delete the `.env` file (or just the `KEYSTATIC_STORAGE`
+line) so subsequent `npm run dev:admin` calls go back to the local-storage
+flow that doesn't need the secrets.
 
 ## 2. Create the Cloudflare Pages project (club's account)
 

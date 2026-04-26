@@ -6,12 +6,20 @@ import { buildMdxComponents } from './src/keystatic/mdxComponents';
 //
 // `local` writes edits straight to src/content/ on disk — no OAuth roundtrip,
 // no wait for GitHub's build pipeline, so `npm run dev:admin` reflects changes
-// immediately. `github` is only used by the deployed admin site (built with
+// immediately. `github` is used by the deployed admin site (built with
 // ADMIN_BUILD=true which sets NODE_ENV to production), where editor saves need
 // to commit back to the repo.
+//
+// `KEYSTATIC_STORAGE=github` in .env forces github storage in dev too — needed
+// to render `/keystatic/setup` (the GitHub App registration wizard), which is
+// otherwise skipped because local storage has no OAuth to configure.
 // ============================================================================
 
-const storage = process.env.NODE_ENV === 'production'
+const useGithubStorage =
+  process.env.NODE_ENV === 'production' ||
+  process.env.KEYSTATIC_STORAGE === 'github';
+
+const storage = useGithubStorage
   ? {
       kind: 'github' as const,
       repo: {
