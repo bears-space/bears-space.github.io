@@ -1,4 +1,5 @@
 ---
+import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PageHeroImage from "@reusable/PageHeroImage.astro";
 import OurMission from "@components/about/OurMission.astro";
@@ -12,6 +13,7 @@ import { getLocale } from "@utils/i18n";
 
 const locale = getLocale(Astro.url);
 const pageContent = await getPageContent('about-us/about-us-title', locale);
+const visibility = (await getEntry('about-section-visibility', 'settings'))!.data;
 
 // Image is locale-agnostic; editors can upload on either locale's singleton.
 // Prefer EN, fall back to the active locale, then to the first file in the directory.
@@ -43,11 +45,11 @@ if (!aboutHeroImage) {
     searchAliases={locale === 'de' ? ['Über Uns'] : ['About Us']}
   />
 
-  <OurMission locale={locale} />
+  {visibility.showOurMission && <OurMission locale={locale} />}
 
-  <FacesOfBears locale={locale} />
+  {visibility.showFacesOfBears && <FacesOfBears locale={locale} />}
 
-  <FindUs locale={locale} />
+  {visibility.showFindUs && <FindUs locale={locale} />}
 
-  <FAQ locale={locale} />
+  {visibility.showFaq && <FAQ locale={locale} />}
 </BaseLayout>

@@ -2,6 +2,7 @@
 // Media Page - Displays all media organized by category in accordion format
 // Categories are configured via the page-text content collection (media-title.mdx)
 
+import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import MediaAccordion from "../components/reusable/MediaAccordion.astro";
 import PageHeroImage from "../components/reusable/PageHeroImage.astro";
@@ -22,6 +23,7 @@ import { getLocale, mediaUiStrings } from "@utils/i18n";
 
 const locale = getLocale(Astro.url);
 const pageContent = await getPageContent('media-categories', locale);
+const visibility = (await getEntry('media-section-visibility', 'settings'))!.data;
 
 // Image is locale-agnostic; editors can upload on either locale's singleton.
 // Prefer EN, fall back to the active locale, then to the first file in the directory.
@@ -99,44 +101,46 @@ for (const cat of contentCategories) {
     title={pageContent?.data.title ?? "Media"}
     subtitle={pageContent?.data.subtitle ?? ""}
   />
-  <div class="container mx-auto px-4 py-6 sm:py-8 lg:py-12 sm:px-8 lg:px-16">
-    {/* Media Categories Accordion */}
-    <div class="flex flex-col gap-6 sm:gap-20">
+  {visibility.showMediaContent && (
+    <div class="container mx-auto px-4 py-6 sm:py-8 lg:py-12 sm:px-8 lg:px-16">
+      {/* Media Categories Accordion */}
+      <div class="flex flex-col gap-6 sm:gap-20">
+        {
+          displayCategories.map((category) => (
+            <MediaAccordion
+              title={category.label}
+              images={category.images}
+              cols={4}
+              gap="md"
+              locale={locale}
+            />
+          ))
+        }
+      </div>
+
+      {/* Empty State */}
       {
-        displayCategories.map((category) => (
-          <MediaAccordion
-            title={category.label}
-            images={category.images}
-            cols={4}
-            gap="md"
-            locale={locale}
-          />
-        ))
+        displayCategories.length === 0 && (
+          <div class="text-center py-16 sm:py-20">
+            <svg
+              class="w-16 h-16 mx-auto mb-4 text-bears-text-onDark/30"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            <p class="text-lg text-bears-text-onDark/60">
+              {mediaUiStrings[locale]['no-media']}
+            </p>
+          </div>
+        )
       }
     </div>
-
-    {/* Empty State */}
-    {
-      displayCategories.length === 0 && (
-        <div class="text-center py-16 sm:py-20">
-          <svg
-            class="w-16 h-16 mx-auto mb-4 text-bears-text-onDark/30"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-            />
-          </svg>
-          <p class="text-lg text-bears-text-onDark/60">
-            {mediaUiStrings[locale]['no-media']}
-          </p>
-        </div>
-      )
-    }
-  </div>
+  )}
 </BaseLayout>

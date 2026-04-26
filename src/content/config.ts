@@ -331,6 +331,41 @@ const landingSectionVisibilityCollection = defineCollection({
   }),
 });
 
+const aboutSectionVisibilityCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    showOurMission: z.boolean().default(true),
+    showFacesOfBears: z.boolean().default(true),
+    showFindUs: z.boolean().default(true),
+    showFaq: z.boolean().default(true),
+  }),
+});
+
+const sponsorsSectionVisibilityCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    showSponsorShowcase: z.boolean().default(true),
+    showBecomeSponsorCta: z.boolean().default(true),
+    showDonateSection: z.boolean().default(true),
+    showProjectsCrosslink: z.boolean().default(true),
+  }),
+});
+
+const contactSectionVisibilityCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    showContactInfo: z.boolean().default(true),
+    showAboutUsCrosslink: z.boolean().default(true),
+  }),
+});
+
+const mediaSectionVisibilityCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    showMediaContent: z.boolean().default(true),
+  }),
+});
+
 export const collections = {
   sponsors: sponsorsCollection,
   events: eventsCollection,
@@ -345,4 +380,8 @@ export const collections = {
   branding: brandingCollection,
   'default-images': defaultImagesCollection,
   'landing-section-visibility': landingSectionVisibilityCollection,
+  'about-section-visibility': aboutSectionVisibilityCollection,
+  'sponsors-section-visibility': sponsorsSectionVisibilityCollection,
+  'contact-section-visibility': contactSectionVisibilityCollection,
+  'media-section-visibility': mediaSectionVisibilityCollection,
 };

@@ -1256,7 +1256,7 @@ function defaultImagesSingleton() {
 
 function landingSectionVisibilitySingleton() {
   return singleton({
-    label: 'Landing section visibility',
+    label: 'Landing — segments',
     path: 'src/content/landing-section-visibility/settings',
     format: { data: 'yaml' as const },
     entryLayout: 'form' as const,
@@ -1267,6 +1267,61 @@ function landingSectionVisibilitySingleton() {
       showBecomeSponsor: fields.checkbox({ label: 'Show "Become a sponsor"', defaultValue: true }),
       showLatestNews: fields.checkbox({ label: 'Show "Latest news"', defaultValue: true }),
       showTestimonials: fields.checkbox({ label: 'Show "Testimonials"', defaultValue: true }),
+    },
+  });
+}
+
+function aboutSectionVisibilitySingleton() {
+  return singleton({
+    label: 'About us — segments',
+    path: 'src/content/about-section-visibility/settings',
+    format: { data: 'yaml' as const },
+    entryLayout: 'form' as const,
+    schema: {
+      showOurMission: fields.checkbox({ label: 'Show "Our Mission"', defaultValue: true }),
+      showFacesOfBears: fields.checkbox({ label: 'Show "Faces of BEARS"', defaultValue: true }),
+      showFindUs: fields.checkbox({ label: 'Show "Find us"', defaultValue: true }),
+      showFaq: fields.checkbox({ label: 'Show FAQ', defaultValue: true }),
+    },
+  });
+}
+
+function sponsorsSectionVisibilitySingleton() {
+  return singleton({
+    label: 'Sponsors — segments',
+    path: 'src/content/sponsors-section-visibility/settings',
+    format: { data: 'yaml' as const },
+    entryLayout: 'form' as const,
+    schema: {
+      showSponsorShowcase: fields.checkbox({ label: 'Show sponsor showcase (tier accordions)', defaultValue: true }),
+      showBecomeSponsorCta: fields.checkbox({ label: 'Show "Become a sponsor" CTA card', defaultValue: true }),
+      showDonateSection: fields.checkbox({ label: 'Show direct donation panel', defaultValue: true }),
+      showProjectsCrosslink: fields.checkbox({ label: 'Show projects crosslink banner', defaultValue: true }),
+    },
+  });
+}
+
+function contactSectionVisibilitySingleton() {
+  return singleton({
+    label: 'Contact — segments',
+    path: 'src/content/contact-section-visibility/settings',
+    format: { data: 'yaml' as const },
+    entryLayout: 'form' as const,
+    schema: {
+      showContactInfo: fields.checkbox({ label: 'Show contact info', defaultValue: true }),
+      showAboutUsCrosslink: fields.checkbox({ label: 'Show "About us" crosslink banner', defaultValue: true }),
+    },
+  });
+}
+
+function mediaSectionVisibilitySingleton() {
+  return singleton({
+    label: 'Media — segments',
+    path: 'src/content/media-section-visibility/settings',
+    format: { data: 'yaml' as const },
+    entryLayout: 'form' as const,
+    schema: {
+      showMediaContent: fields.checkbox({ label: 'Show media categories (and empty-state fallback)', defaultValue: true }),
     },
   });
 }
@@ -1352,7 +1407,13 @@ export default config({
         'pageTextSearchEn', 'pageTextSearchDe',
         'branding',
         'defaultImages',
+      ],
+      'Segment Visibility': [
         'landingSectionVisibility',
+        'aboutSectionVisibility',
+        'sponsorsSectionVisibility',
+        'contactSectionVisibility',
+        'mediaSectionVisibility',
       ],
       // --- Docs -------------------------------------------------------------
       'Docs': ['docsGuides', 'docsDev'],
@@ -1480,6 +1541,10 @@ export default config({
     branding: brandingSingleton(),
     defaultImages: defaultImagesSingleton(),
     landingSectionVisibility: landingSectionVisibilitySingleton(),
+    aboutSectionVisibility: aboutSectionVisibilitySingleton(),
+    sponsorsSectionVisibility: sponsorsSectionVisibilitySingleton(),
+    contactSectionVisibility: contactSectionVisibilitySingleton(),
+    mediaSectionVisibility: mediaSectionVisibilitySingleton(),
     // Landing-page testimonials carousel — single YAML file with a
     // drag-reorderable array of { person, quoteEn, quoteDe }.
     testimonials: testimonialsSingleton(),

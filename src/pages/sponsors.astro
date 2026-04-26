@@ -1,4 +1,5 @@
 ---
+import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PageHeroImage from "@reusable/PageHeroImage.astro";
 import SponsorShowcase from "@components/sponsors/SponsorShowcase.astro";
@@ -18,6 +19,7 @@ const tiersContent = await getPageContent("sponsors/sponsor-tiers", locale);
 const ctaContent = await getPageContent("sponsors/become-sponsor-cta", locale);
 const donateContent = await getPageContent("donate", locale);
 const crosslink = await getPageContent("sponsors/sponsors-crosslink", locale);
+const visibility = (await getEntry('sponsors-section-visibility', 'settings'))!.data;
 
 // Hero image — locale-agnostic; editors can upload on either locale's singleton.
 // Prefer EN, fall back to the active locale, then to the first file in the directory.
@@ -100,41 +102,47 @@ const tiers = [
   />
 
   {/* Sponsor Showcase (light bg, tier accordions) */}
-  <SponsorShowcase
-    title={introContent?.data.title}
-    description={introContent?.data.description}
-    tiers={tiers}
-  />
+  {visibility.showSponsorShowcase && (
+    <SponsorShowcase
+      title={introContent?.data.title}
+      description={introContent?.data.description}
+      tiers={tiers}
+    />
+  )}
 
-  {/* Become a Sponsor CTA */}
-  {ctaContent && (
+  {/* Become a Sponsor CTA + Donate (gated independently inside one shared section) */}
+  {ctaContent && (visibility.showBecomeSponsorCta || visibility.showDonateSection) && (
     <section class="container mx-auto px-4 sm:px-8 lg:px-16 pt-20 sm:pt-28 lg:pt-36 pb-2 sm:pb-4 lg:pb-2">
-      {ctaContent.data.subtitle && (
-        <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-bears-accent mb-3 sm:mb-4 text-center">
-          {ctaContent.data.subtitle}
-        </p>
+      {visibility.showBecomeSponsorCta && (
+        <>
+          {ctaContent.data.subtitle && (
+            <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-bears-accent mb-3 sm:mb-4 text-center">
+              {ctaContent.data.subtitle}
+            </p>
+          )}
+
+          <h2 id="become-a-sponsor-title" class="text-3xl sm:text-4xl lg:text-5xl font-bold text-bears-text-onDark text-center mb-6 sm:mb-8 lg:mb-12 scroll-mt-20">
+            {ctaContent.data.title}
+          </h2>
+
+          <div class="max-w-2xl mx-auto bg-white/[0.04] border border-white/15 rounded-2xl p-6 sm:p-8 lg:p-10 text-center shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
+            {ctaContent.data.description && (
+              <p class="text-sm sm:text-base lg:text-lg text-bears-text-onDark/70 leading-relaxed mb-8 sm:mb-10">
+                {ctaContent.data.description}
+              </p>
+            )}
+
+            {ctaContent.data.buttonText && ctaContent.data.buttonHref && (
+              <Button variant="primary" size="large" href={ctaContent.data.buttonHref}>
+                {ctaContent.data.buttonText}
+              </Button>
+            )}
+          </div>
+        </>
       )}
 
-      <h2 id="become-a-sponsor-title" class="text-3xl sm:text-4xl lg:text-5xl font-bold text-bears-text-onDark text-center mb-6 sm:mb-8 lg:mb-12 scroll-mt-20">
-        {ctaContent.data.title}
-      </h2>
-
-      <div class="max-w-2xl mx-auto bg-white/[0.04] border border-white/15 rounded-2xl p-6 sm:p-8 lg:p-10 text-center shadow-[0_8px_32px_rgba(0,0,0,0.35)]">
-        {ctaContent.data.description && (
-          <p class="text-sm sm:text-base lg:text-lg text-bears-text-onDark/70 leading-relaxed mb-8 sm:mb-10">
-            {ctaContent.data.description}
-          </p>
-        )}
-
-        {ctaContent.data.buttonText && ctaContent.data.buttonHref && (
-          <Button variant="primary" size="large" href={ctaContent.data.buttonHref}>
-            {ctaContent.data.buttonText}
-          </Button>
-        )}
-      </div>
-
-      {/* Visual bridge: "OR" divider connecting to direct donations */}
-      {donateContent && (
+      {/* Visual bridge: "OR" divider — only when both CTA and donate are visible */}
+      {visibility.showBecomeSponsorCta && visibility.showDonateSection && donateContent && (
         <div class="max-w-xl mx-auto flex items-center gap-4 my-10 sm:my-14" aria-hidden="true">
           <div class="flex-1 h-px bg-gradient-to-r from-transparent to-white/15"></div>
           <span class="text-xs font-bold uppercase tracking-[0.2em] text-bears-text-onDark/40">{donateContent.data.orDividerText ?? 'Or'}</span>
@@ -143,7 +151,7 @@ const tiers = [
       )}
 
       {/* Direct donations — secondary, compact */}
-      {donateContent && (
+      {visibility.showDonateSection && donateContent && (
       <div
         id="donate-title"
         class="max-w-2xl mx-auto bg-white/[0.02] border border-white/10 rounded-2xl p-5 sm:p-6 lg:p-8 scroll-mt-20"
@@ -288,11 +296,13 @@ const tiers = [
   )}
 
   {/* Crosslink to projects */}
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <CrosslinkBanner
-      text={crosslink?.data.title ?? "See what your support makes possible"}
-      linkText={crosslink?.data.buttonText ?? "Explore our projects"}
-      href={localizeUrl(crosslink?.data.buttonHref ?? "/projects", locale)}
-    />
-  </div>
+  {visibility.showProjectsCrosslink && (
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <CrosslinkBanner
+        text={crosslink?.data.title ?? "See what your support makes possible"}
+        linkText={crosslink?.data.buttonText ?? "Explore our projects"}
+        href={localizeUrl(crosslink?.data.buttonHref ?? "/projects", locale)}
+      />
+    </div>
+  )}
 </BaseLayout>
