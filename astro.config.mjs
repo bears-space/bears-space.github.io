@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { loadEnv } from 'vite';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -14,6 +15,12 @@ import keystatic from '@keystatic/astro';
 import cloudflare from '@astrojs/cloudflare';
 
 const ADMIN_BUILD = process.env.ADMIN_BUILD === 'true';
+
+// `.env` values aren't auto-merged into process.env at config-load time, so
+// read KEYSTATIC_STORAGE explicitly via Vite's loadEnv. Fallback to process.env
+// for cases where the var is set via shell/cross-env instead of .env.
+const dotEnv = loadEnv(process.env.NODE_ENV ?? 'development', process.cwd(), '');
+const KEYSTATIC_STORAGE = dotEnv.KEYSTATIC_STORAGE ?? process.env.KEYSTATIC_STORAGE ?? '';
 
 const baseIntegrations = [alpinejs(), mdx(), react()];
 
@@ -45,7 +52,7 @@ export default defineConfig({
   vite: {
     define: {
       'import.meta.env.ADMIN_BUILD': JSON.stringify(ADMIN_BUILD),
-      'import.meta.env.KEYSTATIC_STORAGE': JSON.stringify(process.env.KEYSTATIC_STORAGE ?? ''),
+      'import.meta.env.KEYSTATIC_STORAGE': JSON.stringify(KEYSTATIC_STORAGE),
     },
     plugins: [tailwindcss()],
   },
