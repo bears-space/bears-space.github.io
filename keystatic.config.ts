@@ -1254,6 +1254,23 @@ function defaultImagesSingleton() {
   });
 }
 
+function landingSectionVisibilitySingleton() {
+  return singleton({
+    label: 'Landing section visibility',
+    path: 'src/content/landing-section-visibility/settings',
+    format: { data: 'yaml' as const },
+    entryLayout: 'form' as const,
+    schema: {
+      showHero: fields.checkbox({ label: 'Show landing hero', defaultValue: true }),
+      showWhatIsBears: fields.checkbox({ label: 'Show "What is BEARS"', defaultValue: true }),
+      showMeetTheTeam: fields.checkbox({ label: 'Show "Meet the Team"', defaultValue: true }),
+      showBecomeSponsor: fields.checkbox({ label: 'Show "Become a sponsor"', defaultValue: true }),
+      showLatestNews: fields.checkbox({ label: 'Show "Latest news"', defaultValue: true }),
+      showTestimonials: fields.checkbox({ label: 'Show "Testimonials"', defaultValue: true }),
+    },
+  });
+}
+
 // ============================================================================
 // CONFIG
 // ============================================================================
@@ -1335,6 +1352,7 @@ export default config({
         'pageTextSearchEn', 'pageTextSearchDe',
         'branding',
         'defaultImages',
+        'landingSectionVisibility',
       ],
       // --- Docs -------------------------------------------------------------
       'Docs': ['docsGuides', 'docsDev'],
@@ -1461,6 +1479,7 @@ export default config({
     // Site-wide branding (locale-agnostic)
     branding: brandingSingleton(),
     defaultImages: defaultImagesSingleton(),
+    landingSectionVisibility: landingSectionVisibilitySingleton(),
     // Landing-page testimonials carousel — single YAML file with a
     // drag-reorderable array of { person, quoteEn, quoteDe }.
     testimonials: testimonialsSingleton(),

@@ -319,6 +319,18 @@ const defaultImagesCollection = defineCollection({
   }),
 });
 
+const landingSectionVisibilityCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    showHero: z.boolean().default(true),
+    showWhatIsBears: z.boolean().default(true),
+    showMeetTheTeam: z.boolean().default(true),
+    showBecomeSponsor: z.boolean().default(true),
+    showLatestNews: z.boolean().default(true),
+    showTestimonials: z.boolean().default(true),
+  }),
+});
+
 export const collections = {
   sponsors: sponsorsCollection,
   events: eventsCollection,
@@ -332,4 +344,5 @@ export const collections = {
   'social-platforms': socialPlatformsCollection,
   branding: brandingCollection,
   'default-images': defaultImagesCollection,
+  'landing-section-visibility': landingSectionVisibilityCollection,
 };

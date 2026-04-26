@@ -1,4 +1,5 @@
 ---
+import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import LandingHero from "@landing/LandingHero.astro";
 import WhatIsBears from "@landing/WhatIsBears.astro";
@@ -20,13 +21,15 @@ const heroCTAs = (heroContent?.data.ctas ?? []).map(cta => ({
   ...cta,
   href: localizeUrl(cta.href, locale),
 }));
+
+const visibility = (await getEntry('landing-section-visibility', 'settings'))!.data;
 ---
 
 <BaseLayout title={locale === 'de' ? 'Startseite' : 'Home'} description={heroContent?.data.seoDescription}>
-  <LandingHero ctas={heroCTAs} locale={locale} />
-  <WhatIsBears locale={locale} />
-  <MeetTheTeam locale={locale} />
-  <BecomeSponsor locale={locale} />
-  <LatestNews locale={locale} />
-  <Testimonials locale={locale} />
+  {visibility.showHero && <LandingHero ctas={heroCTAs} locale={locale} />}
+  {visibility.showWhatIsBears && <WhatIsBears locale={locale} />}
+  {visibility.showMeetTheTeam && <MeetTheTeam locale={locale} />}
+  {visibility.showBecomeSponsor && <BecomeSponsor locale={locale} />}
+  {visibility.showLatestNews && <LatestNews locale={locale} />}
+  {visibility.showTestimonials && <Testimonials locale={locale} />}
 </BaseLayout>
