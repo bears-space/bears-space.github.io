@@ -26,10 +26,26 @@ git clone https://github.com/bears-space/bears-space.github.io.git
 cd bears-space.github.io
 git checkout leopold-website-migration   # or main, after merge
 npm install
-npm run dev:admin
 ```
 
-Open `http://localhost:4321/keystatic/setup` and walk through the flow. Set:
+The setup wizard at `/keystatic/setup` only renders when `keystatic.config.ts`
+is in github-storage mode, which is gated on `NODE_ENV === 'production'`
+([keystatic.config.ts:14](keystatic.config.ts)). In a normal `npm run
+dev:admin` invocation `NODE_ENV` is `development`, storage falls back to
+`local`, and the setup wizard short-circuits — that's why a fresh clone
+"just works" with no prompts. Force production mode for this one step:
+
+```powershell
+# Windows PowerShell
+$env:NODE_ENV='production'; npm run dev:admin
+```
+
+```sh
+# macOS / Linux / Git Bash
+NODE_ENV=production npm run dev:admin
+```
+
+Then open `http://localhost:4321/keystatic/setup` and walk through the flow. Set:
 
 - Homepage URL → `https://<admin-domain>` (placeholder ok, editable later).
 - OAuth callback → `https://<admin-domain>/api/keystatic/github/oauth/callback`.
@@ -41,6 +57,11 @@ Copy the three secrets it generates:
 - `KEYSTATIC_SECRET`
 
 Install the App on `bears-space/bears-space.github.io` only — not org-wide.
+
+Stop the dev server and unset `NODE_ENV` (close the shell, or
+`Remove-Item Env:\NODE_ENV` / `unset NODE_ENV`) so subsequent `npm run
+dev:admin` calls go back to the local-storage flow that doesn't need the
+secrets.
 
 ## 2. Create the Cloudflare Pages project (club's account)
 
