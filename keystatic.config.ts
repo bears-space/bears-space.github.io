@@ -6,17 +6,17 @@ import { buildMdxComponents } from './src/keystatic/mdxComponents';
 //
 // `local` writes edits straight to src/content/ on disk — no OAuth roundtrip,
 // no wait for GitHub's build pipeline, so `npm run dev:admin` reflects changes
-// immediately. `github` is only used by the deployed admin site
-// (admin.bears-space.de, built with ADMIN_BUILD=true which sets NODE_ENV to
-// production), where editor saves need to commit back to the repo.
+// immediately. `github` is only used by the deployed admin site (built with
+// ADMIN_BUILD=true which sets NODE_ENV to production), where editor saves need
+// to commit back to the repo.
 // ============================================================================
 
 const storage = process.env.NODE_ENV === 'production'
   ? {
       kind: 'github' as const,
       repo: {
-        owner: 'leopoldblum',
-        name: 'bears-website',
+        owner: 'bears-space',
+        name: 'bears-space.github.io',
       },
     }
   : { kind: 'local' as const };
