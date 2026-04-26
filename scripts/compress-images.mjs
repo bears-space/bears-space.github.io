@@ -51,6 +51,7 @@ export async function compressFile(filepath, opts = {}) {
   }
 
   const buf = await fs.readFile(filepath);
+  const sourceMeta = await sharp(buf, { failOn: "none" }).metadata();
   const pipeline = sharp(buf, { failOn: "none" }).rotate().resize({
     width: maxDimension,
     height: maxDimension,
@@ -58,9 +59,16 @@ export async function compressFile(filepath, opts = {}) {
     withoutEnlargement: true,
   });
 
+  // Palette mode quantizes to 256 colors — fine for icons/logos/diagrams (which
+  // have transparency), but produces visible banding on photos saved as PNG.
+  // Use hasAlpha as the proxy: photo-PNGs almost never carry an alpha channel.
   const out =
     ext === ".png"
-      ? await pipeline.png({ compressionLevel: 9, palette: true }).toBuffer()
+      ? sourceMeta.hasAlpha
+        ? await pipeline.png({ compressionLevel: 9, palette: true }).toBuffer()
+        : await pipeline
+            .png({ compressionLevel: 9, palette: false, adaptiveFiltering: true })
+            .toBuffer()
       : await pipeline.jpeg({ quality: jpegQuality, mozjpeg: true }).toBuffer();
 
   if (out.length >= stat.size) {

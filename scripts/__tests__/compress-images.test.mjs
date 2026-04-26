@@ -23,10 +23,11 @@ async function writeNoisyJpeg(filepath, { width, height, quality = 100 } = {}) {
     .toFile(filepath);
 }
 
-async function writeNoisyPng(filepath, { width, height } = {}) {
-  const buf = Buffer.alloc(width * height * 3);
+async function writeNoisyPng(filepath, { width, height, alpha = false } = {}) {
+  const channels = alpha ? 4 : 3;
+  const buf = Buffer.alloc(width * height * channels);
   for (let i = 0; i < buf.length; i++) buf[i] = Math.floor(Math.random() * 256);
-  await sharp(buf, { raw: { width, height, channels: 3 } }).png().toFile(filepath);
+  await sharp(buf, { raw: { width, height, channels } }).png().toFile(filepath);
 }
 
 describe('compressFile', () => {
@@ -110,7 +111,7 @@ describe('compressFile', () => {
     expect(result.status).toBe('missing');
   });
 
-  it('compresses PNG files with palette mode when over threshold', async () => {
+  it('compresses PNG files without alpha using lossless mode (no palette quantization)', async () => {
     const file = path.join(tmp, 'big.png');
     await writeNoisyPng(file, { width: 800, height: 800 });
     const before = (await fs.stat(file)).size;
@@ -119,6 +120,25 @@ describe('compressFile', () => {
 
     expect(result.status).toBe('compressed');
     expect(result.afterSize).toBeLessThan(before);
+
+    // PNG color type at IHDR byte 25: 3 = indexed/palette. No-alpha path must stay non-indexed.
+    const head = await fs.readFile(file);
+    expect(head[25]).not.toBe(3);
+  });
+
+  it('compresses PNG files with alpha using palette mode (256-color quantization)', async () => {
+    const file = path.join(tmp, 'big-alpha.png');
+    await writeNoisyPng(file, { width: 800, height: 800, alpha: true });
+    const before = (await fs.stat(file)).size;
+
+    const result = await compressFile(file, { sizeThreshold: 1, maxDimension: 400 });
+
+    expect(result.status).toBe('compressed');
+    expect(result.afterSize).toBeLessThan(before);
+
+    // PNG color type at IHDR byte 25: 3 = indexed/palette. Alpha path takes the palette branch.
+    const head = await fs.readFile(file);
+    expect(head[25]).toBe(3);
   });
 
   it('is idempotent enough that re-running never grows the file on disk', async () => {
