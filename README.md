@@ -66,7 +66,7 @@ When adding or editing content (events, projects, sponsors, page text, etc.), **
 
 Every save through the admin UI becomes a Git commit, so almost any editing mistake can be undone with one click:
 
-1. Go to [github.com/leopoldblum/bears-website/commits/main](https://github.com/leopoldblum/bears-website/commits/main).
+1. Go to [github.com/bears-space/bears-space.github.io/commits/main](https://github.com/bears-space/bears-space.github.io/commits/main).
 2. Find the bad commit (usually the most recent one).
 3. Click the `...` menu on it → **Revert**. Merge the PR GitHub opens.
 
