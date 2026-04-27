@@ -1,0 +1,54 @@
+---
+title: STARGAZE
+description: >-
+  STARGAZE war unsere erste EuRoC-Wettbewerbsrakete mit einer Zielapogäumshöhe
+  von 3 km und einem COTS-Feststoffmotor.
+date: 2023-10-13
+categoryProject: experimental-rocketry
+coverImage: /stargaze/coverImage.JPG
+isDraft: false
+isProjectCompleted: false
+displayMeetTheTeam: false
+---
+<YouTube id="https://www.youtube.com/watch?v=cWBPDQ5BP5g" title="BEARS Experimental Rocketry Recap 2025" width="60%" />
+
+STARGAZE war unsere vierte Rakete. Die Rakete wurde mit zwei Hauptzielen entwickelt: die Teilnahme an der EuRoC sowie die Bereitstellung einer Startplattform, um unsere Subsysteme und Abläufe zu testen. Sie diente als Zwischenschritt auf dem Weg zu unserem langfristigen Ziel, eine zweistufige Höhenrakete mit bi-liquidem Antrieb zu entwickeln. Für die Teilnahme an der EuRoC entwickelten wir insbesondere zwei Subsysteme: unsere Payload sowie unsere Airbrake.
+
+<ImageGrid images={[{"image":"/src/assets/projects/stargaze/cadStargaze.png","alt":"sgCAD"},{"image":"/src/assets/projects/stargaze/stargaze_team.jpg","alt":"sgTeam"}]} cols={2} gap="md" aspectRatio="native" enableClickToEnlarge />
+
+Die Airbrake ist das einzige aktive Flugsteuerungssystem und vergrößert die Luftwiderstandsfläche der Rakete, um ein Apogäum von 3000 m genau zu erreichen.
+
+<Img src="/src/assets/projects/stargaze/airbrakeCAD.png" alt="airbrake" width="80%" enableClickToEnlarge />
+
+## Struktur
+
+Ähnlich wie bei unseren vorherigen Raketen besteht die Primärstruktur von STARGAZE aus einer Nosecone, einem Body Tube und einer Fin Can. Der Body Tube ist in mehrere Kompartimente unterteilt: Motor-Kompartiment, Electronics Bay, Airbrake, Payload und Recovery. Im Vergleich zu unseren früheren Raketen unterscheidet sich diese Rakete dadurch, dass der Rahmen der Kompartimente aus faserverstärkten Rohren besteht, die mit gefrästen Aluminium-Kopplungen verklebt sind. Die Fins bestehen aus Carbonfaser-Platten, die an das Motorrohr geklebt und anschließend tip-to-tip zwischen den Fins laminiert wurden.
+
+<Img src="/src/assets/projects/stargaze/Protoype_Spin_Camera.JPG" alt="payload" width="80%" enableClickToEnlarge />
+
+## Payload
+
+Die Payload ist ein mechatronisches System, das On-Board-Videokameras von der Rollrate der Rakete entkoppelt. Die Payload ist über zwei Lager auf der Primärstruktur der Rakete montiert. Die Rollrate dieses entkoppelten Kompartiments wird mit einem geschlossenen Regelkreis aus Schrittmotor und Zahnradkopplung bei 0°/s gehalten.
+
+## Elektronik
+
+Das Herzstück der Elektronik besteht aus zwei Flugcomputern, von denen einer selbst entwickelt wurde. Zusätzlich wurde der Altimax G4 als redundanter Flugcomputer gewählt. Der selbst entwickelte MAX-FC ist ein modularer SRAD-Flugcomputer, der Fallschirme steuert, Telemetriedaten an die Bodenstation sendet, Befehle von der Bodenstation empfängt sowie Sensordaten überwacht und speichert.
+
+## Recovery
+
+Das Recovery-System folgt einem zweistufigen Konzept. Mehrere Stufen bedeuten, dass das Auslösen jedes Fallschirms zu bestimmten Zeitpunkten während des Abstiegs geplant ist. Der Drogue-Fallschirm wird am Apogäum der Flugbahn ausgelöst, während der Hauptfallschirm in einer Höhe von 300 Metern über dem Boden geöffnet wird.
+
+| Stats         |         |
+| ------------- | ------- |
+| Altitude      | 3000 m  |
+| Mass          | 21.2 kg |
+| Total Impulse | 6.8 kNs |
+| Velocity      | 1.03 Ma |
+
+<Img src="/src/assets/projects/stargaze/bears-stargaze-patch.png" alt="sgPatch" width="30%" enableClickToEnlarge />
+
+## Sponsoren
+
+Wir möchten unseren Sponsoren für ihre großzügige Unterstützung danken! Ohne sie wären STARGAZE und die Teilnahme an der EuRoC 2025 nicht möglich gewesen:
+
+<Img src="/src/assets/projects/stargaze/sponsorsStargaze.png" alt="sgSponsors" width="100%" enableClickToEnlarge />
