@@ -14,6 +14,8 @@ interface Props {
   title: string;
   /** Optional subtitle text displayed below title */
   subtitle?: string;
+  /** Optional small text displayed in the top-right corner of the hero image */
+  shownText?: string;
   /** Gradient color variant - 'dark' fades to bears-bg, 'light' fades to bears-bg-light */
   variant?: "dark" | "light";
   /** Additional CSS classes */
@@ -29,6 +31,7 @@ const {
   alt,
   title,
   subtitle,
+  shownText,
   variant = "dark",
   class: className,
   loading = "eager",
@@ -88,6 +91,17 @@ const isLight = variant === "light";
     ]}
   >
   </div>
+
+  {/* Top-right overlay text */}
+  {shownText && (
+    <div class="absolute top-0 left-0 right-0 z-20 pt-24 sm:pt-28 lg:pt-32">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-end">
+        <div class="bg-black/50 backdrop-blur-sm rounded-xl px-4 py-2 text-white text-sm sm:text-base lg:text-lg max-w-[60%] sm:max-w-[40%] text-center">
+          {shownText}
+        </div>
+      </div>
+    </div>
+  )}
 
   {/* Content Container - Title in bottom left quadrant */}
   <div class="relative z-20 h-full">

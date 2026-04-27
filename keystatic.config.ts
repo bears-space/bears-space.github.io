@@ -50,13 +50,19 @@ const IMAGE_SIZE_HINT =
 // the legacy flat-filename entries (coverImage: "event-8.jpg") and the new
 // slug-subfolder entries from Keystatic. Globs in src/utils/imageGlobs.ts must
 // use `**/*.*` so subfolder files are picked up.
-function imageField(label: string, directory: string, _publicPath: string) {
+function imageField(
+  label: string,
+  directory: string,
+  _publicPath: string,
+  opts: { required?: boolean } = {},
+) {
+  const { required = true } = opts;
   return fields.image({
     label,
     directory,
     publicPath: '',
     description: IMAGE_SIZE_HINT,
-    validation: { isRequired: true },
+    validation: { isRequired: required },
   });
 }
 
@@ -460,6 +466,10 @@ function pageHeaderSingleton(locale: Locale, pathSuffix: string, label: string, 
           ? undefined
           : 'Note: the background image for this page is managed on the English (EN) singleton and shared across both locales.',
       }),
+      shownText: fields.text({
+        label: 'Overlay text (optional)',
+        description: 'Small text shown in the top-right corner of the hero image. Leave blank to hide.',
+      }),
       seoDescription: fields.text({
         label: 'SEO description',
         description: 'Shown as the <meta name="description"> for this page (~150 characters).',
@@ -761,6 +771,10 @@ function pageTextMediaCategoriesSingleton(locale: 'en' | 'de') {
           ? undefined
           : 'Note: the background image for this page is managed on the English (EN) singleton and shared across both locales.',
       }),
+      shownText: fields.text({
+        label: 'Overlay text (optional)',
+        description: 'Small text shown in the top-right corner of the hero image. Leave blank to hide.',
+      }),
       seoDescription: fields.text({ label: 'SEO description', multiline: true }),
       ...(isEn ? {
         image: fields.image({
@@ -1018,7 +1032,7 @@ const peopleCollection = collection({
       label: 'Rolle (Deutsch)',
       validation: { isRequired: true },
     }),
-    coverImage: imageField('Portrait image', 'src/assets/people', '/src/assets/people/'),
+    coverImage: imageField('Portrait image', 'src/assets/people', '/src/assets/people/', { required: false }),
     showInFaces: fields.checkbox({
       label: 'Show in the "Faces of BEARS" grid',
       description: 'When on, this person appears in the Faces of BEARS grid on the About us page.',

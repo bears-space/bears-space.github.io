@@ -141,7 +141,7 @@ const peopleCollection = defineCollection({
     coverImage: z.string().refine(
       validateImageExtension,
       { message: `coverImage must have a valid image extension: ${VALID_EXTENSIONS_MESSAGE}` }
-    ),
+    ).optional(),
     showInFaces: z.boolean().default(true),
     order: z.number().default(0),
   }),
@@ -180,6 +180,7 @@ const pageTextCollection = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     subtitle: z.string().optional(),
+    shownText: z.string().optional(),
     description: z.string().optional(),
     seoDescription: z.string().optional(),
     buttonText: z.string().optional(),

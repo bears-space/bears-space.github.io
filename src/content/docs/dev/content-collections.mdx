@@ -13,7 +13,7 @@ All website content is managed through [Astro content collections](https://docs.
 |------------|--------|-----------|------------|
 | `events` | `src/content/events/{en,de}/` | Yes | title, description, date, categoryEvent, coverImage, isDraft |
 | `projects` | `src/content/projects/{en,de}/` | Yes | title, description, date, categoryProject, coverImage, isDraft, isProjectCompleted, person (→ `people`) |
-| `people` | `src/content/people/` | No (roles inline per locale) | name, roleEn, roleDe, coverImage, showInFaces, order |
+| `people` | `src/content/people/` | No (roles inline per locale) | name, roleEn, roleDe, coverImage (optional — falls back to `defaultFaceImage`), showInFaces, order |
 | `testimonials` | `src/content/testimonials/list.mdx` (single-entry collection, body empty) | No (quotes inline per locale) | `items`: array of `{ person (→ `people`), quoteEn, quoteDe }` — array order IS display order |
 | `page-text` | `src/content/page-text/{en,de}/` | Yes | title, subtitle, description, ctas, items, address, socialLinks, navLinks, navColumns, faqs, mediaCategories, tierDescriptions, donate fields |
 | `sponsors` | `src/content/sponsors/<tier>/` | No | name, order, logo, url, bgColor (tier from folder) |

@@ -20,15 +20,17 @@ const defaultFaceImage = await getDefaultFaceImage();
 
 const projects = await Promise.all(
   entries.map(async ({ project, person, displayName, displayRole }) => {
-    const portrait = await loadImage({
-      glob: peopleImages,
-      imagePath: resolveImagePath('/src/assets/people', person.data.coverImage),
-      fallbackImage: defaultFaceImage,
-      context: {
-        itemTitle: project.data.title,
-        itemSlug: project.slug,
-      },
-    });
+    const portrait = person.data.coverImage
+      ? await loadImage({
+          glob: peopleImages,
+          imagePath: resolveImagePath('/src/assets/people', person.data.coverImage),
+          fallbackImage: defaultFaceImage,
+          context: {
+            itemTitle: project.data.title,
+            itemSlug: project.slug,
+          },
+        })
+      : defaultFaceImage;
     return {
       project,
       displayName,

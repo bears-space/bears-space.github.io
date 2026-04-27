@@ -826,28 +826,23 @@ describe('People frontmatter edge cases', () => {
       );
     });
 
-    it(`${label} — "coverImage" must have a valid image extension`, () => {
-      expectWithMessage(
-        typeof frontmatter.coverImage === 'string' && frontmatter.coverImage.trim().length > 0,
-        `File "${label}" is missing the required field "coverImage".\n\n` +
-        `Every person needs a portrait image.\n\n` +
-        `To fix: add a "coverImage" field to the frontmatter:\n` +
-        `  coverImage: "<slug>/portrait.jpg"\n` +
-        `  (place the image in src/assets/people/<slug>/)`,
-      );
-
-      if (typeof frontmatter.coverImage === 'string') {
-        const ext = extname(frontmatter.coverImage as string).toLowerCase().slice(1);
-        const validExts = [...VALID_IMAGE_EXTENSIONS];
-
-        expectWithMessage(
-          validExts.includes(ext as typeof validExts[number]),
-          `File "${label}" has "coverImage: ${frontmatter.coverImage}"\n` +
-          `but ".${ext}" is not a supported image format.\n\n` +
-          `Supported formats: ${validExts.map((e) => `.${e}`).join(', ')}\n\n` +
-          `To fix: convert the image to a supported format and update the "coverImage" value.`,
-        );
+    it(`${label} — "coverImage" must have a valid image extension when present`, () => {
+      // coverImage is optional on people — when absent, the default-images
+      // fallback is used. Only validate the extension when a value is given.
+      if (typeof frontmatter.coverImage !== 'string' || frontmatter.coverImage.trim().length === 0) {
+        return;
       }
+
+      const ext = extname(frontmatter.coverImage as string).toLowerCase().slice(1);
+      const validExts = [...VALID_IMAGE_EXTENSIONS];
+
+      expectWithMessage(
+        validExts.includes(ext as typeof validExts[number]),
+        `File "${label}" has "coverImage: ${frontmatter.coverImage}"\n` +
+        `but ".${ext}" is not a supported image format.\n\n` +
+        `Supported formats: ${validExts.map((e) => `.${e}`).join(', ')}\n\n` +
+        `To fix: convert the image to a supported format and update the "coverImage" value.`,
+      );
     });
 
     if (frontmatter.showInFaces !== undefined) {
