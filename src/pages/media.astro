@@ -4,6 +4,7 @@
 
 import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import NotFoundPage from "./404.astro";
 import MediaAccordion from "../components/reusable/MediaAccordion.astro";
 import PageHeroImage from "../components/reusable/PageHeroImage.astro";
 import { loadAllImagesFromDirectory, loadImage, resolveImagePath } from "@utils/imageLoader";
@@ -24,129 +25,139 @@ import { getLocale, mediaUiStrings } from "@utils/i18n";
 const locale = getLocale(Astro.url);
 const visibility = (await getEntry('media-section-visibility', 'settings'))!.data;
 
-if (!visibility.showMediaPage) {
-  return Astro.rewrite(locale === 'de' ? '/de/404' : '/404');
-}
-
-const pageContent = await getPageContent('media-categories', locale);
-
-// Image is locale-agnostic; editors can upload on either locale's singleton.
-// Prefer EN, fall back to the active locale, then to the first file in the directory.
-const imageEntry = await getPageContent('media-categories', 'en');
-const imageFileName = imageEntry?.data.image || pageContent?.data.image;
-const heroAlt = imageEntry?.data.imageAlt || pageContent?.data.imageAlt
-  || "BEARS event showcasing student astronautics activities";
-
-let heroImage = imageFileName
-  ? await loadImage({
-      glob: mediaHeroImages,
-      imagePath: resolveImagePath('/src/assets/hero/media', imageFileName),
-      context: { itemTitle: 'Media hero image' },
-    })
-  : null;
-
-if (!heroImage) {
-  const loadedHeroImages = await loadAllImagesFromDirectory(mediaHeroImages);
-  heroImage = loadedHeroImages[0] ?? null;
-}
-
-// Static mapping from content id → image glob
-// To add a new media category, add a glob to imageGlobs.ts and map it here
-const globById: Record<string, ImageGlob> = {
-  'about-us': ourMissionImages,
-  'events': eventImages,
-  'people': peopleImages,
-  'hero': allHeroImages,
-  'projects': projectImages,
-  'what-is-bears': whatIsBearsImages,
-};
-
-// Read categories from content file (order and visibility controlled by content creators)
-const contentCategories = pageContent?.data.mediaCategories ?? [];
-
-// First pass: load all non-"all" categories
-const loadedCategories = await Promise.all(
-  contentCategories
-    .filter((cat: { id: string }) => cat.id !== 'all' && globById[cat.id])
-    .map(async (cat: { id: string; label: string }) => {
-      const images = await loadAllImagesFromDirectory(globById[cat.id]);
-      return { id: cat.id, label: cat.label, images };
-    }),
-);
-
-// Filter out empty categories
-const categoriesWithImages = loadedCategories.filter((cat) => cat.images.length > 0);
-
-// Second pass: build the "all" entry if requested
-const allEntry = contentCategories.find((cat: { id: string }) => cat.id === 'all');
-const allImages = allEntry
-  ? categoriesWithImages.flatMap((cat) => cat.images)
-  : [];
-
-// Build final display list in content-defined order
+// When the page is hidden, we render the 404 component inline below.
+// We can't use Astro.rewrite() here: the de/ locale wrapper has already
+// started streaming HTML before this frontmatter runs, so a rewrite would
+// throw ResponseSentError on the Cloudflare adapter.
+let pageContent: Awaited<ReturnType<typeof getPageContent>> = undefined;
+let heroImage: ImageMetadata | null = null;
+let heroAlt = "";
 const displayCategories: { label: string; images: ImageMetadata[] }[] = [];
-for (const cat of contentCategories) {
-  if (cat.id === 'all') {
-    if (allImages.length > 0) {
-      displayCategories.push({ label: allEntry!.label, images: allImages });
-    }
-  } else {
-    const loaded = categoriesWithImages.find((c) => c.id === cat.id);
-    if (loaded) {
-      displayCategories.push({ label: loaded.label, images: loaded.images });
+
+if (visibility.showMediaPage) {
+  pageContent = await getPageContent('media-categories', locale);
+
+  // Image is locale-agnostic; editors can upload on either locale's singleton.
+  // Prefer EN, fall back to the active locale, then to the first file in the directory.
+  const imageEntry = await getPageContent('media-categories', 'en');
+  const imageFileName = imageEntry?.data.image || pageContent?.data.image;
+  heroAlt = imageEntry?.data.imageAlt || pageContent?.data.imageAlt
+    || "BEARS event showcasing student astronautics activities";
+
+  heroImage = imageFileName
+    ? await loadImage({
+        glob: mediaHeroImages,
+        imagePath: resolveImagePath('/src/assets/hero/media', imageFileName),
+        context: { itemTitle: 'Media hero image' },
+      })
+    : null;
+
+  if (!heroImage) {
+    const loadedHeroImages = await loadAllImagesFromDirectory(mediaHeroImages);
+    heroImage = loadedHeroImages[0] ?? null;
+  }
+
+  // Static mapping from content id → image glob
+  // To add a new media category, add a glob to imageGlobs.ts and map it here
+  const globById: Record<string, ImageGlob> = {
+    'about-us': ourMissionImages,
+    'events': eventImages,
+    'people': peopleImages,
+    'hero': allHeroImages,
+    'projects': projectImages,
+    'what-is-bears': whatIsBearsImages,
+  };
+
+  // Read categories from content file (order and visibility controlled by content creators)
+  const contentCategories = pageContent?.data.mediaCategories ?? [];
+
+  // First pass: load all non-"all" categories
+  const loadedCategories = await Promise.all(
+    contentCategories
+      .filter((cat: { id: string }) => cat.id !== 'all' && globById[cat.id])
+      .map(async (cat: { id: string; label: string }) => {
+        const images = await loadAllImagesFromDirectory(globById[cat.id]);
+        return { id: cat.id, label: cat.label, images };
+      }),
+  );
+
+  // Filter out empty categories
+  const categoriesWithImages = loadedCategories.filter((cat) => cat.images.length > 0);
+
+  // Second pass: build the "all" entry if requested
+  const allEntry = contentCategories.find((cat: { id: string }) => cat.id === 'all');
+  const allImages = allEntry
+    ? categoriesWithImages.flatMap((cat) => cat.images)
+    : [];
+
+  // Build final display list in content-defined order
+  for (const cat of contentCategories) {
+    if (cat.id === 'all') {
+      if (allImages.length > 0) {
+        displayCategories.push({ label: allEntry!.label, images: allImages });
+      }
+    } else {
+      const loaded = categoriesWithImages.find((c) => c.id === cat.id);
+      if (loaded) {
+        displayCategories.push({ label: loaded.label, images: loaded.images });
+      }
     }
   }
 }
 ---
 
-<BaseLayout title={pageContent?.data.title ?? "Media"} description={pageContent?.data.seoDescription}>
-  <PageHeroImage
-    image={heroImage!}
-    alt={heroAlt}
-    title={pageContent?.data.title ?? "Media"}
-    subtitle={pageContent?.data.subtitle ?? ""}
-    shownText={pageContent?.data.shownText}
-  />
-  {visibility.showMediaContent && (
-    <div class="container mx-auto px-4 py-6 sm:py-8 lg:py-12 sm:px-8 lg:px-16">
-      {/* Media Categories Accordion */}
-      <div class="flex flex-col gap-6 sm:gap-20">
+{!visibility.showMediaPage ? (
+  <NotFoundPage />
+) : (
+  <BaseLayout title={pageContent?.data.title ?? "Media"} description={pageContent?.data.seoDescription}>
+    <PageHeroImage
+      image={heroImage!}
+      alt={heroAlt}
+      title={pageContent?.data.title ?? "Media"}
+      subtitle={pageContent?.data.subtitle ?? ""}
+      shownText={pageContent?.data.shownText}
+    />
+    {visibility.showMediaContent && (
+      <div class="container mx-auto px-4 py-6 sm:py-8 lg:py-12 sm:px-8 lg:px-16">
+        {/* Media Categories Accordion */}
+        <div class="flex flex-col gap-6 sm:gap-20">
+          {
+            displayCategories.map((category) => (
+              <MediaAccordion
+                title={category.label}
+                images={category.images}
+                cols={4}
+                gap="md"
+                locale={locale}
+              />
+            ))
+          }
+        </div>
+
+        {/* Empty State */}
         {
-          displayCategories.map((category) => (
-            <MediaAccordion
-              title={category.label}
-              images={category.images}
-              cols={4}
-              gap="md"
-              locale={locale}
-            />
-          ))
+          displayCategories.length === 0 && (
+            <div class="text-center py-16 sm:py-20">
+              <svg
+                class="w-16 h-16 mx-auto mb-4 text-bears-text-onDark/30"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <p class="text-lg text-bears-text-onDark/60">
+                {mediaUiStrings[locale]['no-media']}
+              </p>
+            </div>
+          )
         }
       </div>
-
-      {/* Empty State */}
-      {
-        displayCategories.length === 0 && (
-          <div class="text-center py-16 sm:py-20">
-            <svg
-              class="w-16 h-16 mx-auto mb-4 text-bears-text-onDark/30"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-            <p class="text-lg text-bears-text-onDark/60">
-              {mediaUiStrings[locale]['no-media']}
-            </p>
-          </div>
-        )
-      }
-    </div>
-  )}
-</BaseLayout>
+    )}
+  </BaseLayout>
+)}
