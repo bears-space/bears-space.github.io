@@ -64,8 +64,11 @@ const addressLines =
     .map((l) => l.trim())
     .filter(Boolean) ?? [];
 
+const mediaVisibility = (await getEntry("media-section-visibility", "settings"))!.data;
+const isMediaHref = (href: string) => href === "/media" || href.startsWith("/media#") || href.startsWith("/media?");
+
 const navContent = await getPageContent("nav-columns", locale);
-const navColumns = navContent?.data.navColumns ?? [
+const rawNavColumns = navContent?.data.navColumns ?? [
   {
     heading: "Projects",
     href: "/projects",
@@ -128,6 +131,15 @@ const navColumns = navContent?.data.navColumns ?? [
     ],
   },
 ];
+
+const navColumns = mediaVisibility.showMediaPage
+  ? rawNavColumns
+  : rawNavColumns
+      .map((column) => ({
+        ...column,
+        links: column.links.filter((link) => !isMediaHref(link.href)),
+      }))
+      .filter((column) => !isMediaHref(column.href));
 
 const bottomBarContent = await getPageContent("nav-links/footer-bottom", locale);
 const copyrightText = (

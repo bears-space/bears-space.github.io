@@ -1335,6 +1335,11 @@ function mediaSectionVisibilitySingleton() {
     format: { data: 'yaml' as const },
     entryLayout: 'form' as const,
     schema: {
+      showMediaPage: fields.checkbox({
+        label: 'Show Media page',
+        description: 'When off, /media returns 404 and the Media link is hidden from the footer.',
+        defaultValue: true,
+      }),
       showMediaContent: fields.checkbox({ label: 'Show media categories (and empty-state fallback)', defaultValue: true }),
     },
   });

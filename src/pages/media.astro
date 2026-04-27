@@ -22,8 +22,13 @@ import { getPageContent } from "@utils/contentQueries";
 import { getLocale, mediaUiStrings } from "@utils/i18n";
 
 const locale = getLocale(Astro.url);
-const pageContent = await getPageContent('media-categories', locale);
 const visibility = (await getEntry('media-section-visibility', 'settings'))!.data;
+
+if (!visibility.showMediaPage) {
+  return Astro.rewrite(locale === 'de' ? '/de/404' : '/404');
+}
+
+const pageContent = await getPageContent('media-categories', locale);
 
 // Image is locale-agnostic; editors can upload on either locale's singleton.
 // Prefer EN, fall back to the active locale, then to the first file in the directory.

@@ -363,6 +363,7 @@ const contactSectionVisibilityCollection = defineCollection({
 const mediaSectionVisibilityCollection = defineCollection({
   type: 'data',
   schema: z.object({
+    showMediaPage: z.boolean().default(true),
     showMediaContent: z.boolean().default(true),
   }),
 });
