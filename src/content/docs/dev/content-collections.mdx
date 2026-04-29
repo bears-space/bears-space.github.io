@@ -135,7 +135,7 @@ The `page-text` collection uses a flexible schema with `title` as the only requi
 
 The schema uses `.refine()` to enforce that button fields always come in pairs &mdash; setting `buttonText` without `buttonHref` (or vice versa) will fail validation at build time. The same applies to `secondButtonText` / `secondButtonHref`.
 
-Most pages share the flat schema and ignore the fields they don't use. The "outlier" shapes &mdash; hero CTAs, FAQ, social links, footer nav columns, donate card, media categories, sponsor tier descriptions &mdash; live in dedicated files at the locale root (`hero.mdx`, `faq.mdx`, `social.mdx`, `nav-columns.mdx`, `donate.mdx`, `media-categories.mdx`) so each one can be edited through its own focused Keystatic singleton.
+Most pages share the flat schema and ignore the fields they don't use. The "outlier" shapes &mdash; hero CTAs, FAQ, social links, footer nav columns, donate card, sponsor tier descriptions &mdash; live in dedicated files at the locale root (`hero.mdx`, `faq.mdx`, `social.mdx`, `nav-columns.mdx`, `donate.mdx`) so each one can be edited through its own focused Keystatic singleton. The Media page splits into two files under the `media/` subfolder (`media/media-title.mdx` for the page header, `media/media-categories.mdx` for the category list), each driven by its own singleton.
 
 ## Adding a New Collection
 

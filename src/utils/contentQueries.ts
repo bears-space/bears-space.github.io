@@ -479,7 +479,7 @@ async function getMediaFromPageBanners(): Promise<ImageWithAlt[]> {
     { id: 'projects/projects-title', baseDir: '/src/assets/hero/projects', glob: projectsHeroImages, fallbackAlt: 'Projects page hero' },
     { id: 'sponsors/sponsors-title', baseDir: '/src/assets/hero/sponsors', glob: sponsorsHeroImages, fallbackAlt: 'Sponsors page hero' },
     { id: 'contact/contact-title', baseDir: '/src/assets/hero/contact', glob: contactHeroImages, fallbackAlt: 'Contact page hero' },
-    { id: 'media-categories', baseDir: '/src/assets/hero/media', glob: mediaHeroImages, fallbackAlt: 'Media page hero' },
+    { id: 'media/media-title', baseDir: '/src/assets/hero/media', glob: mediaHeroImages, fallbackAlt: 'Media page hero' },
   ];
   const items: ImageWithAlt[] = [];
   for (const b of banners) {

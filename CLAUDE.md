@@ -317,7 +317,7 @@ src/content/page-text/
     └── ... (same structure as en/)
 ```
 
-Outlier shapes (hero, FAQ, nav-columns, social, donate, media-categories, nav-links) live as dedicated `.mdx` files at the locale root (or under `nav-links/`) so Keystatic can surface each through a dedicated editor form instead of one giant flat schema. See `keystatic.config.ts` for the full mapping.
+Outlier shapes (hero, FAQ, nav-columns, social, donate, nav-links) live as dedicated `.mdx` files at the locale root (or under `nav-links/`) so Keystatic can surface each through a dedicated editor form instead of one giant flat schema. The Media page splits into `media/media-title.mdx` (page header + SEO) and `media/media-categories.mdx` (category list), each driven by its own singleton. See `keystatic.config.ts` for the full mapping.
 
 **Querying content:**
 Use `getPageContent(id, locale)` from `src/utils/contentQueries.ts` to fetch a page content entry by its ID. The `id` does NOT include the locale prefix — the function prepends it automatically and falls back to English if the translation is missing:

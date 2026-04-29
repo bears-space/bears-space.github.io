@@ -6,7 +6,7 @@
 > - `src/content/page-text/en/events/events-title.mdx`
 > - `src/content/page-text/en/projects/projects-title.mdx`
 > - `src/content/page-text/en/sponsors/sponsors-title.mdx`
-> - `src/content/page-text/en/media-categories.mdx`
+> - `src/content/page-text/en/media/media-title.mdx`
 > - `src/content/page-text/en/contact/contact-title.mdx`
 >
 > **TODO:** Add benefits section to sponsors and link in footer, or remove entry in footer.
@@ -127,12 +127,12 @@ The site rebuilds from the previous state within a few minutes. See the [If Some
 │   │   │   │   ├── imprint/
 │   │   │   │   ├── landing/          # Homepage sections
 │   │   │   │   ├── nav-links/
+│   │   │   │   ├── media/             # Media page (media-title + media-categories)
 │   │   │   │   ├── projects/
 │   │   │   │   ├── site/
 │   │   │   │   ├── sponsors/
 │   │   │   │   └── *.mdx             # Outlier singletons at locale root:
-│   │   │   │                         #   hero, faq, social, donate,
-│   │   │   │                         #   nav-columns, media-categories
+│   │   │   │                         #   hero, faq, social, donate, nav-columns
 │   │   │   └── de/          #   German translations (same structure)
 │   │   ├── people/          # People (Faces of BEARS + project leads, locale-agnostic)
 │   │   ├── projects/        # Project entries (.md/.mdx)

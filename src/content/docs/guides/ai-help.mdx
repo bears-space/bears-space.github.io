@@ -167,7 +167,10 @@ Outlier singletons at the locale root (one .mdx file each, not in a subfolder):
   social.mdx            — site-wide social media links (socialLinks array; each entry references an entry in the social-platforms content collection — icons are owned by that collection, not the mdx)
   contact-details.mdx   — site-wide email and multi-line address; read by the Contact page and the site footer
   nav-columns.mdx       — footer multi-column navigation (navColumns array)
-  media-categories.mdx  — Media page (title + subtitle + seoDescription + mediaCategories array)
+
+Media page (split across two files in the media/ subfolder):
+  media/media-title.mdx       — page header (title + subtitle + seoDescription + hero image + shownText)
+  media/media-categories.mdx  — accordion category list (mediaCategories array)
 
 Naming conventions:
   -title suffix     — page hero header (e.g. events/events-title)
@@ -309,7 +312,7 @@ KEY CONVENTIONS
 - For projects, if displayMeetTheTeam is true then the `person` reference must point to an existing entry in src/content/people/ (e.g. `person: "jane-doe"`).
 - UI strings for events/projects pages (filter labels, sort options, status badges) are centralized in catalogUiStrings in src/utils/i18n.ts.
 - UI strings for the media page ("This is" label, empty state) are in mediaUiStrings in src/utils/i18n.ts.
-- Media page categories are configured via the mediaCategories field in the page-text file media-categories.mdx (at the locale root, edited in the CMS as the Media categories singleton). Category labels are set per locale in the content file, not in i18n.ts.
+- Media page categories are configured via the mediaCategories field in the page-text file media/media-categories.mdx (under the media/ subfolder, edited in the CMS as the Media categories singleton). Category labels are set per locale in the content file, not in i18n.ts. The page header (title/subtitle/seoDescription/hero image) is its own file at media/media-title.mdx.
 - Header navigation links are configured in the page-text file nav-links/header.mdx (navLinks field, edited as part of the Nav link lists collection in the CMS).
 - Footer navigation columns are configured in the page-text file nav-columns.mdx (at the locale root, navColumns field, edited as the Footer navigation singleton in the CMS).
 - Footer address is configured in contact-details.mdx (at the locale root) via the multi-line `address` field (each line in the YAML renders as its own line on the page); the same field drives the Contact page address card.

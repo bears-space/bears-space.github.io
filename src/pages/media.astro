@@ -1,6 +1,7 @@
 ---
 // Media Page - Displays all media organized by category in accordion format
-// Categories are configured via the page-text content collection (media-categories.mdx)
+// Page header (title/subtitle/seoDescription/hero image) lives in media/media-title.mdx;
+// the accordion category list lives in media/media-categories.mdx.
 
 import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
@@ -27,11 +28,11 @@ let heroAlt = "";
 const displayCategories: { label: string; images: ImageWithAlt[] }[] = [];
 
 if (visibility.showMediaPage) {
-  pageContent = await getPageContent('media-categories', locale);
+  pageContent = await getPageContent('media/media-title', locale);
+  const categoriesContent = await getPageContent('media/media-categories', locale);
 
-  // Image is locale-agnostic; editors can upload on either locale's singleton.
-  // Prefer EN, fall back to the active locale, then to the first file in the directory.
-  const imageEntry = await getPageContent('media-categories', 'en');
+  // Image is locale-agnostic; editors can only upload on the EN singleton.
+  const imageEntry = await getPageContent('media/media-title', 'en');
   const imageFileName = imageEntry?.data.image || pageContent?.data.image;
   heroAlt = imageEntry?.data.imageAlt || pageContent?.data.imageAlt
     || "BEARS event showcasing student astronautics activities";
@@ -50,7 +51,7 @@ if (visibility.showMediaPage) {
   }
 
   // Read categories from content file (order and visibility controlled by content creators)
-  const contentCategories = pageContent?.data.mediaCategories ?? [];
+  const contentCategories = categoriesContent?.data.mediaCategories ?? [];
 
   // Each category sources from a different place. People → People collection
   // filtered by showInFaces + coverImage (separate query because we need each

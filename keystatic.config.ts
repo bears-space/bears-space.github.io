@@ -232,7 +232,6 @@ function eventsCollection(locale: 'en' | 'de') {
       coverImageDescription: fields.text({
         label: 'Cover image description / credit (optional)',
         description: 'Shown as a caption strip at the bottom of the cover image on the Media page. Use it for any combination of caption and photographer credit (e.g. "Group photo after the launch — © 2025 Jane Doe"). Leave blank for no caption.',
-        multiline: true,
       }),
       isDraft: fields.checkbox({
         label: 'Draft',
@@ -283,7 +282,6 @@ function projectsCollection(locale: 'en' | 'de') {
       coverImageDescription: fields.text({
         label: 'Cover image description / credit (optional)',
         description: 'Shown as a caption strip at the bottom of the cover image on the Media page. Use it for any combination of caption and photographer credit. Leave blank for no caption.',
-        multiline: true,
       }),
       isDraft: fields.checkbox({
         label: 'Draft',
@@ -513,16 +511,18 @@ function pageHeaderSingleton(
           description: 'Read by screen readers. Describe what the image shows.',
           validation: { isRequired: true },
         }),
-        imageDisplayInMedia: fields.checkbox({
-          label: 'Show this hero image on the Media page',
-          description: 'On by default — turn off to hide this page hero from the Media page\'s Page banners (or About Us) accordion. The "Overlay text" field below doubles as the caption shown on /media.',
-          defaultValue: true,
-        }),
       } : {}),
       shownText: fields.text({
         label: 'Overlay text / Media-page caption (optional)',
         description: 'Small text shown in the top-right corner of the hero image on this page. The same text doubles as the caption strip when this hero appears on /media (use it for any combination of caption and photographer credit).',
       }),
+      ...(isEn ? {
+        imageDisplayInMedia: fields.checkbox({
+          label: 'Show this hero image on the Media page',
+          description: 'Appears in the Page banners (or About Us) accordion.',
+          defaultValue: true,
+        }),
+      } : {}),
       body: fields.emptyContent({ extension: 'mdx' }),
     },
   });
@@ -572,11 +572,10 @@ function sectionWithImageSingleton(locale: Locale, pathSuffix: string, label: st
         imageDescription: fields.text({
           label: 'Image description / credit (optional)',
           description: 'Captured for editorial use. Surfaces as a caption strip wherever this image is rendered through the shared <Img> component. Use it for any combination of caption and photographer credit.',
-          multiline: true,
         }),
         imageDisplayInMedia: fields.checkbox({
           label: 'Show this section image on the Media page',
-          description: 'On by default — turn off to hide this image from the Media page accordion.',
+          description: 'Appears in the Media page accordion.',
           defaultValue: true,
         }),
       } : {}),
@@ -631,11 +630,10 @@ function sectionWithButtonAndImagesSingleton(locale: Locale, pathSuffix: string,
           description: fields.text({
             label: 'Description / credit (optional)',
             description: 'Shown as a caption strip when this image appears on the Media page. Use it for any combination of caption and photographer credit. No effect on the marquee.',
-            multiline: true,
           }),
           displayInMedia: fields.checkbox({
             label: 'Show on the Media page',
-            description: 'On by default — when on, this image appears in the "What is BEARS" category on the Media page.',
+            description: 'Appears in the "What is BEARS" category on the Media page.',
             defaultValue: true,
           }),
         }),
@@ -812,43 +810,12 @@ function pageTextFaqSingleton(locale: 'en' | 'de') {
 }
 
 function pageTextMediaCategoriesSingleton(locale: 'en' | 'de') {
-  const isEn = locale === 'en';
   return singleton({
-    label: `Media categories + SEO (${locale.toUpperCase()})`,
-    path: `src/content/page-text/${locale}/media-categories`,
+    label: `Media categories (${locale.toUpperCase()})`,
+    path: `src/content/page-text/${locale}/media/media-categories`,
     format: { contentField: 'body' },
     entryLayout: 'form',
     schema: {
-      title: fields.text({ label: 'Title', validation: { isRequired: true } }),
-      subtitle: fields.text({
-        label: 'Subtitle',
-        description: isEn
-          ? undefined
-          : 'Note: the background image for this page is managed on the English (EN) singleton and shared across both locales.',
-      }),
-      seoDescription: fields.text({ label: 'SEO description', multiline: true }),
-      ...(isEn ? {
-        image: fields.image({
-          label: 'Background image',
-          directory: 'src/assets/hero/media',
-          publicPath: '/src/assets/hero/media/',
-          description: IMAGE_SIZE_HINT,
-        }),
-        imageAlt: fields.text({
-          label: 'Background image alt text',
-          description: 'Read by screen readers. Describe what the image shows.',
-          validation: { isRequired: true },
-        }),
-        imageDisplayInMedia: fields.checkbox({
-          label: 'Show this hero image on the Media page',
-          description: 'On by default. Showing the Media-page\'s own hero in its Page banners accordion is mildly recursive but harmless — turn off to hide. The "Overlay text" field below doubles as the caption shown on /media.',
-          defaultValue: true,
-        }),
-      } : {}),
-      shownText: fields.text({
-        label: 'Overlay text / Media-page caption (optional)',
-        description: 'Small text shown in the top-right corner of the hero image on this page. The same text doubles as the caption strip when this hero appears on /media (use it for any combination of caption and photographer credit).',
-      }),
       mediaCategories: pageTextMediaCategoriesField(),
       body: fields.emptyContent({ extension: 'mdx' }),
     },
@@ -1096,11 +1063,10 @@ const peopleCollection = collection({
     coverImageDescription: fields.text({
       label: 'Portrait description / credit (optional)',
       description: 'Shown as a caption strip when this portrait appears on the Media page. Use it for any combination of caption and photographer credit (e.g. "Akshat at WS2025 — © 2025 Jane Doe").',
-      multiline: true,
     }),
     showInFaces: fields.checkbox({
       label: 'Show in Faces of BEARS & Media page',
-      description: 'When on, this person\'s portrait appears in both the Faces of BEARS grid (on the About us page) and the People category on the Media page. Off by default — opt each person in only after they\'ve agreed to public display.',
+      description: 'Adds this portrait to the Faces of BEARS grid (About us page) and the People category on the Media page. Only enable with the person\'s consent.',
       defaultValue: false,
     }),
     order: fields.integer({
@@ -1223,11 +1189,6 @@ const heroSlides = collection({
           "Auto-generated from the alt text — you don't need to touch this.",
       },
     }),
-    displayInMedia: fields.checkbox({
-      label: 'Show on the Media page',
-      description: 'On by default — when on (and this slide is an image, not a video), it appears in the Hero category on the Media page. The "Overlay text" field below doubles as the caption shown on /media.',
-      defaultValue: true,
-    }),
     // Image and video uploads need different field types: fields.image
     // renders the thumbnail preview editors expect, while fields.file is the
     // only one that accepts video extensions. Keyed on a media-type select so
@@ -1261,6 +1222,11 @@ const heroSlides = collection({
     shownText: fields.text({
       label: 'Overlay text / Media-page caption (optional)',
       description: 'Text shown over the slide on the homepage hero. The same text doubles as the caption strip when this image slide appears on /media (use it for any combination of caption and photographer credit).',
+    }),
+    displayInMedia: fields.checkbox({
+      label: 'Show on the Media page',
+      description: 'Appears in the Hero category on the Media page (images only — videos are skipped).',
+      defaultValue: true,
     }),
     body: fields.emptyContent({ extension: 'mdx' }),
   },
@@ -1486,7 +1452,10 @@ export default config({
         'pageTextContactCrosslinkEn', 'pageTextContactCrosslinkDe',
         'pageTextDonateEn', 'pageTextDonateDe',
       ],
-      'Static Page Text - Media': ['pageTextMediaCategoriesEn', 'pageTextMediaCategoriesDe'],
+      'Static Page Text - Media': [
+        'pageTextMediaTitleEn', 'pageTextMediaTitleDe',
+        'pageTextMediaCategoriesEn', 'pageTextMediaCategoriesDe',
+      ],
       'Static Page Text - Legal & utility pages': [
         'pageTextImprintEn', 'pageTextImprintDe',
         'pageTextDatenschutzEn', 'pageTextDatenschutzDe',
@@ -1546,6 +1515,8 @@ export default config({
     pageTextSearchDe: pageTextSearchSingleton('de'),
     pageTextFaqEn: pageTextFaqSingleton('en'),
     pageTextFaqDe: pageTextFaqSingleton('de'),
+    pageTextMediaTitleEn: pageHeaderSingleton('en', 'media/media-title', 'Media — page header', 'src/assets/hero/media'),
+    pageTextMediaTitleDe: pageHeaderSingleton('de', 'media/media-title', 'Media — page header', 'src/assets/hero/media'),
     pageTextMediaCategoriesEn: pageTextMediaCategoriesSingleton('en'),
     pageTextMediaCategoriesDe: pageTextMediaCategoriesSingleton('de'),
     pageTextNavColumnsEn: pageTextNavColumnsSingleton('en'),

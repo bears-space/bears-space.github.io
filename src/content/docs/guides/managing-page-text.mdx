@@ -28,12 +28,12 @@ src/content/page-text/
 │   ├── contact/             — Contact page
 │   ├── footer/              — Footer (address)
 │   ├── site/                — Site metadata (title, description)
+│   ├── media/               — Media page (page header + categories list)
 │   ├── 404/                 — Not Found page
 │   ├── imprint/             — Imprint page
 │   ├── datenschutz/         — Privacy policy page
 │   ├── hero.mdx              — Landing hero (CTAs)
 │   ├── faq.mdx               — About Us FAQ
-│   ├── media-categories.mdx  — Media page categories
 │   ├── nav-columns.mdx       — Footer multi-column navigation
 │   ├── social.mdx            — Social media links (site-wide)
 │   ├── donate.mdx            — Sponsors page donate card
@@ -584,11 +584,10 @@ description: "Check back soon — we're always planning something new!"
 
 Controls which image categories appear on the Media page, their display order, and their labels. Each entry has an `id` (matching a known image directory) and a `label` (the displayed title).
 
+The Media page is split across two files: `media/media-title.mdx` holds the page header (title, subtitle, SEO description, hero image) and `media/media-categories.mdx` holds the category list.
+
 ```yaml
 ---
-title: "Media"
-subtitle: "Browse our photo gallery"
-seoDescription: "Photos from BEARS events, projects, and team activities."
 mediaCategories:
   - id: all
     label: "All"
@@ -622,9 +621,9 @@ mediaCategories:
 - **"All" category:** When `all` is in the list, it combines images from all other listed categories. Remove it to hide the combined view.
 - Categories with no images are automatically hidden.
 
-**Fields used:** `title`, `subtitle`, `seoDescription`, `mediaCategories`
+**Fields used:** `mediaCategories` (in `media/media-categories.mdx`); `title`, `subtitle`, `seoDescription`, `image`, `imageAlt`, `shownText` (in `media/media-title.mdx`)
 
-**File:** `media-categories.mdx` (at the locale root). Edited in the CMS via the **Media categories** singleton.
+**Files:** `media/media-title.mdx` — edited in the CMS via the **Media — page header + SEO** singleton. `media/media-categories.mdx` — edited via the **Media categories** singleton.
 
 ---
 
