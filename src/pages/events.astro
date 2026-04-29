@@ -70,7 +70,7 @@ const eventsWithImages = eventsWithLoadedImages.map((event) => ({
 const eventsForCallout = eventsWithImages.map(e => ({
   title: e.title,
   date: e.date.getTime(),
-  slug: e.slug,
+  href: localizeUrl(`/events/${stripLocaleFromSlug(e.slug)}`, locale),
 }));
 
 // Get category options from enum and build labels map
@@ -341,7 +341,6 @@ const eventsData = JSON.stringify(eventsWithImages.map((e, i) => ({
       subtitle={eventsIntro?.data.subtitle}
       description={eventsIntro?.data.description}
       events={eventsForCallout}
-      locale={locale}
     >
       <SortMenu />
       <FilterMenu

@@ -2,7 +2,7 @@
 interface EventData {
   title: string;
   date: number; // timestamp
-  slug: string;
+  href: string;
 }
 
 interface Props {
@@ -54,7 +54,7 @@ const eventsJson = JSON.stringify(events);
     <div class="h-0.5 bg-gradient-to-r from-bears-accent via-bears-accent/80 to-transparent"></div>
     <div class="px-5 py-5 sm:px-6 sm:py-6">
       <a
-        :href="nextEvent ? '/events/' + nextEvent.slug : '#'"
+        :href="nextEvent ? nextEvent.href : '#'"
         class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 group/callout"
       >
         <div class="flex items-center gap-3 min-w-0">
