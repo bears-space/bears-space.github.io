@@ -73,17 +73,14 @@ slotHtml = slotHtml.replace(
       // attributes, so the browser reserves correct layout boxes via intrinsic
       // aspect-ratio and scrollWidth is accurate before images finish decoding.
 
-      // Store original children and measure original width
+      // Snapshot the original children so we can append clones from a stable list
       const originalChildren = Array.from(content.children).map(child => child.cloneNode(true));
-      const originalWidth = content.scrollWidth;
 
-      // Get gap in pixels for width calculation
-      const computedGap = parseFloat(getComputedStyle(content).gap) || 0;
-
-      // Plain object for all animation state — bypasses Alpine's proxy entirely
+      // Plain object for all animation state — bypasses Alpine's proxy entirely.
+      // totalWidth is measured below after cloning, with sub-pixel precision.
       const s = {
         position: 0,
-        totalWidth: originalWidth + computedGap,
+        totalWidth: 0,
         lastTime: performance.now(),
         isPaused: false,
         isDragging: false,
@@ -111,6 +108,16 @@ slotHtml = slotHtml.replace(
       originalChildren.forEach(child => {
         content.appendChild(child.cloneNode(true));
       });
+
+      // Measure the repeat distance from the DOM with sub-pixel precision.
+      // The first clone of the first original sits exactly one full set + gap to
+      // the right of the original, so the difference of their fractional left
+      // edges is the exact wrap distance. Using scrollWidth + parsed gap rounds
+      // to integer pixels and causes a visible jump at every wrap.
+      const firstOriginal = content.children[0];
+      const firstClone = content.children[originalChildren.length];
+      s.totalWidth = firstClone.getBoundingClientRect().left
+                   - firstOriginal.getBoundingClientRect().left;
 
       // Single closure — reused by rAF, no allocation per frame
       const animate = (timestamp) => {
