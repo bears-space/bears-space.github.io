@@ -81,24 +81,66 @@ export default function Carousel({
       }
 
       if (slide.classList.contains('img-better')) {
-        // Direct <Img> as slide: center naturally, don't fill container
+        // Direct <Img> as slide: shrink-wrap to image at correct aspect ratio.
+        // We explicitly compute image dimensions in JS rather than relying on
+        // CSS auto + max-* + object-fit:contain, because the surrounding page
+        // CSS (e.g. `.prose-content .img-better { margin: 1.25rem 0 }` in
+        // PostLayout) and the wrapper's inline aspect-ratio interact with the
+        // absolute positioning to produce visible top-cropping.
+        const img = slide.querySelector('img');
         if (!isAutoHeight) {
-          // Clear inset so it doesn't stretch to fill
           slide.style.inset = '';
           slide.style.top = '50%';
           slide.style.left = '50%';
+          slide.style.margin = '0';
           slide.style.transform = isActive
             ? 'translate(-50%, -50%) scale(1) translateY(0)'
             : 'translate(-50%, -50%) scale(0.97) translateY(4px)';
+
+          if (img) {
+            const container = containerRef.current;
+            // Leave room for the wrapper's hover:ring-2 (2px) plus breathing
+            // room, so the ring isn't clipped by the slides container's
+            // overflow:hidden when it appears on hover.
+            const RING_INSET = 8;
+            const cw = Math.max(0, (container?.clientWidth || 0) - RING_INSET * 2);
+            const ch = Math.max(0, (container?.clientHeight || 0) - RING_INSET * 2);
+            const naturalW = parseInt(img.getAttribute('width') || '0', 10) || img.naturalWidth || 1;
+            const naturalH = parseInt(img.getAttribute('height') || '0', 10) || img.naturalHeight || 1;
+            const ratio = naturalW / naturalH;
+            let displayW: number;
+            let displayH: number;
+            if (cw / ch > ratio) {
+              displayH = ch;
+              displayW = ch * ratio;
+            } else {
+              displayW = cw;
+              displayH = cw / ratio;
+            }
+            img.style.width = `${displayW}px`;
+            img.style.height = `${displayH}px`;
+            img.style.maxWidth = '';
+            img.style.maxHeight = '';
+            img.style.objectFit = '';
+            slide.style.width = `${displayW}px`;
+            slide.style.height = `${displayH}px`;
+          }
         } else {
           slide.style.transform = isActive ? 'scale(1) translateY(0)' : 'scale(0.97) translateY(4px)';
+          slide.style.width = 'auto';
+          slide.style.height = 'auto';
+          slide.style.margin = '';
+          if (img) {
+            img.style.maxWidth = '100%';
+            img.style.maxHeight = '';
+            img.style.width = '';
+            img.style.height = '';
+            img.style.objectFit = '';
+          }
         }
-        slide.style.width = 'auto';
-        slide.style.height = 'auto';
         slide.style.maxWidth = '100%';
         slide.style.maxHeight = isAutoHeight ? '' : '100%';
         slide.style.aspectRatio = 'unset';
-        // Don't need flex centering since the div wraps the image tightly
         slide.style.display = '';
         slide.style.alignItems = '';
         slide.style.justifyContent = '';
@@ -106,25 +148,6 @@ export default function Carousel({
         slide.style.transition = isActive
           ? `opacity 420ms ${EASE}, transform 420ms ${EASE}, box-shadow 300ms ${EASE}, visibility 0s 0s`
           : `opacity 420ms ${EASE}, transform 420ms ${EASE}, box-shadow 300ms ${EASE}, visibility 0s 420ms`;
-        const img = slide.querySelector('img');
-        if (img) {
-          if (isAutoHeight) {
-            img.style.maxWidth = '100%';
-            img.style.maxHeight = '';
-            img.style.width = '';
-            img.style.height = '';
-            img.style.objectFit = '';
-          } else {
-            const container = containerRef.current;
-            const cw = container?.clientWidth || 0;
-            const ch = container?.clientHeight || 0;
-            img.style.maxWidth = `${cw}px`;
-            img.style.maxHeight = `${ch - 16}px`;
-            img.style.width = 'auto';
-            img.style.height = 'auto';
-            img.style.objectFit = 'contain';
-          }
-        }
       } else {
         // HTML content or wrapped images: center naturally
         slide.querySelectorAll<HTMLElement>('.img-better').forEach((el) => {
