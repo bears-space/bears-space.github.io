@@ -119,10 +119,8 @@ describe('Select-option parity (keystatic.config.ts ↔ src/content/config.ts)',
     // page-text `mediaCategories` array. The actual consumers are:
     //   - getMediaItemsByCategory's switch in src/utils/contentQueries.ts
     //     (handles 'events', 'projects', 'hero', 'what-is-bears',
-    //     'about-us', 'page-banners')
-    //   - the special-cased 'people' branch in src/pages/media.astro
-    //     (calls getMediaPeople instead of the dispatch)
-    //   - the runtime 'all' aggregate, also assembled in media.astro
+    //     'about-us')
+    //   - the runtime 'all' aggregate, assembled in media.astro
     // A Keystatic option that no consumer handles silently shows nothing,
     // which is the regression we want to catch.
 
@@ -140,16 +138,9 @@ describe('Select-option parity (keystatic.config.ts ↔ src/content/config.ts)',
     const mediaSource = readFileSync(join(ROOT, 'src/pages/media.astro'), 'utf8');
     const queriesSource = readFileSync(join(ROOT, 'src/utils/contentQueries.ts'), 'utf8');
 
-    // Verify media.astro still wires people + the dispatch.
-    if (ksValues.has('people')) {
-      expect(
-        mediaSource.includes('getMediaPeople'),
-        'Keystatic offers a "people" media category but media.astro no longer calls getMediaPeople — wire it up or remove the option.',
-      ).toBe(true);
-    }
     expect(
       mediaSource.includes('getMediaItemsByCategory'),
-      'media.astro must call getMediaItemsByCategory(...) to populate non-people, non-all categories.',
+      'media.astro must call getMediaItemsByCategory(...) to populate non-"all" categories.',
     ).toBe(true);
 
     // Parse the case statements out of getMediaItemsByCategory to find which
@@ -161,9 +152,9 @@ describe('Select-option parity (keystatic.config.ts ↔ src/content/config.ts)',
       [...(dispatchSection![1].matchAll(/case\s+['"]([\w-]+)['"]\s*:/g))].map((m) => m[1]),
     );
 
-    // 'all' is built at runtime in media.astro; 'people' is the page-level
-    // special case. Everything else must be in the dispatch.
-    const SPECIAL_CASED = new Set(['all', 'people']);
+    // 'all' is built at runtime in media.astro. Everything else must be in
+    // the dispatch.
+    const SPECIAL_CASED = new Set(['all']);
     const ksRequiringDispatch = [...ksValues].filter((v) => !SPECIAL_CASED.has(v));
 
     const onlyInKeystatic = ksRequiringDispatch.filter((v) => !dispatchCases.has(v));
@@ -171,7 +162,7 @@ describe('Select-option parity (keystatic.config.ts ↔ src/content/config.ts)',
 
     expect(
       { onlyInKeystatic, onlyInDispatch },
-      'Media category drift: every Keystatic option (excluding "all" and "people") must have a matching `case` in getMediaItemsByCategory, and every case must correspond to a Keystatic option.',
+      'Media category drift: every Keystatic option (excluding "all") must have a matching `case` in getMediaItemsByCategory, and every case must correspond to a Keystatic option.',
     ).toEqual({ onlyInKeystatic: [], onlyInDispatch: [] });
   });
 });

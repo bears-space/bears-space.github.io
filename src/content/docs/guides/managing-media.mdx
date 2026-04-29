@@ -15,11 +15,9 @@ Each Media-page accordion sources from a different content collection:
 |-----------|--------|------------------------------------|
 | Events | The Events collection | Edit the event → upload a cover photo. Inline `<Img />` blocks in the event body are also pulled in (each has its own `displayInMedia` toggle, default on). |
 | Projects | The Projects collection | Edit the project → upload a cover photo. Inline `<Img />` blocks in the project body are also pulled in (each has its own `displayInMedia` toggle, default on). |
-| Hero slides | The Hero Slides collection | Image slides appear automatically with their `displayInMedia` toggle on. The slide's `shownText` (homepage corner overlay) doubles as the /media caption. |
+| Hero Images | The Hero Slides collection **+** Events / Projects / Sponsors / Contact / Media page-header singletons | Combines the landing-page hero carousel with each subpage's hero banner. Hero slides appear when their `displayInMedia` toggle is on; page heroes appear when their `imageDisplayInMedia` toggle is on (both default on). The slide's / hero's `shownText` (corner overlay) doubles as the /media caption. |
 | What is BEARS | The "What is BEARS" landing singleton | Each carousel image has `displayInMedia` (default on). |
-| About Us | About Us page-header + "Our Mission" section singletons | Page hero plus the "Our Mission" section image. Each has its own `imageDisplayInMedia` toggle (default on). The about-us hero uses `shownText` as the /media caption; the our-mission section image uses `imageDescription`. |
-| Page banners | Events / Projects / Sponsors / Contact / Media page-header singletons | Each subpage's hero banner. Each has its own `imageDisplayInMedia` toggle (default on). The hero's `shownText` (corner overlay on the page) doubles as the /media caption. |
-| People | The People collection | Per-person `showInFaces` toggle (default off — opt-in consent toggle that gates both Faces of BEARS and the Media accordion). People without a portrait image are skipped. See [Managing People](/docs/guides/managing-people). |
+| About Us | About Us page-header + "Our Mission" section singletons **+** the People collection | Page hero plus the "Our Mission" section image, followed by the Faces of BEARS roster (one combined accordion because Faces of BEARS lives on the About Us page). Page-level images each have their own `imageDisplayInMedia` toggle (default on); the about-us hero uses `shownText` as the /media caption while the our-mission section image uses `imageDescription`. People appear when their per-person `showInFaces` toggle is on (default off — opt-in consent toggle that gates both Faces of BEARS and the Media accordion). People without a portrait image are skipped. See [Managing People](/docs/guides/managing-people). |
 
 ## Adding a photo to /media
 
@@ -43,7 +41,7 @@ Each per-image source has a checkbox you can flip off:
 
 - **Hero slides** → `displayInMedia` (default on)
 - **What is BEARS carousel** → `displayInMedia` per item (default on)
-- **Page banners + About Us hero + "Our Mission" section** → `imageDisplayInMedia` per singleton (default on)
+- **Subpage hero banners + About Us hero + "Our Mission" section** → `imageDisplayInMedia` per singleton (default on)
 - **Inline `<Img />` body images** → `displayInMedia` per image (default on; flipping off keeps the image inside the post but hides it from /media)
 - **People** → `showInFaces` (default off; doubles as the consent toggle for Faces of BEARS)
 

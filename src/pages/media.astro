@@ -8,10 +8,10 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import NotFoundPage from "./404.astro";
 import MediaAccordion from "../components/reusable/MediaAccordion.astro";
 import PageHeroImage from "../components/reusable/PageHeroImage.astro";
-import { loadAllImagesFromDirectory, loadCollectionImages, loadImage, resolveImagePath } from "@utils/imageLoader";
+import { loadAllImagesFromDirectory, loadImage, resolveImagePath } from "@utils/imageLoader";
 import type { ImageMetadata } from "astro";
 import { mediaHeroImages } from "@utils/imageGlobs";
-import { getMediaItemsByCategory, getMediaPeople, getPageContent } from "@utils/contentQueries";
+import { getMediaItemsByCategory, getPageContent } from "@utils/contentQueries";
 import { getLocale, mediaUiStrings } from "@utils/i18n";
 import type { ImageWithAlt } from "@types";
 
@@ -53,33 +53,17 @@ if (visibility.showMediaPage) {
   // Read categories from content file (order and visibility controlled by content creators)
   const contentCategories = categoriesContent?.data.mediaCategories ?? [];
 
-  // Each category sources from a different place. People → People collection
-  // filtered by showInFaces + coverImage (separate query because we need each
-  // person's name + role for the alt). Everything else → getMediaItemsByCategory
-  // dispatch. 'all' is a runtime aggregate of everything else.
-  const loadedCategories = (await Promise.all(
+  // Every category (including 'about-us', which now includes Faces of BEARS)
+  // is handled by getMediaItemsByCategory. 'all' is a runtime aggregate
+  // assembled below.
+  const loadedCategories = await Promise.all(
     contentCategories
       .filter((cat: { id: string }) => cat.id !== 'all')
-      .map(async (cat: { id: string; label: string }): Promise<{ id: string; label: string; images: ImageWithAlt[] } | null> => {
-        if (cat.id === 'people') {
-          const mediaPeople = await getMediaPeople(locale);
-          const peopleWithImages = await loadCollectionImages(mediaPeople, 'person');
-          // loadCollectionImages's type signature strips the locale-projected
-          // `role` from getMediaPeople, so re-derive it here from roleEn/roleDe.
-          const images: ImageWithAlt[] = peopleWithImages.map((p) => {
-            const role = locale === 'de' ? p.data.roleDe : p.data.roleEn;
-            return {
-              image: p.loadedImage,
-              alt: `${p.data.name} — ${role}`,
-              description: p.data.coverImageDescription,
-            };
-          });
-          return { id: cat.id, label: cat.label, images };
-        }
+      .map(async (cat: { id: string; label: string }) => {
         const images = await getMediaItemsByCategory(cat.id, locale);
         return { id: cat.id, label: cat.label, images };
       }),
-  )).filter((cat): cat is { id: string; label: string; images: ImageWithAlt[] } => cat !== null);
+  );
 
   // Filter out empty categories
   const categoriesWithImages = loadedCategories.filter((cat) => cat.images.length > 0);
@@ -128,7 +112,7 @@ if (visibility.showMediaPage) {
                 images={category.images}
                 cols={4}
                 gap="md"
-                aspectRatio={category.id === 'people' ? 'native-rows' : 'native'}
+                aspectRatio="native"
                 locale={locale}
               />
             ))

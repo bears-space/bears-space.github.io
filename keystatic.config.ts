@@ -128,23 +128,22 @@ const PROJECT_CATEGORIES = [
 // `mediaCategories` select AND by the dispatch in
 // src/utils/contentQueries.ts → getMediaItemsByCategory(). Each category
 // pulls from a different source:
-//   - 'about-us'      → about-us page hero + about-us "Our Mission" section image
+//   - 'about-us'      → about-us page hero + about-us "Our Mission" section
+//                       image + the Faces of BEARS roster (People collection
+//                       filtered by `showInFaces` + having a `coverImage`)
 //   - 'events'        → event covers + inline <Img> images from event bodies
 //   - 'projects'      → project covers + inline <Img> images from project bodies
-//   - 'hero'          → hero-slides collection (image branch only)
+//   - 'hero'          → landing-page hero-slides (image branch only) + the
+//                       events/projects/sponsors/contact/media title heroes
 //   - 'what-is-bears' → landing/what-is-bears singleton's carouselImages
-//   - 'people'        → People collection filtered by `showInFaces` + having a `coverImage`
-//   - 'page-banners'  → events/projects/sponsors/contact title heroes + media page hero
 //   - 'all'           → runtime aggregate of every category above
 // Adding a new value here also requires updating the dispatch.
 const MEDIA_CATEGORY_IDS = [
   { label: 'About Us', value: 'about-us' },
   { label: 'Events', value: 'events' },
-  { label: 'People', value: 'people' },
-  { label: 'Hero slides', value: 'hero' },
+  { label: 'Hero Images', value: 'hero' },
   { label: 'Projects', value: 'projects' },
   { label: 'What is BEARS', value: 'what-is-bears' },
-  { label: 'Page banners', value: 'page-banners' },
   { label: 'All (aggregates every category above)', value: 'all' },
 ] as const;
 
@@ -519,7 +518,7 @@ function pageHeaderSingleton(
       ...(isEn ? {
         imageDisplayInMedia: fields.checkbox({
           label: 'Show this hero image on the Media page',
-          description: 'Appears in the Page banners (or About Us) accordion.',
+          description: 'Appears in the Hero Images (or About Us) accordion.',
           defaultValue: true,
         }),
       } : {}),

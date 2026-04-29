@@ -2,7 +2,7 @@ import { getCollection, getEntry } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { DEFAULT_LOCALE, type Locale } from './i18n';
 import type { ImageWithAlt } from '@types';
-import { loadImage, resolveImagePath } from './imageLoader';
+import { loadCollectionImages, loadImage, resolveImagePath } from './imageLoader';
 import {
   aboutHeroImages,
   allAssetImages,
@@ -391,9 +391,14 @@ async function getMediaFromProjects(locale: Locale): Promise<ImageWithAlt[]> {
   return items;
 }
 
-async function getMediaFromHeroSlides(): Promise<ImageWithAlt[]> {
-  const slides = await getCollection('hero-slides');
+async function getMediaFromHeroImages(): Promise<ImageWithAlt[]> {
+  // Combines the landing-page hero carousel (hero-slides collection, image
+  // branch only) with the page-header hero banners on
+  // events/projects/sponsors/contact/media. Editors see one "Hero Images"
+  // accordion on /media that aggregates both.
   const items: ImageWithAlt[] = [];
+
+  const slides = await getCollection('hero-slides');
   const sorted = [...slides].sort((a, b) => a.data.order - b.data.order);
   for (const slide of sorted) {
     if (!slide.data.displayInMedia) continue;
@@ -409,6 +414,8 @@ async function getMediaFromHeroSlides(): Promise<ImageWithAlt[]> {
       description: slide.data.shownText,
     });
   }
+
+  items.push(...(await getPageHeaderBannerImages()));
   return items;
 }
 
@@ -461,16 +468,36 @@ async function loadPageTextImage(
   };
 }
 
-async function getMediaFromAboutUs(): Promise<ImageWithAlt[]> {
+async function getMediaFromAboutUs(locale: Locale): Promise<ImageWithAlt[]> {
+  // The About Us accordion combines the page-level images (page hero +
+  // "Our Mission" section image) with the Faces of BEARS roster, since
+  // Faces of BEARS lives on the About Us page. Page-level images come first
+  // to match the on-page reading order, then portraits.
   const items: ImageWithAlt[] = [];
   const hero = await loadPageTextImage('about-us/about-us-title', '/src/assets/hero/about-us', aboutHeroImages, 'About Us hero image');
   if (hero) items.push(hero);
   const ourMission = await loadPageTextImage('about-us/our-mission', '/src/assets/about-us/our-mission', ourMissionImages, 'About Us — Our Mission image');
   if (ourMission) items.push(ourMission);
+  items.push(...(await getMediaFromPeople(locale)));
   return items;
 }
 
-async function getMediaFromPageBanners(): Promise<ImageWithAlt[]> {
+async function getMediaFromPeople(locale: Locale): Promise<ImageWithAlt[]> {
+  const mediaPeople = await getMediaPeople(locale);
+  const peopleWithImages = await loadCollectionImages(mediaPeople, 'person');
+  // loadCollectionImages's type signature strips the locale-projected
+  // `role` from getMediaPeople, so re-derive it here from roleEn/roleDe.
+  return peopleWithImages.map((p) => {
+    const role = locale === 'de' ? p.data.roleDe : p.data.roleEn;
+    return {
+      image: p.loadedImage,
+      alt: `${p.data.name} — ${role}`,
+      description: p.data.coverImageDescription,
+    };
+  });
+}
+
+async function getPageHeaderBannerImages(): Promise<ImageWithAlt[]> {
   // Hardcoded list of page-text page-header singletons (excluding about-us,
   // which has its own dedicated category). Each entry maps id → its hero
   // glob and a fallback alt for context logging.
@@ -495,11 +522,13 @@ async function getMediaFromPageBanners(): Promise<ImageWithAlt[]> {
  * and projects metadata into the shared ImageWithAlt shape used by the
  * Media-page rendering pipeline.
  *
- * Categories handled here: events, projects, hero, what-is-bears, about-us,
- * page-banners. The 'people' category is intentionally absent — it's handled
- * by getMediaPeople + loadCollectionImages directly in media.astro because it
- * needs the locale-projected role from each person record. The 'all' aggregate
- * is also assembled in media.astro.
+ * Categories handled here: events, projects, hero, what-is-bears, about-us.
+ * The 'hero' branch combines the landing-page hero-slides carousel with the
+ * events/projects/sponsors/contact/media title banners — editors see one
+ * "Hero Images" accordion on /media. The 'about-us' branch combines the
+ * about-us page-level images (page hero + "Our Mission" section image) with
+ * the Faces of BEARS roster, since Faces of BEARS lives on the About Us
+ * page. The 'all' aggregate is assembled in media.astro.
  *
  * Adding a new category id in MEDIA_CATEGORY_IDS without adding a branch here
  * silently returns []. The schemaDrift test catches that.
@@ -511,10 +540,9 @@ export async function getMediaItemsByCategory(
   switch (category) {
     case 'events': return getMediaFromEvents(locale);
     case 'projects': return getMediaFromProjects(locale);
-    case 'hero': return getMediaFromHeroSlides();
+    case 'hero': return getMediaFromHeroImages();
     case 'what-is-bears': return getMediaFromWhatIsBears();
-    case 'about-us': return getMediaFromAboutUs();
-    case 'page-banners': return getMediaFromPageBanners();
+    case 'about-us': return getMediaFromAboutUs(locale);
     default: return [];
   }
 }
