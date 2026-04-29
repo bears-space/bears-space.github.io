@@ -847,7 +847,7 @@ function pageTextMediaCategoriesSingleton(locale: 'en' | 'de') {
       } : {}),
       shownText: fields.text({
         label: 'Overlay text / Media-page caption (optional)',
-        description: 'Small text shown in the top-right corner of the hero image on this page. The same text doubles as the caption strip when this hero appears on /media.',
+        description: 'Small text shown in the top-right corner of the hero image on this page. The same text doubles as the caption strip when this hero appears on /media (use it for any combination of caption and photographer credit).',
       }),
       mediaCategories: pageTextMediaCategoriesField(),
       body: fields.emptyContent({ extension: 'mdx' }),
