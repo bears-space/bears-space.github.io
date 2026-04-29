@@ -64,8 +64,7 @@ File naming: "<slug>.mdx" — filename is the slug, sort order comes from the `o
 Frontmatter:
   order: number (required) — display order (lower = shown first)
   alt: string (required) — also used as the slide's slug in the admin UI
-  shownText: string (optional) — overlay text
-  description: string (optional) — single caption + credit field shown on /media when this slide is an image
+  shownText: string (optional) — overlay text shown in the slide corner on the homepage hero; doubles as the caption strip on /media (single field for caption + photographer credit)
   displayInMedia: boolean (default true) — when true and the slide is an image, it appears in the Hero category on /media
   media: object (required) — conditional field with two branches:
     { discriminant: "image", value: "/<slug>/media.<ext>" }  — .jpg .jpeg .png .webp .svg

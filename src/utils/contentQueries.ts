@@ -404,7 +404,9 @@ async function getMediaFromHeroSlides(): Promise<ImageWithAlt[]> {
     items.push({
       image: img,
       alt: slide.data.alt,
-      description: slide.data.description,
+      // shownText doubles as the corner overlay on the homepage hero AND
+      // the /media caption — single field per slide.
+      description: slide.data.shownText,
     });
   }
   return items;
@@ -451,7 +453,11 @@ async function loadPageTextImage(
   return {
     image: img,
     alt: entry.data.imageAlt ?? fallbackAlt,
-    description: entry.data.imageDescription,
+    // For page-header singletons (events/projects/sponsors/contact/media
+    // titles + about-us hero) the corner-overlay shownText doubles as the
+    // /media caption. The our-mission section image has no shownText and
+    // uses imageDescription instead — the ?? falls through accordingly.
+    description: entry.data.shownText ?? entry.data.imageDescription,
   };
 }
 

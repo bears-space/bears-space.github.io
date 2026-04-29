@@ -513,20 +513,15 @@ function pageHeaderSingleton(
           description: 'Read by screen readers. Describe what the image shows.',
           validation: { isRequired: true },
         }),
-        imageDescription: fields.text({
-          label: 'Image description / credit (optional)',
-          description: 'Captured for editorial use. Surfaces as a caption strip wherever this image is rendered through the shared <Img> component (e.g. on the Media page when the hero is exposed there). Use it for any combination of caption and photographer credit.',
-          multiline: true,
-        }),
         imageDisplayInMedia: fields.checkbox({
           label: 'Show this hero image on the Media page',
-          description: 'On by default — turn off to hide this page hero from the Media page\'s Page banners (or About Us) accordion.',
+          description: 'On by default — turn off to hide this page hero from the Media page\'s Page banners (or About Us) accordion. The "Overlay text" field below doubles as the caption shown on /media.',
           defaultValue: true,
         }),
       } : {}),
       shownText: fields.text({
-        label: 'Overlay text (optional)',
-        description: 'Small text shown in the top-right corner of the hero image. Leave blank to hide.',
+        label: 'Overlay text / Media-page caption (optional)',
+        description: 'Small text shown in the top-right corner of the hero image on this page. The same text doubles as the caption strip when this hero appears on /media (use it for any combination of caption and photographer credit).',
       }),
       body: fields.emptyContent({ extension: 'mdx' }),
     },
@@ -844,20 +839,15 @@ function pageTextMediaCategoriesSingleton(locale: 'en' | 'de') {
           description: 'Read by screen readers. Describe what the image shows.',
           validation: { isRequired: true },
         }),
-        imageDescription: fields.text({
-          label: 'Image description / credit (optional)',
-          description: 'Captured for editorial use. Surfaces as a caption strip wherever this image is rendered through the shared <Img> component. Use it for any combination of caption and photographer credit.',
-          multiline: true,
-        }),
         imageDisplayInMedia: fields.checkbox({
           label: 'Show this hero image on the Media page',
-          description: 'On by default. Showing the Media-page\'s own hero in its Page banners accordion is mildly recursive but harmless — turn off to hide.',
+          description: 'On by default. Showing the Media-page\'s own hero in its Page banners accordion is mildly recursive but harmless — turn off to hide. The "Overlay text" field below doubles as the caption shown on /media.',
           defaultValue: true,
         }),
       } : {}),
       shownText: fields.text({
-        label: 'Overlay text (optional)',
-        description: 'Small text shown in the top-right corner of the hero image. Leave blank to hide.',
+        label: 'Overlay text / Media-page caption (optional)',
+        description: 'Small text shown in the top-right corner of the hero image on this page. The same text doubles as the caption strip when this hero appears on /media.',
       }),
       mediaCategories: pageTextMediaCategoriesField(),
       body: fields.emptyContent({ extension: 'mdx' }),
@@ -1233,14 +1223,9 @@ const heroSlides = collection({
           "Auto-generated from the alt text — you don't need to touch this.",
       },
     }),
-    description: fields.text({
-      label: 'Description / credit (optional)',
-      description: 'Shown as a caption strip when this slide appears on the Media page. Use it for any combination of caption and photographer credit. No effect on the homepage hero.',
-      multiline: true,
-    }),
     displayInMedia: fields.checkbox({
       label: 'Show on the Media page',
-      description: 'On by default — when on (and this slide is an image, not a video), it appears in the Hero category on the Media page.',
+      description: 'On by default — when on (and this slide is an image, not a video), it appears in the Hero category on the Media page. The "Overlay text" field below doubles as the caption shown on /media.',
       defaultValue: true,
     }),
     // Image and video uploads need different field types: fields.image
@@ -1273,7 +1258,10 @@ const heroSlides = collection({
         }),
       }
     ),
-    shownText: fields.text({ label: 'Overlay text (optional)' }),
+    shownText: fields.text({
+      label: 'Overlay text / Media-page caption (optional)',
+      description: 'Text shown over the slide on the homepage hero. The same text doubles as the caption strip when this image slide appears on /media (use it for any combination of caption and photographer credit).',
+    }),
     body: fields.emptyContent({ extension: 'mdx' }),
   },
 });

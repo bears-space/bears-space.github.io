@@ -103,7 +103,6 @@ const heroSlidesCollection = defineCollection({
   schema: z.object({
     order: z.number(),
     alt: z.string(),
-    description: z.string().optional(),
     displayInMedia: z.boolean().default(true),
     shownText: z.string().optional(),
     // Mirrors the Keystatic `fields.conditional` on media: the admin UI splits

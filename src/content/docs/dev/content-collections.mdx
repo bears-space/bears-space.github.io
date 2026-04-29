@@ -17,7 +17,7 @@ All website content is managed through [Astro content collections](https://docs.
 | `testimonials` | `src/content/testimonials/list.mdx` (single-entry collection, body empty) | No (quotes inline per locale) | `items`: array of `{ person (→ `people`), quoteEn, quoteDe }` — array order IS display order |
 | `page-text` | `src/content/page-text/{en,de}/` | Yes | title, subtitle, description, ctas, items, address, socialLinks, navLinks, navColumns, faqs, mediaCategories, tierDescriptions, donate fields |
 | `sponsors` | `src/content/sponsors/<tier>/` | No | name, order, logo, alt? (falls back to name), url, bgColor (tier from folder) |
-| `hero-slides` | `src/content/hero-slides/` | No | order, alt, shownText, media (conditional: `{discriminant: image\|video, value}`), description?, displayInMedia |
+| `hero-slides` | `src/content/hero-slides/` | No | order, alt, shownText (corner overlay on homepage hero AND /media caption when surfaced), media (conditional: `{discriminant: image\|video, value}`), displayInMedia |
 | `instagram` | `src/content/instagram/` | No | url, date, isDraft |
 | `docs` | `src/content/docs/` | No | title, description, order, group |
 

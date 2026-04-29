@@ -15,17 +15,17 @@ Each Media-page accordion sources from a different content collection:
 |-----------|--------|------------------------------------|
 | Events | The Events collection | Edit the event → upload a cover photo. Inline `<Img />` blocks in the event body are also pulled in (each has its own `displayInMedia` toggle, default on). |
 | Projects | The Projects collection | Edit the project → upload a cover photo. Inline `<Img />` blocks in the project body are also pulled in (each has its own `displayInMedia` toggle, default on). |
-| Hero slides | The Hero Slides collection | Image slides appear automatically with their `displayInMedia` toggle on. |
+| Hero slides | The Hero Slides collection | Image slides appear automatically with their `displayInMedia` toggle on. The slide's `shownText` (homepage corner overlay) doubles as the /media caption. |
 | What is BEARS | The "What is BEARS" landing singleton | Each carousel image has `displayInMedia` (default on). |
-| About Us | About Us page-header + "Our Mission" section singletons | Page hero plus the "Our Mission" section image. Each has its own `imageDisplayInMedia` toggle (default on). |
-| Page banners | Events / Projects / Sponsors / Contact / Media page-header singletons | Each subpage's hero banner. Each has its own `imageDisplayInMedia` toggle (default on). |
+| About Us | About Us page-header + "Our Mission" section singletons | Page hero plus the "Our Mission" section image. Each has its own `imageDisplayInMedia` toggle (default on). The about-us hero uses `shownText` as the /media caption; the our-mission section image uses `imageDescription`. |
+| Page banners | Events / Projects / Sponsors / Contact / Media page-header singletons | Each subpage's hero banner. Each has its own `imageDisplayInMedia` toggle (default on). The hero's `shownText` (corner overlay on the page) doubles as the /media caption. |
 | People | The People collection | Per-person `showInFaces` toggle (default off — opt-in consent toggle that gates both Faces of BEARS and the Media accordion). People without a portrait image are skipped. See [Managing People](/docs/guides/managing-people). |
 
 ## Adding a photo to /media
 
 For events and projects, the cover image always appears in the matching /media accordion. Use `coverImageDescription` to add a caption + credit (one field, multiline — e.g. `"Group photo — © 2025 Jane Doe"`). To feature **more** photos from the same event/project on /media, embed them inside the post's body with the **Image** block in the editor — each block prompts for the photo, alt text, an optional description (caption + credit), and a per-image **Show on the Media page** toggle (default on, flip off to keep that body image post-only).
 
-For hero slides, the "What is BEARS" carousel, the about-us hero, the "Our Mission" section, and every other page banner, just fill in the description if you want it shown — `displayInMedia` (or `imageDisplayInMedia`) defaults to on.
+For hero slides and every page-header hero (about-us, events, projects, sponsors, contact, media titles), the existing `shownText` field serves double duty: corner-overlay text on the page itself plus the caption strip on /media. For the "What is BEARS" carousel and the about-us "Our Mission" section, fill in the per-item `description` / `imageDescription`. `displayInMedia` (or `imageDisplayInMedia`) on each defaults to on.
 
 ## What shows on the page
 
