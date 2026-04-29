@@ -1,14 +1,15 @@
 ---
-title: "Komplette Styling- & Komponenten-Showcase"
-description: "Eine umfassende Präsentation aller Typografie-, Komponenten- und Designelemente der BEARS-Website."
+title: Komplette Styling- & Komponenten-Showcase
+description: >-
+  Eine umfassende Präsentation aller Typografie-, Komponenten- und
+  Designelemente der BEARS-Website.
 date: 2026-01-26
-categoryProject: "other"
-coverImage: "/erc-rover/coverImage.jpg"
+categoryProject: other
+coverImage: /styling-showcase/coverImage.jpg
 isDraft: true
-displayMeetTheTeam: false
 isProjectCompleted: true
+displayMeetTheTeam: false
 ---
-
 ## Typografie & Textstile
 
 Diese Seite demonstriert alle Typografie- und Stilelemente, die auf der BEARS-Website verwendet werden. Von Überschriften bis Fließtext folgt alles einer sorgfältig gestalteten typografischen Hierarchie.
@@ -18,12 +19,15 @@ Diese Seite demonstriert alle Typografie- und Stilelemente, die auf der BEARS-We
 Alle Überschriften verwenden responsive Schriftgrößen, die sich mit der Bildschirmgröße skalieren. Dies gewährleistet Lesbarkeit auf mobilen Geräten und Desktop gleichermaßen.
 
 #### Unterüberschrift Ebene 4
+
 Dies ist eine Überschrift der Ebene 4, die oft für Unterabschnitte innerhalb größerer Inhaltsblöcke verwendet wird.
 
 ##### Überschrift Ebene 5
+
 Ebene-5-Überschriften eignen sich für verschachtelte Themen.
 
 ###### Überschrift Ebene 6
+
 Ebene-6-Überschriften für tief verschachtelte Inhalte.
 
 ### Fließtext & Absätze
@@ -36,13 +40,13 @@ Dieser Absatz demonstriert **fetten Text**, *kursiven Text* und ***fett-kursiven
 
 Aufzählungszeichen und nummerierte Listen behalten eine konsistente Einrückung und Abstände bei:
 
-- Erster Punkt mit Erklärung
-- Zweiter Punkt zur Demonstration des Listenflusses
-- Verschachtelte Punkte können mehrere Ebenen tief gehen:
-  - Unterpunkt eins
-  - Unterpunkt zwei
-  - Unterpunkt drei
-- Vierter Punkt setzt die Hauptliste fort
+* Erster Punkt mit Erklärung
+* Zweiter Punkt zur Demonstration des Listenflusses
+* Verschachtelte Punkte können mehrere Ebenen tief gehen:
+  * Unterpunkt eins
+  * Unterpunkt zwei
+  * Unterpunkt drei
+* Vierter Punkt setzt die Hauptliste fort
 
 Nummerierte Listen funktionieren ebenso:
 
@@ -94,24 +98,23 @@ for i in range(10):
 Buttons gibt es in mehreren Varianten und Größen für verschiedene Anwendungsfälle:
 
 <Center>
-### Primäre Buttons
+  ### Primäre Buttons
 
-<Button content="Standard Primär" variant="primary" size="standard" href="#buttons" />
+  <Button href="#buttons" variant="primary" size="standard" disabled={false} content="Standard Primär" />
 
-<Button content="Großer Primärer Button" variant="primary" size="large" />
+  <Button variant="primary" size="large" disabled={false} content="Großer Primärer Button" />
 
-### Sekundäre Buttons
+  ### Sekundäre Buttons
 
-<Button content="Standard Sekundär" variant="secondary" size="standard" />
+  <Button variant="secondary" size="standard" disabled={false} content="Standard Sekundär" />
 
-<Button content="Großer Sekundärer Button" variant="secondary" size="large" />
+  <Button variant="secondary" size="large" disabled={false} content="Großer Sekundärer Button" />
 
-### Inverse Buttons
+  ### Inverse Buttons
 
-<Button content="Standard Invers" variant="inverse" size="standard" />
+  <Button variant="inverse" size="standard" disabled={false} content="Standard Invers" />
 
-<Button content="Großer Inverser Button" variant="inverse" size="large" />
-
+  <Button variant="inverse" size="large" disabled={false} content="Großer Inverser Button" />
 </Center>
 
 ---
@@ -121,61 +124,45 @@ Buttons gibt es in mehreren Varianten und Größen für verschiedene Anwendungsf
 Die `Img`-Komponente bietet optimierte, responsive Bildanzeige mit flexibler Größenanpassung:
 
 <Center>
+  ### Bild in voller Breite
 
-### Bild in voller Breite
-<Img src="/src/assets/projects/erc-rover/Rover_team.jpg" alt="Projektpräsentation in voller Breite" width="100%" />
+  <Img src="/src/assets/projects/styling-showcase/DSC02257.jpg" alt="Projektpräsentation in voller Breite" displayInMedia width="100%" enableClickToEnlarge />
 
-### Bild mit 80% Breite
-<Img src="/src/assets/projects/erc-rover/Rover_all_groups.jpg" alt="Bild mit 80% Breite" width="80%" />
+  ### Bild mit 80% Breite
 
-### Bild mit 60% Breite
-<Img src="/src/assets/projects/erc-rover/Rover_fixing_onsite.jpg" alt="Bild mit 60% Breite" width="60%" />
+  <Img src="/src/assets/projects/styling-showcase/R1-02831-0027.jpg" alt="Bild mit 80% Breite" displayInMedia width="80%" enableClickToEnlarge />
 
+  ### Bild mit 60% Breite
+
+  <Img src="/src/assets/projects/styling-showcase/R1-02831-0006.JPG" alt="Bild mit 60% Breite" displayInMedia width="60%" enableClickToEnlarge />
 </Center>
 
 ### Bilder-Raster
 
 #### Quadratisch
 
-<ImageGrid
-  cols={2}
-  aspectRatio='square'
-  images={[
-    { image: "/src/assets/projects/erc-rover/Rover_team.jpg", alt: "Projekt 1 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_all_groups.jpg", alt: "Projekt 2 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_fixing_onsite.jpg", alt: "Projekt 3 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_robro.jpg", alt: "Projekt 4 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_tag.jpg", alt: "Projekt 5 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_team_with_erc_banner.jpg", alt: "Projekt 6 Rasterbeispiel" }
-  ]}
-/>
+<ImageGrid images={[{"image":"/src/assets/projects/styling-showcase/R1-06712-009A-3.jpg","alt":"Projekt 1 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/R1-06712-011A-2.jpg","alt":"Projekt 2 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/R1-00289-0004.jpg","alt":"Projekt 3 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/R1-00289-0002.jpg","alt":"Projekt 4 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/R1-00289-0014.jpg","alt":"Projekt 5 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/R1-00289-0017.jpg","alt":"Projekt 6 Rasterbeispiel"}]} cols={2} gap="md" aspectRatio="square" enableClickToEnlarge />
 
 #### Nativ
 
-<ImageGrid
-  cols={2}
-  aspectRatio="native"
-  images={[
-    { image: "/src/assets/projects/erc-rover/Rover_team.jpg", alt: "Projekt 1 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_all_groups.jpg", alt: "Projekt 2 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_fixing_onsite.jpg", alt: "Projekt 3 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_robro.jpg", alt: "Projekt 4 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_tag.jpg", alt: "Projekt 5 Rasterbeispiel" },
-    { image: "/src/assets/projects/erc-rover/Rover_team_with_erc_banner.jpg", alt: "Projekt 6 Rasterbeispiel" }
-  ]}
-/>
+<ImageGrid images={[{"image":"/src/assets/projects/styling-showcase/2023_04_16_6046_2.jpg","alt":"Projekt 2 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/2023_04_29_6200.jpg","alt":"Projekt 3 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/2023_04_29_6212.jpg","alt":"Projekt 4 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/2023_04_29_6260.jpg","alt":"Projekt 5 Rasterbeispiel"},{"image":"/src/assets/projects/styling-showcase/2023_04_29_6296.jpg","alt":"Projekt 6 Rasterbeispiel"}]} cols={2} gap="md" aspectRatio="native" enableClickToEnlarge />
 
 ### Bilder-Carousel
 
 Ein Carousel kann ebenfalls Bilder mit der Img-Komponente anzeigen:
 
-<Carousel showArrows={true} showDots={true} height="md">
-  <Img src="/src/assets/projects/erc-rover/Rover_team.jpg" alt="Projekt 1" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_all_groups.jpg" alt="Projekt 2" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_fixing_onsite.jpg" alt="Projekt 3" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_robro.jpg" alt="Projekt 4" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_tag.jpg" alt="Projekt 5" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_team_with_erc_banner.jpg" alt="Projekt 6" class="rounded-lg" />
+<Carousel height="md" autoScroll={false} showArrows showDots>
+  <Img src="/src/assets/projects/styling-showcase/2023_09_03_9999_25_grain.jpg" alt="Projekt 1" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/2023_09_13_9999_7.jpg" alt="Projekt 2" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/R1-02788-025A.JPG" alt="Projekt 3" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/R1-02788-029A-2.jpg" alt="Projekt 4" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/2022_08_22_4441-4.jpg" alt="Projekt 5" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/2022_11_23_4906.jpg" alt="Projekt 6" displayInMedia class="rounded-lg" enableClickToEnlarge />
 </Carousel>
 
 ---
@@ -184,32 +171,7 @@ Ein Carousel kann ebenfalls Bilder mit der Img-Komponente anzeigen:
 
 Akkordeons organisieren Inhalte in ausklappbare Abschnitte:
 
-<Accordion
-  items={[
-    {
-      title: "Was ist das BEARS-Programm?",
-      subtitle: "Allgemeine Informationen",
-      content: "Das BEARS-Programm ist eine umfassende Initiative zur Förderung von Forschung und Innovation. Es bringt Studierende, Forschende und Industriepartner zusammen, um durch kollaborative Projekte reale Herausforderungen zu bewältigen.\n\n- Multidisziplinärer Ansatz\n- Industriepartnerschaften\n- Studentisch geleitete Forschung\n- Praxisanwendungen"
-    },
-    {
-      title: "Wie trete ich einem Projekt bei?",
-      subtitle: "Erste Schritte",
-      content: "Einem BEARS-Projekt beizutreten ist unkompliziert:\n\n1. Verfügbare Projekte auf der Website durchstöbern\n2. Projektanforderungen und Zeitplan prüfen\n3. Die Projektleitung kontaktieren\n4. Am Kickoff-Meeting teilnehmen\n5. Mit dem Team zusammenarbeiten\n\nJedes Projekt hat unterschiedliche Anforderungen - schaue auf den einzelnen Projektseiten nach spezifischen Details."
-    },
-    {
-      title: "Welche Fähigkeiten brauche ich?",
-      subtitle: "Technische Voraussetzungen",
-      content: "Erforderliche und bevorzugte Fähigkeiten variieren je nach Projekt:\n\n- **Immer hilfreich:** Problemlösung, Teamarbeit, Kommunikation\n- **Technisch:** Programmierung, CAD, Datenanalyse (projektabhängig)\n- **Soft Skills:** Führung, Projektmanagement, Dokumentation\n- **Wünschenswert:** Vorherige Forschungserfahrung, Fachwissen\n\nKeine Sorge, wenn dir bestimmte Fähigkeiten fehlen - die BEARS-Community ist kooperativ und unterstützend."
-    },
-    {
-      title: "Gibt es Fristen?",
-      subtitle: "Projektzeitplan",
-      content: "Ja, jedes Projekt hat spezifische Meilensteine und Fristen:\n\n- Projektstart: Normalerweise zu Semesterbeginn\n- Checkpoint-Reviews: Monatliche Fortschrittskontrollen\n- Abschlusspräsentation: Semesterende\n- Dokumentationsfrist: Eine Woche vor der Abschlusspräsentation\n\nFristen helfen, Projekte auf Kurs zu halten und qualitativ hochwertige Ergebnisse sicherzustellen."
-    }
-  ]}
-  mode="multi"
-  width="100%"
-/>
+<Accordion mode="multi" items={[{"title":"Was ist das BEARS-Programm?","subtitle":"Allgemeine Informationen","content":"Das BEARS-Programm ist eine umfassende Initiative zur Förderung von Forschung und Innovation. Es bringt Studierende, Forschende und Industriepartner zusammen, um durch kollaborative Projekte reale Herausforderungen zu bewältigen.\n\n- Multidisziplinärer Ansatz\n- Industriepartnerschaften\n- Studentisch geleitete Forschung\n- Praxisanwendungen"},{"title":"Wie trete ich einem Projekt bei?","subtitle":"Erste Schritte","content":"Einem BEARS-Projekt beizutreten ist unkompliziert:\n\n1. Verfügbare Projekte auf der Website durchstöbern\n2. Projektanforderungen und Zeitplan prüfen\n3. Die Projektleitung kontaktieren\n4. Am Kickoff-Meeting teilnehmen\n5. Mit dem Team zusammenarbeiten\n\nJedes Projekt hat unterschiedliche Anforderungen - schaue auf den einzelnen Projektseiten nach spezifischen Details."},{"title":"Welche Fähigkeiten brauche ich?","subtitle":"Technische Voraussetzungen","content":"Erforderliche und bevorzugte Fähigkeiten variieren je nach Projekt:\n\n- **Immer hilfreich:** Problemlösung, Teamarbeit, Kommunikation\n- **Technisch:** Programmierung, CAD, Datenanalyse (projektabhängig)\n- **Soft Skills:** Führung, Projektmanagement, Dokumentation\n- **Wünschenswert:** Vorherige Forschungserfahrung, Fachwissen\n\nKeine Sorge, wenn dir bestimmte Fähigkeiten fehlen - die BEARS-Community ist kooperativ und unterstützend."},{"title":"Gibt es Fristen?","subtitle":"Projektzeitplan","content":"Ja, jedes Projekt hat spezifische Meilensteine und Fristen:\n\n- Projektstart: Normalerweise zu Semesterbeginn\n- Checkpoint-Reviews: Monatliche Fortschrittskontrollen\n- Abschlusspräsentation: Semesterende\n- Dokumentationsfrist: Eine Woche vor der Abschlusspräsentation\n\nFristen helfen, Projekte auf Kurs zu halten und qualitativ hochwertige Ergebnisse sicherzustellen."}]} width="100%" />
 
 ---
 
@@ -231,34 +193,32 @@ Callouts heben wichtige Informationen mit einer Glasmorphismus-Karte und Akzent-
 
 Die SideBySide-Komponente erstellt responsive Zwei-Spalten-Layouts, die auf Mobilgeräten gestapelt werden:
 
-<SideBySide>
-  <Left>
+<SideBySide showDivider>
+  <Left centerVertical={false}>
+    ### Linke Spalte
 
-### Linke Spalte
+    Dies ist die linke Spalte eines Nebeneinander-Layouts. Auf Mobilgeräten wird dieser Inhalt vertikal über der rechten Spalte gestapelt.
 
-Dies ist die linke Spalte eines Nebeneinander-Layouts. Auf Mobilgeräten wird dieser Inhalt vertikal über der rechten Spalte gestapelt.
+    * Punkt eins zur Erklärung des linken Inhalts
+    * Punkt zwei mit zusätzlichen Details
+    * Punkt drei zum Abschluss des Abschnitts
 
-- Punkt eins zur Erklärung des linken Inhalts
-- Punkt zwei mit zusätzlichen Details
-- Punkt drei zum Abschluss des Abschnitts
-
-Die linke Spalte kann jeden Inhaltstyp enthalten: Text, Bilder, Listen, Buttons usw.
-
+    Die linke Spalte kann jeden Inhaltstyp enthalten: Text, Bilder, Listen, Buttons usw.
   </Left>
-  <Right>
 
-### Rechte Spalte
+  <Right centerVertical={false}>
+    ### Rechte Spalte
 
-Dies ist der Inhalt der rechten Spalte. Sie behält auf dem Desktop die gleiche Breite wie die linke Spalte bei.
+    Dies ist der Inhalt der rechten Spalte. Sie behält auf dem Desktop die gleiche Breite wie die linke Spalte bei.
 
-Die SideBySide-Komponente ist nützlich für:
-- Vergleich zweier Ansätze
-- Vorher/Nachher-Szenarien
-- Visuelle Balance schaffen
-- Verwandte Inhalte organisieren
+    Die SideBySide-Komponente ist nützlich für:
 
-Beide Spalten bleiben gleichermaßen lesbar und gut proportioniert.
+    * Vergleich zweier Ansätze
+    * Vorher/Nachher-Szenarien
+    * Visuelle Balance schaffen
+    * Verwandte Inhalte organisieren
 
+    Beide Spalten bleiben gleichermaßen lesbar und gut proportioniert.
   </Right>
 </SideBySide>
 
@@ -268,23 +228,30 @@ Beide Spalten bleiben gleichermaßen lesbar und gut proportioniert.
 
 Das Marquee erstellt eine scrollende Bildergalerie, die sich perfekt zur Präsentation mehrerer Projekte eignet. Es verarbeitet Bilder mit unterschiedlichen Seitenverhältnissen elegant:
 
-<Marquee speed={80} gap="1.5rem" height="md" direction='left'>
-  <Img src="/src/assets/projects/erc-rover/Rover_team.jpg" alt="Projekt 1 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_all_groups.jpg" alt="Projekt 2 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_fixing_onsite.jpg" alt="Projekt 3 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_robro.jpg" alt="Projekt 4 Showcase" class="rounded-lg" />
+<Marquee height="md" direction="left" speed={80} gap="1.5rem" pauseOnHover>
+  <Img src="/src/assets/projects/styling-showcase/DSC04653.jpg" alt="Projekt 1 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/DSC04805.jpg" alt="Projekt 2 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/DSC04904.jpg" alt="Projekt 3 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/DSC05009.jpg" alt="Projekt 4 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
 </Marquee>
 
 ### Marquee in umgekehrter Richtung
 
 Das Marquee unterstützt auch das Scrollen in die entgegengesetzte Richtung:
 
-<Marquee speed={180} gap="2rem" height="sm" direction="right">
-  <Img src="/src/assets/projects/erc-rover/Rover_team.jpg" alt="Projekt 1 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_all_groups.jpg" alt="Projekt 2 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_fixing_onsite.jpg" alt="Projekt 3 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_robro.jpg" alt="Projekt 4 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_tag.jpg" alt="Projekt 5 Showcase" class="rounded-lg" />
+<Marquee height="sm" direction="right" speed={180} gap="2rem" pauseOnHover>
+  <Img src="/src/assets/projects/styling-showcase/DSC06384.jpg" alt="Projekt 1 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/DSC06595.jpg" alt="Projekt 2 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/DSC06541.jpg" alt="Projekt 3 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/DSC06414.jpg" alt="Projekt 4 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+  <Img src="/src/assets/projects/styling-showcase/DSC06586.jpg" alt="Projekt 5 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
 </Marquee>
 
 ---
@@ -307,7 +274,7 @@ Die `YouTube`-Komponente macht das Einbetten von Videos einfach. Übergib einfac
 
 Die `Instagram`-Komponente bettet Instagram-Posts ein. Übergib einfach eine Post-URL oder Shortcode:
 
-<Instagram url="https://www.instagram.com/p/DTtCU_xCO2f/" />
+<Instagram url="https://www.instagram.com/p/DTtCU_xCO2f/" size="medium" />
 
 ---
 
@@ -317,30 +284,27 @@ Hier ist ein komplexeres Beispiel, das mehrere Komponenten kombiniert:
 
 ### Vertikal zentrierter Inhalt
 
-<SideBySide>
-  <Left>
+<SideBySide showDivider>
+  <Left centerVertical={false}>
+    ### Warum vertikale Zentrierung wichtig ist
 
-### Warum vertikale Zentrierung wichtig ist
+    Wenn eine Spalte ein kompaktes Element wie eine Video-Einbettung enthält und die andere höheren Inhalt hat, sorgt vertikale Zentrierung für visuelles Gleichgewicht.
 
-Wenn eine Spalte ein kompaktes Element wie eine Video-Einbettung enthält und die andere höheren Inhalt hat, sorgt vertikale Zentrierung für visuelles Gleichgewicht.
+    * Das Video bleibt relativ zum benachbarten Text zentriert
+    * Kein unschöner Leerraum am Ende der kürzeren Spalte
+    * Funktioniert nahtlos auf Mobilgeräten, wo Spalten gestapelt werden
 
-- Das Video bleibt relativ zum benachbarten Text zentriert
-- Kein unschöner Leerraum am Ende der kürzeren Spalte
-- Funktioniert nahtlos auf Mobilgeräten, wo Spalten gestapelt werden
+    Dies ist besonders nützlich für:
 
-Dies ist besonders nützlich für:
+    1. Video + Beschreibungs-Layouts
+    2. Bild + langer Text-Kombinationen
+    3. Jede asymmetrische Inhaltskombination
 
-1. Video + Beschreibungs-Layouts
-2. Bild + langer Text-Kombinationen
-3. Jede asymmetrische Inhaltskombination
-
-> Vertikale Zentrierung gilt nur auf dem Desktop, wenn Spalten nebeneinander stehen. Auf Mobilgeräten wird der Inhalt normal gestapelt.
-
+    > Vertikale Zentrierung gilt nur auf dem Desktop, wenn Spalten nebeneinander stehen. Auf Mobilgeräten wird der Inhalt normal gestapelt.
   </Left>
+
   <Right centerVertical>
-
-<YouTube id="dQw4w9WgXcQ" />
-
+    <YouTube id="dQw4w9WgXcQ" />
   </Right>
 </SideBySide>
 
@@ -348,35 +312,23 @@ Dies ist besonders nützlich für:
 
 ## Kombiniertes Layout-Beispiel
 
-<SideBySide>
-  <Left>
-<Marquee speed={80} gap="1.5rem" height="md" direction='left'>
-  <Img src="/src/assets/projects/erc-rover/Rover_team.jpg" alt="Projekt 1 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_all_groups.jpg" alt="Projekt 2 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_fixing_onsite.jpg" alt="Projekt 3 Showcase" class="rounded-lg" />
-  <Img src="/src/assets/projects/erc-rover/Rover_robro.jpg" alt="Projekt 4 Showcase" class="rounded-lg" />
-</Marquee>
+<SideBySide showDivider>
+  <Left centerVertical={false}>
+    <Marquee height="md" direction="left" speed={80} gap="1.5rem" pauseOnHover>
+      <Img src="/src/assets/projects/styling-showcase/DSC06552.jpg" alt="Projekt 1 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
 
+      <Img src="/src/assets/projects/styling-showcase/DSC06563.jpg" alt="Projekt 2 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+      <Img src="/src/assets/projects/styling-showcase/DSC06620.jpg" alt="Projekt 3 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+
+      <Img src="/src/assets/projects/styling-showcase/DSC06505-2.jpg" alt="Projekt 4 Showcase" displayInMedia class="rounded-lg" enableClickToEnlarge />
+    </Marquee>
   </Left>
-  <Right>
 
-### Informations-Akkordeon
+  <Right centerVertical={false}>
+    ### Informations-Akkordeon
 
-<Accordion
-  items={[
-    {
-      title: "Galerie-Features",
-      content: "Dieses Marquee zeigt ausgewählte Projekte mit flüssiger Scroll-Animation. Hover zum Pausieren."
-    },
-    {
-      title: "Komponenten-Vorteile",
-      content: "Diese Komponenten schaffen ansprechende, interaktive Nutzererlebnisse, die Besucher fesseln."
-    }
-  ]}
-  mode="single-closed"
-  width="100%"
-/>
-
+    <Accordion mode="single-closed" items={[{"title":"Galerie-Features","content":"Dieses Marquee zeigt ausgewählte Projekte mit flüssiger Scroll-Animation. Hover zum Pausieren."},{"title":"Komponenten-Vorteile","content":"Diese Komponenten schaffen ansprechende, interaktive Nutzererlebnisse, die Besucher fesseln."}]} width="100%" />
   </Right>
 </SideBySide>
 
@@ -388,26 +340,27 @@ Das gesamte Design-System ist mit Mobile-First-Prinzipien aufgebaut:
 
 ### Breakpoint-Strategie
 
-- **Mobil (< 640px)**: Ein-Spalten-Layouts, optimierte Abstände
-- **Kleines Tablet (640px - 1023px)**: Verbessertes Padding, erhöhte Lesbarkeit
-- **Desktop (>= 1024px)**: Volle Zwei-Spalten-Layouts, optimale Zeilenlängen
-- **Großer Desktop (>= 1280px)**: Zusätzliches Padding, maximale Inhaltsbreite
+* **Mobil (\< 640px)**: Ein-Spalten-Layouts, optimierte Abstände
+* **Kleines Tablet (640px - 1023px)**: Verbessertes Padding, erhöhte Lesbarkeit
+* **Desktop (>= 1024px)**: Volle Zwei-Spalten-Layouts, optimale Zeilenlängen
+* **Großer Desktop (>= 1280px)**: Zusätzliches Padding, maximale Inhaltsbreite
 
 ### Responsive Textgrößen
 
 Alle Texte verwenden `clamp()` für fließende Skalierung:
-- Titel skalieren von 2rem nach 3.5rem
-- Unterüberschriften skalieren fließend mit dem Viewport
-- Fließtext bleibt durchgehend gut lesbar
-- Zeilenhöhen gewährleisten Lesbarkeit über alle Größen
+
+* Titel skalieren von 2rem nach 3.5rem
+* Unterüberschriften skalieren fließend mit dem Viewport
+* Fließtext bleibt durchgehend gut lesbar
+* Zeilenhöhen gewährleisten Lesbarkeit über alle Größen
 
 ### Bildoptimierung
 
-- Automatische Formatkonvertierung (WebP mit Fallbacks)
-- Responsive Bildgrößenanpassung
-- Lazy Loading für Bilder unterhalb des Folds
-- Eager Loading für Titelbilder
-- Adaptive Bildauflösung
+* Automatische Formatkonvertierung (WebP mit Fallbacks)
+* Responsive Bildgrößenanpassung
+* Lazy Loading für Bilder unterhalb des Folds
+* Eager Loading für Titelbilder
+* Adaptive Bildauflösung
 
 ---
 
@@ -416,26 +369,24 @@ Alle Texte verwenden `clamp()` für fließende Skalierung:
 Das Design verwendet eine sorgfältig ausgewählte Farbpalette:
 
 <Center>
+  ### Hintergrundfarben
 
-### Hintergrundfarben
+  * **Primärer Hintergrund:** Tiefes Dunkel (`#1A1A1A`)
+  * **Heller Hintergrund:** Gebrochenes Weiß (`#F5F5F5`)
+  * **Rahmen/Trennlinien:** Subtile Transparenzebenen
 
-- **Primärer Hintergrund:** Tiefes Dunkel (`#1A1A1A`)
-- **Heller Hintergrund:** Gebrochenes Weiß (`#F5F5F5`)
-- **Rahmen/Trennlinien:** Subtile Transparenzebenen
+  ### Textfarben
 
-### Textfarben
+  * **Auf Dunkel:** Hellgrau (`#E1E1E1`)
+  * **Auf Hell:** Dunkelgrau (`#2B2B2B`)
+  * **Akzent:** Tiefrot (`#C50E1F`)
+  * **Akzent gedämpft:** Dunkelrot (`#A00B19`)
 
-- **Auf Dunkel:** Hellgrau (`#E1E1E1`)
-- **Auf Hell:** Dunkelgrau (`#2B2B2B`)
-- **Akzent:** Tiefrot (`#C50E1F`)
-- **Akzent gedämpft:** Dunkelrot (`#A00B19`)
+  ### Interaktive Elemente
 
-### Interaktive Elemente
+  Alle interaktiven Elemente verwenden eine konsistente Farbbehandlung:
 
-Alle interaktiven Elemente verwenden eine konsistente Farbbehandlung:
-
-<Button content="Farbe in Aktion sehen" variant="primary" size="standard" />
-
+  <Button variant="primary" size="standard" disabled={false} content="Farbe in Aktion sehen" />
 </Center>
 
 ---
@@ -452,10 +403,10 @@ Dieser Text ist **fett** (nutzt fette Schriftstärke). Dieser Text ist *kursiv* 
 
 Alle Inhalte werden automatisch zentriert und auf optimale Lesebreite begrenzt:
 
-- Mobil: 100 % des Viewports (mit Padding)
-- Desktop: Bis zu 90 Zeichen breit
-- Maximale Breite: Verhindert zu lange Textzeilen
-- Konsistente Abstände um alle Elemente
+* Mobil: 100 % des Viewports (mit Padding)
+* Desktop: Bis zu 90 Zeichen breit
+* Maximale Breite: Verhindert zu lange Textzeilen
+* Konsistente Abstände um alle Elemente
 
 Die responsive Maximalbreite gewährleistet Lesbarkeit auf jedem Gerät.
 
@@ -465,10 +416,10 @@ Die responsive Maximalbreite gewährleistet Lesbarkeit auf jedem Gerät.
 
 Diese Showcase demonstriert das komplette Design-System und die Komponentenbibliothek, die für BEARS-Projektseiten verfügbar sind. Jedes Element ist gestaltet mit:
 
-- **Barrierefreiheit** im Fokus
-- **Responsivem** Verhalten auf allen Geräten
-- **Konsistentem** Styling durchgehend
-- **Performance**-Optimierung
-- **Nutzererlebnis** als Priorität
+* **Barrierefreiheit** im Fokus
+* **Responsivem** Verhalten auf allen Geräten
+* **Konsistentem** Styling durchgehend
+* **Performance**-Optimierung
+* **Nutzererlebnis** als Priorität
 
 Nutze diese Komponenten und Stilmuster, um ansprechende, professionelle Projektseiten zu erstellen, die deine Arbeit und Forschung effektiv kommunizieren.
