@@ -1,17 +1,11 @@
 # Astro.js Website for BEARS
 >
-> **TODO:** Write SEO meta descriptions (~150 characters each) in the `seoDescription` field of these content files (in both `en/` and `de/` folders):
-> - `src/content/page-text/en/hero.mdx` (homepage)
-> - `src/content/page-text/en/about-us/about-us-title.mdx`
-> - `src/content/page-text/en/events/events-title.mdx`
-> - `src/content/page-text/en/projects/projects-title.mdx`
-> - `src/content/page-text/en/sponsors/sponsors-title.mdx`
-> - `src/content/page-text/en/media/media-title.mdx`
-> - `src/content/page-text/en/contact/contact-title.mdx`
->
-> **TODO:** Add benefits section to sponsors and link in footer, or remove entry in footer.
->
-> **TODO:** At website-migration cutover, switch the Cloudflare Pages project's production branch from `leopold-website-migration` to `main`. Cloudflare → Workers & Pages → the admin project → Settings → Builds & deployments → Production branch. Do this *after* `leopold-website-migration` has been merged into `main`, otherwise the admin will redeploy from a branch that's now behind.
+> **TODO:** Write the privacy policy at `src/content/page-text/{en,de}/datenschutz/datenschutz.mdx` (currently both stubs say "Coming soon!"). The following points need to be disclosed:
+> - **Instagram embeds:** `embed.js` is loaded from Meta, transmits IP address and browser data to Meta Platforms Ireland Ltd
+> - **OpenStreetMap map tiles:** IP address is transmitted to `openstreetmap.org` tile servers
+> - **YouTube embeds (nocookie):** Privacy-enhanced mode, but still connects to Google
+> - **localStorage:** Used for docs sidebar UI state (purely functional, no tracking)
+> - **No analytics tools or tracking cookies in use**
 
 ## Prerequisites
 
