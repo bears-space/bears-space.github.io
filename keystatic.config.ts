@@ -466,10 +466,6 @@ function pageHeaderSingleton(locale: Locale, pathSuffix: string, label: string, 
           ? undefined
           : 'Note: the background image for this page is managed on the English (EN) singleton and shared across both locales.',
       }),
-      shownText: fields.text({
-        label: 'Overlay text (optional)',
-        description: 'Small text shown in the top-right corner of the hero image. Leave blank to hide.',
-      }),
       seoDescription: fields.text({
         label: 'SEO description',
         description: 'Shown as the <meta name="description"> for this page (~150 characters).',
@@ -488,6 +484,10 @@ function pageHeaderSingleton(locale: Locale, pathSuffix: string, label: string, 
           validation: { isRequired: true },
         }),
       } : {}),
+      shownText: fields.text({
+        label: 'Overlay text (optional)',
+        description: 'Small text shown in the top-right corner of the hero image. Leave blank to hide.',
+      }),
       body: fields.emptyContent({ extension: 'mdx' }),
     },
   });
