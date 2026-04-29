@@ -114,12 +114,17 @@ describe('Select-option parity (keystatic.config.ts ↔ src/content/config.ts)',
     ).toEqual([...zodValues].sort());
   });
 
-  it('Media category IDs in Keystatic are all wired up in media.astro', () => {
+  it('Media category IDs in Keystatic are all handled by the dispatch + page', () => {
     // No Zod enum here — media categories live as a free-form string in the
-    // page-text `mediaCategories` array. The actual consumer is the
-    // `globById` map in src/pages/media.astro. A Keystatic option with no
-    // matching glob silently loads zero images, which is the regression we
-    // want to catch.
+    // page-text `mediaCategories` array. The actual consumers are:
+    //   - getMediaItemsByCategory's switch in src/utils/contentQueries.ts
+    //     (handles 'events', 'projects', 'hero', 'what-is-bears',
+    //     'about-us', 'page-banners')
+    //   - the special-cased 'people' branch in src/pages/media.astro
+    //     (calls getMediaPeople instead of the dispatch)
+    //   - the runtime 'all' aggregate, also assembled in media.astro
+    // A Keystatic option that no consumer handles silently shows nothing,
+    // which is the regression we want to catch.
 
     const mediaCategoriesField = (keystaticConfig.singletons as Record<string, { schema: Record<string, unknown> }>)
       .pageTextMediaCategoriesEn.schema.mediaCategories as { arrayFieldConfig?: unknown };
@@ -133,23 +138,41 @@ describe('Select-option parity (keystatic.config.ts ↔ src/content/config.ts)',
     const ksValues = new Set((idOptions ?? []).map((o) => o.value));
 
     const mediaSource = readFileSync(join(ROOT, 'src/pages/media.astro'), 'utf8');
-    const globByIdMatch = mediaSource.match(/const\s+globById[^{]*\{([\s\S]*?)\};/);
-    expect(globByIdMatch, 'Could not locate `const globById` in src/pages/media.astro').toBeTruthy();
-    const globKeys = new Set(
-      [...(globByIdMatch![1].matchAll(/['"]([\w-]+)['"]\s*:/g))].map((m) => m[1]),
+    const queriesSource = readFileSync(join(ROOT, 'src/utils/contentQueries.ts'), 'utf8');
+
+    // Verify media.astro still wires people + the dispatch.
+    if (ksValues.has('people')) {
+      expect(
+        mediaSource.includes('getMediaPeople'),
+        'Keystatic offers a "people" media category but media.astro no longer calls getMediaPeople — wire it up or remove the option.',
+      ).toBe(true);
+    }
+    expect(
+      mediaSource.includes('getMediaItemsByCategory'),
+      'media.astro must call getMediaItemsByCategory(...) to populate non-people, non-all categories.',
+    ).toBe(true);
+
+    // Parse the case statements out of getMediaItemsByCategory to find which
+    // category ids the dispatch handles. Looks for `case 'X':` patterns inside
+    // the switch — defensive enough to catch silent dispatch drift.
+    const dispatchSection = queriesSource.match(/getMediaItemsByCategory[\s\S]*?switch\s*\([^)]+\)\s*\{([\s\S]*?)\n\}/);
+    expect(dispatchSection, 'Could not find getMediaItemsByCategory switch in contentQueries.ts').toBeTruthy();
+    const dispatchCases = new Set(
+      [...(dispatchSection![1].matchAll(/case\s+['"]([\w-]+)['"]\s*:/g))].map((m) => m[1]),
     );
 
-    // 'all' is a special aggregate — it's a valid Keystatic option but not a
-    // glob key. media.astro filters it out at runtime.
-    const ksWithoutAll = new Set([...ksValues].filter((v) => v !== 'all'));
+    // 'all' is built at runtime in media.astro; 'people' is the page-level
+    // special case. Everything else must be in the dispatch.
+    const SPECIAL_CASED = new Set(['all', 'people']);
+    const ksRequiringDispatch = [...ksValues].filter((v) => !SPECIAL_CASED.has(v));
 
-    const onlyInKeystatic = [...ksWithoutAll].filter((v) => !globKeys.has(v));
-    const onlyInGlobs = [...globKeys].filter((v) => !ksWithoutAll.has(v));
+    const onlyInKeystatic = ksRequiringDispatch.filter((v) => !dispatchCases.has(v));
+    const onlyInDispatch = [...dispatchCases].filter((v) => !ksValues.has(v));
 
     expect(
-      { onlyInKeystatic, onlyInGlobs },
-      'Media category drift: every non-"all" Keystatic option must have a matching key in media.astro\'s globById, and vice versa.',
-    ).toEqual({ onlyInKeystatic: [], onlyInGlobs: [] });
+      { onlyInKeystatic, onlyInDispatch },
+      'Media category drift: every Keystatic option (excluding "all" and "people") must have a matching `case` in getMediaItemsByCategory, and every case must correspond to a Keystatic option.',
+    ).toEqual({ onlyInKeystatic: [], onlyInDispatch: [] });
   });
 });
 

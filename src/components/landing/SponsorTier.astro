@@ -8,6 +8,7 @@ interface Props {
   sponsors: Array<{
     name: string;
     logo: ImageMetadata;
+    alt?: string;
     url?: string;
     tier: SponsorTier;
     slug: string;
@@ -75,7 +76,7 @@ const hoverClasses = config.hoverClasses ?? "hover:scale-[1.04] hover:shadow-[0_
         const content = (
           <Img
             src={sponsor.logo}
-            alt={sponsor.name}
+            alt={sponsor.alt ?? sponsor.name}
             class={`${config.imgClasses} rounded-none`}
             loading="lazy"
             sizes={config.sizes}

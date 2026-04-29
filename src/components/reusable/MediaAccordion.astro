@@ -3,7 +3,6 @@
 // Shows a clickable header with title + chevron, and a collapsible image grid below
 // If all images fit in one row, renders statically without accordion behavior
 
-import type { ImageMetadata } from "astro";
 import type { ImageWithAlt } from "@types";
 import CollapsibleImageGrid from "./CollapsibleImageGrid.astro";
 import GradientDivider from "./GradientDivider.astro";
@@ -13,8 +12,8 @@ import { mediaUiStrings, type Locale } from "@utils/i18n";
 interface Props {
   /** Category title displayed at the top */
   title: string;
-  /** Array of images to display in the grid */
-  images: ImageMetadata[];
+  /** Array of images with alt text + optional description */
+  images: ImageWithAlt[];
   /** Additional CSS classes */
   class?: string;
   /** Number of columns in the grid (default: 4) */
@@ -31,12 +30,6 @@ const sectionId = `media-${title.toLowerCase().replace(/\s+/g, '-').replace(/[^a
 
 // Clamp cols to image count so images fill the width, but never below 3 on wide screens
 const effectiveCols = Math.min(cols, Math.max(3, images.length)) as typeof cols;
-
-// Transform images to include alt text
-const imagesWithAlt: ImageWithAlt[] = images.map((image, index) => ({
-  image,
-  alt: `${title} image ${index + 1}`,
-}));
 
 // If all images fit in one row, skip accordion functionality
 const fitsInOneRow = images.length <= effectiveCols;
@@ -58,7 +51,7 @@ const fitsInOneRow = images.length <= effectiveCols;
     {/* Image Grid - no accordion wrapper */}
     <div class="pb-6">
       <ImageGrid
-        images={imagesWithAlt}
+        images={images}
         cols={effectiveCols}
         gap={gap}
         enableClickToEnlarge={true}
@@ -68,7 +61,7 @@ const fitsInOneRow = images.length <= effectiveCols;
   </div>
 ) : (
   <div id={sectionId} class={`media-accordion rounded-lg overflow-hidden scroll-mt-20 ${className || ""}`}>
-    <CollapsibleImageGrid images={imagesWithAlt} cols={effectiveCols} gap={gap} previewRows={1}>
+    <CollapsibleImageGrid images={images} cols={effectiveCols} gap={gap} previewRows={1}>
       <Fragment slot="header">
         {/* Accordion Header */}
         <button

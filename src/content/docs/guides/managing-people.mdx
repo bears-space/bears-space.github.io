@@ -49,8 +49,9 @@ The body of these files is not rendered — all content comes from the frontmatt
 | `roleEn` | string | English role (e.g., "Project Lead"). |
 | `roleDe` | string | German role (e.g., "Projektleitung"). |
 | `coverImage` | string | Portrait path under `src/assets/people/<slug>/`, written as `<slug>/<filename>`. |
-| `showInFaces` | boolean | If `true`, this person appears in the Faces of BEARS grid on the About Us page. Default `false`. |
-| `order` | number | Sort order in the grid. Only meaningful when `showInFaces` is `true`. Lower numbers appear first; ties break on the slug. |
+| `coverImageDescription` | string (optional) | Caption shown over the portrait on the Media page. Use it for any combination of caption and photographer credit (e.g. `"Akshat at WS2025 — © 2025 Jane Doe"`). Doesn't appear on Faces of BEARS / Meet the Team / Testimonials cards (those use custom layouts). |
+| `showInFaces` | boolean | Single consent toggle for both the Faces of BEARS grid (About Us page) and the People accordion on the Media page. Default `false` (opt-in) — flip on per person once they've agreed to public display. |
+| `order` | number | Sort order. Lower numbers appear first wherever this person is shown (Faces of BEARS grid, Media page). Ties break on the slug. |
 
 ## Images
 
@@ -60,10 +61,8 @@ When uploading through the Keystatic admin, the image is automatically scoped to
 
 ## Surfaces a person can appear on
 
-The three surfaces are independent.
-
-- **Faces of BEARS** — `showInFaces: true`, sorted by `order`.
-- **Meet the Team** — this person is referenced from a project's `person` field. Works independently of `showInFaces`; project leads who don't belong in the grid can stay with `showInFaces: false`.
+- **Faces of BEARS + Media page (People accordion)** — gated by the single `showInFaces` toggle (consent). When on and the person has a `coverImage`, they appear on both surfaces. People without a `coverImage` show the default-face placeholder on Faces of BEARS but are skipped on /media (no placeholder portraits there).
+- **Meet the Team** — this person is referenced from a project's `person` field. Works independently of `showInFaces`; project leads who shouldn't appear publicly can stay with `showInFaces: false`.
 - **Testimonials** — create an entry in the separate **Testimonials** collection that references this person. The quote text and display order live on the testimonial entry, not the person. See [Managing Testimonials](/docs/guides/managing-testimonials).
 
 To attach a person to a project, edit the project (`Projects` group in the admin) and pick the person from the **Head of project** dropdown. See [Managing Projects](/docs/guides/managing-projects).

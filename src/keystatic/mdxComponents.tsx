@@ -60,6 +60,16 @@ function makeImgBlock(imageRoot?: string) {
       schema: {
         src: fields.text({ label: 'Image path', validation: { isRequired: true } }),
         alt: fields.text({ label: 'Alt text', validation: { isRequired: true } }),
+        description: fields.text({
+          label: 'Caption / description / credit (optional)',
+          description: 'Shown as a gradient strip at the bottom of the image, and beneath the enlarged image when clicked. Use it for any combination of caption and photographer credit.',
+          multiline: true,
+        }),
+        displayInMedia: fields.checkbox({
+          label: 'Show on the Media page',
+          description: 'When the surrounding post (event or project) appears on /media, this image is also pulled into that post\'s accordion. Turn off to keep this body image post-only.',
+          defaultValue: true,
+        }),
         width: fields.text({ label: 'Width (CSS, default 100%)', defaultValue: '100%' }),
         class: fields.text({
           label: 'Extra classes (optional)',
@@ -77,6 +87,9 @@ function makeImgBlock(imageRoot?: string) {
           <NotEditable>
             <code style={{ fontSize: 12 }}>{value.src || '(no src)'}</code>
             <div style={{ opacity: 0.7, fontSize: 12 }}>{value.alt}</div>
+            {value.description && (
+              <div style={{ opacity: 0.6, fontSize: 11, marginTop: 2 }}>{value.description}</div>
+            )}
           </NotEditable>
         </div>
       ),
@@ -99,6 +112,16 @@ function makeImgBlock(imageRoot?: string) {
           'Large images (>2 MB) freeze the tab during upload — pre-resize with squoosh.app first.',
       }),
       alt: fields.text({ label: 'Alt text', validation: { isRequired: true } }),
+      description: fields.text({
+        label: 'Caption / description / credit (optional)',
+        description: 'Shown as a gradient strip at the bottom of the image, and beneath the enlarged image when clicked. Use it for any combination of caption and photographer credit.',
+        multiline: true,
+      }),
+      displayInMedia: fields.checkbox({
+        label: 'Show on the Media page',
+        description: 'When the surrounding post (event or project) appears on /media, this image is also pulled into that post\'s accordion. Turn off to keep this body image post-only.',
+        defaultValue: true,
+      }),
       width: fields.text({ label: 'Width (CSS, default 100%)', defaultValue: '100%' }),
       class: fields.text({
         label: 'Extra classes (optional)',
@@ -125,6 +148,9 @@ function makeImgBlock(imageRoot?: string) {
           <NotEditable>
             <code style={{ fontSize: 12 }}>{displaySrc}</code>
             <div style={{ opacity: 0.7, fontSize: 12 }}>{value.alt}</div>
+            {value.description && (
+              <div style={{ opacity: 0.6, fontSize: 11, marginTop: 2 }}>{value.description}</div>
+            )}
           </NotEditable>
         </div>
       );

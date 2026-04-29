@@ -64,20 +64,13 @@ export const ourMissionImages: ImageGlob = filterImageGlob(
 
 /**
  * People portrait images (Faces of BEARS grid + project Meet-the-Team leads).
- * Used by: FacesOfBears.astro, MeetTheTeam.astro, media.astro.
+ * Used by: FacesOfBears.astro, MeetTheTeam.astro, and the People-category
+ * branch on /media (via getMediaPeople + loadCollectionImages).
  * Files live at /src/assets/people/{slug}/coverImage.{ext} following the
  * Keystatic per-entry-subfolder convention.
  */
 export const peopleImages: ImageGlob = filterImageGlob(
   import.meta.glob<{ default: ImageMetadata }>("/src/assets/people/**/*.*"),
-);
-
-/**
- * All hero images (across all sub-page hero folders)
- * Used by: media.astro
- */
-export const allHeroImages: ImageGlob = filterImageGlob(
-  import.meta.glob<{ default: ImageMetadata }>("/src/assets/hero/**/*.*"),
 );
 
 /**

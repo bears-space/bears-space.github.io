@@ -2,9 +2,11 @@
 interface Props {
   src: string;  // Pre-generated image URL
   alt: string;
+  /** Optional caption shown beneath the enlarged image. */
+  description?: string;
 }
 
-const { src, alt } = Astro.props;
+const { src, alt, description } = Astro.props;
 ---
 
 <template x-teleport="body">
@@ -33,7 +35,12 @@ const { src, alt } = Astro.props;
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </button>
-    <img src={src} alt={alt} class="max-w-full max-h-full object-contain" />
+    <div class="flex flex-col items-center gap-3 max-w-full max-h-full">
+      <img src={src} alt={alt} class="max-w-full max-h-[80vh] object-contain" />
+      {description && (
+        <p class="text-sm text-white text-center max-w-2xl px-4 whitespace-pre-line">{description}</p>
+      )}
+    </div>
   </div>
 </template>
 

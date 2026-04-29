@@ -6,7 +6,7 @@ import type { ImageWithAlt } from "@types";
 import Img from "@mdx/Img.astro";
 
 interface Props {
-  /** Array of images with alt text to display in the grid */
+  /** Array of images with alt text (and optional description) to display in the grid */
   images: ImageWithAlt[];
   /** Number of columns in the grid (default: 4) */
   cols?: 2 | 3 | 4 | 5 | 6;
@@ -83,11 +83,12 @@ const masonryItemGap: Record<string, string> = {
   <div
     class={`not-prose ${masonryColCount[cols] ?? masonryColCount[4]} ${gridGap} px-4 sm:px-6 py-3 ${className || ""}`}
   >
-    {images.map(({ image, alt }, index) => (
+    {images.map(({ image, alt, description }, index) => (
       <div class={`break-inside-avoid ${masonryItemGap[gap] ?? masonryItemGap["md"]} ${enableClickToEnlarge ? '' : 'overflow-hidden rounded-lg'}`}>
         <Img
           src={image}
           alt={alt}
+          description={description}
           class="w-full h-auto object-cover transition-transform duration-300 group-hover/image:scale-105"
           width="100%"
           sizes={imageSizes}
@@ -102,12 +103,13 @@ const masonryItemGap: Record<string, string> = {
   <div
     class={`not-prose grid ${gridCols} ${gridGap} items-center px-4 sm:px-6 py-3 ${className || ""}`}
   >
-    {images.map(({ image, alt }, index) => (
+    {images.map(({ image, alt, description }, index) => (
       <div class={`square-grid-item ${enableClickToEnlarge ? '' : 'overflow-hidden rounded-lg'}`}>
         <div class="w-full h-full">
           <Img
             src={image}
             alt={alt}
+            description={description}
             class="w-full h-full object-cover object-center transition-transform duration-300 group-hover/image:scale-105"
             width="100%"
             sizes={imageSizes}

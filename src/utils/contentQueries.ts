@@ -1,6 +1,23 @@
 import { getCollection, getEntry } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { DEFAULT_LOCALE, type Locale } from './i18n';
+import type { ImageWithAlt } from '@types';
+import { loadImage, resolveImagePath } from './imageLoader';
+import {
+  aboutHeroImages,
+  allAssetImages,
+  contactHeroImages,
+  eventImages,
+  eventsHeroImages,
+  heroImages,
+  mediaHeroImages,
+  ourMissionImages,
+  projectImages,
+  projectsHeroImages,
+  sponsorsHeroImages,
+  whatIsBearsImages,
+} from './imageGlobs';
+import type { ImageGlob } from './imageGlobs';
 
 // ============================================================================
 // COMPOSABLE SORTING UTILITIES
@@ -245,6 +262,255 @@ export async function getFacesOfBearsPeople(locale: Locale = DEFAULT_LOCALE) {
         role: locale === 'de' ? p.data.roleDe : p.data.roleEn,
       },
     }));
+}
+
+/**
+ * Gets all people flagged `showInFaces: true` AND with a defined `coverImage`,
+ * sorted by `order` (ascending, ties on slug). The coverImage filter avoids
+ * showing the default-face placeholder on /media for people without a portrait.
+ * Faces-of-BEARS grid uses the same toggle (consent), but doesn't filter on
+ * coverImage because the placeholder is acceptable in that team-grid context.
+ * Role is projected per locale, same as `getFacesOfBearsPeople`.
+ */
+export async function getMediaPeople(locale: Locale = DEFAULT_LOCALE) {
+  const all = await getCollection('people');
+  const shown = all.filter(
+    (p) => p.data.showInFaces === true && Boolean(p.data.coverImage),
+  );
+  return [...shown]
+    .sort((a, b) => {
+      const orderDiff = a.data.order - b.data.order;
+      if (orderDiff !== 0) return orderDiff;
+      return a.slug.localeCompare(b.slug);
+    })
+    .map((p) => ({
+      ...p,
+      data: {
+        ...p.data,
+        role: locale === 'de' ? p.data.roleDe : p.data.roleEn,
+      },
+    }));
+}
+
+// ============================================================================
+// MEDIA PAGE — per-category dispatch
+//
+// Each Media-page accordion (other than People, which uses getMediaPeople)
+// pulls from a different content source. getMediaItemsByCategory is the
+// single entry point keyed on the category id from MEDIA_CATEGORY_IDS.
+// ============================================================================
+
+/**
+ * Parses inline <Img /> tags out of an Astro entry's raw MDX body and
+ * returns them as ImageWithAlt entries for the Media page. Skips entries
+ * with `displayInMedia={false}`.
+ *
+ * Keystatic writes <Img /> as a self-closing tag with double-quoted
+ * attributes — that's the format this regex assumes. JSX-expression form
+ * (`displayInMedia={false}`) is also handled because Keystatic emits the
+ * checkbox false case that way.
+ */
+async function extractInlineImagesFromBody(body: string | undefined): Promise<ImageWithAlt[]> {
+  if (!body) return [];
+  const items: ImageWithAlt[] = [];
+  // Self-closing <Img ... /> tag
+  const tagPattern = /<Img\s+([^>]*?)\/>/g;
+  // Double-quoted attribute: name="value"
+  const attrPattern = /(\w+)\s*=\s*"([^"]*)"/g;
+  // JSX-expression boolean: name={true} or name={false}
+  const boolExprPattern = /(\w+)\s*=\s*\{(true|false)\}/g;
+
+  let match: RegExpExecArray | null;
+  while ((match = tagPattern.exec(body)) !== null) {
+    const attrs: Record<string, string | boolean> = {};
+    const inner = match[1];
+    let am: RegExpExecArray | null;
+    while ((am = attrPattern.exec(inner)) !== null) {
+      attrs[am[1]] = am[2];
+    }
+    while ((am = boolExprPattern.exec(inner)) !== null) {
+      attrs[am[1]] = am[2] === 'true';
+    }
+
+    if (attrs.displayInMedia === false) continue;
+    const src = attrs.src;
+    const alt = attrs.alt;
+    if (typeof src !== 'string' || !src) continue;
+    if (typeof alt !== 'string' || !alt) continue;
+
+    const path = resolveImagePath('', src);
+    const img = await loadImage({ glob: allAssetImages, imagePath: path, context: { itemTitle: alt } });
+    if (!img) continue;
+
+    items.push({
+      image: img,
+      alt,
+      description: typeof attrs.description === 'string' ? attrs.description : undefined,
+    });
+  }
+  return items;
+}
+
+async function getMediaFromEvents(locale: Locale): Promise<ImageWithAlt[]> {
+  const events = await getPublishedEvents(locale);
+  const items: ImageWithAlt[] = [];
+  for (const event of events) {
+    if (event.data.coverImage) {
+      const path = resolveImagePath('/src/assets/events', event.data.coverImage);
+      const img = await loadImage({ glob: eventImages, imagePath: path, context: { itemTitle: event.data.title } });
+      if (img) {
+        items.push({
+          image: img,
+          alt: event.data.title,
+          description: event.data.coverImageDescription,
+        });
+      }
+    }
+    items.push(...(await extractInlineImagesFromBody(event.body)));
+  }
+  return items;
+}
+
+async function getMediaFromProjects(locale: Locale): Promise<ImageWithAlt[]> {
+  const projects = await getPublishedProjects(locale);
+  const items: ImageWithAlt[] = [];
+  for (const project of projects) {
+    if (project.data.coverImage) {
+      const path = resolveImagePath('/src/assets/projects', project.data.coverImage);
+      const img = await loadImage({ glob: projectImages, imagePath: path, context: { itemTitle: project.data.title } });
+      if (img) {
+        items.push({
+          image: img,
+          alt: project.data.title,
+          description: project.data.coverImageDescription,
+        });
+      }
+    }
+    items.push(...(await extractInlineImagesFromBody(project.body)));
+  }
+  return items;
+}
+
+async function getMediaFromHeroSlides(): Promise<ImageWithAlt[]> {
+  const slides = await getCollection('hero-slides');
+  const items: ImageWithAlt[] = [];
+  const sorted = [...slides].sort((a, b) => a.data.order - b.data.order);
+  for (const slide of sorted) {
+    if (!slide.data.displayInMedia) continue;
+    if (slide.data.media.discriminant !== 'image') continue;
+    const path = resolveImagePath('/src/assets/hero/landingpage', slide.data.media.value);
+    const img = await loadImage({ glob: heroImages, imagePath: path, context: { itemTitle: slide.data.alt } });
+    if (!img) continue;
+    items.push({
+      image: img,
+      alt: slide.data.alt,
+      description: slide.data.description,
+    });
+  }
+  return items;
+}
+
+async function getMediaFromWhatIsBears(): Promise<ImageWithAlt[]> {
+  // Carousel images are managed on the EN singleton only and shared across both locales.
+  const entry = await getPageContent('landing/what-is-bears', 'en');
+  if (!entry) return [];
+  const items: ImageWithAlt[] = [];
+  for (const carousel of entry.data.carouselImages ?? []) {
+    if (!carousel.displayInMedia) continue;
+    const path = resolveImagePath('/src/assets/whatIsBears', carousel.src);
+    const img = await loadImage({ glob: whatIsBearsImages, imagePath: path, context: { itemTitle: carousel.alt } });
+    if (!img) continue;
+    items.push({
+      image: img,
+      alt: carousel.alt,
+      description: carousel.description,
+    });
+  }
+  return items;
+}
+
+/**
+ * Loads a single page-text image entry into ImageWithAlt, applying the
+ * displayInMedia toggle and resolving the image against the matching glob.
+ * Reads EN because page-text image fields are locale-agnostic (only editable
+ * on EN).
+ */
+async function loadPageTextImage(
+  pageId: string,
+  baseDir: string,
+  glob: ImageGlob,
+  fallbackAlt: string,
+): Promise<ImageWithAlt | null> {
+  const entry = await getPageContent(pageId, 'en');
+  if (!entry) return null;
+  if (entry.data.imageDisplayInMedia === false) return null;
+  if (!entry.data.image) return null;
+  const path = resolveImagePath(baseDir, entry.data.image);
+  const img = await loadImage({ glob, imagePath: path, context: { itemTitle: fallbackAlt } });
+  if (!img) return null;
+  return {
+    image: img,
+    alt: entry.data.imageAlt ?? fallbackAlt,
+    description: entry.data.imageDescription,
+  };
+}
+
+async function getMediaFromAboutUs(): Promise<ImageWithAlt[]> {
+  const items: ImageWithAlt[] = [];
+  const hero = await loadPageTextImage('about-us/about-us-title', '/src/assets/hero/about-us', aboutHeroImages, 'About Us hero image');
+  if (hero) items.push(hero);
+  const ourMission = await loadPageTextImage('about-us/our-mission', '/src/assets/about-us/our-mission', ourMissionImages, 'About Us — Our Mission image');
+  if (ourMission) items.push(ourMission);
+  return items;
+}
+
+async function getMediaFromPageBanners(): Promise<ImageWithAlt[]> {
+  // Hardcoded list of page-text page-header singletons (excluding about-us,
+  // which has its own dedicated category). Each entry maps id → its hero
+  // glob and a fallback alt for context logging.
+  const banners: Array<{ id: string; baseDir: string; glob: ImageGlob; fallbackAlt: string }> = [
+    { id: 'events/events-title', baseDir: '/src/assets/hero/events', glob: eventsHeroImages, fallbackAlt: 'Events page hero' },
+    { id: 'projects/projects-title', baseDir: '/src/assets/hero/projects', glob: projectsHeroImages, fallbackAlt: 'Projects page hero' },
+    { id: 'sponsors/sponsors-title', baseDir: '/src/assets/hero/sponsors', glob: sponsorsHeroImages, fallbackAlt: 'Sponsors page hero' },
+    { id: 'contact/contact-title', baseDir: '/src/assets/hero/contact', glob: contactHeroImages, fallbackAlt: 'Contact page hero' },
+    { id: 'media-categories', baseDir: '/src/assets/hero/media', glob: mediaHeroImages, fallbackAlt: 'Media page hero' },
+  ];
+  const items: ImageWithAlt[] = [];
+  for (const b of banners) {
+    const item = await loadPageTextImage(b.id, b.baseDir, b.glob, b.fallbackAlt);
+    if (item) items.push(item);
+  }
+  return items;
+}
+
+/**
+ * Returns the images shown under a given Media-page accordion. Each branch
+ * pulls from its category's source content (events/projects/hero-slides/etc.)
+ * and projects metadata into the shared ImageWithAlt shape used by the
+ * Media-page rendering pipeline.
+ *
+ * Categories handled here: events, projects, hero, what-is-bears, about-us,
+ * page-banners. The 'people' category is intentionally absent — it's handled
+ * by getMediaPeople + loadCollectionImages directly in media.astro because it
+ * needs the locale-projected role from each person record. The 'all' aggregate
+ * is also assembled in media.astro.
+ *
+ * Adding a new category id in MEDIA_CATEGORY_IDS without adding a branch here
+ * silently returns []. The schemaDrift test catches that.
+ */
+export async function getMediaItemsByCategory(
+  category: string,
+  locale: Locale = DEFAULT_LOCALE,
+): Promise<ImageWithAlt[]> {
+  switch (category) {
+    case 'events': return getMediaFromEvents(locale);
+    case 'projects': return getMediaFromProjects(locale);
+    case 'hero': return getMediaFromHeroSlides();
+    case 'what-is-bears': return getMediaFromWhatIsBears();
+    case 'about-us': return getMediaFromAboutUs();
+    case 'page-banners': return getMediaFromPageBanners();
+    default: return [];
+  }
 }
 
 /**

@@ -21,7 +21,7 @@ import ImageGrid from '@reusable/ImageGrid.astro';
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `images` | `ImageWithAlt[]` | &mdash; | **Required.** Array of `{ image, alt }` entries; `image` is an `ImageMetadata` import |
+| `images` | `ImageWithAlt[]` | &mdash; | **Required.** Array of `{ image, alt, description? }` entries; `image` is an `ImageMetadata` import. When `description` is set, a gradient strip renders on the bottom of that image (and beneath it in the click-to-enlarge modal). Use `description` for any combination of caption and photographer credit — there's no separate copyright field. |
 | `cols` | `2 \| 3 \| 4 \| 5 \| 6` | `4` | Desktop column count (mobile is always 2 cols) |
 | `gap` | `'sm' \| 'md' \| 'lg'` | `'md'` | Spacing between tiles |
 | `aspectRatio` | `'square' \| 'native'` | `'square'` | `square` crops to 1:1, `native` keeps original aspect ratios in a masonry layout |
@@ -31,8 +31,14 @@ import ImageGrid from '@reusable/ImageGrid.astro';
 `ImageWithAlt` is defined in `@types`:
 
 ```ts
-type ImageWithAlt = { image: ImageMetadata; alt: string };
+interface ImageWithAlt {
+  image: ImageMetadata | string;
+  alt: string;
+  description?: string;
+}
 ```
+
+`description` is optional. When set, the image renders a tight gradient strip at the bottom showing the description text. The same text shows beneath the enlarged image inside the click-to-enlarge modal. Use `description` for any combination of caption and photographer credit.
 
 ## Layout Modes
 

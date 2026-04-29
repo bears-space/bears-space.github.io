@@ -1,26 +1,18 @@
 ---
 // Media Page - Displays all media organized by category in accordion format
-// Categories are configured via the page-text content collection (media-title.mdx)
+// Categories are configured via the page-text content collection (media-categories.mdx)
 
 import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import NotFoundPage from "./404.astro";
 import MediaAccordion from "../components/reusable/MediaAccordion.astro";
 import PageHeroImage from "../components/reusable/PageHeroImage.astro";
-import { loadAllImagesFromDirectory, loadImage, resolveImagePath } from "@utils/imageLoader";
+import { loadAllImagesFromDirectory, loadCollectionImages, loadImage, resolveImagePath } from "@utils/imageLoader";
 import type { ImageMetadata } from "astro";
-import {
-  mediaHeroImages,
-  eventImages,
-  projectImages,
-  whatIsBearsImages,
-  ourMissionImages,
-  peopleImages,
-  allHeroImages,
-} from "@utils/imageGlobs";
-import type { ImageGlob } from "@utils/imageGlobs";
-import { getPageContent } from "@utils/contentQueries";
+import { mediaHeroImages } from "@utils/imageGlobs";
+import { getMediaItemsByCategory, getMediaPeople, getPageContent } from "@utils/contentQueries";
 import { getLocale, mediaUiStrings } from "@utils/i18n";
+import type { ImageWithAlt } from "@types";
 
 const locale = getLocale(Astro.url);
 const visibility = (await getEntry('media-section-visibility', 'settings'))!.data;
@@ -32,7 +24,7 @@ const visibility = (await getEntry('media-section-visibility', 'settings'))!.dat
 let pageContent: Awaited<ReturnType<typeof getPageContent>> = undefined;
 let heroImage: ImageMetadata | null = null;
 let heroAlt = "";
-const displayCategories: { label: string; images: ImageMetadata[] }[] = [];
+const displayCategories: { label: string; images: ImageWithAlt[] }[] = [];
 
 if (visibility.showMediaPage) {
   pageContent = await getPageContent('media-categories', locale);
@@ -57,36 +49,43 @@ if (visibility.showMediaPage) {
     heroImage = loadedHeroImages[0] ?? null;
   }
 
-  // Static mapping from content id → image glob
-  // To add a new media category, add a glob to imageGlobs.ts and map it here
-  const globById: Record<string, ImageGlob> = {
-    'about-us': ourMissionImages,
-    'events': eventImages,
-    'people': peopleImages,
-    'hero': allHeroImages,
-    'projects': projectImages,
-    'what-is-bears': whatIsBearsImages,
-  };
-
   // Read categories from content file (order and visibility controlled by content creators)
   const contentCategories = pageContent?.data.mediaCategories ?? [];
 
-  // First pass: load all non-"all" categories
-  const loadedCategories = await Promise.all(
+  // Each category sources from a different place. People → People collection
+  // filtered by showInFaces + coverImage (separate query because we need each
+  // person's name + role for the alt). Everything else → getMediaItemsByCategory
+  // dispatch. 'all' is a runtime aggregate of everything else.
+  const loadedCategories = (await Promise.all(
     contentCategories
-      .filter((cat: { id: string }) => cat.id !== 'all' && globById[cat.id])
-      .map(async (cat: { id: string; label: string }) => {
-        const images = await loadAllImagesFromDirectory(globById[cat.id]);
+      .filter((cat: { id: string }) => cat.id !== 'all')
+      .map(async (cat: { id: string; label: string }): Promise<{ id: string; label: string; images: ImageWithAlt[] } | null> => {
+        if (cat.id === 'people') {
+          const mediaPeople = await getMediaPeople(locale);
+          const peopleWithImages = await loadCollectionImages(mediaPeople, 'person');
+          // loadCollectionImages's type signature strips the locale-projected
+          // `role` from getMediaPeople, so re-derive it here from roleEn/roleDe.
+          const images: ImageWithAlt[] = peopleWithImages.map((p) => {
+            const role = locale === 'de' ? p.data.roleDe : p.data.roleEn;
+            return {
+              image: p.loadedImage,
+              alt: `${p.data.name} — ${role}`,
+              description: p.data.coverImageDescription,
+            };
+          });
+          return { id: cat.id, label: cat.label, images };
+        }
+        const images = await getMediaItemsByCategory(cat.id, locale);
         return { id: cat.id, label: cat.label, images };
       }),
-  );
+  )).filter((cat): cat is { id: string; label: string; images: ImageWithAlt[] } => cat !== null);
 
   // Filter out empty categories
   const categoriesWithImages = loadedCategories.filter((cat) => cat.images.length > 0);
 
   // Second pass: build the "all" entry if requested
   const allEntry = contentCategories.find((cat: { id: string }) => cat.id === 'all');
-  const allImages = allEntry
+  const allImages: ImageWithAlt[] = allEntry
     ? categoriesWithImages.flatMap((cat) => cat.images)
     : [];
 

@@ -1,0 +1,56 @@
+---
+title: "Managing the Media page"
+description: "How photos make it onto the /media gallery and how to control what shows up."
+order: 30
+group: "Content"
+---
+
+The `/media` page is a curated photo gallery. It doesn't pull every image from disk — every photo on /media has metadata (alt text + an optional description used for caption + photographer credit) attached at its source.
+
+## Where photos come from
+
+Each Media-page accordion sources from a different content collection:
+
+| Accordion | Source | What you edit to add a photo there |
+|-----------|--------|------------------------------------|
+| Events | The Events collection | Edit the event → upload a cover photo. Inline `<Img />` blocks in the event body are also pulled in (each has its own `displayInMedia` toggle, default on). |
+| Projects | The Projects collection | Edit the project → upload a cover photo. Inline `<Img />` blocks in the project body are also pulled in (each has its own `displayInMedia` toggle, default on). |
+| Hero slides | The Hero Slides collection | Image slides appear automatically with their `displayInMedia` toggle on. |
+| What is BEARS | The "What is BEARS" landing singleton | Each carousel image has `displayInMedia` (default on). |
+| About Us | About Us page-header + "Our Mission" section singletons | Page hero plus the "Our Mission" section image. Each has its own `imageDisplayInMedia` toggle (default on). |
+| Page banners | Events / Projects / Sponsors / Contact / Media page-header singletons | Each subpage's hero banner. Each has its own `imageDisplayInMedia` toggle (default on). |
+| People | The People collection | Per-person `showInFaces` toggle (default off — opt-in consent toggle that gates both Faces of BEARS and the Media accordion). People without a portrait image are skipped. See [Managing People](/docs/guides/managing-people). |
+
+## Adding a photo to /media
+
+For events and projects, the cover image always appears in the matching /media accordion. Use `coverImageDescription` to add a caption + credit (one field, multiline — e.g. `"Group photo — © 2025 Jane Doe"`). To feature **more** photos from the same event/project on /media, embed them inside the post's body with the **Image** block in the editor — each block prompts for the photo, alt text, an optional description (caption + credit), and a per-image **Show on the Media page** toggle (default on, flip off to keep that body image post-only).
+
+For hero slides, the "What is BEARS" carousel, the about-us hero, the "Our Mission" section, and every other page banner, just fill in the description if you want it shown — `displayInMedia` (or `imageDisplayInMedia`) defaults to on.
+
+## What shows on the page
+
+Each photo on /media renders with:
+
+- The image
+- A small gradient strip at the bottom with the description text (multi-line supported) when set
+- A click-to-enlarge modal that shows the full-resolution image with the same description text underneath
+
+If no description is set, the image renders cleanly with no strip.
+
+## Hiding a single photo
+
+Each per-image source has a checkbox you can flip off:
+
+- **Hero slides** → `displayInMedia` (default on)
+- **What is BEARS carousel** → `displayInMedia` per item (default on)
+- **Page banners + About Us hero + "Our Mission" section** → `imageDisplayInMedia` per singleton (default on)
+- **Inline `<Img />` body images** → `displayInMedia` per image (default on; flipping off keeps the image inside the post but hides it from /media)
+- **People** → `showInFaces` (default off; doubles as the consent toggle for Faces of BEARS)
+
+Event and project covers always appear on /media — to keep an event/project off the page entirely, mark its `isDraft: true` (which hides it everywhere).
+
+To hide an entire category, edit the **Media — page header + categories** singleton in the admin and remove that category from the `mediaCategories` list.
+
+## Hiding the whole page
+
+The **Media — segments** singleton has a `showMediaPage` toggle. Flip it off to make `/media` 404 and remove the Media link from the footer.

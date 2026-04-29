@@ -23,6 +23,7 @@ const sponsorsCollection = defineCollection({
       validateImageExtension,
       { message: `logo must have a valid image extension: ${VALID_EXTENSIONS_MESSAGE}` }
     ),
+    alt: z.string().optional(),         // falls back to `name` at call sites
     url: z.string().url().optional(),
     bgColor: z.string().default('#ffffff'),
     // tier is automatically derived from folder structure (bronze/, silver/, gold/)
@@ -41,6 +42,7 @@ const eventsCollection = defineCollection({
       validateImageExtension,
       { message: `coverImage must have a valid image extension: ${VALID_EXTENSIONS_MESSAGE}` }
     ),
+    coverImageDescription: z.string().optional(),
     isDraft: z.boolean().default(false).optional(),
   }).transform((data) => {
     // Derive coverImageType from coverImage presence
@@ -63,6 +65,7 @@ const projectsCollection = defineCollection({
       validateImageExtension,
       { message: `coverImage must have a valid image extension: ${VALID_EXTENSIONS_MESSAGE}` }
     ),
+    coverImageDescription: z.string().optional(),
     isDraft: z.boolean().default(false).optional(),
     displayMeetTheTeam: z.boolean().optional(),
     // Reference into the `people` collection. Replaces the old flat
@@ -100,6 +103,8 @@ const heroSlidesCollection = defineCollection({
   schema: z.object({
     order: z.number(),
     alt: z.string(),
+    description: z.string().optional(),
+    displayInMedia: z.boolean().default(true),
     shownText: z.string().optional(),
     // Mirrors the Keystatic `fields.conditional` on media: the admin UI splits
     // uploads into an image branch (with thumbnail preview) and a video branch,
@@ -142,7 +147,8 @@ const peopleCollection = defineCollection({
       validateImageExtension,
       { message: `coverImage must have a valid image extension: ${VALID_EXTENSIONS_MESSAGE}` }
     ).optional(),
-    showInFaces: z.boolean().default(true),
+    coverImageDescription: z.string().optional(),
+    showInFaces: z.boolean().default(false),
     order: z.number().default(0),
   }),
 });
@@ -230,12 +236,16 @@ const pageTextCollection = defineCollection({
       { message: `image must have a valid image extension: ${VALID_EXTENSIONS_MESSAGE}` },
     ).optional(),
     imageAlt: z.string().optional(),
+    imageDescription: z.string().optional(),
+    imageDisplayInMedia: z.boolean().default(true).optional(),
     carouselImages: z.array(z.object({
       src: z.string().refine(
         validateImageExtension,
         { message: `src must have a valid image extension: ${VALID_EXTENSIONS_MESSAGE}` },
       ),
       alt: z.string().min(1),
+      description: z.string().optional(),
+      displayInMedia: z.boolean().default(true),
     })).optional(),
     mediaCategories: z.array(z.object({
       id: z.string(),

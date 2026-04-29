@@ -27,6 +27,8 @@ Frontmatter:
   date: YYYY-MM-DD (required)
   categoryEvent: one of "trade-fairs-and-conventions", "competitions-and-workshops", "kick-off-events", "other" (required)
   coverImage: string (required) — path under src/assets/events/<slug>/, written as "/<slug>/<filename>", valid: .jpg .jpeg .png .webp .svg
+  coverImageDescription: string (optional) — single caption + credit field shown as a gradient strip below the cover image on /media (multiline ok)
+  // Cover always appears in the Events category on /media. Inline <Img /> blocks in the body also surface on /media unless `displayInMedia: false`.
   isDraft: boolean (optional, default false) — hidden in production, visible in dev
 Body: Markdown or MDX content for the detail page.
 
@@ -38,6 +40,8 @@ Frontmatter:
   date: YYYY-MM-DD (required)
   categoryProject: one of "experimental-rocketry", "science-and-experiments", "robotics", "other" (required)
   coverImage: string (required) — path under src/assets/projects/<slug>/, written as "/<slug>/<filename>", valid: .jpg .jpeg .png .webp .svg
+  coverImageDescription: string (optional) — single caption + credit field shown as a gradient strip below the cover image on /media (multiline ok)
+  // Cover always appears in the Projects category on /media. Inline <Img /> blocks in the body also surface on /media unless `displayInMedia: false`.
   isProjectCompleted: boolean (required)
   isDraft: boolean (optional, default false)
   displayMeetTheTeam: boolean (optional) — shows this project in the homepage "Meet the Team" section
@@ -51,6 +55,7 @@ Frontmatter:
   name: string (required)
   order: number (required) — display order within the tier (lower = shown first)
   logo: string (required) — path under src/assets/sponsors/<tier>/<slug>/, written as "/<slug>/<filename>", valid: .jpg .jpeg .png .webp .svg
+  alt: string (optional) — falls back to `name` at call sites
   url: string (optional) — full website URL
   bgColor: string (optional, default #ffffff) — logo card background color
 
@@ -60,6 +65,8 @@ Frontmatter:
   order: number (required) — display order (lower = shown first)
   alt: string (required) — also used as the slide's slug in the admin UI
   shownText: string (optional) — overlay text
+  description: string (optional) — single caption + credit field shown on /media when this slide is an image
+  displayInMedia: boolean (default true) — when true and the slide is an image, it appears in the Hero category on /media
   media: object (required) — conditional field with two branches:
     { discriminant: "image", value: "/<slug>/media.<ext>" }  — .jpg .jpeg .png .webp .svg
     { discriminant: "video", value: "/<slug>/media.<ext>" }  — .mp4 .webm .ogg
@@ -81,8 +88,9 @@ Frontmatter:
   roleEn: string (required) — English role
   roleDe: string (required) — German role
   coverImage: string (required) — path under src/assets/people/<slug>/, written as "<slug>/<filename>", valid: .jpg .jpeg .png .webp .svg. The same portrait is reused across all three surfaces.
-  showInFaces: boolean (default false) — true = appears in the Faces of BEARS grid on the About Us page; project-only people can stay false
-  order: number (default 0) — only meaningful when showInFaces is true; lower = shown first; ties fall back to the slug
+  coverImageDescription: string (optional) — single caption + credit field shown over the portrait on /media (multiline ok; no effect on Faces/Meet/Testimonials cards)
+  showInFaces: boolean (default false, opt-in) — single consent toggle gating BOTH Faces of BEARS (About Us) and the People accordion on /media; off = appears in neither; on /media only people with a coverImage are shown
+  order: number (default 0) — sort order wherever the person is shown (Faces of BEARS, Media page); lower = first, ties break on slug
 
 TESTIMONIALS (src/content/testimonials/list.mdx)
 Single-entry content collection backing the landing-page Testimonials carousel. The MDX body is empty and not editable — only frontmatter is used. Managed in Keystatic as a drag-reorderable list (a singleton with fields.array); array order in the file IS the display order — no sort key, no per-item filenames.

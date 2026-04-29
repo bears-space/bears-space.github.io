@@ -39,7 +39,8 @@ Each asset directory has a centralized glob pattern exported as a constant:
 | `sponsorLogos` | `/src/assets/sponsors/**/` | Sponsor showcase |
 | `whatIsBearsImages` | `/src/assets/whatIsBears/**/` | Landing "What is BEARS" carousel (content-driven via `landing/what-is-bears` page-text singleton) |
 | `ourMissionImages` | `/src/assets/about-us/our-mission/` | About page hero |
-| `peopleImages` | `/src/assets/people/` | Faces of BEARS grid, Meet the Team portraits, Testimonials carousel |
+| `peopleImages` | `/src/assets/people/` | Faces of BEARS grid, Meet the Team portraits, Testimonials carousel, People category on /media (resolved via `loadCollectionImages`) |
+| `allAssetImages` | `/src/assets/**/` | Img.astro's string-src resolver; also consulted by the Media-page body-image extractor in `contentQueries.ts` so any path Keystatic writes into an MDX `<Img src="…">` can resolve regardless of which asset subdir it points at |
 | `aboutHeroImages` | `/src/assets/hero/about-us/` | About page hero |
 | `eventsHeroImages` | `/src/assets/hero/events/` | Events page hero |
 | `projectsHeroImages` | `/src/assets/hero/projects/` | Projects page hero |
@@ -113,10 +114,10 @@ Always returns a non-null `ImageMetadata` (falls back to default).
 
 ### `loadAllImagesFromDirectory(glob)`
 
-Loads all images from a glob. Used for carousels/galleries that are not backed by a content entry.
+Loads all images from a glob. Useful as a fallback when no specific filename is configured (e.g. picking the first hero file off disk if the page-text singleton's `image` field is blank).
 
 ```typescript
-const allHeroImages = await loadAllImagesFromDirectory(allHeroImages);
+const fallbackHeroes = await loadAllImagesFromDirectory(mediaHeroImages);
 ```
 
 Returns `ImageMetadata[]`, filtering out failed loads.

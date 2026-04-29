@@ -11,13 +11,13 @@ All website content is managed through [Astro content collections](https://docs.
 
 | Collection | Folder | Localized | Key Fields |
 |------------|--------|-----------|------------|
-| `events` | `src/content/events/{en,de}/` | Yes | title, description, date, categoryEvent, coverImage, isDraft |
-| `projects` | `src/content/projects/{en,de}/` | Yes | title, description, date, categoryProject, coverImage, isDraft, isProjectCompleted, person (→ `people`) |
-| `people` | `src/content/people/` | No (roles inline per locale) | name, roleEn, roleDe, coverImage (optional — falls back to `defaultFaceImage`), showInFaces, order |
+| `events` | `src/content/events/{en,de}/` | Yes | title, description, date, categoryEvent, coverImage (+ optional coverImageDescription for /media — captures caption + credit in one field), isDraft. Inline `<Img />` body images surface on /media too (unless `displayInMedia: false` per-image). |
+| `projects` | `src/content/projects/{en,de}/` | Yes | title, description, date, categoryProject, coverImage (+ optional coverImageDescription for /media — captures caption + credit in one field), isDraft, isProjectCompleted, person (→ `people`). Inline `<Img />` body images surface on /media too (unless `displayInMedia: false` per-image). |
+| `people` | `src/content/people/` | No (roles inline per locale) | name, roleEn, roleDe, coverImage (optional — falls back to `defaultFaceImage`), coverImageDescription? (caption + credit in one field), showInFaces (consent toggle for both Faces of BEARS and the Media-page People accordion), order |
 | `testimonials` | `src/content/testimonials/list.mdx` (single-entry collection, body empty) | No (quotes inline per locale) | `items`: array of `{ person (→ `people`), quoteEn, quoteDe }` — array order IS display order |
 | `page-text` | `src/content/page-text/{en,de}/` | Yes | title, subtitle, description, ctas, items, address, socialLinks, navLinks, navColumns, faqs, mediaCategories, tierDescriptions, donate fields |
-| `sponsors` | `src/content/sponsors/<tier>/` | No | name, order, logo, url, bgColor (tier from folder) |
-| `hero-slides` | `src/content/hero-slides/` | No | order, alt, shownText, media (conditional: `{discriminant: image\|video, value}`) |
+| `sponsors` | `src/content/sponsors/<tier>/` | No | name, order, logo, alt? (falls back to name), url, bgColor (tier from folder) |
+| `hero-slides` | `src/content/hero-slides/` | No | order, alt, shownText, media (conditional: `{discriminant: image\|video, value}`), description?, displayInMedia |
 | `instagram` | `src/content/instagram/` | No | url, date, isDraft |
 | `docs` | `src/content/docs/` | No | title, description, order, group |
 

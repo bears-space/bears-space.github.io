@@ -73,12 +73,13 @@ const CoverImageType = z.enum(["DEFAULT", "CUSTOM"]);
 type SponsorEntry = CollectionEntry<'sponsors'>;
 
 interface ImageWithAlt {
-  image: ImageMetadata;
+  image: ImageMetadata | string;
   alt: string;
+  description?: string;
 }
 ```
 
-`ImageWithAlt` is used by `ImageGrid`, `CollapsibleImageGrid`, and other image display components.
+`ImageWithAlt` is used by `ImageGrid`, `CollapsibleImageGrid`, and other image display components. `description` is optional and surfaces as a gradient overlay at the bottom of the image (and again beneath the enlarged image in the click-to-enlarge modal) when set. Use it for any combination of caption and photographer credit.
 
 ## Astro Configuration
 

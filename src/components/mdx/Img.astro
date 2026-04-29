@@ -11,6 +11,21 @@ interface Props {
   // (e.g. "/src/assets/events/<slug>/foo.jpg"). Undefined → placeholder.
   src?: ImageMetadata | string;
   alt: string;
+  /**
+   * Optional caption shown as a gradient overlay at the bottom of the image
+   * and beneath the enlarged image in the click-to-enlarge modal. Use it
+   * for a description, a photographer credit, or both — there's no separate
+   * credit/copyright field on purpose.
+   */
+  description?: string;
+  /**
+   * When this `<Img>` is rendered inside an event/project body, controls
+   * whether the same image is also pulled into that post's accordion on
+   * the Media page. Has no effect on the inline rendering itself —
+   * the body extractor in contentQueries.ts reads this attribute from
+   * the MDX source, not from the rendered component.
+   */
+  displayInMedia?: boolean;
   width?: string;
   sizes?: string;
   widths?: number[];
@@ -24,6 +39,11 @@ interface Props {
 const {
   src: rawSrc,
   alt,
+  description,
+  // displayInMedia is parsed from the MDX source by contentQueries.ts; we
+  // destructure it here only so Astro doesn't pass an unknown attribute
+  // down to the underlying <Image>.
+  displayInMedia: _displayInMedia,
   width = "100%",
   sizes: customSizes,
   widths = [240, 480, 720, 960, 1280, 1920, 2560],
@@ -88,7 +108,7 @@ const modalSrc = enableClickToEnlarge && !missingSrc
 ) : enableClickToEnlarge ? (
   <!-- With wrapper: enables click-to-enlarge modal -->
   <div
-    class={`img-better group/image ${roundedClass} overflow-hidden ring-0 ring-bears-accent transition-all duration-300 hover:ring-2 ${width === '100%' ? 'w-full h-full' : 'h-full'} ${className || ''}`.trim()}
+    class={`img-better group/image relative ${roundedClass} overflow-hidden ring-0 ring-bears-accent transition-all duration-300 hover:ring-2 ${width === '100%' ? 'w-full h-full' : 'h-full'} ${className || ''}`.trim()}
     x-data="{ modalOpen: false }"
     style={fill ? (width !== '100%' ? `width: ${width}` : undefined) : `aspect-ratio: ${src.width} / ${src.height}${width !== '100%' ? `; width: ${width}` : ''}`}
   >
@@ -104,7 +124,16 @@ const modalSrc = enableClickToEnlarge && !missingSrc
       x-on:click="modalOpen = true"
     />
 
-    <ImageModal src={modalSrc!} alt={alt} />
+    {description && (
+      <div
+        class="absolute inset-x-0 bottom-0 px-2 py-1.5 sm:px-3 sm:py-2 pointer-events-none"
+        style="background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.55) 60%, transparent 100%);"
+      >
+        <p class="text-[11px] sm:text-xs leading-tight text-white font-medium line-clamp-3 whitespace-pre-line">{description}</p>
+      </div>
+    )}
+
+    <ImageModal src={modalSrc!} alt={alt} description={description} />
   </div>
 ) : fill ? (
   <!-- With wrapper for fill mode: ensures image fills container -->
