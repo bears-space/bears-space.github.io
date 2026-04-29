@@ -17,6 +17,8 @@ interface Props {
   gap?: "sm" | "md" | "lg";
   /** Number of preview rows visible when collapsed (default: 1) */
   previewRows?: number;
+  /** Aspect ratio mode for the inner ImageGrid (default: 'native' masonry) */
+  aspectRatio?: "square" | "native" | "native-rows";
   /** Additional CSS classes for the ImageGrid */
   class?: string;
 }
@@ -26,6 +28,7 @@ const {
   cols = 4,
   gap = "md",
   previewRows = 1,
+  aspectRatio = "native",
   class: className,
 } = Astro.props;
 
@@ -86,7 +89,7 @@ const desktopColWidth = `${+(100 / cols).toFixed(3)}vw`;
         cols={cols}
         gap={gap}
         enableClickToEnlarge={true}
-        aspectRatio="native"
+        aspectRatio={aspectRatio}
         class={className}
       />
     </div>

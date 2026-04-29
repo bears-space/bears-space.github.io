@@ -96,15 +96,13 @@ const desktopColWidth = `${+(100 / cols).toFixed(3)}vw`;
         x-bind:class="isOpen ? 'pb-6' : 'pb-0'"
       >
         <div x-ref="content" class="p-1">
-          <div class="columns-2 lg:columns-3 gap-4 lg:gap-6">
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 items-start">
             {faces.map((face) => (
-              <div class="break-inside-avoid mb-4 lg:mb-6">
-                <FaceCard
-                  coverImage={face.coverImage}
-                  name={face.name}
-                  role={face.role}
-                />
-              </div>
+              <FaceCard
+                coverImage={face.coverImage}
+                name={face.name}
+                role={face.role}
+              />
             ))}
           </div>
         </div>

@@ -20,11 +20,13 @@ interface Props {
   cols?: 2 | 3 | 4 | 5 | 6;
   /** Gap between images (default: 'md') */
   gap?: "sm" | "md" | "lg";
+  /** Aspect ratio mode for the inner ImageGrid (default: 'native' masonry) */
+  aspectRatio?: "square" | "native" | "native-rows";
   /** Locale for translated UI strings */
   locale?: Locale;
 }
 
-const { title, images, class: className, cols = 4, gap = "md", locale = "en" } = Astro.props;
+const { title, images, class: className, cols = 4, gap = "md", aspectRatio = "native", locale = "en" } = Astro.props;
 const thisIsLabel = mediaUiStrings[locale]['this-is'];
 const sectionId = `media-${title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`;
 
@@ -55,13 +57,13 @@ const fitsInOneRow = images.length <= effectiveCols;
         cols={effectiveCols}
         gap={gap}
         enableClickToEnlarge={true}
-        aspectRatio="native"
+        aspectRatio={aspectRatio}
       />
     </div>
   </div>
 ) : (
   <div id={sectionId} class={`media-accordion rounded-lg overflow-hidden scroll-mt-20 ${className || ""}`}>
-    <CollapsibleImageGrid images={images} cols={effectiveCols} gap={gap} previewRows={1}>
+    <CollapsibleImageGrid images={images} cols={effectiveCols} gap={gap} aspectRatio={aspectRatio} previewRows={1}>
       <Fragment slot="header">
         {/* Accordion Header */}
         <button

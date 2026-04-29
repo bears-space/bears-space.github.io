@@ -16,8 +16,8 @@ interface Props {
   class?: string;
   /** Whether to enable click-to-enlarge functionality (default: true) */
   enableClickToEnlarge?: boolean;
-  /** Aspect ratio mode: 'square' crops to 1:1, 'native' uses masonry column layout (default: 'square') */
-  aspectRatio?: "square" | "native";
+  /** Aspect ratio mode: 'square' crops to 1:1, 'native' uses masonry column layout, 'native-rows' uses CSS Grid rows with native aspect ratios (default: 'square') */
+  aspectRatio?: "square" | "native" | "native-rows";
 }
 
 const {
@@ -78,7 +78,27 @@ const masonryItemGap: Record<string, string> = {
 };
 ---
 
-{aspectRatio === "native" ? (
+{aspectRatio === "native-rows" ? (
+  <!-- NATIVE-ROWS MODE: CSS Grid with native aspect ratios (clean rows, last row left-aligned) -->
+  <div
+    class={`not-prose grid ${gridCols} ${gridGap} items-start px-4 sm:px-6 py-3 ${className || ""}`}
+  >
+    {images.map(({ image, alt, description }, index) => (
+      <div class={enableClickToEnlarge ? '' : 'overflow-hidden rounded-lg'}>
+        <Img
+          src={image}
+          alt={alt}
+          description={description}
+          class="w-full h-auto object-cover transition-transform duration-300 group-hover/image:scale-105"
+          width="100%"
+          sizes={imageSizes}
+          loading={index <= cols * 2 ? "eager" : "lazy"}
+          enableClickToEnlarge={enableClickToEnlarge}
+        />
+      </div>
+    ))}
+  </div>
+) : aspectRatio === "native" ? (
   <!-- MASONRY MODE: CSS columns for true masonry layout -->
   <div
     class={`not-prose ${masonryColCount[cols] ?? masonryColCount[4]} ${gridGap} px-4 sm:px-6 py-3 ${className || ""}`}
