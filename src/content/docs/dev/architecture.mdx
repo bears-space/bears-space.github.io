@@ -36,6 +36,8 @@ Content is managed through Astro's content collections, defined in `src/content/
 
 Localized collections (`events`, `projects`, `page-text`) use `en/` and `de/` subfolders. Language-neutral collections (`sponsors`, `instagram`, `hero-slides`, `docs`, `people`, `testimonials`, `social-platforms`) stay flat — `people` carries both role translations inline (`roleEn`/`roleDe`), and `testimonials` carries both quote translations inline (`quoteEn`/`quoteDe`).
 
+A second class of collections — `landing-section-visibility`, `about-section-visibility`, `sponsors-section-visibility`, `contact-section-visibility`, `media-section-visibility` — store per-page section-toggle YAML (`settings.yaml`) rather than rendered content. Pages read them to skip entire sections at render time, and editors flip the toggles through the **\<page\> — segments** singletons in Keystatic.
+
 ## Internationalization (i18n)
 
 The site supports English (default, no URL prefix) and German (`/de/` prefix). Configured via Astro's built-in i18n in `astro.config.mjs`.

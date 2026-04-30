@@ -26,6 +26,14 @@ npm install
 npm run dev
 ```
 
+Dev server runs at `localhost:4321`. To work on the admin UI locally, use:
+
+```sh
+npm run dev:admin
+```
+
+Then visit `localhost:4321/keystatic` to open the Keystatic editor.
+
 ## Deployment
 
 The repo produces **two separate deploys** from the same source tree. The public pages are pure static HTML/CSS/JS, which GitHub Pages serves for free — but the admin UI's `/keystatic` and `/api/keystatic/*` routes need server-side rendering (OAuth callback + GitHub commit handler), and GitHub Pages doesn't support that. The admin therefore runs on Cloudflare Pages with an SSR adapter, while the public site stays on GitHub Pages.
@@ -77,6 +85,7 @@ The site rebuilds from the previous state within a few minutes. See the [If Some
 │   ├── assets/              # Images organized by content type
 │   │   ├── about-us/        # About page section images (our-mission/)
 │   │   ├── default-images/  # Placeholder/fallback images
+│   │   ├── docs/            # Images embedded in /docs MDX content
 │   │   ├── events/          # Event cover images
 │   │   ├── footer/          # Footer logo variants
 │   │   ├── header/          # Header logo variants
@@ -85,11 +94,11 @@ The site rebuilds from the previous state within a few minutes. See the [If Some
 │   │   ├── projects/        # Project cover images
 │   │   ├── social-icons/    # Social platform icons (per-platform subfolder)
 │   │   ├── sponsors/        # Sponsor logos by tier (diamond/, gold/, etc.)
-│   │   ├── testimonials/    # Testimonial portraits
 │   │   └── whatIsBears/     # "What is BEARS" section images
 │   │
 │   ├── components/          # Astro components
 │   │   ├── about/           # About page sections
+│   │   ├── admin/           # Admin dashboard (admin build only)
 │   │   ├── contact/         # Contact page components
 │   │   ├── docs/            # Documentation page components
 │   │   ├── events/          # Events page components
@@ -103,7 +112,9 @@ The site rebuilds from the previous state within a few minutes. See the [If Some
 │   │   └── sponsors/        # Sponsors page components
 │   │
 │   ├── content/             # Astro content collections
+│   │   ├── about-section-visibility/    # Per-section show/hide toggles (singleton)
 │   │   ├── branding/        # Brand logos, favicon, OG default (singleton)
+│   │   ├── contact-section-visibility/  # Per-section show/hide toggles (singleton)
 │   │   ├── default-images/  # Fallback cover images (singleton)
 │   │   ├── docs/            # Documentation pages (guides/, dev/)
 │   │   ├── events/          # Event entries (.md/.mdx)
@@ -111,6 +122,8 @@ The site rebuilds from the previous state within a few minutes. See the [If Some
 │   │   │   └── de/          #   German translations
 │   │   ├── hero-slides/     # Landing page hero carousel slides
 │   │   ├── instagram/       # Instagram feed entries
+│   │   ├── landing-section-visibility/  # Per-section show/hide toggles (singleton)
+│   │   ├── media-section-visibility/    # Per-section show/hide toggles (singleton)
 │   │   ├── page-text/       # Editable page copy by section
 │   │   │   ├── en/          #   English (default)
 │   │   │   │   ├── 404/
@@ -134,9 +147,8 @@ The site rebuilds from the previous state within a few minutes. See the [If Some
 │   │   │   └── de/          #   German translations
 │   │   ├── social-platforms/ # Social platforms (Instagram, LinkedIn, YouTube, …)
 │   │   ├── sponsors/        # Sponsor entries by tier (diamond/, gold/, etc.)
-│   │   ├── testimonials/    # Testimonial entries
-│   │   │   ├── en/          #   English (default)
-│   │   │   └── de/          #   German translations
+│   │   ├── sponsors-section-visibility/ # Per-section show/hide toggles (singleton)
+│   │   ├── testimonials/    # Single list.mdx; quotes inline as quoteEn / quoteDe
 │   │   └── config.ts        # Collection schemas (Zod)
 │   │
 │   ├── keystatic/           # MDX component registry for the Keystatic editor
@@ -170,7 +182,7 @@ The site supports two languages: **English** (default) and **German**.
 - English pages live at the root URL (e.g., `/about-us`)
 - German pages live under `/de/` (e.g., `/de/about-us`)
 
-Localized content collections (`events`, `projects`, `page-text`, `testimonials`) use `en/` and `de/` subfolders. Collections that are language-neutral (`people`, `sponsors`, `instagram`, `hero-slides`) stay flat — `people` keeps role translation inline via `roleEn` / `roleDe`. If a German translation is missing, the English version is shown as fallback.
+Localized content collections (`events`, `projects`, `page-text`) use `en/` and `de/` subfolders. Collections that are language-neutral (`people`, `sponsors`, `instagram`, `hero-slides`, `testimonials`) stay flat — `people` keeps role translation inline via `roleEn` / `roleDe`, and `testimonials` keeps quote translation inline via `quoteEn` / `quoteDe`. If a German translation is missing, the English version is shown as fallback.
 
 The language switcher in the header toggles between locales. Locale utilities live in `src/utils/i18n.ts`.
 

@@ -20,6 +20,7 @@ All website content is managed through [Astro content collections](https://docs.
 | `hero-slides` | `src/content/hero-slides/` | No | order, alt, shownText (corner overlay on homepage hero AND /media caption when surfaced), media (conditional: `{discriminant: image\|video, value}`), displayInMedia |
 | `instagram` | `src/content/instagram/` | No | url, date, isDraft |
 | `docs` | `src/content/docs/` | No | title, description, order, group |
+| `landing-section-visibility`, `about-section-visibility`, `sponsors-section-visibility`, `contact-section-visibility`, `media-section-visibility` | `src/content/<page>-section-visibility/settings.yaml` (one YAML file each) | No | Boolean `show*` toggles per page, edited via the **\<page\> — segments** singletons. Pages read these to skip whole sections at render time. |
 
 **Localized collections** use `en/` and `de/` subfolders with identical filenames in each. Content queries filter by locale and fall back to English if a German translation is missing.
 
