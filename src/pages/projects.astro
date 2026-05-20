@@ -442,15 +442,19 @@ const projectsData = JSON.stringify(projectsWithImages.map((p, i) => ({
         <button
           @click="showMore()"
           type="button"
-          class="group flex items-center justify-center gap-2.5 px-6 py-3 rounded-lg border border-white/15 text-sm text-bears-text-onDark/80 hover:border-bears-accent/50 hover:text-bears-text-onDark transition-all duration-200 cursor-pointer"
+          class="show-more-btn group inline-flex items-center gap-3 px-6 py-3 rounded-lg border border-bears-accent/40 bg-bears-bg-surface text-[15px] font-medium text-bears-text-onDark shadow-[0_2px_8px_rgba(0,0,0,0.25)] hover:border-bears-accent hover:bg-bears-bg-elevated hover:shadow-[0_10px_28px_-12px_rgba(197,14,31,0.55)] transition-[background-color,border-color,box-shadow,transform] duration-200 active:scale-[0.98] cursor-pointer"
         >
           <span>{showMoreText}</span>
           <span
-            class="text-bears-text-onDark/60"
-            x-text={`\`(\${remainingCount} ${remainingText})\``}
+            class="inline-flex items-center rounded-md px-2 py-0.5 bg-white/[0.08] text-bears-text-onDark/75 text-xs font-semibold tabular-nums"
+            x-text={`\`\${remainingCount} ${remainingText}\``}
           ></span>
-          <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          <svg
+            class="show-more-chevron w-4 h-4 text-bears-accent"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
           </svg>
         </button>
       </div>

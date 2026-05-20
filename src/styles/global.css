@@ -246,6 +246,16 @@ body {
   }
 }
 
+/* "Show more" button chevron — gentle idle bounce hinting at downward reveal */
+.show-more-chevron {
+  animation: showMoreChevronBounce 1.8s ease-in-out infinite;
+}
+
+@keyframes showMoreChevronBounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(3px); }
+}
+
 /* Respect user preference for reduced motion */
 @media (prefers-reduced-motion: reduce) {
 
@@ -257,7 +267,8 @@ body {
   .metadata-card,
   .contact-card,
   .nav-link,
-  .search-result {
+  .search-result,
+  .show-more-chevron {
     animation: none;
   }
 
