@@ -91,10 +91,11 @@ const roundedClass = className?.match(/\brounded(-\w+)?\b/) ? '' : 'rounded-lg';
 // CMS without choosing a source yet. Keeps the build green and surfaces the
 // missing image to the content editor directly on the page.
 const missingSrc = !src;
+const isSvg = src?.format === 'svg';
 
 // Generate full-res modal image only if click-to-enlarge enabled and src present
 const modalSrc = enableClickToEnlarge && !missingSrc
-  ? (await getImage({ src, format: 'webp' })).src
+  ? isSvg ? src.src : (await getImage({ src, format: 'webp' })).src
   : undefined;
 ---
 
@@ -111,17 +112,29 @@ const modalSrc = enableClickToEnlarge && !missingSrc
     x-data="{ modalOpen: false }"
     style={fill ? (width !== '100%' ? `width: ${width}` : undefined) : `aspect-ratio: ${src.width} / ${src.height}${width !== '100%' ? `; width: ${width}` : ''}`}
   >
-    <Image
-      src={src}
-      alt={alt}
-      widths={widths}
-      sizes={sizes}
-      class={`${fill ? 'w-full h-full object-cover object-center' : ''} ${className || ''} hover:cursor-pointer`.trim()}
-      loading={loading}
-      format="webp"
-      fetchpriority={fetchpriority}
-      x-on:click="modalOpen = true"
-    />
+    {isSvg ? (
+      <img
+        src={src.src}
+        alt={alt}
+        width={src.width}
+        height={src.height}
+        class={`${fill ? 'w-full h-full object-cover object-center' : ''} ${className || ''} hover:cursor-pointer`.trim()}
+        loading={loading}
+        x-on:click="modalOpen = true"
+      />
+    ) : (
+      <Image
+        src={src}
+        alt={alt}
+        widths={widths}
+        sizes={sizes}
+        class={`${fill ? 'w-full h-full object-cover object-center' : ''} ${className || ''} hover:cursor-pointer`.trim()}
+        loading={loading}
+        format="webp"
+        fetchpriority={fetchpriority}
+        x-on:click="modalOpen = true"
+      />
+    )}
 
     {description && (
       <div
@@ -136,26 +149,48 @@ const modalSrc = enableClickToEnlarge && !missingSrc
   </div>
 ) : fill ? (
   <div class={`w-full h-full ${roundedClass} overflow-hidden ${className || ''}`.trim()}>
+    {isSvg ? (
+      <img
+        src={src.src}
+        alt={alt}
+        width={src.width}
+        height={src.height}
+        class={`!w-full !h-full object-cover object-center ${className || ''}`.trim()}
+        loading={loading}
+      />
+    ) : (
+      <Image
+        src={src}
+        alt={alt}
+        widths={widths}
+        sizes={sizes}
+        class={`!w-full !h-full object-cover object-center ${className || ''}`.trim()}
+        loading={loading}
+        format="webp"
+        fetchpriority={fetchpriority}
+      />
+    )}
+  </div>
+) : (
+  isSvg ? (
+    <img
+      src={src.src}
+      alt={alt}
+      width={src.width}
+      height={src.height}
+      class={`${roundedClass} ${className || ''}`.trim()}
+      loading={loading}
+    />
+  ) : (
     <Image
       src={src}
       alt={alt}
       widths={widths}
       sizes={sizes}
-      class={`!w-full !h-full object-cover object-center ${className || ''}`.trim()}
+      class={`${roundedClass} ${className || ''}`.trim()}
       loading={loading}
       format="webp"
       fetchpriority={fetchpriority}
     />
-  </div>
-) : (
-  <Image
-    src={src}
-    alt={alt}
-    widths={widths}
-    sizes={sizes}
-    class={`${roundedClass} ${className || ''}`.trim()}
-    loading={loading}
-    format="webp"
-    fetchpriority={fetchpriority}
-  />
+  )
 )}
