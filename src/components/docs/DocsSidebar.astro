@@ -1,5 +1,5 @@
 ---
-import { getDocsBySection } from "@utils/contentQueries";
+import { getDocsBySection, stripLocaleFromSlug } from "@utils/contentQueries";
 import type { CollectionEntry } from "astro:content";
 
 const sections = await getDocsBySection();
@@ -35,7 +35,7 @@ function isActive(slug: string) {
 }
 
 function groupHasActive(docs: CollectionEntry<'docs'>[]) {
-  return docs.some(doc => isActive(doc.slug));
+  return docs.some(doc => isActive(stripLocaleFromSlug(doc.id)));
 }
 ---
 
@@ -96,10 +96,10 @@ function groupHasActive(docs: CollectionEntry<'docs'>[]) {
                       {groupItems.map(doc => (
                         <li>
                           <a
-                            href={`/docs/${doc.slug}/`}
+                            href={`/docs/${stripLocaleFromSlug(doc.id)}/`}
                             class:list={[
                               "block px-3 py-1.5 rounded text-sm transition-colors",
-                              isActive(doc.slug)
+                              isActive(stripLocaleFromSlug(doc.id))
                                 ? "text-bears-accent bg-white/5 font-medium"
                                 : "text-bears-text-onDark/70 hover:text-bears-text-onDark hover:bg-white/5",
                             ]}
@@ -116,10 +116,10 @@ function groupHasActive(docs: CollectionEntry<'docs'>[]) {
                   {groupItems.map(doc => (
                     <li>
                       <a
-                        href={`/docs/${doc.slug}/`}
+                        href={`/docs/${stripLocaleFromSlug(doc.id)}/`}
                         class:list={[
                           "block px-3 py-1.5 rounded text-sm transition-colors",
-                          isActive(doc.slug)
+                          isActive(stripLocaleFromSlug(doc.id))
                             ? "text-bears-accent bg-white/5 font-medium"
                             : "text-bears-text-onDark/70 hover:text-bears-text-onDark hover:bg-white/5",
                         ]}
@@ -235,10 +235,10 @@ function groupHasActive(docs: CollectionEntry<'docs'>[]) {
                         {groupItems.map(doc => (
                           <li>
                             <a
-                              href={`/docs/${doc.slug}/`}
+                              href={`/docs/${stripLocaleFromSlug(doc.id)}/`}
                               class:list={[
                                 "block px-3 py-1.5 rounded text-sm transition-colors",
-                                isActive(doc.slug)
+                                isActive(stripLocaleFromSlug(doc.id))
                                   ? "text-bears-accent bg-white/5 font-medium"
                                   : "text-bears-text-onDark/70 hover:text-bears-text-onDark hover:bg-white/5",
                               ]}
@@ -255,10 +255,10 @@ function groupHasActive(docs: CollectionEntry<'docs'>[]) {
                     {groupItems.map(doc => (
                       <li>
                         <a
-                          href={`/docs/${doc.slug}/`}
+                          href={`/docs/${stripLocaleFromSlug(doc.id)}/`}
                           class:list={[
                             "block px-3 py-1.5 rounded text-sm transition-colors",
-                            isActive(doc.slug)
+                            isActive(stripLocaleFromSlug(doc.id))
                               ? "text-bears-accent bg-white/5 font-medium"
                               : "text-bears-text-onDark/70 hover:text-bears-text-onDark hover:bg-white/5",
                           ]}

@@ -107,24 +107,27 @@ const isCli =
   process.argv[1] &&
   fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
 if (isCli) {
-  const files = process.argv.slice(2).filter(Boolean);
-  if (files.length === 0) {
-    console.log("compress-images: no files provided, nothing to do");
-    process.exit(0);
-  }
-  const results = await compressFiles(files);
-  let changed = 0;
-  for (const r of results) {
-    if (r.status === "compressed") {
-      console.log(
-        `  ${r.filepath}: ${fmt(r.beforeSize)} → ${fmt(r.afterSize)}`,
-      );
-      changed++;
-    } else if (r.status === "no-gain") {
-      console.log(
-        `  skip ${r.filepath} (${fmt(r.beforeSize)} → ${fmt(r.afterSize)}, no gain)`,
-      );
+  void (async () => {
+    const files = process.argv.slice(2).filter(Boolean);
+    if (files.length === 0) {
+      console.log("compress-images: no files provided, nothing to do");
+      process.exit(0);
+      return;
     }
-  }
-  if (changed > 0) console.log(`compress-images: rewrote ${changed} file(s)`);
+    const results = await compressFiles(files);
+    let changed = 0;
+    for (const r of results) {
+      if (r.status === "compressed") {
+        console.log(
+          `  ${r.filepath}: ${fmt(r.beforeSize)} → ${fmt(r.afterSize)}`,
+        );
+        changed++;
+      } else if (r.status === "no-gain") {
+        console.log(
+          `  skip ${r.filepath} (${fmt(r.beforeSize)} → ${fmt(r.afterSize)}, no gain)`,
+        );
+      }
+    }
+    if (changed > 0) console.log(`compress-images: rewrote ${changed} file(s)`);
+  })();
 }

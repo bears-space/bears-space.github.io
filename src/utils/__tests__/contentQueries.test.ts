@@ -392,6 +392,14 @@ describe('getPageContent', () => {
     expect(result).toBeDefined();
   });
 
+  it('finds entries whose loader-generated ids omit the file extension', async () => {
+    mockedGetCollection.mockResolvedValue([
+      { id: 'en/landing/hero', data: { title: 'Hero' } },
+    ]);
+    const result = await getPageContent('landing/hero');
+    expect(result?.data.title).toBe('Hero');
+  });
+
   it('returns undefined for non-existent id', async () => {
     mockedGetCollection.mockResolvedValue([
       { id: 'en/landing/hero.mdx', slug: 'hero', data: { title: 'Hero' } },

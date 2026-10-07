@@ -13,10 +13,11 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'node',
+    include: ['src/utils/__tests__/**/*.test.ts'],
     coverage: {
       provider: 'v8',
       reporter: ['text'],
-      include: ['src/utils/**', 'src/content/config.ts', 'src/types/**'],
+      include: ['src/utils/**', 'src/content.config.ts', 'src/types/**'],
       reportOnFailure: true,
     },
   },

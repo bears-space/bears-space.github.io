@@ -37,14 +37,14 @@ async function loadTierImages(sponsors: typeof allTiers.diamond) {
           fallbackImage: defaultSponsorImage,
           context: {
             itemTitle: sponsor.data.name,
-            itemSlug: sponsor.slug,
+            itemSlug: sponsor.id.replace(/\.mdx?$/i, ''),
           },
         })) || defaultSponsorImage;
 
       return {
         ...sponsor.data,
         logo: logoData,
-        slug: sponsor.slug,
+        slug: sponsor.id.replace(/\.mdx?$/i, ''),
         tier: tier as "bronze" | "silver" | "gold" | "platinum" | "diamond",
       };
     }),

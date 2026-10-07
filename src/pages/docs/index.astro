@@ -1,6 +1,6 @@
 ---
 import DocsLayout from "@layouts/DocsLayout.astro";
-import { getDocsBySection } from "@utils/contentQueries";
+import { getDocsBySection, stripLocaleFromSlug } from "@utils/contentQueries";
 import type { CollectionEntry } from "astro:content";
 
 const sections = await getDocsBySection();
@@ -53,7 +53,7 @@ function groupDocs(docs: CollectionEntry<'docs'>[]) {
           <ul>
             {groupDocs.map(doc => (
               <li>
-                <a href={`/docs/${doc.slug}/`}>{doc.data.title}</a>
+                <a href={`/docs/${stripLocaleFromSlug(doc.id)}/`}>{doc.data.title}</a>
                 {doc.data.description && (
                   <span class="text-bears-text-onDark/50"> &mdash; {doc.data.description}</span>
                 )}

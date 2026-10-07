@@ -79,7 +79,6 @@ const masonryItemGap: Record<string, string> = {
 ---
 
 {aspectRatio === "native-rows" ? (
-  <!-- NATIVE-ROWS MODE: CSS Grid with native aspect ratios (clean rows, last row left-aligned) -->
   <div
     class={`not-prose grid ${gridCols} ${gridGap} items-start px-4 sm:px-6 py-3 ${className || ""}`}
   >
@@ -99,7 +98,6 @@ const masonryItemGap: Record<string, string> = {
     ))}
   </div>
 ) : aspectRatio === "native" ? (
-  <!-- MASONRY MODE: CSS columns for true masonry layout -->
   <div
     class={`not-prose ${masonryColCount[cols] ?? masonryColCount[4]} ${gridGap} px-4 sm:px-6 py-3 ${className || ""}`}
   >
@@ -119,7 +117,6 @@ const masonryItemGap: Record<string, string> = {
     ))}
   </div>
 ) : (
-  <!-- SQUARE MODE: CSS Grid with 1:1 aspect ratio -->
   <div
     class={`not-prose grid ${gridCols} ${gridGap} items-center px-4 sm:px-6 py-3 ${className || ""}`}
   >

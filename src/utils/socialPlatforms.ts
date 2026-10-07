@@ -19,9 +19,9 @@ export async function getSocialPlatformsMap(): Promise<Map<string, SocialPlatfor
   const entries = await getCollection('social-platforms');
   cachedMap = new Map(
     entries.map((entry) => [
-      entry.slug,
+      entry.id.replace(/\.mdx?$/i, ''),
       {
-        slug: entry.slug,
+        slug: entry.id.replace(/\.mdx?$/i, ''),
         label: entry.data.label,
         iconFile: entry.data.iconFile,
         defaultHoverColor: entry.data.defaultHoverColor,

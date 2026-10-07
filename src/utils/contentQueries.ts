@@ -84,7 +84,7 @@ export function filterDrafts<T extends { data: { isDraft?: boolean } }>(
  * e.g., "en/rocket-launch" → "rocket-launch"
  */
 export function stripLocaleFromSlug(slug: string): string {
-  return slug.replace(/^(en|de)\//, '');
+  return slug.replace(/\.mdx?$/i, '').replace(/^(en|de)\//, '');
 }
 
 
@@ -118,8 +118,16 @@ export async function getPublishedPosts(locale: Locale = DEFAULT_LOCALE) {
   const events = await getPublishedEvents(locale);
   const projects = await getPublishedProjects(locale);
 
-  const eventsWithType = events.map(e => ({ ...e, _collectionType: 'events' as const }));
-  const projectsWithType = projects.map(p => ({ ...p, _collectionType: 'projects' as const }));
+  const eventsWithType = events.map(e => ({
+    ...e,
+    slug: stripLocaleFromSlug(e.id),
+    _collectionType: 'events' as const,
+  }));
+  const projectsWithType = projects.map(p => ({
+    ...p,
+    slug: stripLocaleFromSlug(p.id),
+    _collectionType: 'projects' as const,
+  }));
 
   const combined = [...eventsWithType, ...projectsWithType];
   return sortByDateDesc(combined);
@@ -137,7 +145,7 @@ export async function getPublishedPosts(locale: Locale = DEFAULT_LOCALE) {
 export async function getMeetTheTeamProjectsWithPeople(locale: Locale = DEFAULT_LOCALE) {
   const allProjects = await getCollection('projects');
   const allPeople = await getCollection('people');
-  const peopleBySlug = new Map(allPeople.map((p) => [p.slug, p]));
+  const peopleBySlug = new Map(allPeople.map((p) => [stripLocaleFromSlug(p.id), p]));
 
   const localeProjects = filterByLocale(allProjects, locale);
   const published = filterDrafts(localeProjects).filter(
@@ -152,7 +160,7 @@ export async function getMeetTheTeamProjectsWithPeople(locale: Locale = DEFAULT_
     const personSlug = typeof ref === 'string' ? ref : ref.id;
     const person = peopleBySlug.get(personSlug);
     if (!person) {
-      console.warn(`[MeetTheTeam] project "${project.slug}" references unknown person "${personSlug}"`);
+      console.warn(`[MeetTheTeam] project "${stripLocaleFromSlug(project.id)}" references unknown person "${personSlug}"`);
       return [];
     }
     return [{
@@ -216,7 +224,7 @@ export async function getTestimonials(locale: Locale = DEFAULT_LOCALE) {
     getCollection('people'),
   ]);
   if (!list) return [];
-  const peopleBySlug = new Map(people.map((p) => [p.slug, p]));
+  const peopleBySlug = new Map(people.map((p) => [stripLocaleFromSlug(p.id), p]));
 
   return list.data.items.flatMap((item, index) => {
     const ref = item.person;
@@ -253,7 +261,7 @@ export async function getFacesOfBearsPeople(locale: Locale = DEFAULT_LOCALE) {
     .sort((a, b) => {
       const orderDiff = a.data.order - b.data.order;
       if (orderDiff !== 0) return orderDiff;
-      return a.slug.localeCompare(b.slug);
+      return stripLocaleFromSlug(a.id).localeCompare(stripLocaleFromSlug(b.id));
     })
     .map((p) => ({
       ...p,
@@ -281,7 +289,7 @@ export async function getMediaPeople(locale: Locale = DEFAULT_LOCALE) {
     .sort((a, b) => {
       const orderDiff = a.data.order - b.data.order;
       if (orderDiff !== 0) return orderDiff;
-      return a.slug.localeCompare(b.slug);
+      return stripLocaleFromSlug(a.id).localeCompare(stripLocaleFromSlug(b.id));
     })
     .map((p) => ({
       ...p,
@@ -579,7 +587,7 @@ export async function getSponsorsByTier() {
     [...list].sort((a, b) => {
       const orderDiff = a.data.order - b.data.order;
       if (orderDiff !== 0) return orderDiff;
-      return a.slug.localeCompare(b.slug);
+      return stripLocaleFromSlug(a.id).localeCompare(stripLocaleFromSlug(b.id));
     });
 
   return {
@@ -601,15 +609,17 @@ export async function getSponsorsByTier() {
 export async function getPageContent(id: string, locale: Locale = DEFAULT_LOCALE) {
   const allContent = await getCollection('page-text');
   const cleanId = id.replace(/\.mdx?$/, '');
+  const findByLocaleAndId = (targetLocale: Locale) => {
+    const targetId = `${targetLocale}/${cleanId}`;
+    return allContent.find(entry => entry.id.replace(/\.mdx?$/i, '') === targetId);
+  };
 
   // Try requested locale
-  const localeId = `${locale}/${cleanId}.mdx`;
-  let entry = allContent.find(entry => entry.id === localeId);
+  let entry = findByLocaleAndId(locale);
 
   // Fallback to default locale
   if (!entry && locale !== DEFAULT_LOCALE) {
-    const fallbackId = `${DEFAULT_LOCALE}/${cleanId}.mdx`;
-    entry = allContent.find(entry => entry.id === fallbackId);
+    entry = findByLocaleAndId(DEFAULT_LOCALE);
   }
 
   if (!entry) {

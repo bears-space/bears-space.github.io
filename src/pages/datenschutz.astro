@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import { render } from "astro:content";
 import { getPageContent } from "@utils/contentQueries";
 import { getLocale } from "@utils/i18n";
 
@@ -7,7 +8,7 @@ const locale = getLocale(Astro.url);
 const entry = await getPageContent('datenschutz/datenschutz', locale);
 const title = entry?.data.title ?? "Datenschutz";
 const subtitle = entry?.data.subtitle;
-const { Content } = entry ? await entry.render() : { Content: null };
+const { Content } = entry ? await render(entry) : { Content: null };
 ---
 
 <BaseLayout title={title}>

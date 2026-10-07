@@ -62,7 +62,7 @@ const eventsWithLoadedImages = await loadCollectionImages(sortedEvents, 'event')
 // Map to format expected by PostShowcase
 const eventsWithImages = eventsWithLoadedImages.map((event) => ({
   ...event.data,
-  slug: event.slug,
+  slug: stripLocaleFromSlug(event.id),
   coverImage: event.loadedImage,
 }));
 

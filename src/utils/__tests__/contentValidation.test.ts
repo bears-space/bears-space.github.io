@@ -53,8 +53,12 @@ function parseFrontmatter(filePath: string): Record<string, unknown> | null {
 }
 
 /** Human-readable path relative to project root */
+function toPosixPath(filePath: string): string {
+  return filePath.replace(/\\/g, '/');
+}
+
 function rel(filePath: string): string {
-  return relative(ROOT, filePath);
+  return toPosixPath(relative(ROOT, filePath));
 }
 
 /** Format Zod errors into readable messages */
@@ -210,7 +214,7 @@ const IMAGE_FIELD_TO_ASSET_DIR: Record<string, Record<string, string>> = {
 
 /** Sponsors have tier-based asset dirs */
 function getSponsorAssetDir(filePath: string): string {
-  const parts = relative(join(CONTENT_DIR, 'sponsors'), filePath).split('/');
+  const parts = toPosixPath(relative(join(CONTENT_DIR, 'sponsors'), filePath)).split('/');
   const tier = parts[0]; // bronze, silver, etc.
   return join(ASSETS_DIR, 'sponsors', tier);
 }

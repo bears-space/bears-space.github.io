@@ -1,4 +1,5 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, it } from 'node:test';
+import assert from 'node:assert/strict';
 import { promises as fs } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -38,12 +39,12 @@ describe('compressFile', () => {
 
     const result = await compressFile(file, { sizeThreshold: 10 * 1024, maxDimension: 800 });
 
-    expect(result.status).toBe('compressed');
-    expect(result.beforeSize).toBe(before);
-    expect(result.afterSize).toBeLessThan(before);
+    assert.equal(result.status, 'compressed');
+    assert.equal(result.beforeSize, before);
+    assert.ok(result.afterSize < before);
 
     const afterOnDisk = (await fs.stat(file)).size;
-    expect(afterOnDisk).toBe(result.afterSize);
+    assert.equal(afterOnDisk, result.afterSize);
   });
 
   it('resizes images larger than maxDimension and preserves aspect ratio without upscaling', async () => {
@@ -53,8 +54,8 @@ describe('compressFile', () => {
     await compressFile(file, { sizeThreshold: 1, maxDimension: 800 });
 
     const meta = await sharp(file).metadata();
-    expect(meta.width).toBe(800);
-    expect(meta.height).toBe(400);
+    assert.equal(meta.width, 800);
+    assert.equal(meta.height, 400);
   });
 
   it('does not upscale images smaller than maxDimension', async () => {
@@ -64,8 +65,8 @@ describe('compressFile', () => {
     await compressFile(file, { sizeThreshold: 1, maxDimension: 2000 });
 
     const meta = await sharp(file).metadata();
-    expect(meta.width).toBe(400);
-    expect(meta.height).toBe(300);
+    assert.equal(meta.width, 400);
+    assert.equal(meta.height, 300);
   });
 
   it('skips files under the size threshold without modifying them', async () => {
@@ -75,9 +76,9 @@ describe('compressFile', () => {
 
     const result = await compressFile(file, { sizeThreshold: 10 * 1024 * 1024 });
 
-    expect(result.status).toBe('under-threshold');
+    assert.equal(result.status, 'under-threshold');
     const after = await fs.readFile(file);
-    expect(after.equals(before)).toBe(true);
+    assert.ok(after.equals(before));
   });
 
   it('returns unsupported for non-image extensions', async () => {
@@ -86,7 +87,7 @@ describe('compressFile', () => {
 
     const result = await compressFile(file);
 
-    expect(result.status).toBe('unsupported');
+    assert.equal(result.status, 'unsupported');
   });
 
   it('returns unsupported for gif and webp extensions', async () => {
@@ -95,20 +96,20 @@ describe('compressFile', () => {
     await fs.writeFile(gif, 'x');
     await fs.writeFile(webp, 'x');
 
-    expect((await compressFile(gif)).status).toBe('unsupported');
-    expect((await compressFile(webp)).status).toBe('unsupported');
+    assert.equal((await compressFile(gif)).status, 'unsupported');
+    assert.equal((await compressFile(webp)).status, 'unsupported');
   });
 
   it('returns missing for non-existent files without throwing', async () => {
     const result = await compressFile(path.join(tmp, 'nope.jpg'));
-    expect(result.status).toBe('missing');
+    assert.equal(result.status, 'missing');
   });
 
   it('returns missing for directories that happen to end in an image extension', async () => {
     const dirPath = path.join(tmp, 'folder.jpg');
     await fs.mkdir(dirPath);
     const result = await compressFile(dirPath);
-    expect(result.status).toBe('missing');
+    assert.equal(result.status, 'missing');
   });
 
   it('compresses PNG files without alpha using lossless mode (no palette quantization)', async () => {
@@ -118,12 +119,11 @@ describe('compressFile', () => {
 
     const result = await compressFile(file, { sizeThreshold: 1, maxDimension: 400 });
 
-    expect(result.status).toBe('compressed');
-    expect(result.afterSize).toBeLessThan(before);
+    assert.equal(result.status, 'compressed');
+    assert.ok(result.afterSize < before);
 
-    // PNG color type at IHDR byte 25: 3 = indexed/palette. No-alpha path must stay non-indexed.
     const head = await fs.readFile(file);
-    expect(head[25]).not.toBe(3);
+    assert.notEqual(head[25], 3);
   });
 
   it('compresses PNG files with alpha using palette mode (256-color quantization)', async () => {
@@ -133,12 +133,11 @@ describe('compressFile', () => {
 
     const result = await compressFile(file, { sizeThreshold: 1, maxDimension: 400 });
 
-    expect(result.status).toBe('compressed');
-    expect(result.afterSize).toBeLessThan(before);
+    assert.equal(result.status, 'compressed');
+    assert.ok(result.afterSize < before);
 
-    // PNG color type at IHDR byte 25: 3 = indexed/palette. Alpha path takes the palette branch.
     const head = await fs.readFile(file);
-    expect(head[25]).toBe(3);
+    assert.equal(head[25], 3);
   });
 
   it('is idempotent enough that re-running never grows the file on disk', async () => {
@@ -151,7 +150,7 @@ describe('compressFile', () => {
     await compressFile(file, { sizeThreshold: 1, maxDimension: 800, jpegQuality: 80 });
     const afterSecond = (await fs.stat(file)).size;
 
-    expect(afterSecond).toBeLessThanOrEqual(afterFirst);
+    assert.ok(afterSecond <= afterFirst);
   });
 
   it('never replaces the file when the re-encoded buffer would not be smaller', async () => {
@@ -172,10 +171,10 @@ describe('compressFile', () => {
 
     const after = await fs.readFile(file);
     if (result.status === 'no-gain') {
-      expect(after.equals(before)).toBe(true);
+      assert.ok(after.equals(before));
     } else {
-      expect(result.status).toBe('compressed');
-      expect(after.length).toBeLessThan(before.length);
+      assert.equal(result.status, 'compressed');
+      assert.ok(after.length < before.length);
     }
   });
 
@@ -190,7 +189,7 @@ describe('compressFile', () => {
 
     const hiSize = (await fs.stat(hi)).size;
     const loSize = (await fs.stat(lo)).size;
-    expect(loSize).toBeLessThan(hiSize);
+    assert.ok(loSize < hiSize);
   });
 
   it('handles .jpeg extension the same as .jpg', async () => {
@@ -199,9 +198,9 @@ describe('compressFile', () => {
 
     const result = await compressFile(file, { sizeThreshold: 1, maxDimension: 500 });
 
-    expect(result.status).toBe('compressed');
+    assert.equal(result.status, 'compressed');
     const meta = await sharp(file).metadata();
-    expect(meta.width).toBe(500);
+    assert.equal(meta.width, 500);
   });
 });
 
@@ -215,9 +214,9 @@ describe('compressFiles', () => {
 
     const results = await compressFiles([a, b, c], { sizeThreshold: 1, maxDimension: 400 });
 
-    expect(results).toHaveLength(3);
-    expect(results[0].status).toBe('compressed');
-    expect(results[1].status).toBe('unsupported');
-    expect(results[2].status).toBe('missing');
+    assert.equal(results.length, 3);
+    assert.equal(results[0].status, 'compressed');
+    assert.equal(results[1].status, 'unsupported');
+    assert.equal(results[2].status, 'missing');
   });
 });

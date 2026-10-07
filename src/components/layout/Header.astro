@@ -209,6 +209,7 @@ const noResultsText = searchContent?.data.searchNoResultsText
         <div class="relative" x-on:click.outside="searchActive = false">
           <div class="flex items-center w-48 rounded-lg bg-bears-bg-elevated transition-all duration-300"
                :class="searchActive && 'w-72 ring-2 ring-bears-accent/40 shadow-[0_2px_8px_rgba(0,0,0,0.25)]'"
+          >
             <svg class="w-4 h-4 text-gray-400 shrink-0 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>

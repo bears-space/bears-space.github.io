@@ -106,7 +106,6 @@ const modalSrc = enableClickToEnlarge && !missingSrc
     <strong>Image missing</strong> — {alt ? `"${alt}"` : 'no src set in the CMS'}
   </div>
 ) : enableClickToEnlarge ? (
-  <!-- With wrapper: enables click-to-enlarge modal -->
   <div
     class={`img-better group/image relative ${roundedClass} overflow-hidden ring-0 ring-bears-accent transition-all duration-300 hover:ring-2 ${width === '100%' ? 'w-full h-full' : 'h-full'} ${className || ''}`.trim()}
     x-data="{ modalOpen: false }"
@@ -136,7 +135,6 @@ const modalSrc = enableClickToEnlarge && !missingSrc
     <ImageModal src={modalSrc!} alt={alt} description={description} />
   </div>
 ) : fill ? (
-  <!-- With wrapper for fill mode: ensures image fills container -->
   <div class={`w-full h-full ${roundedClass} overflow-hidden ${className || ''}`.trim()}>
     <Image
       src={src}
@@ -150,7 +148,6 @@ const modalSrc = enableClickToEnlarge && !missingSrc
     />
   </div>
 ) : (
-  <!-- Without wrapper: just the optimized image -->
   <Image
     src={src}
     alt={alt}

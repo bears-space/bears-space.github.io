@@ -1,6 +1,6 @@
 ---
 import PostLayout from "@layouts/PostLayout.astro";
-import { type CollectionEntry } from "astro:content";
+import { type CollectionEntry, render } from "astro:content";
 import { loadCoverImage } from "@utils/imageLoader";
 import { getPublishedEvents, stripLocaleFromSlug } from "@utils/contentQueries";
 import { getLocale } from "@utils/i18n";
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
   const allEvents = await getPublishedEvents();
 
   return allEvents.map(entry => ({
-    params: { slug: stripLocaleFromSlug(entry.slug) },
+    params: { slug: stripLocaleFromSlug(entry.id) },
     props: { entry }
   }));
 }
@@ -29,18 +29,18 @@ const locale = getLocale(Astro.url);
 let entry = defaultEntry;
 if (locale !== 'en') {
   const localeEvents = await getPublishedEvents(locale);
-  const bareSlug = stripLocaleFromSlug(defaultEntry.slug);
-  const localeEntry = localeEvents.find(e => stripLocaleFromSlug(e.slug) === bareSlug);
+  const bareSlug = stripLocaleFromSlug(defaultEntry.id);
+  const localeEntry = localeEvents.find(e => stripLocaleFromSlug(e.id) === bareSlug);
   if (localeEntry) entry = localeEntry;
 }
 
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 // Load cover image
 const coverImageData = await loadCoverImage(
   entry.data.coverImage,
   'event',
-  { itemTitle: entry.data.title, itemSlug: entry.slug }
+  { itemTitle: entry.data.title, itemSlug: stripLocaleFromSlug(entry.id) }
 );
 
 // Extract data for template use
@@ -50,7 +50,7 @@ const { title, date, categoryEvent } = entry.data;
 <PostLayout
   title={title}
   description={entry.data.description}
-  slug={entry.slug}
+  slug={stripLocaleFromSlug(entry.id)}
   date={date}
   coverImage={coverImageData}
   category={categoryEvent}

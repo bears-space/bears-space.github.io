@@ -78,7 +78,7 @@ const projectsWithLoadedImages = await loadCollectionImages(sortedProjects, 'pro
 // Map to format expected by PostShowcase
 const projectsWithImages = projectsWithLoadedImages.map((project) => ({
   ...project.data,
-  slug: project.slug,
+  slug: stripLocaleFromSlug(project.id),
   coverImage: project.loadedImage,
 }));
 
