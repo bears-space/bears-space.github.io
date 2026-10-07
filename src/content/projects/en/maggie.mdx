@@ -27,6 +27,13 @@ import team_shirts from '/src/assets/projects/maggie/team2.png';
 import IPR_Gang from '/src/assets/projects/maggie/IPR_GANG.jpg';
 import EO_logo from '/src/assets/projects/maggie/EOworldwide-2.png';
 
+import REXUS_raw from '/src/assets/projects/maggie/REXUS_raw.jpg';
+import Leo_light from '/src/assets/projects/maggie/Leo_light.jpg';
+import EBox from '/src/assets/projects/maggie/E-Box.jpg';
+import CAD_web from '/src/assets/projects/maggie/01_MAGGIE_web.png';
+
+import BUA_conference from '/src/assets/projects/maggie/BUA_conference2.jpeg';
+
 <a rel="me" href="https://mastodon.social/@MAGGIE_REXUS" class="hidden">Mastodon</a>
 
 
@@ -38,11 +45,10 @@ MAGGIE stands for **M**icrogravitational **A**utomated **G**ecko **G**ripping **
 */}
 ## News
 
-**01.07.2026**: Merchandise Update: The team is now fully equipped with merchandise. Great thanks to the sturopx-team for the wonderfull t-shirts.
+**02.10.2026**: The team presented its preliminary design and implementation status at the Berlin Conference for Student Research. With that the X-Tutorial Part of MAGGIE came to an end. The team once again thanks the BUA and the Sturopx team for their support along the way.
 
-**10.06.2026**: The Critical Design Review was completed and now its time for some final design decisions.
+**27.08.2026**: MAGGIE has passed its Integration Preparation Review (IPR). 
 
-**23.04.2026**: With a great and heartly Kick-Off Meeting, the MAGGIE Team starts motivated into the summer term. With three new students not only our software team but also the testing group got new help.
 
 
 
@@ -68,12 +74,29 @@ We are currently 19 active Members, and have great supervision under the guidanc
   <Img src={photo4} alt="Parts and Subsystems" />
   <Img src={photo5} alt="Lighting Test" />
   <Img src={photo6} alt="Target" />
+  <Img src={REXUS_raw} alt="REXUS Parts" />
+  <Img src={Leo_light} alt="Lighting Concept" />
+  <Img src={EBox} alt="Electrical Box" />
+  
 </Marquee>
+
+## Experiment Concept
+
+<Img src={CAD_web} alt="MAGGIE Experiment Concept" />
+
+The experiment uses the standard 220mm-REXUS Shell and divides the experiment space into two main compartments. 
+The upper compartment contains the robotic arm and the target surface, while the lower compartment contains the electronics and power supply. 
+The robotic arm is designed to be lightweight and compact, with a gecko-inspired adhesive end effector that can grip and manipulate objects in microgravity. 
+One target surface is made of fused silica, which provides a smooth surface for testing the adhesive properties of the gecko-inspired materials. 
+The experiment will be controlled by an onboard computer, which will receive commands from the ground station and send back data on the performance of the robotic arm and the adhesive materials.
+
+To keep the robtic arm secured during ascent and descent, a Hold-Down-and-Release-Mechanism (HDRM) is used to lock the arm in place.
+The movement of the arm is observed by four cameras, shich record the movement but also the interaction of the gecko-inspired adhesive materials with the target surface.
 
 
 ## Events and Reviews
 
-#### REXUS Selection Workshop - 24. and 25. November 2025
+### REXUS Selection Workshop - 24. and 25. November 2025
 
 <Img src="/src/assets/projects/maggie/SW_Bonn_MAGGIE.jpg" alt="MAGGIE and DOPAMINS Teams." width="60%" enableClickToEnlarge />
 
@@ -81,14 +104,14 @@ From left to right: Felix Schoetzau, Johanna Teuchert, Leo Scheuermann, Tom Prug
 
 Following the invitation to the selection workshop for the REXUS programme, the MAGGIE team travelled to Bonn at the end of November together with the BEXUS team [DOPAMINS](https://www.bears-space.de/projects/dopamins/) from BEARS to defend their project concept to experts from DLR, ESA, SSC, MORABA, and ZARM. The other REXUS/BEXUS teams also introduced themselves, and current problems with the developments as well as outstanding questions, were clarified in a constructive and appreciative environment. Feedback is still pending to clarify which teams will be part of REXUS/BEXUS going forward and will be allowed to travel to Kiruna, Sweden, at the end of January for the Preliminary Design Review and Training Week.
 
-#### REXUS/BEXUS Student Training Week & Preliminary Design Review
+### REXUS/BEXUS Student Training Week & Preliminary Design Review
 
 <Img src="/src/assets/projects/maggie/MAGGIE_PDR_grouppicture1.jpeg" alt="MAGGIE PDR" width="100%" enableClickToEnlarge />
 
 With a very successfull Preliminary Design Review (PDR) the Team can continue working on its experiment design. Hosted at Esrange in the vast North of Sweden, the PDR and the parallel Student Training Week offers a great opportunity for the team and fellow European students to learn a lot about designing a scientific payload, about (space) project management, outreach and requirements.
 Besides this much on input, the team enjoys a lot of snow, auroras and very good food.
 
-#### REXUS Critical Design Review 
+### REXUS Critical Design Review 
 
 The June 2026 sterted for MAGGIE with its REXUS Critical Design Review, where the team was presenting and defending its current design status to a board of reviewers and experts. 
 
@@ -99,7 +122,7 @@ Besides these touristic activities, the team attended thoughtfull and important 
 Now that key design decisions need to be finalized and a brief review of the CDR has been completed, we will move on to preparing for the Integration Process Review.
 This includes manufacturing and integration, but in parallel also testing and verification activities. 
 
-#### REXUS Integration Process Review
+### REXUS Integration Process Review
 
 At the end of august, MAGGIE held its Integration Progress Review (IPR) at the space facilities of the TU Berlin. 
 Within the prestigious mission control centre, the team was able to convince the reviewers of the ongoing integration of the MAGGIE experiment including an experiment mock-up, integrated electronic systems and software for on-board controlling and ground station communication. 
@@ -109,6 +132,15 @@ The experiment performed well under critical eyes.
 
 With an successful performed PyroCutter test to prove the functionality of our Hold-Down-and-Release-Mechanisms, the review was passed and the team can low look into further integration and testing of the experiment. 
 The next highlight awaits us in December within the ZARM facilities including a Shakertest to test the experiment for flight readiness. 
+
+### Berlin Conference for Student Research
+
+<Img src={BUA_conference} alt="BUA Conference" />
+
+The end of the X-Tutorial part of MAGGIE was marked by the Berlin Conference for Student Research, where the team presented its preliminary design and implementation status to a broad audience of students and researchers.
+Presented was not only the concept but also the research and implementation approach for the robotic arm movement. 
+Trajectory planning and collission avoidance is an important part to take into calculations. 
+The conference was a great opportunity to get in touch with other researchers and students and to discuss the project and its challenges, but also to learn about other young student research projects.
 
 ## How to get involved
 
@@ -170,6 +202,12 @@ The BUA is not only supporting the project with funding for the tutors, but also
 Edmund Optics is supporting the project with free samples of clear windows and mirrors for the experiment.
 
 ## Older News
+
+**01.07.2026**: Merchandise Update: The team is now fully equipped with merchandise. Great thanks to the sturopx-team for the wonderfull t-shirts.
+
+**10.06.2026**: The Critical Design Review was completed and now its time for some final design decisions.
+
+**23.04.2026**: With a great and heartly Kick-Off Meeting, the MAGGIE Team starts motivated into the summer term. With three new students not only our software team but also the testing group got new help.
 
 **29.01.2026**: The team presents its preliminary design to the REXUS experts and has a great time at Esrange. Meeting other European student teams and discussing with the REXUS experts.
 
