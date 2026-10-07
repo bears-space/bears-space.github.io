@@ -18,7 +18,7 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
     "@astrojs/check": "^0.9.6",
-    "@astrojs/cloudflare": "^12.6.13",
+    "@astrojs/cloudflare": "^14.3.4",
     "@astrojs/mdx": "^8.0.2",
     "@astrojs/react": "^4.4.2",
     "@astrojs/sitemap": "^3.7.0",
@@ -51,6 +51,7 @@
     "husky": "^9.1.7",
     "pagefind": "^1.4.0",
     "tailwind-scrollbar": "^4.0.2",
-    "vitest": "^4.0.18"
+    "vitest": "^4.0.18",
+    "wrangler": "^4.125.0"
   }
 }
