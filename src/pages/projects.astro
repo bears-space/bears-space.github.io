@@ -208,13 +208,10 @@ const projectsData = JSON.stringify(projectsWithImages.map((p, i) => ({
           return acc;
         }, []);
 
-        // Sort: ongoing first, then by date within each group
+        // Sort only by date; completion status is a filter, not a sort priority.
         filtered.sort((a, b) => {
           const projA = this.projectsData[a];
           const projB = this.projectsData[b];
-          if (projA.isCompleted !== projB.isCompleted) {
-            return projA.isCompleted ? 1 : -1;
-          }
           return this.sortOrder === 'newest'
             ? projB.dateTimestamp - projA.dateTimestamp
             : projA.dateTimestamp - projB.dateTimestamp;

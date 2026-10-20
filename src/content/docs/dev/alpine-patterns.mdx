@@ -19,7 +19,7 @@ filteredIndices (getter)     →  Apply category + date/status filters, sort
     visibleIndices (state)   →  Display buffer that animates in/out
 ```
 
-- **`filteredIndices`** &mdash; Computed getter that filters `eventsData` by active category and date filters, then sorts (upcoming events first, then by date within each group).
+- **`filteredIndices`** &mdash; Computed getter that applies the active filters, then sorts the results. Events place upcoming items first; projects sort only by the selected date direction, while completion status remains a filter only.
 - **`displayedIndices`** &mdash; Slices `filteredIndices` to `visibleCount` for pagination.
 - **`visibleIndices`** &mdash; Mutable state array that represents what's currently rendered. Updated during animations.
 
