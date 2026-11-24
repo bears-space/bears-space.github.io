@@ -50,6 +50,9 @@ export default defineConfig({
   },
 
   vite: {
+    optimizeDeps: {
+      include: ['react-dom/client'],
+    },
     define: {
       'import.meta.env.ADMIN_BUILD': JSON.stringify(ADMIN_BUILD),
       'import.meta.env.KEYSTATIC_STORAGE': JSON.stringify(KEYSTATIC_STORAGE),

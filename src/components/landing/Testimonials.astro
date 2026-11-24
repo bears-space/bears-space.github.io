@@ -8,7 +8,7 @@ import Carousel from "@mdx/Carousel.astro";
 import TestimonialCard from "./TestimonialCard.astro";
 import { loadCollectionImages } from "@utils/imageLoader";
 import { getTestimonials, getPageContent } from "@utils/contentQueries";
-import { type Locale } from '@utils/i18n';
+import { type Locale, localizeUrl } from '@utils/i18n';
 
 interface Props {
   locale: Locale;
@@ -28,6 +28,7 @@ const testimonials = peopleWithLoadedImages.map((person) => ({
   name: person.data.name,
   role: person.data.role,
   image: person.loadedImage,
+  profileHref: localizeUrl("/about-us#faces-of-bears-title", locale),
 }));
 
 const content = await getPageContent('landing/testimonials', locale);
@@ -53,6 +54,7 @@ const content = await getPageContent('landing/testimonials', locale);
           name={testimonial.name}
           role={testimonial.role}
           image={testimonial.image}
+          profileHref={testimonial.profileHref}
         />
       ))
     }
